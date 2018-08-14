@@ -1,0 +1,32 @@
+"  character_sanitizer(e.Coll_EventID_collector) as eventID,\n" +
+"  e.Collection_Method as collectionMethod,\n" +
+"  e.Collector_List as collectorList,\n" +
+"  e.ContinentOcean as continentOcean,\n" +
+"  e.Country as country,\n" +
+"  e.County as county,\n" +
+"  e.DecimalLatitude as decimalLatitude,\n" +
+"  e.DecimalLongitude as decimalLongitude,\n" +
+"  e.DepthOfBottomMeters as depthOfBottomInMeters,\n" +
+"  e.EnteredBy as enteredBy,\n" +
+"  e.Habitat as habitat,\n" +
+"  cast(e.HorizontalDatum as unsigned integer) as horizontalDatum,\n" +
+"  e.Island as island,\n" +
+"  e.IslandGroup as islandGroup,\n" +
+"  e.Landowner as landowner,\n" +
+"  e.Locality as locality,\n" +
+"  cast(e.MaxDepthMeters as unsigned integer) as maximumDepthInMeters,\n" +
+"  cast(e.MaxElevationMeters as unsigned integer) as maximumElevationInMeters,\n" +
+"  cast(e.MaxErrorInMeters as unsigned integer) as coordinateUncertaintyInMeters,\n" +
+"  cast(e.MinDepthMeters as unsigned integer) as minimumDepthInMeters,\n" +
+"  cast(e.MinElevationMeters as unsigned integer) as minimumElevationInMeters,\n" +
+"  e.MicroHabitat as microHabitat,\n" +
+"  e.Permit_Info as permitInformation,\n" +
+"  e.Remarks as eventRemarks,\n" +
+"  e.StateProvince as stateProvince,\n" +
+"  e.TaxTeam as taxTeam,\n" +
+"  e.TimeofDay as timeOfDay,\n" +
+"  e.VerbatimLatitude as verbatimLatitude,\n" +
+"  e.VerbatimLongitude as verbatimLongitude,\n" +
+"  e.YearCollected as yearCollected,\n" +
+"  e.MonthCollected as monthCollected,\n" +
+"  e.DayCollected as dayCollected,\n" +

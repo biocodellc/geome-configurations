@@ -1,0 +1,5 @@
+],
+	"datasetForwardingAddress": "http://biscicol.org/dipnet/bcids/metadata/{ark}",
+	"expeditionForwardingAddress": "http://biscicol.org/dipnet/bcids/metadata/{ark}",
+	"expeditionMetadataProperties": []
+}
