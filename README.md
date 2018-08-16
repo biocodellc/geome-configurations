@@ -9,10 +9,15 @@ The process involves:
 
 Following are instructions:
 
+
 ```
 cd bin
-curl https://api.develop.geome-db.org/projects/1/config > template.json.gz
-gunzip template.json.gz
+# Biocode Template = 1
+# Dipnet = 2
+curl https://api.develop.geome-db.org/projects/1/config > biocode.json.gz
+curl https://api.develop.geome-db.org/projects/2/config > dipnet.json.gz
+gunzip biocode.json.gz
+gunzip dipnet.json.gz
 # run the following script to loop through projects and load
 ./put.sh
 ```
