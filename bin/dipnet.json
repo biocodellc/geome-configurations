@@ -459,7 +459,7 @@
                 },
                 {
                     "allowUnknown": false,
-                    "column": "sexCaste",
+                    "column": "sex",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/sex",
                     "definition": "The sex of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary. See associated list on lists tab.",
@@ -613,37 +613,37 @@
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/associatedMedia",
                     "definition": "Photos, videos etc of the individual. From Darwincore: A list (concatenated and separated) of identifiers (publication, global unique identifier, URI,DOI) of media associated with the Occurrence.",
-		    "group": "Record and Owner Details",
+                    "group": "Record and Owner Details",
                     "internal": false,
                     "uri": "urn:associatedMedia"
                 },
                 {
                     "allowUnknown": false,
                     "column": "substratum",
-		    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://purl.obolibrary.org/obo/ENVO_00010483",
                     "definition": "Substrate from which the individual was sampled. This could be abiotic or biotic (host organism).",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:substratum"
                 },
                 {
                     "allowUnknown": false,
                     "column": "associatedReferences",
-		    "group": "Record and Owner Details",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/associatedReferences",
                     "definition": "Any associated publications/references pertaining to this individual or its derivative tissues or sequences. The first place it was published is particularly relevant. From Darwincore: A list (concatenated and separated) of identifiers (publication, bibliographic reference, global unique identifier, URI) of literature associated with the Occurrence.]",
+                    "group": "Record and Owner Details",
                     "internal": false,
                     "uri": "urn:associatedReferences"
                 },
                 {
                     "allowUnknown": false,
                     "column": "establishmentMeans",
-		    "group": "Taxonomy and Life History",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/establishmentMeans",
                     "definition": "The process by which the biological individual(s) represented in the Occurrence became established at the location. Recommended best practice is to use a controlled vocabulary. See associated list in 'lists' tab.",
+                    "group": "Taxonomy and Life History",
                     "internal": false,
                     "uri": "urn:establishmentMeans"
                 }
@@ -653,7 +653,7 @@
             "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
             "hashed": false,
             "parentEntity": "Event",
-            "recordType": "biocode.fims.models.records.GenericRecord",
+            "recordType": "biocode.fims.records.GenericRecord",
             "rules": [
                 {
                     "column": "materialSampleID",
@@ -678,7 +678,7 @@
                     "columns": [
                         "genus",
                         "specificEpithet",
-                        "sexCaste",
+                        "sex",
                         "lifeStage"
                     ],
                     "level": "WARNING",
@@ -709,7 +709,7 @@
                     "name": "ControlledVocabulary"
                 },
                 {
-                    "column": "sexCaste",
+                    "column": "sex",
                     "level": "ERROR",
                     "listName": "sex",
                     "name": "ControlledVocabulary"
@@ -867,50 +867,50 @@
                 {
                     "allowUnknown": false,
                     "column": "county",
-		    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "ttp://rs.tdwg.org/dwc/terms/county",
                     "definition": "The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:county"
                 },
                 {
                     "allowUnknown": false,
                     "column": "depthOfBottomInMeters",
-		    "group": "Locality and Habitat",
                     "dataType": "INTEGER",
                     "definedBy": "urn:depthOfBottomInMeters",
                     "definition": "The depth of bottom as measured in meters where the collecting event took place.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:depthOfBottomInMeters"
                 },
                 {
                     "allowUnknown": false,
                     "column": "enteredBy",
-		    "group": "Record and Owner Details",
                     "dataType": "STRING",
                     "definedBy": "urn:enteredBy",
                     "definition": "The name of the person entering the data.",
+                    "group": "Record and Owner Details",
                     "internal": false,
                     "uri": "urn:enteredBy"
                 },
                 {
                     "allowUnknown": false,
                     "column": "habitat",
-		    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000739",
                     "definition": "A category or description of the habitat in which the Event occurred.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:habitat"
                 },
                 {
                     "allowUnknown": false,
                     "column": "horizontalDatum",
-		    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/geodeticDatum",
                     "definition": "The ellipsoid, geodetic datum, or spatial reference system (SRS) upon which the geographic coordinates given in decimalLatitude and decimalLongitude as based. Recommended best practice is use the EPSG code as a controlled vocabulary to provide an SRS, if known. Otherwise use a controlled vocabulary for the name or code of the geodetic datum, if known. Otherwise use a controlled vocabulary for the name or code of the ellipsoid, if known. If none of these is known, use the value 'unknown'.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:geodeticDatum"
                 },
@@ -939,9 +939,9 @@
                     "allowUnknown": false,
                     "column": "continentOcean",
                     "dataType": "STRING",
-		    "group": "Locality and Habitat",
                     "definedBy": "urn:continentOcean",
                     "definition": "The continent or ocean name associated with this event.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:continentOcean"
                 },
@@ -949,79 +949,79 @@
                     "allowUnknown": false,
                     "column": "island",
                     "dataType": "STRING",
-                    "group": "Locality and Habitat",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/island",
                     "definition": "The name of the island on or near which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:island"
                 },
                 {
                     "allowUnknown": false,
                     "column": "islandGroup",
-                    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/islandGroup",
                     "definition": "The name of the island group in which the Location occurs. Recommended best practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:islandGroup"
                 },
                 {
                     "allowUnknown": false,
                     "column": "landowner",
-                    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "urn:landowner",
                     "definition": "The name of the landowner where the event occurred.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:landowner"
                 },
                 {
                     "allowUnknown": false,
                     "column": "maximumDepthInMeters",
-                    "group": "Locality and Habitat",
                     "dataType": "FLOAT",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/maximumDepthInMeters",
                     "definition": "The greater depth of a range of depth below the local surface, in meters.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:maximumDepthInMeters"
                 },
                 {
                     "allowUnknown": false,
                     "column": "maximumElevationInMeters",
-                    "group": "Locality and Habitat",
                     "dataType": "FLOAT",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/maximumDistanceAboveSurfaceInMeters",
                     "definition": "The greater distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:maximumDistanceAboveSurfaceInMeters"
                 },
                 {
                     "allowUnknown": false,
                     "column": "microHabitat",
-                    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "urn:microHabitat",
                     "definition": "The microHabitat, which occupies a smaller area than the larger habitat.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:microHabitat"
                 },
                 {
                     "allowUnknown": false,
                     "column": "minimumDepthInMeters",
-                    "group": "Locality and Habitat",
                     "dataType": "FLOAT",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/minimumDepthInMeters",
                     "definition": "The lesser depth of a range of depth below the local surface, in meters.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:minimumDepthInMeters"
                 },
                 {
                     "allowUnknown": false,
                     "column": "minimumElevationInMeters",
-                    "group": "Locality and Habitat",
                     "dataType": "FLOAT",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/minimumDistanceAboveSurfaceInMeters",
                     "definition": "The lesser distance in a range of distance from a reference surface in the vertical direction, in meters. Use positive values for locations above the surface, negative values for locations below. If depth measures are given, the reference surface is the location given by the depth, otherwise the reference surface is the location given by the elevation.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:minimumDistanceAboveSurfaceInMeters"
                 },
@@ -1037,80 +1037,80 @@
                 {
                     "allowUnknown": false,
                     "column": "eventRemarks",
-		    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/eventRemarks",
                     "definition": "Comments or notes about the Event.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:eventRemarks"
                 },
                 {
                     "allowUnknown": false,
                     "column": "stateProvince",
-                    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/stateProvince",
                     "definition": "The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:stateProvince"
                 },
                 {
                     "allowUnknown": false,
                     "column": "taxTeam",
-                    "group": "Record and Owner Details",
                     "dataType": "STRING",
                     "definedBy": "urn:taxTeam",
                     "definition": "The taxonomic team.",
+                    "group": "Record and Owner Details",
                     "internal": false,
                     "uri": "urn:taxTeam"
                 },
                 {
                     "allowUnknown": false,
                     "column": "timeOfDay",
-                    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "urn:timeCollected",
                     "definition": "The time the collecting event took place.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:timeCollected"
                 },
                 {
                     "allowUnknown": false,
                     "column": "verbatimLatitude",
-                    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/verbatimLatitude",
                     "definition": "The verbatim original latitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:verbatimLatitude"
                 },
                 {
                     "allowUnknown": false,
                     "column": "verbatimLongitude",
-                    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/verbatimLongitude",
                     "definition": "The verbatim original longitude of the Location. The coordinate ellipsoid, geodeticDatum, or full Spatial Reference System (SRS) for these coordinates should be stored in verbatimSRS and the coordinate system should be stored in verbatimCoordinateSystem.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:verbatimLongitude"
                 },
                 {
                     "allowUnknown": false,
                     "column": "fundingSource",
-                    "group": "Record and Owner Details",
                     "dataType": "STRING",
                     "definedBy": "urn:fundingSource",
                     "definition": "Granting body and grant number, can be in a delimited list.",
+                    "group": "Record and Owner Details",
                     "internal": false,
                     "uri": "urn:fundingSource"
                 },
                 {
                     "allowUnknown": false,
                     "column": "fieldNotes",
-                    "group": "Locality and Habitat",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/fieldNotes",
                     "definition": "Any notes taken in the field, or a link to those notes: population size, ecological info, etc.",
+                    "group": "Locality and Habitat",
                     "internal": false,
                     "uri": "urn:fieldNotes"
                 }
@@ -1119,7 +1119,7 @@
             "conceptForwardingAddress": "http://biscicol.org/dipnet/bcids/metadata/{ark}{suffix}",
             "conceptURI": "http://rs.tdwg.org/dwc/terms/Event",
             "hashed": true,
-            "recordType": "biocode.fims.models.records.GenericRecord",
+            "recordType": "biocode.fims.records.GenericRecord",
             "rules": [
                 {
                     "column": "eventID",
@@ -1241,6 +1241,251 @@
             "attributes": [
                 {
                     "allowUnknown": false,
+                    "column": "materialSampleID",
+                    "dataType": "STRING",
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/MaterialSampleID",
+                    "definition": "The collector's specimen number. This number must be unique among the IDs within the expedition.",
+                    "internal": false,
+                    "uri": "urn:materialSampleID"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueType",
+                    "dataType": "STRING",
+                    "definedBy": "urn:geneticTissueType",
+                    "definition": "A list (concatenated and separated) of the tissue types sampled from this individual, together with any tissue identifiers that were assigned to them",
+                    "internal": false,
+                    "uri": "urn:geneticTissueType"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissuePlate",
+                    "dataType": "STRING",
+                    "definedBy": "urn:plateID",
+                    "definition": "The name of the plate.Typically this is a 96 well plat for Biocode projects",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:plateID"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueWell",
+                    "dataType": "STRING",
+                    "definedBy": "urn:wellID",
+                    "definition": "The well location in the plate",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:wellID"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueCatalogNumber",
+                    "dataType": "STRING",
+                    "definedBy": "urn:previousTissueID",
+                    "definition": "The previous tissue catalog number, designated by a GUID",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:previousTissueID"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueBarcode",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueStorageID",
+                    "definition": "Tissue Barcode",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueStorageID"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueInstitution",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueInstitution",
+                    "definition": "Institutionname or acronym which maintains ownership of the tissue",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueInstitution"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueOtherCatalogNumbers",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueOtherCatalogNumbers",
+                    "definition": "Other catalog numbers which this tissue is known by",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueOtherCatalogNumbers"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueSamplingYear",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueSamplingYear",
+                    "definition": "Year this tissue was sampled",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueSamplingYear"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueSamplingMonth",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueSamplingMonth",
+                    "definition": "Month this tissue was sampled",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueSamplingMonth"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueSamplingDay",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueSamplingDay",
+                    "definition": "Day his tissue was sampled by",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueSamplingDay"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueRecordedBy",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueRecordedBy",
+                    "definition": "Person sub-sampling this tissue",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueRecordedBy"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueContainer",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueContainer",
+                    "definition": "Container type tissue is stored in",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueContainer"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissuePreservative",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissuePreservative",
+                    "definition": "Presersvative of this tissue",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissuePreservative"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "associatedSequences",
+                    "dataType": "STRING",
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/associatedSequences",
+                    "definition": "A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:associatedSequences"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "tissueRemarks",
+                    "dataType": "STRING",
+                    "definedBy": "urn:tissueRemarks",
+                    "definition": "Remarks pertaining to this tissue",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:tissueRemarks"
+                },
+                {
+                    "allowUnknown": false,
+                    "column": "fromTissue",
+                    "dataType": "STRING",
+                    "definedBy": "urn:fromTissue",
+                    "definition": "Identifier of tissue that this tissue was derived from, if available.",
+                    "group": "Tissue Details",
+                    "internal": false,
+                    "uri": "urn:fromTissue"
+                }
+            ],
+            "conceptAlias": "Tissue",
+            "conceptForwardingAddress": "http://biscicol.org/dipnet/bcids/metadata/{ark}{suffix}",
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
+            "hashed": false,
+            "parentEntity": "Sample",
+            "recordType": "biocode.fims.records.GenericRecord",
+            "rules": [
+                {
+                    "column": "materialSampleID",
+                    "level": "ERROR",
+                    "name": "UniqueValue",
+                    "uniqueAcrossProject": false
+                },
+                {
+                    "column": "materialSampleID",
+                    "level": "ERROR",
+                    "name": "ValidForURI"
+                },
+                {
+                    "columns": [
+                        "materialSampleID"
+                    ],
+                    "level": "ERROR",
+                    "name": "RequiredValue"
+                },
+                {
+                    "column": "tissueWell",
+                    "level": "WARNING",
+                    "name": "RequireValueIfOtherColumn",
+                    "otherColumn": "tissuePlate"
+                },
+                {
+                    "column": "tissuePreservative",
+                    "level": "WARNING",
+                    "listName": "preservative",
+                    "name": "ControlledVocabulary"
+                },
+                {
+                    "column": "tissueContainer",
+                    "level": "WARNING",
+                    "listName": "container",
+                    "name": "ControlledVocabulary"
+                },
+                {
+                    "column": "tissueSamplingYear",
+                    "level": "ERROR",
+                    "name": "NumericRange",
+                    "range": ">=1500|<=2050"
+                },
+                {
+                    "column": "tissueSamplingMonth",
+                    "level": "ERROR",
+                    "name": "NumericRange",
+                    "range": ">=1|<=12"
+                },
+                {
+                    "column": "tissueSamplingDay",
+                    "level": "ERROR",
+                    "name": "NumericRange",
+                    "range": ">=1|<=31"
+                },
+                {
+                    "columns": [
+                        "tissueType"
+                    ],
+                    "level": "WARNING",
+                    "name": "RequiredValue"
+                }
+            ],
+            "type": "Entity",
+            "uniqueAcrossProject": false,
+            "uniqueKey": "materialSampleID",
+            "worksheet": "Samples"
+        },
+        {
+            "attributes": [
+                {
+                    "allowUnknown": false,
                     "column": "sequence",
                     "dataType": "STRING",
                     "definition": "Sequence data for the material sample.",
@@ -1275,7 +1520,7 @@
             "conceptAlias": "fastaSequence",
             "conceptURI": "urn:fastaSequence",
             "hashed": false,
-            "parentEntity": "Sample",
+            "parentEntity": "Tissue",
             "recordType": "biocode.fims.fasta.FastaRecord",
             "rules": [],
             "type": "Fasta",
@@ -1369,7 +1614,7 @@
             "conceptAlias": "fastqMetadata",
             "conceptURI": "urn:fastqMetadata",
             "hashed": false,
-            "parentEntity": "Sample",
+            "parentEntity": "Tissue",
             "recordType": "biocode.fims.fastq.FastqRecord",
             "rules": [],
             "type": "Fastq",
