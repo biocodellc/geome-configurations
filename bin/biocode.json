@@ -455,7 +455,7 @@
                 },
                 {
                     "allowUnknown": false,
-                    "column": "sexCaste",
+                    "column": "sex",
                     "dataType": "STRING",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/sex",
                     "definition": "The sex of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary. See associated list on lists tab.",
@@ -651,7 +651,7 @@
                     "name": "ControlledVocabulary"
                 },
                 {
-                    "column": "sexCaste",
+                    "column": "sex",
                     "level": "ERROR",
                     "listName": "sex",
                     "name": "ControlledVocabulary"
