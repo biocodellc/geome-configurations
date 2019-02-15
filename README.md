@@ -31,15 +31,14 @@ select create_project(12, 'SI_BLITZ','SI BioBlitz',1);
 # Creating Configuration Files
 Configuration files are managed in the geome-configurator repository.
 ```
-cd bin
 # Biocode Template = 1
 # Dipnet = 2
 curl https://api.develop.geome-db.org/projects/1/config > biocode.json.gz
 curl https://api.develop.geome-db.org/projects/2/config > dipnet.json.gz
 gunzip biocode.json.gz
 gunzip dipnet.json.gz
-# run the following script to loop through projects and load
-./put.sh
+# run the following script to load data
+bin/putConfigurationFile.sh
 ```
 
 The files in initial_creation_scripts directory is maintained here for historical purposes.  They are not used currently but contain the initial creation scripts used for generating projects.  These were run at the inception of geome and contain useful information but should not be run.
