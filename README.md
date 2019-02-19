@@ -16,29 +16,32 @@ This repository contains the master copies of the configuration files, offline. 
 #select create_project(ID, 'PROJECT_CODE','PROJECT_TITLE',1)
 select create_project(1, 'B_TEMPLATE','Biocode Template',1);
 select create_project(2, 'DIPNET','Diversity of the IndoPacific',1);
-select create_project(3, 'ACEH','ACEH',1);
-select create_project(4, 'AMANDA','AMANDA',1);
-select create_project(5, 'BALI','BALI',1);
-select create_project(6, 'NOAA','NOAA',1);
-select create_project(7, 'PEER','PEER',1);
-select create_project(8, 'PIRE','PIRE',1);
-select create_project(9, 'PNMNH','PNMNH',1);
-select create_project(10, 'SERIBU','SERIBU',1);
-select create_project(11, 'TIMOR','TIMOR',1);
-select create_project(12, 'SI_BLITZ','SI BioBlitz',1);
 ```
 
-# Creating Configuration Files
-Configuration files are managed in the geome-configurator repository.
+# Working with Configuration Files
+
+1. You can get the ID of the configuration you are trying to update here: 
 ```
-# Biocode Template = 1
-# Dipnet = 2
-curl https://api.develop.geome-db.org/projects/1/config > biocode.json.gz
-curl https://api.develop.geome-db.org/projects/2/config > dipnet.json.gz
-gunzip biocode.json.gz
-gunzip dipnet.json.gz
-# run the following script to load data
-bin/putConfigurationFile.sh
+curl https://api.develop.geome-db.org/projects/configs | python -m json.tool > {OUTPUT_FILE}
 ```
+
+2. Get the project configuration, unzip, pretty print JSON and write to file: 
+```
+curl https://api.develop.geome-db.org/projects/configs/{PROJECT_ID} | gunzip - | python -m json.tool > {CONFIGURATION}.json
+```
+
+3. Update {CONFIGURATION}.json using vim
+
+4. PUT the entire projectConfiguration object back:
+```
+curl -X PUT -H 'Content-Type: application/json' --data "@$file_path" https://api.develop.geome-db.org/projects/configs/{PROJECT_ID}?access_token={ACCESS_TOKEN}
+```
+or, you can run the convenience script in the bin directory:
+```
+$ ./bin/putConfigurationFile.sh
+usage: putConfigurationFile.sh [DEV|PROD] [access_token] [projectID] [file_path]
+```
+
+# Notes
 
 The files in initial_creation_scripts directory is maintained here for historical purposes.  They are not used currently but contain the initial creation scripts used for generating projects.  These were run at the inception of geome and contain useful information but should not be run.

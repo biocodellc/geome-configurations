@@ -4,7 +4,7 @@
 
 usage()
 {
-    echo "usage: putBiocode.sh [DEV|PROD] [access_token] [projectID] [file_path]"
+    echo "usage: putConfigurationFile.sh [DEV|PROD] [access_token] [projectID] [file_path]"
 }
 
 run() 
@@ -12,9 +12,9 @@ run()
     echo "Putting JSON to server...."
     # Set server
     if [ "$server" = "DEV" ]; then
-        url=https://api.develop.geome-db.org/projects/$projectID/config?access_token=$access_token
+        url=https://api.develop.geome-db.org/projects/configs/$projectID?access_token=$access_token
     else
-        url=https://api.geome-db.org/projects/$projectID/config?access_token=$access_token
+        url=https://api.geome-db.org/projects/configs/$projectID?access_token=$access_token
     fi
     echo "endpoint: "$url
     curl -X PUT -H 'Content-Type: application/json' --data "@$file_path" $url
