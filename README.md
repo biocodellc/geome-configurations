@@ -24,7 +24,7 @@ select create_project(2, 'DIPNET','Diversity of the IndoPacific',1);
 # get the network configuration
 curl https://api.geome-db.org/network/1/config | gunzip - | python -m json.tool > network.json
 # put the network configuration
-curl -X PUT -H 'Content-Type: application/json' --data "@$file_path" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
+curl -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
 ```
 
 # List Network approved project Configurations (and their identifiers)
@@ -35,12 +35,12 @@ curl https://api.develop.geome-db.org/projects/configs | python -m json.tool > {
 # Working with project Configuration files
 ```
 # Get a project configuration, unzip, pretty print JSON and write to file: 
-curl https://api.develop.geome-db.org/projects/configs/{PROJECT_ID} | gunzip - | python -m json.tool > {CONFIGURATION}.json
+curl https://api.develop.geome-db.org/projects/{PROJECT_ID}/config?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > {CONFIGURATION}.json
 
 You will want to Update {CONFIGURATION}.json using vim
 
 # PUT the entire projectConfiguration object back:
-curl -X PUT -H 'Content-Type: application/json' --data "@$file_path" https://api.develop.geome-db.org/projects/configs/{PROJECT_ID}?access_token={ACCESS_TOKEN}
+curl -X PUT -H 'Content-Type: application/json' --data "@$file_path" https://api.develop.geome-db.org/projects/{PROJECT_ID}/config?access_token={ACCESS_TOKEN}
 ```
 
 or, you can run the convenience script in the bin directory:
