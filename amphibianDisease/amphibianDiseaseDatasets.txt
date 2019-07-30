@@ -1,0 +1,20 @@
+adFilePath	public	num_records	project_title
+helpers/js-dragdrop/uploaded/51a1209cb9b32b1ee883971557060049/506b347661892c57eaa03d2f49b3ec05.xlsx 506b347661892c57eaa03d2f49b3ec05.xlsx	1	84	Investigating the chytrid presence in a non-native amphibian in Cambridge, England
+helpers/js-dragdrop/uploaded/5c875ff7f3929c2cfe6e870579462a09/c654f4c5fb6de5ba1e5b9aacef69e604.xlsx c654f4c5fb6de5ba1e5b9aacef69e604.xlsx	0	1197	Sierra Nevada Retrospective Analysis
+helpers/js-dragdrop/uploaded/2af82333fc5b1c1906365d5bd1e89bf0/cd26aa75610660ca249ae9638b6dfcbf.xlsx cd26aa75610660ca249ae9638b6dfcbf.xlsx	0	160	Posthoc data upload test
+helpers/js-dragdrop/uploaded/fada61870c99153bdf7128c647794a0f/b59295b64153563d92dbce51abc5b7e3.xlsx b59295b64153563d92dbce51abc5b7e3.xlsx	0	84	testing
+helpers/js-dragdrop/uploaded/75eeefed4814cdf5585a7a53d5b41636/7f5d6fe37b819da189d99e077aa89279.xlsx 7f5d6fe37b819da189d99e077aa89279.xlsx	1	463	Widespread presence and high prevalence of Batrachochytrium dendrobatidis in Gabon
+helpers/js-dragdrop/uploaded/5c6c1dd9e27c8fc67a27dec569e23355/d0541ad898cf62407e48c8cf04215cf8.xlsx d0541ad898cf62407e48c8cf04215cf8.xlsx	1	543	Kosnipata
+helpers/js-dragdrop/uploaded/2a74758c2b3b2201b3714351ddb81b52/cbdaa1247e9bcd6fa41bd2fba9cadb37.xlsx cbdaa1247e9bcd6fa41bd2fba9cadb37.xlsx	1	70	Japumayo
+helpers/js-dragdrop/uploaded/7c40973f329dbfb802d33bf6e3309569/a76217bd787a7429ffa48870f885239f.xlsx a76217bd787a7429ffa48870f885239f.xlsx	0	2924	Bd surveys as part of the Rays of Hope - Atelopus resurvey project in Panama&#39;s Cordillera Central
+helpers/js-dragdrop/uploaded/a917c648408b8039beef7d950126ec2c/77cc4bf82c061c03e78edfbdcceb0961.xlsx 77cc4bf82c061c03e78edfbdcceb0961.xlsx	1	509	Survey of Bd in Salamanders from Three Mountain Ranges in Europe and the Americas
+helpers/js-dragdrop/uploaded/ca2e087ce1fc1599d6175714d0c64dbf/299c0fedddb0a412480240cbc6eeecd2.xlsx 299c0fedddb0a412480240cbc6eeecd2.xlsx	1	509	Bsal salamander survey
+helpers/js-dragdrop/uploaded/e9b14912e2fb5674ac65e0c787b4b637/1250d61e8b6d92d86ce4ae1653f92387.xlsx 1250d61e8b6d92d86ce4ae1653f92387.xlsx	1	847	Bd swabs from all Bd projects conducted by Dr Cori Richards Zawacki and collaborators
+helpers/js-dragdrop/uploaded/4af27cbdb77a9089fb9040999818131d/4ff2ea78ff5cd0038edd46ac0f1e26c7.xlsx 4ff2ea78ff5cd0038edd46ac0f1e26c7.xls	0	736	Field Survey of Mount Gede, Java, Indonesia
+helpers/js-dragdrop/uploaded/b4689b13c62d82cf578e9820d912c597/e6df7b391f16217584ea65c5bd9fa709.xlsx e6df7b391f16217584ea65c5bd9fa709.xlsx	1	1034	Batrachochytrium dendrobatidis in amphibian museum specimens from Costa Rica (UCR)
+helpers/js-dragdrop/uploaded/129f37fa4ccf05bb9fe221a19d9b46b9/47a944bf3ee5bd611ad6e0c8a463ce19.xlsx 47a944bf3ee5bd611ad6e0c8a463ce19.xlsx	1	7913	Introduced bullfrogs facilitate pathogen invasion in the western United States
+helpers/js-dragdrop/uploaded/9a8d2ed7d6a429828a76ab6a6158e236/be79ff9a50c8093816b808a37817c310.xlsx be79ff9a50c8093816b808a37817c310.xlsx	1	1975	Is Chytridiomycosis an Emerging Infectious Disease in Asia?
+helpers/js-dragdrop/uploaded/4831a90278bbc455c0cd5efc2806497f/1958720a9fc8fd57674e603852390a50.xlsx 1958720a9fc8fd57674e603852390a50.xlsx	1	697	Batrachochytrium dendrobatidis invasion on California Islands
+helpers/js-dragdrop/uploaded/f4ae601368714210c354b6cdd30df093/6be654689e04d6c9348e2ef7467569ba.xlsx 6be654689e04d6c9348e2ef7467569ba.xlsx	0	1951	Historical Context of Amphibian Host and Fungal Disease Dynamics: A retrospective study of the Pyrenees Mountains
+helpers/js-dragdrop/uploaded/c285180c6554b6d7ed48254ec0320cb6/ec344bf12c675d751036895b706c7810.xlsx ec344bf12c675d751036895b706c7810.xlsx	0	407	Bd invasion in Aneides lugubris and Batrachoseps luciae 
+helpers/js-dragdrop/uploaded/81042127c8cc61524ff183276c08da4f/b61548184b5f4a25942689b72b1378ac.xlsx b61548184b5f4a25942689b72b1378ac.xlsx	1	1894	Pathogen invasion and non-epizootic dynamics in Pacific newts in California over the last century
