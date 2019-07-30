@@ -1,0 +1,2312 @@
+﻿materialSampleID,country,locality,principalInvestigator,collectorList,coordinateUncertaintyInMeters,minimumElevationInMeters,decimalLongitude,decimalLatitude,yearCollected,monthCollected,dayCollected,specificEpithet,genus,diseaseDetected,fatal,sampleType,diseaseTested,ZEscore,infraspecificEpithet
+1,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,signifera,crinia,TRUE,FALSE,swabbing,Bd,473.3428,
+2,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,signifera,crinia,TRUE,FALSE,swabbing,Bd,5045.1009,
+3,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,signifera,crinia,TRUE,FALSE,swabbing,Bd,4421.7551,
+4,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,signifera,crinia,TRUE,FALSE,swabbing,Bd,6921.8051,
+5,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,signifera,crinia,TRUE,FALSE,swabbing,Bd,383.341,
+6,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,signifera,crinia,TRUE,FALSE,swabbing,Bd,41.6675,
+7,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,7,signifera,crinia,TRUE,FALSE,swabbing,Bd,1985.0397,
+8,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,7,signifera,crinia,TRUE,FALSE,swabbing,Bd,51.6677,
+9,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,7,signifera,crinia,TRUE,FALSE,swabbing,Bd,27170.5434,
+10,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,signifera,crinia,TRUE,FALSE,swabbing,Bd,2598.3853,
+11,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,signifera,crinia,TRUE,FALSE,swabbing,Bd,13573.6048,
+12,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,signifera,crinia,TRUE,FALSE,swabbing,Bd,4186.7504,
+13,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,signifera,crinia,TRUE,FALSE,swabbing,Bd,3111.7289,
+14,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,signifera,crinia,TRUE,FALSE,swabbing,Bd,1375.0275,
+15,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,signifera,crinia,TRUE,FALSE,swabbing,Bd,1790.0358,
+16,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,signifera,crinia,TRUE,FALSE,swabbing,Bd,968.3527,
+17,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,signifera,crinia,TRUE,FALSE,swabbing,Bd,5436.7754,
+18,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,signifera,crinia,TRUE,FALSE,swabbing,Bd,1331.6933,
+19,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,signifera,crinia,TRUE,FALSE,swabbing,Bd,13303.5994,
+20,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,signifera,crinia,TRUE,FALSE,swabbing,Bd,560.0112,
+21,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,signifera,crinia,TRUE,FALSE,swabbing,Bd,2218.3777,
+22,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,8,31,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,46.6676, alpina
+23,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+24,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,11.6669, alpina
+25,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,65.0013, alpina
+26,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,21,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,341.6735, alpina
+27,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,8.3335, alpina
+28,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,3065.0613, alpina
+29,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,13.3336, alpina
+30,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,8,31,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+31,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+32,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,781.6823, alpina
+33,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,3613.4056, alpina
+34,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,2725.0545, alpina
+35,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,8,31,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,24593.8252, alpina
+36,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+37,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,8,31,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,20.0004, alpina
+38,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,1171.6901, alpina
+39,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+40,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,8,31,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+41,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+42,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+43,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+44,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+45,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,2185.0437, alpina
+46,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,14,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,490.0098, alpina
+47,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,7,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,25.0005, alpina
+48,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,3223.3978, alpina
+49,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,21,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,13.3336, alpina
+50,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,26,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,758.3485, alpina
+51,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,21,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+52,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,21,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,1033.354, alpina
+53,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,11,5,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,46.6676, alpina
+54,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,21,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,545.0109, alpina
+55,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,2420.0484, alpina
+56,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+57,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,3526.7372, alpina
+58,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,5658.4465, alpina
+59,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,7,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,41.6675, alpina
+60,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,14,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,4958.4325, alpina
+61,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,1855.0371, alpina
+62,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,435.0087, alpina
+63,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,2285.0457, alpina
+64,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,14,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,328.3399, alpina
+65,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,45989.2531, alpina
+66,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,151.6697, alpina
+67,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,8873.5108, alpina
+68,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,30,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,1.6667, alpina
+69,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,50.001, alpina
+70,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,7,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,1.6667, alpina
+71,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,43.3342, alpina
+72,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,14,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,20.0004, alpina
+73,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,288.3391, alpina
+74,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,11,5,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,861.6839, alpina
+75,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,21,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,391.6745, alpina
+76,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,14,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,401.6747, alpina
+77,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,29,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,65.0013, alpina
+78,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+79,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,14,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,10.0002, alpina
+80,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,10,16,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+81,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,FALSE,FALSE,swabbing,Bd,0, alpina
+82,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,4063.4146, alpina
+83,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,8,31,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,1121.6891, alpina
+84,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,9,9,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,146.6696, alpina
+85,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1335,148.39900,-35.96000,2013,8,31,verreauxii,litoria,TRUE,FALSE,swabbing,Bd,421.6751, alpina
+86,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404,148.40100,-35.95800,2013,9,29,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1893.3712,
+87,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404,148.40100,-35.95800,2013,10,8,signifera,Crinia,TRUE,FALSE,swabbing,Bd,3608.4055,
+88,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404,148.40100,-35.95800,2013,10,8,signifera,Crinia,TRUE,FALSE,swabbing,Bd,3376.7342,
+89,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404,148.40100,-35.95800,2013,10,8,signifera,Crinia,TRUE,FALSE,swabbing,Bd,3881.7443,
+90,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404,148.40100,-35.95800,2013,10,8,signifera,Crinia,TRUE,FALSE,swabbing,Bd,545.0109,
+91,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404,148.40100,-35.95800,2013,10,8,signifera,Crinia,TRUE,FALSE,swabbing,Bd,47679.2869,
+92,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1363.3606,
+93,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1101.6887,
+94,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1768.3687,
+95,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,3433.402,
+96,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,15418.6417,
+97,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1468.3627,
+98,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,85.0017,
+99,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,525.0105,
+100,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1075.0215,
+101,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,66.668,
+102,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,12216.911,
+103,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,795.0159,
+104,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1515.0303,
+105,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1846.7036,
+106,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,661.6799,
+107,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1281.6923,
+108,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,2801.7227,
+109,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,858.3505,
+110,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1705.0341,
+111,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,20,signifera,Crinia,TRUE,FALSE,swabbing,Bd,8823.5098,
+112,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,7965.1593,
+113,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,831.6833,
+114,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,5738.4481,
+115,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,2650.053,
+116,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,2010.0402,
+117,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,7760.1552,
+118,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1200.024,
+119,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,151.6697,
+120,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,2833.39,
+121,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,2621.7191,
+122,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,27,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1755.0351,
+123,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,983.353,
+124,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,29112.2489,
+125,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1110.0222,
+126,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,270.0054,
+127,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,9,signifera,Crinia,TRUE,FALSE,swabbing,Bd,165.0033,
+128,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,16,signifera,Crinia,TRUE,FALSE,swabbing,Bd,3168.3967,
+129,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,16,signifera,Crinia,TRUE,FALSE,swabbing,Bd,188.3371,
+130,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,16,signifera,Crinia,TRUE,FALSE,swabbing,Bd,468.3427,
+131,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,16,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1823.3698,
+132,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,22,signifera,Crinia,TRUE,FALSE,swabbing,Bd,1620.0324,
+133,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,11,22,signifera,Crinia,FALSE,FALSE,swabbing,Bd,0,
+134,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,21.6671,alpina
+135,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,363.3406,alpina
+136,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,25,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,283.339,alpina
+137,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,120.0024,alpina
+138,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,38.3341,alpina
+139,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,25,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,16832.0033,alpina
+140,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,20.0004,alpina
+141,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,25,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,67916.3583,alpina
+142,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,25,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,11940.2388,alpina
+143,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,2651.7197,alpina
+144,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,9,verreauxii,Litoria,FALSE,FALSE,swabbing,Bd,0,alpina
+145,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1606,148.45200,-36.37200,2013,10,25,verreauxii,Litoria,TRUE,FALSE,swabbing,Bd,18882.0443,alpina
+146,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,1061.6879,
+147,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,880.0176,
+148,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,491.6765,
+149,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,1036.6874,
+150,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,823.3498,
+151,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,3551.7377,
+152,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,2188.3771,
+153,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,2116.709,
+154,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,3926.7452,
+155,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,1448.3623,
+156,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,4813.4296,
+157,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,1650.033,
+158,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,13068.5947,
+159,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,3113.3956,
+160,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,1210.0242,
+161,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,3281.7323,
+162,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,706.6808,
+163,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,301.6727,
+164,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,926.6852,
+165,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,525.0105,
+166,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,8661.8399,
+167,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,4785.0957,
+168,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,6838.4701,
+169,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,611.6789,
+170,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,1136.6894,
+171,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,26,signifera,Crinia ,FALSE,FALSE,swabbing,Bd,0,
+172,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,26,signifera,Crinia ,TRUE,FALSE,swabbing,Bd,113.3356,
+173,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+174,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+175,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,101.6687,alpina
+176,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4283.419,alpina
+177,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13.3336,alpina
+178,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,195.0039,alpina
+179,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,500.01,alpina
+180,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8450.169,alpina
+181,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13.3336,alpina
+182,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,10.0002,alpina
+183,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,40.0008,alpina
+184,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+185,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,40.0008,alpina
+186,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,21.6671,alpina
+187,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+188,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,925.0185,alpina
+189,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+190,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,353.3404,alpina
+191,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+192,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+193,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+194,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,261.6719,alpina
+195,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+196,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5998.4533,alpina
+197,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+198,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+199,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,848.3503,alpina
+200,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,268.3387,alpina
+201,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+202,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+203,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+204,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+205,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+206,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,633.346,alpina
+207,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+208,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+209,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+210,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,38089.0951,alpina
+211,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+212,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+213,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+214,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+215,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+216,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+217,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+218,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+219,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+220,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+221,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+222,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,85493.3765,alpina
+223,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,140.0028,alpina
+224,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+225,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,175.0035,alpina
+226,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1701.7007,alpina
+227,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+228,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,21.6671,alpina
+229,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+230,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+231,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+232,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+233,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+234,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+235,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+236,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,9286.8524,alpina
+237,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+238,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+239,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+240,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,300.006,alpina
+241,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+242,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,66678.0002,alpina
+243,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+244,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1.6667,alpina
+245,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8.3335,alpina
+246,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+247,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+248,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,333.34,alpina
+249,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+250,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+251,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+252,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1208.3575,alpina
+253,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,556.6778,alpina
+254,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2616.719,alpina
+255,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,10.0002,alpina
+256,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8.3335,alpina
+257,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,195.0039,alpina
+258,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,91.6685,alpina
+259,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13816.943,alpina
+260,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+261,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+262,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2210.0442,alpina
+263,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,296.6726,alpina
+264,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+265,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+266,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,23.3338,alpina
+267,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,18,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+268,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+269,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,390.0078,alpina
+270,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1145.0229,alpina
+271,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,12673.5868,alpina
+272,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6170.1234,alpina
+273,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,135.0027,alpina
+274,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+275,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,361.6739,alpina
+276,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,4,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+277,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,41.6675,alpina
+278,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,40.0008,alpina
+279,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+280,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,705.0141,alpina
+281,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+282,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4241.7515,alpina
+283,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+284,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,190.0038,alpina
+285,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+286,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+287,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+288,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,26.6672,alpina
+289,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,138.3361,alpina
+290,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+291,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+292,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+293,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+294,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+295,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+296,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+297,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,33.334,alpina
+298,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+299,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,75.0015,alpina
+300,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+301,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8.3335,alpina
+302,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,11.6669,alpina
+303,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+304,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+305,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+306,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1.6667,alpina
+307,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,16.667,alpina
+308,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5240.1048,alpina
+309,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+310,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1670.0334,alpina
+311,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+312,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+313,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+314,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5.0001,alpina
+315,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,295.0059,alpina
+316,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1641.6995,alpina
+317,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,33.334,alpina
+318,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+319,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+320,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,60.0012,alpina
+321,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,30.0006,alpina
+322,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,15.0003,alpina
+323,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,45.0009,alpina
+324,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+325,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,30.0006,alpina
+326,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+327,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,171.6701,alpina
+328,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+329,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1508.3635,alpina
+330,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,16.667,alpina
+331,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+332,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+333,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,15.0003,alpina
+334,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+335,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,12,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,10885.2177,alpina
+336,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+337,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,18.3337,alpina
+338,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+339,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+340,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+341,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+342,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,12,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,740.0148,alpina
+343,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,811.6829,alpina
+344,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,7750.155,alpina
+345,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+346,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+347,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1665.0333,alpina
+348,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+349,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,298.3393,alpina
+350,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,340.0068,alpina
+351,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,18,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8.3335,alpina
+352,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,70.0014,alpina
+353,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,38.3341,alpina
+354,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4510.0902,alpina
+355,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,4,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+356,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2270.0454,alpina
+357,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+358,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,30.0006,alpina
+359,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,768.3487,alpina
+360,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+361,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,375.0075,alpina
+362,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5.0001,alpina
+363,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+364,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,213.3376,alpina
+365,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13335.2667,alpina
+366,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+367,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+368,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,155.0031,alpina
+369,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+370,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8.3335,alpina
+371,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,175.0035,alpina
+372,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+373,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,176.6702,alpina
+374,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5.0001,alpina
+375,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,130.0026,alpina
+376,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1.6667,alpina
+377,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+378,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+379,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+380,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+381,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,76.6682,alpina
+382,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,116.669,alpina
+383,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+384,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+385,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+386,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+387,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+388,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+389,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+390,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+391,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,33.334,alpina
+392,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,121.6691,alpina
+393,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+394,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+395,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+396,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+397,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+398,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13.3336,alpina
+399,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,30.0006,alpina
+400,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,12,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+401,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,65.0013,alpina
+402,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+403,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+404,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,18,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+405,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,50.001,alpina
+406,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,154346.4202,alpina
+407,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,928.3519,alpina
+408,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,4,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+409,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,21.6671,alpina
+410,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,186.6704,alpina
+411,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,70.0014,alpina
+412,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+413,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+414,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+415,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+416,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1996.7066,alpina
+417,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,7435.1487,alpina
+418,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+419,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+420,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,100.002,alpina
+421,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+422,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+423,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,796.6826,alpina
+424,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5248.4383,alpina
+425,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,10.0002,alpina
+426,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+427,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+428,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,388.3411,alpina
+429,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,38.3341,alpina
+430,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+431,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+432,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+433,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+434,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,931.6853,alpina
+435,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1803.3694,alpina
+436,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13.3336,alpina
+437,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+438,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+439,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+440,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,93.3352,alpina
+441,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+442,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+443,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+444,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+445,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,201.6707,alpina
+446,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+447,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,441.6755,alpina
+448,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,50.001,alpina
+449,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,10.0002,alpina
+450,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5.0001,alpina
+451,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+452,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+453,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+454,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13316.933,alpina
+455,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,475.0095,alpina
+456,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,726.6812,alpina
+457,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+458,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+459,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+460,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+461,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,25.0005,alpina
+462,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,136.6694,alpina
+463,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+464,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+465,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+466,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,23302.1327,alpina
+467,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+468,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+469,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+470,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+471,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+472,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,17,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,18.3337,alpina
+473,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+474,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,76.6682,alpina
+475,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+476,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+477,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,10235.2047,alpina
+478,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+479,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,9,25,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,108.3355,alpina
+480,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1830.0366,alpina
+481,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+482,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+483,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+484,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+485,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6498.4633,alpina
+486,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+487,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+488,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,33.334,alpina
+489,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2040.0408,alpina
+490,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+491,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,18,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+492,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,18,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,18.3337,alpina
+493,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,18,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,195.0039,alpina
+494,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+495,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+496,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+497,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+498,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+499,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+500,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,17235.3447,alpina
+501,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+502,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3095.0619,alpina
+503,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+504,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+505,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,19,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,556.6778,alpina
+506,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+507,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+508,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+509,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+510,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,75.0015,alpina
+511,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+512,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,180.0036,alpina
+513,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+514,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,10083.535,alpina
+515,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,420.0084,alpina
+516,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+517,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+518,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,751.6817,alpina
+519,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1243.3582,alpina
+520,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+521,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+522,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+523,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4628.4259,alpina
+524,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+525,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+526,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,106.6688,alpina
+527,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+528,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+529,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+530,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+531,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2560.0512,alpina
+532,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2068.3747,alpina
+533,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,168.3367,alpina
+534,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+535,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,791.6825,alpina
+536,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+537,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4838.4301,alpina
+538,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+539,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,10,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+540,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,12,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6120.1224,alpina
+541,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,21,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,66.668,alpina
+542,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,21.6671,alpina
+543,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+544,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+545,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,24,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1261.6919,alpina
+546,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1519,148.48400,-36.35900,2013,11,25,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+547,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,11,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,533.344,alpina
+548,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,11,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,45895.9179,alpina
+549,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,11,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1040.0208,alpina
+550,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,11,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,33489.0031,alpina
+551,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,11,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+552,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8.3335,alpina
+553,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+554,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+555,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2151.7097,alpina
+556,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4911.7649,alpina
+557,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2855.0571,alpina
+558,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,50.001,alpina
+559,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3311.7329,alpina
+560,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1246.6916,alpina
+561,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+562,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+563,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1405.0281,alpina
+564,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,11511.8969,alpina
+565,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+566,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6413.4616,alpina
+567,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8075.1615,alpina
+568,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4935.0987,alpina
+569,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,7851.8237,alpina
+570,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+571,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+572,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1.6667,alpina
+573,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4190.0838,alpina
+574,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+575,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,56.6678,alpina
+576,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1.6667,alpina
+577,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3388.4011,alpina
+578,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+579,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,146.6696,alpina
+580,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,15.0003,alpina
+581,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,40.0008,alpina
+582,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,791.6825,alpina
+583,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+584,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+585,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+586,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+587,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,26.6672,alpina
+588,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1763.3686,alpina
+589,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,17,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+590,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,11.6669,alpina
+591,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,17,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+592,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+593,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+594,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,16,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1.6667,alpina
+595,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+596,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+597,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5.0001,alpina
+598,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,11,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,140.0028,alpina
+599,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+600,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8.3335,alpina
+601,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,17,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+602,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+603,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+604,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+605,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+606,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+607,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1.6667,alpina
+608,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,713.3476,alpina
+609,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+610,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+611,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,1,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,23.3338,alpina
+612,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,76.6682,alpina
+613,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,20.0004,alpina
+614,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+615,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,1,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+616,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+617,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1343.3602,alpina
+618,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1150.023,alpina
+619,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4600.092,alpina
+620,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+621,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5.0001,alpina
+622,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8878.5109,alpina
+623,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+624,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,16,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+625,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,56.6678,alpina
+626,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,17,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,66.668,alpina
+627,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6576.7982,alpina
+628,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,356.6738,alpina
+629,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,14245.2849,alpina
+630,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,680.0136,alpina
+631,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,241.6715,alpina
+632,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+633,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4371.7541,alpina
+634,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+635,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1115.0223,alpina
+636,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2670.0534,alpina
+637,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13.3336,alpina
+638,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+639,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1590.0318,alpina
+640,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+641,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,41519.1637,alpina
+642,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,916.685,alpina
+643,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4088.4151,alpina
+644,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,18.3337,alpina
+645,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,20.0004,alpina
+646,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1101.6887,alpina
+647,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,20822.0831,alpina
+648,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1883.371,alpina
+649,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,71.6681,alpina
+650,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+651,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,10031.8673,alpina
+652,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,190.0038,alpina
+653,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4268.4187,alpina
+654,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+655,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,26,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+656,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,5,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+657,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+658,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+659,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+660,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,753.3484,alpina
+661,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,9900.198,alpina
+662,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,188.3371,alpina
+663,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,194932.2319,alpina
+664,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2410.0482,alpina
+665,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,11,6,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,50459.3425,alpina
+666,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+667,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6128.4559,alpina
+668,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+669,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1471.6961,alpina
+670,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,80.0016,alpina
+671,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1703.3674,alpina
+672,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,395.0079,alpina
+673,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,651.6797,alpina
+674,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+675,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4978.4329,alpina
+676,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,491.6765,alpina
+677,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,25925.5185,alpina
+678,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+679,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,12575.2515,alpina
+680,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2085.0417,alpina
+681,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,158.3365,alpina
+682,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,29,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+683,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1721.7011,alpina
+684,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,268.3387,alpina
+685,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,116403.9947,alpina
+686,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,228.3379,alpina
+687,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3896.7446,alpina
+688,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,558.3445,alpina
+689,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4465.0893,alpina
+690,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,29,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8.3335,alpina
+691,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,29,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,20.0004,alpina
+692,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+693,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,9430.1886,alpina
+694,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,29,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,201.6707,alpina
+695,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,611.6789,alpina
+696,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,40.0008,alpina
+697,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+698,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+699,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,10,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,13.3336,alpina
+700,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,83.335,alpina
+701,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,333.34,alpina
+702,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+703,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,105.0021,alpina
+704,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+705,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8268.4987,alpina
+706,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,8,30,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3.3334,alpina
+707,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,121.6691,alpina
+708,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,446.6756,alpina
+709,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1981.7063,alpina
+710,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1066.688,alpina
+711,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+712,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,235.0047,alpina
+713,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,120.0024,alpina
+714,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,26.6672,alpina
+715,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2938.3921,alpina
+716,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1038.3541,alpina
+717,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,73.3348,alpina
+718,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,36.6674,alpina
+719,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,328.3399,alpina
+720,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,245.0049,alpina
+721,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,468.3427,alpina
+722,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+723,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,21.6671,alpina
+724,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+725,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,25.0005,alpina
+726,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,61.6679,alpina
+727,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,8,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+728,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+729,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,25.0005,alpina
+730,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+731,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+732,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,216.671,alpina
+733,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+734,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+735,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+736,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1991.7065,alpina
+737,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,76.6682,alpina
+738,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,630.0126,alpina
+739,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+740,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,508.3435,alpina
+741,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+742,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+743,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6.6668,alpina
+744,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+745,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+746,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,416.675,alpina
+747,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+748,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,105.0021,alpina
+749,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+750,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,35.0007,alpina
+751,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+752,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+753,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3280.0656,alpina
+754,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,48.3343,alpina
+755,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+756,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+757,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,40.0008,alpina
+758,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+759,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,633.346,alpina
+760,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2175.0435,alpina
+761,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+762,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1888.3711,alpina
+763,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,18195.3639,alpina
+764,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+765,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,186.6704,alpina
+766,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+767,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,20,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,490.0098,alpina
+768,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,888.3511,alpina
+769,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,175.0035,alpina
+770,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+771,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,98.3353,alpina
+772,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1370.0274,alpina
+773,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+774,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2633.386,alpina
+775,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1031.6873,alpina
+776,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,38.3341,alpina
+777,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,860.0172,alpina
+778,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,465.0093,alpina
+779,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+780,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,26.6672,alpina
+781,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,9963.5326,alpina
+782,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,423.3418,alpina
+783,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1811.7029,alpina
+784,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,548.3443,alpina
+785,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,11641.8995,alpina
+786,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+787,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,9,28,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3201.7307,alpina
+788,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,25280.5056,alpina
+789,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,360.0072,alpina
+790,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1121.6891,alpina
+791,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,83.335,alpina
+792,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4778.4289,alpina
+793,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,11755.2351,alpina
+794,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,14300.286,alpina
+795,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5636.7794,alpina
+796,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4615.0923,alpina
+797,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,19515.3903,alpina
+798,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8560.1712,alpina
+799,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4446.7556,alpina
+800,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1103.3554,alpina
+801,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3880.0776,alpina
+802,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2028.3739,alpina
+803,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1538.3641,alpina
+804,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,131.6693,alpina
+805,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,23788.8091,alpina
+806,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1843.3702,alpina
+807,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,8,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,46277.5922,alpina
+808,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,120.0024,alpina
+809,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,8431.8353,alpina
+810,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1960.0392,alpina
+811,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3170.0634,alpina
+812,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,9648.5263,alpina
+813,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,30312.2729,alpina
+814,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2641.7195,alpina
+815,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,193.3372,alpina
+816,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,80904.9514,alpina
+817,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,25973.8528,alpina
+818,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5696.7806,alpina
+819,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3050.061,alpina
+820,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1675.0335,alpina
+821,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+822,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,17740.3548,alpina
+823,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4481.7563,alpina
+824,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,46630.9326,alpina
+825,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,71.6681,alpina
+826,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,12170.2434,alpina
+827,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,15,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,710.0142,alpina
+828,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,6656.7998,alpina
+829,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+830,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+831,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,66.668,alpina
+832,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,293.3392,alpina
+833,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+834,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1418.3617,alpina
+835,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+836,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,405.0081,alpina
+837,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,50849.3503,alpina
+838,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,585.0117,alpina
+839,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,1003.3534,alpina
+840,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,3078.3949,alpina
+841,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,4423.4218,alpina
+842,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,33272.3321,alpina
+843,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,245.0049,alpina
+844,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,2420.0484,alpina
+845,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,5410.1082,alpina
+846,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,TRUE,FALSE,swabbing,Bd,45842.5835,alpina
+847,Australia,Unknown,Laura Brannelly,Laura Brannelly,30,1404 ,148.40100,-35.95800,2013,10,22,verreauxii,Litoria ,FALSE,FALSE,swabbing,Bd,0,alpina
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
