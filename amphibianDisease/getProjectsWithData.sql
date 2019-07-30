@@ -1,5 +1,5 @@
 select 
-replace(substring_index(substring_index(d.carto_id,'table&quot;:&quot;',-1),'&quot',1),'&#95;','_') as tableID,
+substring_index(substring_index(d.carto_id,'filePath&quot;:&quot;',-1),'&quot',1) as adFilePath,
 d.public,
 count(*) as num_records,
 d.project_title
