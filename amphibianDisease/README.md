@@ -9,7 +9,7 @@ in the Amphibian Disease Project in GEOME.  This will make it easier to map data
 in a file called ```project_data.xlsx``` in this directory.  
 
 For the actual data, not just project metadata, look in field called ```sample_raw_data```.  I renamed the hash strings
-to the ```id``` field + xlsx extension.  After removing the test datasets from Koo, Kahn, and Deck am left with 17 dataset
+to the ```id``` field + xlsx extension.  After removing test datasets (from Koo, Kahn, and Deck) am left with 17 dataset
 files which are stored in the ```data``` directory.  
 
 There is a new directory called ```revised_data``` which stores clean-up copies of data from the ```data``` directory.  The
