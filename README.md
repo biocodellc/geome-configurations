@@ -22,17 +22,18 @@ select create_project(2, 'DIPNET','Diversity of the IndoPacific',1);
 # Working with the master configuration
 ```
 # get the network configuration
-curl https://api.geome-db.org/network/1/config | gunzip - | python -m json.tool > network.json
-# put the network configuration
-curl -g -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
-```
+curl https://api.{DEVELOP|}geome-db.org/network/1/config | gunzip - | python -m json.tool > {NETWORK_FILE}
 
+# edit the network file in text editor
+
+# put the network configuration
+curl -g -X PUT -H 'Content-Type: application/json' --data "@{NETWORK_FILE}" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
+```
 # List project Configurations 
 The following lists network approved project configurations
 ```
 curl https://api.{DEVELOP|}geome-db.org/projects/configs?networkApproved=true | python -m json.tool 
 ```
-
 # Update project Configuration files
 Once you have the {CONFIG_ID}, obtained from the previous section we can fetch, modify, and then PUT the data.
 The configuration ID that we are referring to updates the configuration in the project_configurations table, 
@@ -53,6 +54,3 @@ $ ./bin/putConfigurationFile.sh
 usage: putConfigurationFile.sh [DEV|PROD] [access_token] [projectID] [file_path]
 ```
 
-# Notes
-
-The files in initial_creation_scripts directory is maintained here for historical purposes.  They are not used currently but contain the initial creation scripts used for generating projects.  These were run at the inception of geome and contain useful information but should not be run.
