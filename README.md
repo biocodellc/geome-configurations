@@ -24,23 +24,27 @@ select create_project(2, 'DIPNET','Diversity of the IndoPacific',1);
 # get the network configuration
 curl https://api.geome-db.org/network/1/config | gunzip - | python -m json.tool > network.json
 # put the network configuration
-curl -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
+curl -g -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
 ```
 
-# List Network approved project Configurations (and their identifiers)
+# List project Configurations 
+The following lists network approved project configurations
 ```
-curl https://api.develop.geome-db.org/projects/configs | python -m json.tool > {OUTPUT_FILE}
+curl https://api.{DEVELOP|}geome-db.org/projects/configs?networkApproved=true | python -m json.tool 
 ```
 
-# Working with project Configuration files
+# Update project Configuration files
+Once you have the {CONFIG_ID}, obtained from the previous section we can fetch, modify, and then PUT the data.
+The configuration ID that we are referring to updates the configuration in the project_configurations table, 
+which effectively updates TEAM configurations.
 ```
 # Get a project configuration, unzip, pretty print JSON and write to file: 
-curl https://api.develop.geome-db.org/projects/{PROJECT_ID}/config?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > {CONFIGURATION}.json
+curl https://api{DEVELOP|}.geome-db.org/projects/configs/{CONFIG_ID}?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > {CONFIG_ID}.json
 
-You will want to Update {CONFIGURATION}.json using vim
+# Update {CONFIG_ID}.json using a text editor
 
 # PUT the entire projectConfiguration object back:
-curl -X PUT -H 'Content-Type: application/json' --data "@$file_path" https://api.develop.geome-db.org/projects/{PROJECT_ID}/config?access_token={ACCESS_TOKEN}
+curl -X PUT -H 'Content-Type: application/json' --data "@{FILE_PATH}" https://api{DEVELOP|}.geome-db.org/projects/configs/{CONFIG_ID}?access_token={ACCESS_TOKEN}
 ```
 
 or, you can run the convenience script in the bin directory:
