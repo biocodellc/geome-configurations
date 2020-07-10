@@ -22,7 +22,8 @@ select create_project(2, 'DIPNET','Diversity of the IndoPacific',1);
 # Working with the master configuration
 ```
 # get the network configuration
-curl https://api.{DEVELOP|}geome-db.org/network/1/config | gunzip - | python -m json.tool > {NETWORK_FILE}
+curl https://api.geome-db.org/network/1/config | gunzip - | python -m json.tool > {NETWORK_FILE}
+curl https://api.develop.geome-db.org/network/1/config | gunzip - | python -m json.tool > {NETWORK_FILE}
 
 # edit the network file in text editor
 
@@ -32,7 +33,8 @@ curl -g -X PUT -H 'Content-Type: application/json' --data "@{NETWORK_FILE}" http
 # List project Configurations 
 The following lists network approved project configurations
 ```
-curl https://api.{DEVELOP|}geome-db.org/projects/configs?networkApproved=true | python -m json.tool 
+curl https://api.geome-db.org/projects/configs?networkApproved=true | python -m json.tool 
+curl https://api.develop.geome-db.org/projects/configs?networkApproved=true | python -m json.tool 
 ```
 # Update project Configuration files
 Once you have the {CONFIG_ID}, obtained from the previous section we can fetch, modify, and then PUT the data.
@@ -40,7 +42,8 @@ The configuration ID that we are referring to updates the configuration in the p
 which effectively updates TEAM configurations.
 ```
 # Get a project configuration, unzip, pretty print JSON and write to file: 
-curl https://api{DEVELOP|}.geome-db.org/projects/configs/{CONFIG_ID}?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > {CONFIG_ID}.json
+curl https://api.geome-db.org/projects/configs/{CONFIG_ID}?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > {CONFIG_ID}.json
+curl https://api.develop.geome-db.org/projects/configs/{CONFIG_ID}?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > {CONFIG_ID}.json
 
 # Update {CONFIG_ID}.json using a text editor
 
