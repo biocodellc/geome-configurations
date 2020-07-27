@@ -29,6 +29,7 @@ curl https://api.develop.geome-db.org/network/1/config | gunzip - | python -m js
 
 # put the network configuration
 curl -g -X PUT -H 'Content-Type: application/json' --data "@{NETWORK_FILE}" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
+curl -g -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
 ```
 # List project Configurations 
 The following lists network approved project configurations
