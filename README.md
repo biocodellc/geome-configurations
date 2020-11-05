@@ -11,7 +11,7 @@ Currently there is only one network.  Each network defines its own entities and 
 curl https://api.geome-db.org/v1/network/ | gunzip - | python -m json.tool > allnetworks.json
 ```
 
-# Working with the master configuration for a network
+# Working with the network configuration 
 The master configuration is the global configuration for a network. In the following example, "1" is network 1
 (which is GEOME)
 ```
