@@ -1,18 +1,15 @@
 # geome-configurations
-A spawning ground for GEOME projects using API calls and the command-line to create new Projects
-and manage configuration files
-
-This repository contains the master copies of the configuration files, offline.  The process involves:
- * Changes to configuration files can be made using the GEOME website, or by downloading the JSON and editing the files there.
- * Once changes have been made to the JSON configuration files, they are uploaded back to GEOME
-
+A spawning ground for GEOME projects using API calls and the command-line.  Not all GEOME projects are created here, 
+but this repository does have a set of useful tools to help manage certain projects programitically.  In particular,
+for editing templates directly in JSON rather than relying on the interface as well as tools for editing and managing
+the GEOME network template.  Project editing is accomplished through fetching templates in JSON format, editing offline,
+and then re-loading to GEOME.  This is accomplished using API calls.
 
 # Getting the list of available networks
 Currently there is only one network.  Each network defines its own entities and relationships between entities.
 ```
 curl https://api.geome-db.org/v1/network/ | gunzip - | python -m json.tool > allnetworks.json
 ```
-
 
 # Working with the master configuration for a network
 The master configuration is the global configuration for a network. In the following example, "1" is network 1
