@@ -24,13 +24,17 @@ curl https://api.geome-db.org/network/1/config | gunzip - | python -m json.tool 
 curl -g -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
 ```
 
-# List project Configurations 
-The following lists GEOME teams (or, network approved project configurations)
+# Fetch all projects
+The following lists GEOME projects.
 ```
+# Filter for just TEAMS (networkApproved = true)
 curl https://api.geome-db.org/projects/configs?networkApproved=true | python -m json.tool > teams.json
+
+# Get all projects
+curl https://api.geome-db.org/projects/configs | python -m json.tool > allprojects.json
 ```
 
-# Update project Configuration files
+# Update project configuration files
 Once you have the {CONFIG_ID}, obtained from the previous section we can fetch, modify, and then PUT the data.
 The configuration ID that we are referring to updates the configuration in the project_configurations table, 
 which effectively updates either team or project-specific configurations.
