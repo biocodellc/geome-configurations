@@ -1,0 +1,602 @@
+site_code,reference_id,period_id,site_type_id,context_id,notes,assemblage_date
+AB78L01,152,8,99,0,,
+ABRID01,170,14,99,0,Abri Dufaure is one of four Late glacial sites on the cliff boarder of the Aquitane Basin.,
+AGIOS01,106,2,8,0,,middle-late Neolithic
+AITOS01,86,9,8,0,,Antique
+AITZB01,170,14,2,0,,
+AKLA001,194,2,99,0,,
+ALMSL01,30,11,12,1,,1150-1275 AD
+ALON001,180,4,8,0,"The Bronze Age settlement has four main phases of transformation, for which radiocarbon dating overlap: Philia period (c. 2,400-2,200 BC), which consists of four phases: A, A-1, B and B-1; EC I-II (c. 2,300-2,000 BC), also has four phases: C, C-1, D and D-1; EC III (c. 2,100—1,900 BC), with four phases: E, E-1, F and F-1; MC I-II (c. 2,000-1,700 BC), correspond to phases G and G-1 (MC I), and phases I and I-1 (MC II).  After that the site was abandoned. However, there are a few contexts for which material derived from disturbed Bronze Age layers mixed with material from either Iron Age or Medieval periods and attests of activities during those periods.",
+ALON001,180,6,99,0,"The Bronze Age settlement has four main phases of transformation, for which radiocarbon dating overlap: Philia period (c. 2,400-2,200 BC), which consists of four phases: A, A-1, B and B-1; EC I-II (c. 2,300-2,000 BC), also has four phases: C, C-1, D and D-1; EC III (c. 2,100—1,900 BC), with four phases: E, E-1, F and F-1; MC I-II (c. 2,000-1,700 BC), correspond to phases G and G-1 (MC I), and phases I and I-1 (MC II).  After that the site was abandoned. However, there are a few contexts for which material derived from disturbed Bronze Age layers mixed with material from either Iron Age or Medieval periods and attests of activities during those periods.",
+ALON001,180,11,99,0,"The Bronze Age settlement has four main phases of transformation, for which radiocarbon dating overlap: Philia period (c. 2,400-2,200 BC), which consists of four phases: A, A-1, B and B-1; EC I-II (c. 2,300-2,000 BC), also has four phases: C, C-1, D and D-1; EC III (c. 2,100—1,900 BC), with four phases: E, E-1, F and F-1; MC I-II (c. 2,000-1,700 BC), correspond to phases G and G-1 (MC I), and phases I and I-1 (MC II).  After that the site was abandoned. However, there are a few contexts for which material derived from disturbed Bronze Age layers mixed with material from either Iron Age or Medieval periods and attests of activities during those periods.",
+ANDER01,170,14,99,0,,
+AROUC01,149,4,11,0,"Arouch burials are in Ashtarak region, to the South-East of Arouch village. It is dated by the end of the III and the 1st half of the II Millennium BC.",
+ASINE01,85,4,8,0,Id uncertain: ? Fallow,2000-1500 BC (MH)
+ASKIL01,29,2,8,0,Recorded only as Dama sp.,8040-7490 BC
+ASSOM01,126,4,99,0,Data from Yannouli & Trantalidou 1999.,3000-2000 BC
+AUGUS01,105,8,12,0,"Whole book, only data tables copied.",Roman
+AUSTI01,112,11,3,0,Only data from phase c. AD 1250-1400 recorded here.<br />Measurements ranges given in report but phase or details not given so not enetered on database.,1250-1400 AD
+AXIOC01,61,4,11,0,Data from Yannouli & Trantalidou 1999. <br />NB. looked up original report didn't see mention of fallow.,Bronze Age
+AYGA001,193,3,2,0,,
+AYIAT01,119,4,8,0,,2000-1570 BC (Minoan)
+AYIOS01,9,4,9,0,"The tell dates from Late Neolithic - Byzantine, but the data in this paper comes mainly from Middle Bronze age layers",1700-1400(Middle Bronze Age)
+BADEM01,142,3,8,0,,Neolithic/Bronze Age
+BARB001,201,13,12,0,,
+BARNS01,91,8,8,0,,360-400 AD
+BARTH01,38,11,12,0,,late 14th to mid 15th century AD
+BELGI01,167,13,99,0,"Male Roe Deer, Belgium - ID = RB5 Belgium",
+BELGI02,167,13,99,0,"Male Roe Deer, Belgium - ID = RB3 Belgium",
+BELGI03,167,13,99,0,"Female Roe Deer, Belgium - ID = RB2 Belgium",
+BELGI04,167,13,99,0,"Female Roe Deer, Belgium - ID = Little One/RB6 Belgium",
+BELGI05,167,13,99,0,"Roe Deer, Belgium - ID = ? Belgium",
+BELGI06,167,13,99,0,"Female Roe Deer, Belgium - ID = RB4",
+BELGI07,167,13,99,0,"Female Roe Deer, Belgium - ID = RB1 Belgium",
+BELGI08,167,13,99,0,"Female Roe Deer, Belgium - ID = RB7 Sik/Jik Belgium",
+BERLI01,166,13,99,0,"From zoo. Old individual and few parts of the skeleton exhibit exostosis, which may influence osteometric analysis. Measurements that can be biased are mentioned in notes.",
+BERLI02,166,13,99,0,"From zoo. Old individual and few parts of the skeleton exhibit exostosis, which may influence osteometric analysis. Measurements that can be biased are mentioned in notes.",
+BERRI01,90,9,12,0,,8th to mid-11th century AD
+BERRI01,90,11,12,0,,late 11th to late 13th century
+BESIK01,128,4,8,0,,
+BESIK01,128,6,8,0,,
+BIERS01,156,12,12,0,,
+BINCH01,158,11,4,0,Recovered from Roman site but radiocarbon dated to the medieval period,
+BOGO001,194,3,99,0,,
+BOURN01,146,13,99,0,,
+BOUSS01,155,12,1,0,,
+BRAMB01,118,9,1,0,,12th century AD
+BRAND01,44,9,8,0,"Uncertain date, feature contained Late Saxon pottery, but the feature was shallow (25cms) therefore possibility of intrusion.",10th century AD
+BREDA01,162,12,1,0,,
+BREDE01,157,11,1,0,1300-1573,
+BRILL01,170,14,2,0,,
+BROAD01,123,11,12,3,,14th century AD
+BROXM01,169,6,5,0,,
+BRUCA01,25,11,8,0,,11th to 14th century AD
+BUDJ001,194,2,99,0,,
+CAERL01,94,11,12,0,,13th century A.D
+CAFER01,29,2,8,0,Data in Asikili report.,Neolithic
+CAMP001,207,8,99,0,,
+CARIS01,108,9,1,0,,11th-12th century A.D
+CARIS01,185,11,1,0,Medieval and Post-Medieval collection,
+CARIS01,185,12,1,0,,
+CARNU01,163,8,99,0,,
+CASTA01,138,8,8,0,,Roman
+CASTA01,196,8,99,0,,
+CASTA01,207,8,99,0,,
+CASTL01,77,9,1,0,"Fallow = 1.75% of the assemblage, only antler and metapodia present.<br />Report on the worked bone mentions fallow antler.",Norman
+CASTL02,2,9,1,0,"Knife cutmarks interpreted as skinning marks, on midshaft.",late 11th century AD
+CASTL02,2,11,1,0,,late 12th to mid-14th century AD
+CASTL03,70,9,1,0,,Saxo-Norman
+CASTL03,70,11,1,0,,Medieval
+CASTL03,70,12,1,0,,post medieval
+CATAL01,115,2,8,0,* element  recorded from the 1999 excavations.,Neolithic
+CATHE01,48,9,3,0,Phases E & F enterd together as both 11th century.,11th century AD
+CATSG01,49,8,13,0,,Late 2nd century
+CHANI01,175,4,8,0,,
+CHANI02,175,4,8,0,,
+CHANI03,175,4,8,0,,
+CHAP001,147,13,99,0,,
+CHAP002,147,13,99,0,Epping Forest,
+CHAP003,147,13,99,0,,
+CHAP004,147,13,99,0,,
+CHAP005,147,13,99,0,,
+CHAP006,147,13,99,0,,
+CHAPM01,174,13,99,0,"Many different individuals, of known age, from different parks.",
+CHART01,78,8,8,0,,Roman
+CHAS001,197,8,13,0,,
+CHEAP01,40,11,12,0,Shed antler.,1150-1200 AD
+CHEDD01,62,9,6,0,(intrusive?),pre 930
+CHEDD02,129,10,7,0,,early medieval/medieval
+CHEDD03,160,11,99,0,Period 6 - late 13th-16th Century,
+CHELM01,170,14,99,0,"The fanual remains were published by Jackson (1962) 'The vertebrate and molluscan fauna (Chelm's Coombe, Cheddar).",
+CHER001,194,3,99,0,,
+CHEWV01,97,8,13,0,(unstratified),Roman
+CHMIE01,134,14,99,0,,Late Pleistocene
+CITIZ01,54,9,12,3,periods after 12th c. not included here,11th/12th century AD
+COMBE01,170,14,2,0,The site is located by a small dry valley one kilometre south of the Dordogne River in southwest France.,
+CORN001,182,11,12,0,,
+COWDR01,83,8,8,3,,early Roman
+CUCKO01,87,11,12,3,Unusual deposit?<br />Young fallow deer skull <1yr.,1300 to 1350 AD
+DEMIR01,98,4,9,0,"The measurements given in the report provide the range, the average, and the difference (see pg.75).",Bronze Age
+DIMIT01,124,2,9,0,Unpublished PhD thesis.<br />This site has been entred twice see also 76.,Neolithic (MN-LLN)
+DIMIT01,125,3,9,0,This site has been entred twice see also 125.,Neolithic/Bronze Age
+DJADO01,86,11,8,0,,Medieval
+DOILL01,71,11,1,0,Side given in report.,12th century AD
+DOMPL01,63,11,12,0,,12th to 17th century AD
+DONEG01,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB015. Death = 1997/1998",
+DONEG02,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Female Red Deer, ID = TB016. Death = 18/12/1998",
+DONEG03,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Female Red Deer, ID = TB017. Death = 26/12/1998",
+DONEG04,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Female Red Deer, ID = TB019. Death = 1997/1998",
+DONEG05,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB/JH.",
+DONEG06,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Female Red Deer, ID = Churchill 39kg 10/1/00. Death = 10/01/2000",
+DONEG07,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB002. Death = September 1997",
+DONEG08,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB011. Death = 1997/1998",
+DONEG09,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Red Deer, ID = TB004. Incorrectly labelled 'male'; pelvis is female - probably mixed up with another specimen",
+DONEG10,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB007. Death = 1997/1998",
+DONEG11,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB010. Death = 1997/1998",
+DONEG12,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB012. Death = 1997/1998",
+DONEG13,167,13,99,0,"Irish Deer Society, Donegeal, Ireland - Male Red Deer, ID = TB013. Death = 1997/1998",
+DONEG14,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB014. Death = 1997/1998",
+DONEG15,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Female Red Deer, ID = TB018. Death = 29/12/1998",
+DONEG16,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB030. Death = 19/09/1999",
+DONEG17,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = Classy 6/10/00. Death = 06/10/1999",
+DONEG18,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = 1/10/99 old male. Death = 01/10/1999",
+DONEG19,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = 24/10/1999. Death = 24/10/1999",
+DONEG20,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = Donegal Red. Death = 24/10/1999 or 26/10/1999",
+DONEG21,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB001. Death = 05/09/1997",
+DONEG22,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB003. Death = September/October 1997",
+DONEG23,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB005. Death = October/December 1997",
+DONEG24,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB006. Death = January 1998",
+DONEG25,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB008. Death = 1997/1998",
+DONEG26,167,13,99,0,"Irish Deer Society, Donegal, Ireland - Male Red Deer, ID = TB009. Death = 20/08/1997",
+DORCH01,53,8,8,0,,4th century AD
+DUDLE01,113,9,12,0,Only data for phases 1-4 (pre 1071-1262) entered.<br />see Thomas 2005:9  for measurement type refs,1100 AD (phase 1-2)
+DUDLE01,113,11,12,0,,1262-1533
+DUDLE01,113,12,12,0,,1533-1750
+DURRI01,171,3,8,0,,
+EASTK01,161,8,99,0,,
+ELWA001,187,1,2,0,"The site is a complex of chambers in a cave and the adjacent terrace dated to the Natufian period. The bones are from the new terrace excavations that started in 1995, which contexts are from the Late Natufian (c. 10,500-9,500 BC).",
+EMPOR01,32,3,8,0,"There is a possible mistake in this report - it seems as though some of these measurments should be on distal epiphyses but are labelled as proximal, see Table 7,  pg. 688<br />Also has measurements of fallow bones from British Museum for comparison.",Neolithic-Bronze Age
+EXETE01,81,10,12,0,,1000-1200 AD
+EYNSH01,5,9,3,0,,12th century AD
+EYNSH01,5,11,3,0,,Late 13th to 15th century AD
+EZERO01,86,3,8,0,Total count from all phases.,Late Neolithic- Early Bronze Age
+FACCO01,104,9,6,0,,Saxon
+FACCO01,104,10,6,0,,Norman
+FACCO01,104,11,6,0,,Medieval
+FENNI01,100,9,12,2,,12th century AD
+FIKIR01,17,2,8,0,"Results from 1952 and 1953/54 excavations have been combined here, presented separately in the report.",Neolithic
+FISHB01,130,8,99,0,,1st-5th century AD
+FISHB01,168,8,7,0,,
+FOXCO01,35,11,8,0,,13th/14th century AD
+FRANK01,166,13,99,0,"From von Opel zoo (Kronberg, Germany).",
+FRANK02,166,13,99,0,"From von Opel zoo (Kronberg, Germany). Old individual and few parts of the skeleton exhibit exostosis, which may influence otseometric analysis. Measurements that can be biased are mentioned in notes.",
+FRANK03,166,13,99,0,"From von Opel zoo (Kronberg, Germany). Old individual and few parts of the skeleton exhibit exostosis, which may influence otseometric analysis. Measurements that can be biased are mentioned in notes.",
+GARED01,170,14,99,0,"The site has two rock shelters on to the east and one to the west as well as a small cave on the right bank of the Dordogne river. Three excavations have been carried out on the site, in 1884 by Testut, another in 1912 by Peyroni and in 1957 by Bordes and Fitte. The Faunal remains collected are from",
+GEIEN01,170,14,2,0,The cave is located in the Ach valley in the Swabian Alb. It is situated on a steep cliff around 50m above todays valley-floor. It was first investigated by Wagner in 1973 and has been continued to be studied by Hahn. The site has two Aurignacian and a single Gravettian occupation are represented at,
+GEORG01,67,11,12,0,,mid 14th century AD
+GOLJA01,86,1,9,0,,Aneolithic
+GOLTH01,69,9,6,0,,850-1000 A.D (period3/4)
+GOLTH02,129,10,99,0,"The Goltho archive, now stored at Lincoln Museum, was re-analysed at the begining of 2010. The animal bone assemblage does not appear to reflect the published zooarchaeological report",Saxo-Norman
+GORTY01,120,9,12,0,,6th-7th AD (Byzantine)
+GRAVI01,117,6,12,0,Question mark dama for measurments.,150-25 BC
+GREEN01,11,11,1,0,,14th century AD
+GUILD01,139,11,1,0,,medieval
+GULPI01,111,2,8,0,Tools.,5000-4500 BC
+HAMAL01,122,11,12,0,Periods combined.,late 12th to early 15th century
+HAREC01,16,9,12,4,Metrics: Bendrey pers. comm.,Middle Saxon
+HAYME01,92,8,8,0,,1st to 4th century AD
+HEFZ001,187,14,8,0,There are radiometric dates available for this site (for which there is two major horizons: layers 1-6 & 7-18) and was assigned to the Geometric Kebaran and contemporaneous of Neve-David.,
+HENLE01,68,8,10,0,,Roman
+HIGHP01,172,6,2,0,,
+HOHLE01,170,14,2,0,"The site is located 2.5km from Kallenhardt, northwestern Germany. The first traces of prehistoric occupation is in the form of stone artifacts and bone remains (Baales 1996). Excavations were carried out in 1920s and 1930s by Hennebolle and Andree. Though they failed to record information about ther",
+HOYUC01,143,2,1,0,,neolithic
+HUNG001,203,11,12,0,,
+HUNGA01,166,13,99,0,From zoo.,
+HUNGA02,166,13,99,0,NB: These fallow deer were zoo animals.,
+HUNGA03,166,13,99,0,NB: These fallow deer were zoo animals.,
+HYDEA01,153,11,12,0,Recovered from a Roman context but radiocarbon dated to the medieval period.,
+IL30001,189,2,8,0,,
+IL30001,189,4,8,0,,
+KABIL01,86,6,99,0,,Hellenisitic
+KABIL01,194,8,99,0,,
+KABIR01,18,7,10,0,See  report pg. 23 for description of measurements (in German).,Hellenistic/Roman
+KALYT01,58,2,2,0,"Some metrical data in graphs, but detailed measurements not provided. Discussion as to which deer species - most likely fallow based on metrics",Neolithic
+KARAN01,86,3,9,0,Total count from all phases.,Neolithic/Bronze Age
+KASTA01,99,4,8,0,See report for description of measurements (in German).,Bronze Age
+KASTA02,127,4,8,0,,Bronze Age
+KAVOU01,74,6,8,0,,760-700 BC
+KENTS01,170,14,99,0,"Is a multi-period site originally dug by Pengelly in the last century and then re-appraised by Campbell and Sampson (1971). Two radio carbon dates have been collected from the Late Palaeolithic 'layer' though not from the reindeer bones themselves. 12,325 +/- 120 bc and 10,230 +/- 100 bc. However, s",
+KESSL01,170,14,2,0,"The cave is situated about 1 km west of Thayingen near the Swiss-German border. Discovered in 1873 by Merk and was excavated the following year. The excavation methods were crude and although much was probably lost there was a large amount of Magdalenian flint artifacts, bones and antler tools.",
+KILIS01,131,4,9,0,,Bronze Age
+KILIS01,131,6,9,0,,Iron Age
+KILIS01,131,7,9,0,,Iron Age/Roman
+KILK001,182,11,99,0,,
+KILK001,183,11,99,0,,
+KILLA01,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = West Meadow Stag.",
+KILLA02,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1A. Death = 01/12/1998",
+KILLA03,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1H. Death = 10/12/1998",
+KILLA04,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1I. Death = 14/12/1998",
+KILLA05,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1K. Death = 16/12/1998",
+KILLA06,167,13,99,0,"Killarney National Park, County Kerry Ireland - Female Red Deer, ID = 1L. Death = 17/12/1998",
+KILLA07,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1Q. Death = 03/02/1999",
+KILLA08,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AD. Recovered 12/12/2000",
+KILLA09,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AE. Death = 04/12/2000",
+KILLA10,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = Feb 00 No.2",
+KILLA11,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = No. 81. Death = 19/02/1999",
+KILLA12,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = No. 87. Death = 22/02/1999",
+KILLA13,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AI.",
+KILLA14,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AN. Death = 25/02/1999",
+KILLA15,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = Reed wds.",
+KILLA16,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1S",
+KILLA17,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AJ",
+KILLA18,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = Feb 00 No.3",
+KILLA19,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = No. 84. Death = 20/02/1999",
+KILLA20,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1J. Death = 17/12/1998",
+KILLA21,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1N. Death = 01/01/1999",
+KILLA22,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1U.",
+KILLA23,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1V.",
+KILLA24,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1X.",
+KILLA25,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AB",
+KILLA26,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AF. Death = 30/11/2000",
+KILLA27,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AH. Death = 03/12/2000",
+KILLA28,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AL. Death = 22/02/2001",
+KILLA29,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AM. Death = 16/02/1999",
+KILLA30,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AO. Death = 16/02/1999",
+KILLA31,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1AS. Death = Feb-March 2001",
+KILLA32,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = Blue G.",
+KILLA33,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = Feb 00 No.4",
+KILLA34,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = No. 82. Death = 19/02/1999",
+KILLA35,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = No. 86. Death = 22/02/1999",
+KILLA36,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = Orange D. Death = 07/02/2000",
+KILLA37,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = No.1 PD",
+KILLA38,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Red Deer, ID = unk",
+KILLA39,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1F. Death = 01/12/1998",
+KILLA40,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Red Deer, ID = Redi ? Astrag. Death = 01/12/1998",
+KILLA41,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AT",
+KILLA42,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Red Deer, ID = unlabelled scapula",
+KILLA43,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1B. Death = 01/12/1998.",
+KILLA44,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1M.",
+KILLA45,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1O. Natural death, retrieved 05/02/1999",
+KILLA46,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1R. Natural death = 23/02/1999",
+KILLA47,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1T.",
+KILLA48,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1W.",
+KILLA49,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1Y.",
+KILLA50,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1Z",
+KILLA51,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AA.",
+KILLA52,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AC. Death = 17/12/2000",
+KILLA53,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AG. Recovered 19/10/2000",
+KILLA54,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AK. Death = 22/10/2000, found dead - rut antler injury",
+KILLA55,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AP. Death = 16/02/1999",
+KILLA56,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AQ. Death = 26/02/2001",
+KILLA57,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = 1AR. Death = Feb 2001",
+KILLA58,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = Cores Flats Stag",
+KILLA59,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = Innisfallan Island",
+KILLA60,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = No. 1. Death = September 1999",
+KILLA61,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Male Red Deer, ID = No. 70. Death = 14/02/1999",
+KILLA62,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1C. Death = 01/12/1998",
+KILLA63,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1D. Death = 01/12/1998",
+KILLA64,167,13,99,0,"Killarney National Park, County Kerry Ireland - Female Red Deer, ID = 1E. Death = 01/12/1998",
+KILLA65,167,13,99,0,"Killarney National Park, County Kerry, Ireland - Female Red Deer, ID = 1G. Death = 14/12/1998",
+KINE001,209,4,8,0,,
+KINE001,209,6,8,0,,
+KINE001,209,11,8,0,,
+KINGS01,88,9,12,0,Periods I (1050-1250) and II (1250-1350) combined. Only 1 fragment from period I.,1050-1250 AD
+KNIA001,194,7,99,0,,
+KNIGS01,170,14,99,0,Konigsaue is an open air site in the Harz mountains foreland which is Northwest from the city of Halle. Excavations took place in 1963-64 under Mania and Toepfer (1973) the time span is between the Eemian and Holocene. The number of Rangifer (reindeer) bone fragments was not large and only a fractio,
+KNOSS01,64,4,7,0,Quantification method MinAU (minimum anatomical units),Bronze Age
+KNOSS01,66,8,10,0,Probably fallow.,Roman
+KONIS01,103,1,2,0,Question mark fallow deer.,Mesolithic/Neolithic
+KORTI01,3,2,99,0,Not sure if Dama dama or Dama mesopotamica,Pre Pottery Neolithic
+KORYK01,114,1,2,0,Radius & ulna fused.,Mesolithic/Neolithic
+KOUKL01,57,4,8,4,,1600 - 1050 BC (Late Bronze Age)
+KZIN001,188,14,2,0,,
+LAMAD01,170,14,99,0,"La Madeleine is a rock shelter site and is situated on the right bank of Vezere in France. First explored in 1963 by Lartet and Christy. Magdalenian, Magdalenian IV and Magdalenian VI have all been identified at the site.",
+LAUGE01,170,14,99,0,"Laugerie Haute is a rock shelter located 2 km from the town of Les Eyzies in France. Discovered in 1860 by Lartet and Christy, it have been excavted multiple times, Massenat and Girod 1892, Capitan 1895, Capitan, Breuil and Peyrony in 1901, Hauser 1907, Peyrony 1921, 1927 and 1932-1935, Peyrony and",
+LAUGH01,141,11,1,0,,12th-14th
+LAUGH01,141,12,1,0,,16th-17th century
+LAUNC01,1,11,1,0,,late 12th - 15th century
+LAUNC01,1,12,1,0,,17th - 20th century
+LB19501,152,8,99,0,,
+LECOL01,72,8,13,0,Information taken from data in King 1985.,1st century BC to  2nd century AD
+LEWE001,129,11,99,0,,
+LIME001,182,11,99,0,,
+LURKL01,107,11,12,0,Hind quarters make up over 60% of bones present.,13th/14th century AD
+MAGNA01,24,6,8,0,Additional red deer/fallow deer 3.,4th century BC
+MAKRI01,43,2,8,0,,5500-4000 BC
+MASSE01,20,2,8,0,"""worked fragment of the upper palmated part of an antler""",Neolithic
+MAURE01,78,8,99,0,Shed antler.,2nd to 3rd century AD
+MEIEN01,170,14,99,0,This is an open air site in a tunnel valley near Hamburg. It is split into two sites Meiendorf and Stellmoor that are split into different periods. It was excavated in the 1930s by Rust. It was an ideal place for Late Palaeolithic people to hunt migrating reindeer herds due to the valleys long narro,
+MESSI01,126,4,11,0,"Unpublished reports, data from Yannouli & Trantalidou 1999.",3000 - 2000 BC (Early Bronze Age)
+MICHA01,86,4,8,0,The maxilla has 3 molars.,Bronze Age
+MIDDL01,60,11,12,0,,1100 to 1400 AD
+MONKT01,15,8,13,0,,1st to 3rd century AD
+MONTE01,6,8,99,0,,Roman
+MONTE02,73,8,8,0,"fallow:<br />2 radius, phase 3, late Roman<br />1 radius, phase 5, late 8th century<br />1 metacarpal, phase 6, 10th/11th century",Late Roman- 10/11th c.AD
+MORG001,208,4,99,0,,
+MOUNT01,4,11,6,0,Phases 5 (late 12th-early 13th c.) and 6 (mid-late 13thc.) combined.,12th -13th century AD
+MUNIC01,166,13,99,0,"From Tierpark Hellabrunn (Munich, Germany). Originally from von Opel zoo (Kronberg, Germany).",
+MUNIC02,166,13,99,0,"From Tierpark Hellabrunn (Munich, Germany).",
+MUNIC03,166,13,99,0,"From Tierpark Hellabrunn (Munich, Germany). Originally from von Opel zoo (Kronberg, Germany). Old individual and a few parts of the skeleton exhibit exostosis, which may influence osteometric analysis. Measurements that can be strongly biased are mentioned in notes.",
+MUNIC04,166,13,99,0,"Wild specimen that was captured near Harmala (Khuzistan, Iran). It is specimen (A) mentioned in Haltenorth (1959: 22, Abb. 34-37). Haltenorth, T. 1959. Beitrag zur Kenntis des Metopotamischen Damhirsches – Cervus (Dama) mesopotamicus Brooke (1875) – und zur Stammes- und Verbreitungs",
+MUNIC05,166,13,99,0,"From Tierpark Hellabrunn (Munich, Germany).",
+MUNIC06,166,13,99,0,"From Tierpark Hellabrunn (Munich, Germany).",
+MYKO001,193,2,2,0,,
+MYLO001,177,3,8,0,"There are no Ddm remains for the early Cypro-PPNB period (c. 8,600-8,200 BC, period 1A). The period 1B is dated to the late Cypro-PPNB (c. 7,200-6,800 BC). The most of the collection is dated to the early-middle Chalcolithic periods (c. 3,600-3,500 BC) and can be subdivided in different phases:  period 2 (early Chalcolithic, c. 3,600 BC); period 3 (middle Chalcolithic c. 3,500 BC, with two subdivisions: 3A, early middle Chalcolithic and 3B, late middle Chalcolithic). The uninterrupted Chalcolith",
+NAHA001,187,14,8,0,"The site was dated by direct luminescence, since no 14C was preserved.",
+NATHI01,140,13,1,0,,modern male
+NATHI02,140,13,99,0,,modern male
+NEVE001,187,14,8,0,"Two 14C dates are available for this site, though there is a gap of 800 years in-between and no overlap of those dates.",
+NEWTO01,144,12,1,0,,17th century
+NEWTO01,182,11,99,0,,
+NISS001,178,2,8,0,,
+NMSRO01,167,13,99,0,"National Museums of Scotland (Edinburgh Museum), Scotland - Female Roe Deer, ID = Anatomy dept. ex Edin Univ1963; Disart1971.",
+NMSRO02,167,13,99,0,"National Museums of Scotland (Edinburgh Museum), Scotland - Male Roe Deer, ID = 1958.52 NMS, Edinburgh",
+NMSRO03,167,13,99,0,"National Museums of Scotland (Edinburgh Museum), Scotland - Male Roe Deer, ID = 1993.104 NMS, Edinburgh",
+NMSRO04,167,13,99,0,"National Museums of Scotland (Edinburgh Museum), Scotland - Female Roe Deer, ID = 1958.51 NMS, Edinburgh",
+NORMA01,147,13,99,0,"Modern specimen from Norma Chapman's private collection. Female European fallow aged over 9 years at death, from Richmond Park, Surrey.",
+NORTH01,89,11,3,0,(identification problems),Saxo-Norman
+NURAG01,47,4,99,0,,Bronze Age
+OKEHA01,82,11,1,0,,pre 1300 AD
+ORHEU01,12,11,99,0,15th -16th century ?,14th century AD
+ORHEU01,148,11,99,0,,
+OSBOU01,39,11,12,3,,1250-1350 AD
+OSSOM01,170,14,2,0,"Excavations were carried out between 1954-1956 by Bramwell. Four levels were uncovered, Levels D and E dates to an unspecified part of the Pleistocene. Level C dates to the late glacial and Level B to the postglacial. The only level which reindeer remains were uncovered was level C. The C dates for",
+PALAC01,79,11,6,0,MNI 2,pre 1310 AD
+PALME01,150,10,1,0,,
+PARAD01,76,2,8,0,,3800-3000 BC
+PARI001,181,13,99,0,,
+PARI002,181,13,99,0,,
+PARI003,181,13,99,0,,
+PARI004,181,13,99,0,,
+PARI005,181,13,99,0,,
+PARI006,181,13,99,0,,
+PARI007,181,13,99,0,,
+PARI008,181,13,99,0,,
+PARI009,181,13,99,0,Old animal with osteoarthritis and bone growth - particularly on the humerus and radious,
+PARI010,181,13,99,0,,
+PARI011,181,13,99,0,,
+PARI012,181,13,99,0,,
+PARIS01,166,13,99,0,"From la Réserve naturelle de la Haute-Touche (Obterre, France).",
+PARIS02,166,13,99,0,"From la Réserve naturelle de la Haute-Touche (Obterre, France).",
+PARKS01,65,8,13,0,Base of shed antler with brow tine.,2nd century
+PEFKA01,126,3,99,0,PhD thesis.<br />Data from Yannouli & Trantalidou 1999.,Late Neolithic- Early Bronze Age
+PEND001,209,2,8,0,,
+PENTA01,124,4,9,0,Unpublished PhD thesis.,Early Bronze Age
+PETER01,170,14,2,0,"The site is located in the Bruder valley, near the southwestern city of Germany. The excavations were carried out in 1927-1930 by peters. Modern excavations on the talus outside the cave by Albrecht. There were three levels distinguished, AH4 12,898 +/- 290, AH3 12,513 +/- 285 and AH2 12,047 +/- 220",
+PHOE007,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = y 638. Birth = 1997, Death = 19/07/2000. Carden Age Class 3_4, (~37 months)",
+PHOE008,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = g 338. Birth = 1995, Death = 17/08/1998. Carden Age Class 3_4, (~38 months)",
+PHOE009,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = lg 337. Birth = 1995, Death = 03/09/1998. Carden Age Class 3_4, (~39 months)",
+PHOE010,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = b 208. Birth = 1993, Death = 06/10/1996. Carden Age Class 3_4, (~40 months)",
+PHOE011,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = b 239. Birth = 1993, Death = 16/10/1996. Carden Age Class 3_4, (~40 months)",
+PHOE012,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = b 236. Birth = 1993, Death = 24/02/1997. Carden Age Class 3_4, (~44 months)",
+PHOE013,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = g 346. Birth = 17/06/1995, Death = 29/06/1998. Carden Age Class 3_4, (~44 months)",
+PHOE014,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = p 820. Birth = 1994, Death = 03/03/1998. Carden Age Class 3_4, (~45 months)",
+PHOE015,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 437. Birth = 1996, Death = 24/07/2000",
+PHOE016,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = b 273. Birth = 1993, Death = 05/12/1997. Carden Age Class 4_5, (~54 months)",
+PHOE017,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w338. Birth = 1992, Death = 24/09/1997. Carden Age Class 5_6, (~63 months)",
+PHOE018,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 340. Birth = 1992, Death = 30/10/1997. Carden Age Scale 5_6, (~64 months)",
+PHOE019,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = y 359. Birth = 1992, Death = 23/10/1997. Carden Age Class 5_6, (~64 months)",
+PHOE020,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = y 360. Birth = 1992, Death = 17/12/1997. Carden Age Class 5_6, (~66 months)",
+PHOE021,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = y 351. Birth = 1992, Death = ~5/10/1998. Carden Age Class 6_7, (~76 months)",
+PHOE022,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = y 207. Birth = 1989, Death = 16/06/1997. Carden Age Class 8_9, (~96 months)",
+PHOE023,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 285. Birth = 1987, Death = 07/10/1997. Carden Age Class 10_11, (~124 months)",
+PHOE024,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 248. Birth = 1989, Death = ~16/06/1998. Carden Age Class 9_10, (~108 months)",
+PHOE025,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 209. Birth = 1987, Death = 29/12/1996/ Carden Age Class 9_10, (~114 months)",
+PHOE026,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = b 117. Birth = 1988, Death = 18/07/1998. Carden Age Class 10_11, (~121 months)",
+PHOE027,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 243. Birth = 1988, Death = 31/08/1998. Carden Age Class 10_11, (~122 months)",
+PHOE028,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 284. Birth = 1989, Death = December 1999. Carden Age Class 10_11, (~126 months)",
+PHOE029,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = b 124. Birth = 1988, Death = 19/04/1999",
+PHOE030,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = y/w 139. Birth = 1986, Death = 21/09/1997. Carden Age Class 11_12, (~135 months)",
+PHOE031,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 111. Birth = 1985, Death = 05/12/1997. Carden Age Class 12_13, (~150 months)",
+PHOE032,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 232. Birth = 1985, Death = 23/09/1998. Carden Age Class 13_14, (~159 months)",
+PHOE033,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 101. Birth = 1983, Death = 13/01/1997",
+PHOE034,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 35. Birth = 1984, Death = 15/03/1999. Carden Age Class 14_15, (~177 months)",
+PHOE035,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 105. Birth = 1985, Death = 17/04/2000. Carden Age Class 14_15, (~178 months)",
+PHOE036,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = g 47. Birth = 1982, Death = 18/11/1997. Carden Age Class 15_16, (~185 months)",
+PHOE037,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 116. Birth = 1981, Death = January 1997. Carden Age Class 15_16, (~187 months)",
+PHOE038,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 180. Birth = 1981, Death = 20/01/1998. Carden Age Class 15_16, (~187 months)",
+PHOE039,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = g 40. Birth = 1982, Death = 02/03/1998. Carden Age Class 15_16, (~189 months)",
+PHOE040,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = g 52. Birth = 1982, Death = 03/03/1998. Carden Age Class 15_16, (~189 months)",
+PHOE041,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 168. Birth = 1983, Death = 13/11/1999",
+PHOE042,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 106. Birth = 1974, Death = March 1997. Carden Age Class 22_23, (~273 months)",
+PHOE043,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = o 294. Death = 30/06/1999. Carden Age Class: ""very old"", (unknown months)",
+PHOE044,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = unt 1. Death = 22/10/1996",
+PHOE045,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = J 13/02/98. Death = 13/02/1998",
+PHOE046,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = unt adult",
+PHOE052,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 560. Death = ~29/01/1999. Carden Age Class 'older adult', (? months)",
+PHOE053,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 36. Birth = 1982, Death = 20/01/1997. Carden Age Class 15_16, (~187 months)",
+PHOE054,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y/w 101. Birth = 1985, Death = 04/10/1997. Carden Age Class 12_13, (~148 months)",
+PHOE055,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = o 176. Birth = 1986, Death = Spring 1997. Carden Age Class 11_12, (~140 months)",
+PHOE056,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = b 141. Birth = 1988, Death = 02/11/1999. Carden Age Class 11_12, (~137 months)",
+PHOE057,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = b 108. Birth = 1988, Death = 20/10/1999. Carden Age Class 11_12, (~136 months)",
+PHOE058,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = o 230. Birth = 1988, Death = 22/03/1999. Carden Age Class 10_11, (~129 months)",
+PHOE059,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y 76. Birth = 24/06/1989, Death = 26/02/2000. Carden Age Class 10_11, (~128 months)",
+PHOE060,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = b 100. Birth = 1988, Death = 23/02/1998. Carden Age Class 9_10, (~116 months)",
+PHOE061,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 178. Birth = 1987, Death = 23/01/1997. Carden Age Class 9_10, (~115 months)",
+PHOE062,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = o 229. Birth = 1988, Death = 09/12/1997. Carden Age Class 9_10, (~114 months)",
+PHOE063,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 31. Birth = 1990, Death = 17/09/1997. Carden Age Class 7_8, (~87 months)",
+PHOE079,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 535. Birth = 1996, Death = 30/07/1997.",
+PHOE080,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 403. Birth = 08/06/1996, Death = 30/07/1997",
+PHOE081,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = unt 24/9/97. Birth = 1996, Death = 24/09/1997",
+PHOE082,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = y 711. Birth = 1997, Death = 10/09/1998",
+PHOE083,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = unt 26/9/97. Birth = 1996, Death = 16/09/1997",
+PHOE084,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 505. Birth = 1996, Death = 18/11/1997",
+PHOE085,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = G 13/2/98. Birth = 1996, Death = 13/02/1998",
+PHOE086,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = T 13/2/98. Birth = 1996, Death = 13/02/1998",
+PHOE087,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = P 13/02/98. Death = 13/02/1998",
+PHOE088,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = 3 17/2/98. Birth = 1996, Death = 17/02/1998",
+PHOE089,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = 6 17/2/98. Birth = 1996, 17/02/1998",
+PHOE090,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = 9 17/2/98. Birth = 1996, Death = 17/02/1998",
+PHOE091,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = 4 17/2/98. Birth = 1996, Death = 17/02/1998",
+PHOE092,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = 5 17/2/98. Birth = 1996, Death = 17/02/1998",
+PHOE093,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = 8 17/2/98. Birth = 1996, Death = 17/02/1998",
+PHOE094,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = U 13/02/98. Birth = 1996, Death = 13/02/1998",
+PHOE095,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = F. Birth = 1996, Death = 13/02/1998",
+PHOE096,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = AD. Birth = 1996, Death = 27/02/1998",
+PHOE097,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = S. Birth = 1996, Death = 13/02/1998",
+PHOE098,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = dump 28/3/98. Birth = 1996. Skeletal remains found in dump on 28/03/1998. Bones recovered included mature adult male and a female yearling. Stomach contents decomposing but seemed to be normal - grass. Suspected poaching incident. Scapula (mal",
+PHOE099,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 424. Birth = 12/06/1996, Death = 23/09/1998.",
+PHOE100,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 510. Birth = 1996, Death = 08/09/1998",
+PHOEN03,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = b 102. Birth = 1988, Death = 21/08/1997. Carden Age Class 9_10, (~110 months)",
+PHOEN07,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 331. Birth = 1991, Death = 12/05/2000. Carden Age Class 8_9, (~107 months)",
+PHOEN08,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 110. Birth = 1990, Death = 16/02/1999. Carden Age Class 8_9, (~103 months)",
+PHOEN09,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 277. Birth = 1991, Death = 10/12/1999. Carden Age Class 8_9, (~102 months)",
+PHOEN12,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 209. Birth = 12/06/1991, Death = 08/10/1999. Carden Age Class 8_9, (~100 months)",
+PHOEN13,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 231. Birth = 17/06/1991, Death = 20/11/1999. Carden Age Class 8_9, (~100 months)",
+PHOEN14,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 184. Birth = 1987, Death = 04/09/1997. Carden Age Class 10_11, (~123 months)",
+PHOEN15,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 131. Birth = 1990, Death = 30/07/1998. Carden Age Class 8_9, (~97 months)",
+PHOEN16,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 114. Birth = 1990, Death = 26/04/1998. Carden Age Class 7_8, (~94 months)",
+PHOEN17,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y 318. Death = 05/11/1999. Carden Age Class 7_8, (~89 months)",
+PHOEN18,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y 309. Death = 20/01/2000. Carden Age Class 7_8, (~89 months)",
+PHOEN19,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 101. Birth = 1990, Death = 19/11/1997. Carden Age Class 7_8, (~89 months)",
+PHOEN21,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y 220. Birth = 1989, Death = 12/10/1996. Carden Age Class 7_8, (~88 months)",
+PHOEN22,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = g 313. Birth = 1995, Death = 15/10/1997",
+PHOEN23,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 132. Birth = 1990, Death = 27/09/1997. Carden Age Class 7_8, (~87 months)",
+PHOEN24,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y 225. Birth = 1989, Death = 16/09/1996. Carden Age Class 7_8, (~87 months)",
+PHOEN25,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 252. Birth = 1991, Death = 22/10/1997. Carden Age Class 6_7, (~76 months)",
+PHOEN26,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y 357. Birth = 1992, Death = 19/02/1998. Carden Age Class 5_6, (~68 months)",
+PHOEN27,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y 375. Birth = 1992, Death = 10/12/1997. Carden Age Class 5_6, (~66 months)",
+PHOEN28,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = p 801. Birth = 08/06/1994, Death = 03/11/1999. Carden Age Class 5_6, (~65 months)",
+PHOEN29,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = b 203. Birth = 1993, Death = 27/11/1998. Carden Age Class 5_6, (~65 months)",
+PHOEN31,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = b 259. Birth = 1993, Death = 31/12/1997. Carden Age Class 4_5, (~54 months)",
+PHOEN33,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = y 322. Birth = 1992, Death = 31/12/1996. Carden Age Class 4_5, (~54 months)",
+PHOEN34,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 315. Birth = 14/06/1995, Death = 13/11/1999. Carden Age Class 4_5, (~53 months)",
+PHOEN36,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = bendy1/2ear. Birth = 1994, Death = 10/11/1998. Carden Age Class 4_5, (~53 months)",
+PHOEN37,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = p 903. Birth = 1994, Death = 13/01/1997",
+PHOEN39,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = p 914. Birth = 1994, Death = 31/10/1998. Carden Age Class 4_5, (~52 months)",
+PHOEN41,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = p 868. Birth = 1994, Death = 12/08/1998. Carden Age Scale 4_5, (~50 months)",
+PHOEN43,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = p 864. Birth = 1994, Death = 07/02/1998. Carden Age Scale 3_4, (~44 months)",
+PHOEN44,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 454. Death = 01/12/1999. Carden Age Class 3_4, (~42 months)",
+PHOEN45,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 440. Birth = 14/06/1996, Death = 08/11/1996. Carden Age Class 3_4, (~41 months)",
+PHOEN46,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = b 230. Birth = 1993, Death = 18/11/1996. Carden Age Class 3_4, (~41 months)",
+PHOEN47,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = b 235. Birth = 1993, Death = 1996/1997",
+PHOEN48,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = w 472. Birth = 1996, Death = 13/11/1999. Carden Age Class 3_4, (~39 months)",
+PHOEN49,167,13,99,0,"Phoenix Park, Dublin, Ireland - Male Fallow Deer, ID = g 302. Birth = 1995, Death = 23/09/1998. Carden Age Class 3_4, (~39 months)",
+PHOEN61,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 503. Birth = 18/06/1996, Death = 17/02/1999",
+PHOEN66,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = w 441. Birth = 1996, Death = 15/03/1999",
+PHOEN75,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = g 351. Birth = 1995, Death = 30/04/1998",
+PHOEN80,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = g 371. Birth = 1995, Death = 13/06/1998. Carden Age Class 3_4 (~36 months)",
+PHOEN86,167,13,99,0,"Phoenix Park, Dublin, Ireland - Female Fallow Deer, ID = p 886. Birth = 1994, Death = 24/06/1997. Carden Age Class 3_4, (~36 months)",
+PHOTO01,136,3,8,0,,4600-1900 BC
+PINCE01,170,14,99,0,"Pincevent is an open air site located in the Paris Basin, on the left bank of the Seine. The excavation began in 1964 by Andre Leroi-Gourhan, there were five main stratigraphic horizons the main being level IV which yielded Magdalenian.",
+PODU001,195,3,99,0,,
+POIAN01,10,3,8,0,"Antler, mandible, teeth, neck vertebrae.<br />Thought to be a trophy.",c. 3000- c. 2400 BC
+POLL001,190,8,12,0,,
+PONTE01,102,9,1,0,"Element representation suggests 8 tibiae, but species representaion indicates only 3 fragments from this period",Saxo-Norman
+PONTE01,102,11,1,0,Quantities need to be checked.,13th - 15th centuries AD
+PONTN01,173,14,2,0,,
+POOLE01,37,11,12,0,,medieval
+PORTC01,50,8,4,0,(identification issues),Roman
+PORTC01,51,9,6,0,(identification issues),Saxon
+PORTC01,52,11,1,0,(identification issues),Medieval
+PORTC02,133,10,1,0,,Saxon and Norman
+PRINI01,121,6,10,0,,11th - 6th century BC
+PRUDH01,45,11,1,0,,13th-mid 16th century AD
+PRUDH01,45,12,1,0,,mid-16th - 18th
+QUILT01,26,11,12,0,,14th century AD
+READI01,34,11,3,0,,mid-12th to mid-13th century  AD
+READI02,129,12,99,0,,1500-1600
+REMOU01,170,14,2,0,"This is a cave site located near the Ourthe's Ambleve tributary in Germany. The stone tool industry has been classified as Ahrensburgian, the faunal and palaeobotanical evidence suggests the climatic conditions during its occupation was harsh. A C-date of 10,300 +/- 170 BP confirms it to the Younger",
+RENDI01,19,2,8,0,Question mark next to identification as fallow deer.,Early Neolithic
+RHOD001,193,4,99,0,,
+ROCCA01,23,6,99,0,Additional red deer/fallow deer 2.,4th century BC
+ROCDE01,170,14,2,0,The cave site was discovered in 1950 by J. Labrot and was excavated in 1966.,
+ROUEN01,78,8,99,0,Presumably A.D?,Ist century AD
+SAGAL01,135,6,8,0,,Iron Age
+SAGAL01,135,8,12,0,,Roman
+SAGAL01,135,9,12,0,,Byzantine
+SAINT01,78,9,99,0,,Carolingian
+SALIA01,22,2,99,0,Data from Yannouli & Trantalidou 1999.<br />They note the 5 ids after re-examination of half the sample.,Late Neolithic
+SALVA01,14,8,12,0,"Bendrey pers. comm.<br />PCA report, to be published soon.",Roman
+SAME001,190,8,13,0,,
+SANDA01,55,9,1,0,"Only phase 7/8 included here, other phases too late.",1106-1130 AD
+SANDF01,170,14,99,0,"The site has one of the riches faunal collections from Middle Palaeolithic Britain. The site no longer exists as was quarried away long ago. There has been no stone tools associated with the fauna so the dates are based on radiocarbon dates. They indicate and age of ca. 48000-44,000 BP though it mus",
+SANPO01,21,8,13,0,,Roman
+SASS001,202,11,99,0,,
+SASS001,202,12,99,0,,
+SAVY001,78,8,99,0,,1st to 2nd century AD
+SCHUS01,170,14,99,0,"This is an open aired site located in Southern Germany. Excavations were carried out in 1866 by O. Fraas. The preservation at the site was excellent, besides stone tools, remains of bone and plant material were recovered. However, a large quantity of the assemblage was destroyed during the war, radi",
+SCOLE01,7,8,12,4,"Naturally shed, almost complete, with chop and cut marks.<br /><br />D. coronet c. 3.7 x 4.7",3rd to 6th century AD
+SETTE01,72,8,13,0,,Roman
+SGIAC01,145,12,1,0,Data entered by R. Madgwick but submitted by G. Carenti,
+SHENG01,149,3,99,0,End 3rd- 4th millennium BC,
+SHILL01,176,2,8,0,"The site is divided into two areas (Area 1 & Area 3). Published data come from the Area 1. The long lasting occupation of Area 1 can be divided into four main phases: early A phase,  8,400-8,100 BC (with two sub-phases: aA1 & aA2); early B phase, 8,000-7,600 BC, and early C phase, 7,600-7,500 BC; middle phases, 7,600-7,200 BC (with two subphases: middle A, 7,500-7,400 BC – also two subphases mA1 & mA2 – and middle B, 7,400-7,200 BC; late phase: 7,200-7,000 BC.",
+SILLO01,116,8,8,0,,Roman
+SISIN01,149,6,12,0,Late 2nd Millennium BC. Examples could be D.d Mesapotamica or even Moufflon,
+SITAG01,22,3,8,0,* approximatation,Neolithic/Bronze Age
+SKOTE01,75,2,2,0,"Scapula fragment from mixed levels - mostly dated to LNIIb but also later periods measurements on red and roe, but not fallow.",Late Neolithic
+SLIVE01,86,9,99,0,Total count from all phases.,Antique-Medieval
+SOPED01,46,8,8,0,,3rd to 5th century AD
+SOTIR01,124,4,8,0,Unpublished PhD thesis.,Early Bronze Age
+SOUTH01,110,8,12,3,,3rd/4th century AD
+SOUTH02,27,11,12,4,,12th/13th century AD
+SOUTH03,159,9,99,0,,
+SOZOP01,86,5,99,0,,Bronze Age/Hellenistic
+SOZOP01,194,3,99,0,,
+SPARS01,154,11,13,0,Recovered from a Roman Villa but Radiocarbon dated to 360 +/-23 BP (OxA-27934),
+STADE01,170,14,2,0,"The cave site is one of three at the 'Hohlenstein complex' on the right bank of the Lone river. The site was excavated intermittently by Wetzel between 1935 and 1961. Nine Palaeolithic layers were recognised: Mousterian (Layers X-V), Aurignacian (layers IV and IVa) and Magdalenian (layer III). Most",
+STELL01,170,14,99,0,Ahrensburgian layer,
+STFRI01,109,11,3,0,Only data from12th-13 centuries recorded here.,12th to 13th century AD
+STGEO01,13,8,12,0,Bendrey pers. comm.<br />MoLAS did an assessment of the assemblage but no report was ever produced.<br />Bone located in Canterbury.,Roman
+STMAR01,31,9,12,0,,11th to 12th century AD
+STONE01,171,3,99,0,,
+STUTT01,166,13,99,0,"From Wilhelma zoo (Stuttgart, Germany).",
+TBING01,166,13,99,0,"From Wilhelma zoo (Stuttgart, Germany). Old individual and few parts of the skeleton exhibit exostosis, which may influence otseometric analysis. Measurements that can be biased are mentioned in notes.",
+TELAV01,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV02,166,13,99,0,"From Hai Bar Carmel Reserve (Haifa). Reintroduced into the wild, to Nahal Keziv Nature Reserve in Galilee.",
+TELAV03,166,13,99,0,"From Hai Bar Carmel Reserve (Haifa). Reintroduced into the wild, to Nahal Keziv Nature Reserve in Galilee.",
+TELAV04,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV05,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV06,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV07,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV08,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV09,166,13,99,0,"From Hai Bar Carmel Reserve (Haifa). Reintroduced into the wild, to Nahal Keziv Nature Reserve in Galilee.",
+TELAV10,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV11,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV12,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV13,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV14,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV15,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV16,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV17,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV18,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV19,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV20,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV21,166,13,99,0,"From Hai Bar Carmel Reserve (Haifa). Reintroduced into the wild, to Nahal Keziv Nature Reserve in Galilee.",
+TELAV22,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV23,166,13,99,0,"From Hai Bar Carmel Reserve (Haifa). Reintroduced into the wild, to Nahal Keziv Nature Reserve in Galilee.",
+TELAV24,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV25,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV26,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV27,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV28,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV29,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV30,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TELAV31,166,13,99,0,From Hai Bar Carmel Reserve (Haifa).,
+TENT001,179,2,8,0,"Despite issues with stratigraphic correlation between the latest occupations and radiocarbon dating, the village was established possibly at the end of the early Cypro-PPNB (c. 7,500 BC), but with an attested occupation during the late Cypro-PPNB and Aceramic period (Khirokitia culture), from c. 7,200 to 5,300 BC, before being abandoned. After a gap of a few centuries, the site was reoccupied during the Ceramic period (Sotira culture) c. 4,600 BC. The majority of measurements correspond to the e",
+TERME01,165,13,99,0,,
+TERME02,165,13,99,0,,
+TERME03,165,13,99,0,,
+TERME04,165,13,99,0,,
+TERME05,165,13,99,0,,
+TESTE01,95,11,12,0,,13th to 14th century AD
+THEOP01,59,2,2,0,Hamilakis & Harris pers.comm.<br />We are probably going to double check these ids.,Neolithic
+THERM01,8,4,8,0,Fragments of antlers and limb bones. No data.,Bronze Age
+THERM01,193,4,2,0,,
+THERM02,124,2,8,0,,late Neolithic
+TORBE01,42,6,5,0,N.B. animal bones identified by Cunliffe under guidance of E. Higgs.,Iron Age
+TORRE01,80,8,13,0,See email correspondance.,2nd to 4th century
+TOTHI01,151,8,99,0,,
+TREVE01,169,6,5,0,,
+TRIM001,182,11,1,0,,
+TROIA01,164,4,8,0,,
+TROWB01,28,9,6,0,,950-1139 AD (period 4)
+TROWB01,28,11,1,0,,1139-1200 AD (period 5)
+ULUC001,186,2,99,0,,
+ULUC001,186,3,99,0,,
+ULUC001,209,2,99,0,,
+ULUC001,209,3,8,0,,
+ULUC001,209,4,99,0,,
+URTIA01,170,14,2,0,,
+VALKE01,96,8,12,0,Worked.,Roman
+VASSI01,124,2,8,0,Unpublished PhD thesis.,Neolithic (MN-LLN)
+VATTE01,133,11,1,0,,Medieval
+VERGI01,170,14,2,0,,
+VEYRI01,170,14,2,0,,
+VOGEL01,170,14,2,0,,
+WESTE01,33,11,12,0,"Data taken from unpublished AML report, published report should be out soon (Serjeantson pers. comm.)",12th to 13th century AD
+WESTG01,132,11,12,3,,15th/16th century
+WESTK01,171,3,99,0,,
+WETW001,169,8,8,0,,
+WETW001,191,6,8,0,,
+WETW001,192,6,8,0,,
+WHITE01,13,8,12,0,R. Bendrey/Canterbury Archaeological Trust provided the fallow bones.<br />Report should be out Dec. '07.<br />Cutmarks.,Roman
+WICKH01,36,11,12,0,Measurements provided in report but division into phases includes late med. Data therefore not entered here.,Medieval
+WIGMO01,137,11,1,0,,13th-15th century
+WIGMO01,137,12,1,0,,16th-20th century
+WIND001,204,11,1,0,,
+WINNA01,169,7,8,0,,
+WRAYS01,41,9,8,0,(dating issues),Early Medieval
+WROXE01,84,8,12,0,Tentative id as fallow pg. 328,130-170 AD
+WROXE01,93,8,12,0,Two bones thought to be from the same animal.,1st to 3rd century AD
+WYTH0
