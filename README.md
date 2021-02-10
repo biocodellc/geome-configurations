@@ -5,7 +5,7 @@ for editing templates directly in JSON rather than relying on the interface as w
 the GEOME network template.  Project editing is accomplished through fetching templates in JSON format, editing offline,
 and then re-loading to GEOME.  This is accomplished using API calls.
 
-# Getting the list of available networks
+# Retrieve available networks
 Currently there is only one network.  Each network defines its own entities and relationships between entities.
 ```
 curl https://api.geome-db.org/v1/network/ | gunzip - | python -m json.tool > allnetworks.json
@@ -24,28 +24,29 @@ curl https://api.geome-db.org/network/1/config | gunzip - | python -m json.tool 
 curl -g -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
 ```
 
-# Fetch all projects
-The following lists GEOME projects.
+# Fetch configurations
+The following lists GEOME configurations.  These are team configurations (networkedApproved = true), or project configurations
+that are not part of a team..
 ```
-# Filter for just TEAMS (networkApproved = true)
+# Return TEAMS (networkApproved = true)
 curl https://api.geome-db.org/projects/configs?networkApproved=true | python -m json.tool > teams.json
 
-# Get all projects
+# Get all configurations  (Teams and project configurations)
 curl https://api.geome-db.org/projects/configs | python -m json.tool > allprojects.json
 ```
 
 # Update project configuration files
-Once you have the {CONFIG_ID}, obtained from the previous section we can fetch, modify, and then PUT the data.
+Once you have the {ID}, obtained from the previous section we can fetch, modify, and then PUT the data.
 The configuration ID that we are referring to updates the configuration in the project_configurations table, 
 which effectively updates either team or project-specific configurations.
 ```
 # Get a project configuration, unzip, pretty print JSON and write to file: 
-curl https://api.geome-db.org/projects/configs/{CONFIG_ID}?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > {CONFIG_ID}.json
+curl https://api.geome-db.org/projects/configs/{ID}?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > {ID}.json
 
-# Update {CONFIG_ID}.json using a text editor
+# Update {ID}.json using a text editor
 
 # PUT the entire projectConfiguration object back:
-curl -X PUT -H 'Content-Type: application/json' --data "@{FILE_PATH}" https://api.geome-db.org/projects/configs/{CONFIG_ID}?access_token={ACCESS_TOKEN}
+curl -X PUT -H 'Content-Type: application/json' --data "@{FILE_PATH}" https://api.geome-db.org/projects/configs/{ID}?access_token={ACCESS_TOKEN}
 ```
 
 or, you can run the convenience script in the bin directory:
