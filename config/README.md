@@ -5,5 +5,5 @@ The formatting of the files in this directory conforms to that expected for use 
 [ontology-data-pipeline](https://github.com/biocodellc/ontology-data-pipeline)
 
 
-`entity.csv` assigns GEOME entities to ontology classes
-`relations.csv` assigns relationships between entities described in the entity.csv file
+ * `entity.csv` assigns GEOME entities to ontology classes
+ * `relations.csv` assigns relationships between entities described in the entity.csv file
