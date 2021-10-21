@@ -1,0 +1,10 @@
+subject_entity_alias,predicate,object_entity_alias,notes
+Tissue,{collecting specimen from organism},Sample,http://purl.obolibrary.org/obo/OBI_0600005 
+Sample,{is_specified_input_of},Event,http://purl.obolibrary.org/obo/OBI_0000295
+Sample,{has quality},Diagnostics,See http://purl.obolibrary.org/obo/RO_0000086
+Sample,{has_specified_output},Sample_Photo,http://purl.obolibrary.org/obo/OBI_0000299
+Event,{has_specified_output},Event_Photo,http://purl.obolibrary.org/obo/OBI_0000299
+Tissue,{has_specified_output},fastqMetadata,http://purl.obolibrary.org/obo/OBI_0000299
+Tissue,{has_specified_output},fastaSequence,http://purl.obolibrary.org/obo/OBI_0000299
+
+
