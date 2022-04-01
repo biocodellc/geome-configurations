@@ -21,7 +21,7 @@ curl https://api.geome-db.org/network/1/config | gunzip - | python -m json.tool 
 # Edit the network configuration
 
 # Put the network configuration
-curl -g -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN}
+curl -g -X PUT -H 'Content-Type: application/json' --data "@network.json" https://api.geome-db.org/network/1/config?access_token={ACCESS_TOKEN} | gunzip - | python -m json.tool > network_new.json
 ```
 
 # Fetch configurations
