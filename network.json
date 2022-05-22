@@ -977,7 +977,6 @@
                     "definition": "The names of the cultural groups with which the occupants of the site would have been affiliated during the occupational period to which these specimens pertain - these are modern names where original culture names are unknown.",
                     "allowUnknown": false,
                     "allowTBD": false
-<<<<<<< HEAD
                 },
                 {
                     "column": "waterTemperatureInDegreesCelsius",
@@ -998,8 +997,6 @@
                     "definition": "Sea surface temperature (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
-=======
->>>>>>> bca868da593795107d7d16b967299fcc74d13cfc
                 }
             ]
         },
@@ -1024,10 +1021,7 @@
                     "level": "ERROR",
                     "column": "sampleSizeUnits",
                     "listName": "sampleSizeUnits"
-<<<<<<< HEAD
                 },
-=======
->>>>>>> bca868da593795107d7d16b967299fcc74d13cfc
                 {
                     "name": "ControlledVocabulary",
                     "level": "ERROR",
@@ -2037,20 +2031,6 @@
                     "allowTBD": false
                 },
                 {
-<<<<<<< HEAD
-=======
-                    "column": "sampleCollectionDevice",
-                    "uri": "urn:sampleCollectionDevice",
-                    "dataType": "STRING",
-                    "internal": false,
-                    "definedBy": "urn:sampleCollectionDevice",
-                    "group": "Default",
-                    "definition": "The device used to collect an environmental sample. This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).",
-                    "allowUnknown": false,
-                    "allowTBD": false
-                },
-                {
->>>>>>> bca868da593795107d7d16b967299fcc74d13cfc
                     "column": "sampleMaterialProcessing",
                     "uri": "urn:sampleMaterialProcessing",
                     "dataType": "STRING",
@@ -2126,7 +2106,6 @@
                 },
                 {
                     "name": "ControlledVocabulary",
-<<<<<<< HEAD
                     "level": "WARNING",
                     "column": "PARMethod",
                     "listName": "PARMethod"
@@ -2145,8 +2124,6 @@
                 },
                 {
                     "name": "ControlledVocabulary",
-=======
->>>>>>> bca868da593795107d7d16b967299fcc74d13cfc
                     "level": "ERROR",
                     "column": "measurementSide",
                     "listName": "measurementSide"
@@ -2559,7 +2536,6 @@
                     "definition": "URI pointing to description of method for measurement",
                     "allowUnknown": false,
                     "allowTBD": false
-<<<<<<< HEAD
                 },
                 {
                     "column": "derivedDataType",
@@ -2945,8 +2921,6 @@
                     "definition": "True if sediment is deposited on top of the coral or the coral was partially buried. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
-=======
->>>>>>> bca868da593795107d7d16b967299fcc74d13cfc
                 }
             ]
         },
@@ -3831,7 +3805,6 @@
             "networkList": true
         },
         {
-<<<<<<< HEAD
             "alias": "derivedDataType",
             "caseInsensitive": false,
             "fields": [
@@ -3889,8 +3862,6 @@
             "networkList": true
         },
         {
-=======
->>>>>>> bca868da593795107d7d16b967299fcc74d13cfc
             "alias": "measurementSide",
             "caseInsensitive": false,
             "fields": [
