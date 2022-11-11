@@ -24,13 +24,14 @@ def upload_files(project_id, access_token, dir, accept_warnings=False):
 	for file in files:
 		# extract expedition code from filename
 		code = file.split('_')[0]
-		create_expedition(project_id, code, access_token)
+		title = code+file.split('_')[1]
+		create_expedition(project_id, code, title, access_token)
 		upload_data(project_id, code, access_token, dir, file, accept_warnings)
 
-def create_expedition(project_id, code, access_token):
+def create_expedition(project_id, code, title, access_token):
 	url = "{}projects/{}/expeditions/{}?access_token={}".format(ENDPOINT, project_id, code, access_token)
 	expedition = {
-		'expeditionTitle': code,
+		'expeditionTitle': title,
 		'expeditionCode': code,
 		'visibility': 'anyone',
 		'public': True,
@@ -54,9 +55,9 @@ def create_expedition(project_id, code, access_token):
 
 
 def upload_data(project_id, code, access_token, base_dir, file, accept_warnings):
-	print('************************')
-	print('Attempting to upload data for expedition: ', code)
-	print('************************')
+	#print('************************')
+	#print('Attempting to upload data for expedition: ', code)
+	#print('************************')
 
 	validate_url = "{}data/validate?access_token={}".format(ENDPOINT, access_token)
 
@@ -117,12 +118,12 @@ def upload_data(project_id, code, access_token, base_dir, file, accept_warnings)
 				for group in entityResults.get('errors'):
 					print_messages(group.get('groupMessage'), group.get('messages'))
 
-			if len(entityResults.get('warnings')) > 0:
-				print("\n\n{} found on worksheet: \"{}\" for entity: \"{}\"\n\n".format('Warnings', entityResults.get('sheetName'),
-																				entityResults.get('entity')))
+			#if len(entityResults.get('warnings')) > 0:
+			#	print("\n\n{} found on worksheet: \"{}\" for entity: \"{}\"\n\n".format('Warnings', entityResults.get('sheetName'),
+			#																	entityResults.get('entity')))
 
-				for group in entityResults.get('warnings'):
-					print_messages(group.get('groupMessage'), group.get('messages'))
+			#	for group in entityResults.get('warnings'):
+			#		print_messages(group.get('groupMessage'), group.get('messages'))
 
 	if response.get('hasError'):
 		print("Validation error(s) attempting to upload expedition: {}".format(code))
