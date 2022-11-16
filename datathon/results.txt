@@ -22,34 +22,13 @@ Successfully uploaded expedition:  M0019
 Successfully uploaded expedition:  E1444
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0222
+Successfully uploaded expedition:  E0222
 
 
 Successfully uploaded expedition:  E1537
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "83189.0"
-
-
-Validation error(s) attempting to upload expedition: M0005
+Successfully uploaded expedition:  M0005
 
 
 Successfully uploaded expedition:  E0706
@@ -58,19 +37,7 @@ Successfully uploaded expedition:  E0706
 Successfully uploaded expedition:  E0586
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0859
+Successfully uploaded expedition:  E0859
 
 
 Successfully uploaded expedition:  E1144
@@ -82,36 +49,13 @@ Successfully uploaded expedition:  M0036
 Successfully uploaded expedition:  E0481
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0943
+Successfully uploaded expedition:  E0943
 
 
 Successfully uploaded expedition:  E1371
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-
-
-Validation error(s) attempting to upload expedition: E0937
+Successfully uploaded expedition:  E0937
 
 
 Successfully uploaded expedition:  E0316
@@ -120,20 +64,7 @@ Successfully uploaded expedition:  E0316
 Successfully uploaded expedition:  E0790
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "85752.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "69583.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "51704.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1918.0"
-
-
-Validation error(s) attempting to upload expedition: E1288
+Successfully uploaded expedition:  E1288
 
 
 
@@ -149,58 +80,13 @@ Errors found on worksheet: "Samples" for entity: "Event"
 Validation error(s) attempting to upload expedition: E0932
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Unique value constraint did not pass:
-
-		"materialSampleID" column is defined as unique but some values used more than once: "TW14.035b", "NZ0106", "TW14_001c", "TW36", "TW13_31e", "TW11_173_1", "TW36", "TW14.035.1a", "TW13_01a", "TW14.033.2a", "TW13_01a", "TW13_57", "J09.002A", "TW14_001c", "TW14_001c", "J09.053A", "J09.053A", "TW13_02a", "TW13_01a", "TW13_02a", "TW14_001c", "J09.002A", "TW13_31e", "TW36", "TW14.002c", "TW13_02c", "TW13_01c", "TW36", "TW14.002c", "Byen5C", "J09.002A", "TW14.003a", "J09.053A", "TW14.002c", "TW36", "TW13_91", "TW13_03b", "TW14.032a1", "TW14.032b", "TW14.002c", "TW14_001b", "TW13_55", "TW14.035b", "J09.006B", "TW13_91", "TW14.033.3a", "TW14.032a1", "J09.006B", "TW11_173_1", "TW13_02b", "TW14_001b", "NZ0106", "TW14.003c", "TW36", "TW14.002c", "TW13_5", "TW14.035b", "TW14.035b", "TW13_56", "TW14.003a", "TW13_55", "TW14.001f", "TW14.003a", "TW14_001c", "TW14.002c", "TW14.035.2a", "TW14.035b", "TW13_03a", "TW13_03b", "TW14.032b", "TW14.003d", "TW14.032a1", "TW13_03b", "TW14.033.1a"
-
-
-	Duplicate parent records:
-
-		Duplicate "materialSampleID" values, however the other columns are not the same.
-
-
-Validation error(s) attempting to upload expedition: E0020
+Successfully uploaded expedition:  E0020
 
 
 Successfully uploaded expedition:  E1056
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "1998.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1978.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1609.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "63.0"
-		"dayCollected" contains non-integer value "17.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "13.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "27.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2000.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "25.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "5.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0325
+Successfully uploaded expedition:  E0325
 
 
 Successfully uploaded expedition:  E0657
@@ -209,21 +95,7 @@ Successfully uploaded expedition:  E0657
 Successfully uploaded expedition:  E0803
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "3000.0"
-
-
-Validation error(s) attempting to upload expedition: E1020
+Successfully uploaded expedition:  E1020
 
 
 Successfully uploaded expedition:  E0276
@@ -241,17 +113,7 @@ Successfully uploaded expedition:  E0752
 Successfully uploaded expedition:  E1173
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "36969.0"
-
-
-Validation error(s) attempting to upload expedition: E0904
+Successfully uploaded expedition:  E0904
 
 
 Successfully uploaded expedition:  E1074
@@ -266,21 +128,7 @@ Successfully uploaded expedition:  M0030
 Successfully uploaded expedition:  E0326
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "36792.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "42715.0"
-
-
-Validation error(s) attempting to upload expedition: E1430
+Successfully uploaded expedition:  E1430
 
 
 Successfully uploaded expedition:  E0279
@@ -289,37 +137,10 @@ Successfully uploaded expedition:  E0279
 Successfully uploaded expedition:  E0878
 
 
+Successfully uploaded expedition:  E0831
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2000.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2002.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2001.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2003.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0831
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-
-
-Validation error(s) attempting to upload expedition: E0181
+Successfully uploaded expedition:  E0181
 
 
 Successfully uploaded expedition:  E0972
@@ -392,14 +213,6 @@ Errors found on worksheet: "Samples" for entity: "Event"
 		"habitat" has a missing cell value
 
 
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "341.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "549.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "430.0"
-
-
 Validation error(s) attempting to upload expedition: E0658
 
 
@@ -431,132 +244,25 @@ Errors found on worksheet: "Samples" for entity: "Event"
 Validation error(s) attempting to upload expedition: E1051
 
 
+Successfully uploaded expedition:  E0974
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E1478
 
 
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "4000.0"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0974
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "1889.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1906.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1895.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "4000.0"
-		"dayCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "5.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1478
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "1899.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1908.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1905.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1900.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1966.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "12.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1904.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1931.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "20.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "13.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "28.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "16.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1960.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1902.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1228
+Successfully uploaded expedition:  E1228
 
 
 Successfully uploaded expedition:  M0034
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "14.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "17.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2008.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "27.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "25.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "15.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "12.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: M0009
+Successfully uploaded expedition:  M0009
 
 
 Successfully uploaded expedition:  E0590
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0255
+Successfully uploaded expedition:  E0255
 
 
 Successfully uploaded expedition:  E1499
@@ -565,53 +271,7 @@ Successfully uploaded expedition:  E1499
 Successfully uploaded expedition:  E1161
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "14.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "17.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "20.0"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2008.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "12.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "50.0"
-		"dayCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"dayCollected" contains non-integer value "15.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "300.0"
-		"dayCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "18.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "16.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "30.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "309.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "200.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "500.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "150.0"
-		"dayCollected" contains non-integer value "21.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0336
+Successfully uploaded expedition:  E0336
 
 
 Successfully uploaded expedition:  E0428
@@ -641,17 +301,7 @@ Successfully uploaded expedition:  E1370
 Successfully uploaded expedition:  E1459
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-
-
-Validation error(s) attempting to upload expedition: E1109
+Successfully uploaded expedition:  E1109
 
 
 Successfully uploaded expedition:  M0015
@@ -673,22 +323,6 @@ Errors found on worksheet: "Samples" for entity: "Event"
 		"habitat" has a missing cell value
 
 
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "328.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1984.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "867.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2530.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "380.0"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1995.0". Value can also be "Unknown"
-
-
 Validation error(s) attempting to upload expedition: E1332
 
 
@@ -704,17 +338,7 @@ Successfully uploaded expedition:  E1222
 Successfully uploaded expedition:  E0286
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-
-
-Validation error(s) attempting to upload expedition: E0050
+Successfully uploaded expedition:  E0050
 
 
 Successfully uploaded expedition:  E1238
@@ -723,18 +347,7 @@ Successfully uploaded expedition:  E1238
 Successfully uploaded expedition:  E0728
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "9637.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3500.0"
-
-
-Validation error(s) attempting to upload expedition: E0661
+Successfully uploaded expedition:  E0661
 
 
 Successfully uploaded expedition:  E1504
@@ -746,97 +359,19 @@ Successfully uploaded expedition:  E1254
 Successfully uploaded expedition:  E0531
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1991.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "30000.0"
-		"yearCollected" contains non-integer value "1996.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2008.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2001.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1997.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0299
+Successfully uploaded expedition:  E0299
 
 
 Successfully uploaded expedition:  E0174
 
 
+Successfully uploaded expedition:  E0241
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E0048
 
 
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "30000.0"
-
-
-Validation error(s) attempting to upload expedition: E0241
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Unique value constraint did not pass:
-
-		"materialSampleID" column is defined as unique but some values used more than once: "CC12475"
-
-
-	Duplicate parent records:
-
-		Duplicate "materialSampleID" values, however the other columns are not the same.
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2002.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "50413.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "78869.0"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "46544.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "90490.0"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "51648.0"
-
-
-Validation error(s) attempting to upload expedition: E0048
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "20000.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "500.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "10000.0"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "5000.0"
-
-
-Validation error(s) attempting to upload expedition: E1324
+Successfully uploaded expedition:  E1324
 
 
 Successfully uploaded expedition:  E1512
@@ -855,18 +390,7 @@ Errors found on worksheet: "Samples" for entity: "Event"
 Validation error(s) attempting to upload expedition: E0502
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0395
+Successfully uploaded expedition:  E0395
 
 
 Successfully uploaded expedition:  E1245
@@ -878,27 +402,7 @@ Successfully uploaded expedition:  E1104
 Successfully uploaded expedition:  E1465
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Non-valid URI characters:
-
-		"materialSampleID" contains some invalid URI characters: "Istiblennius_female_replicate_#8", "Istiblennius_male_replicate_#2", "Istiblennius_male_replicate_#3", "Istiblennius_male_replicate_#10", "Istiblennius_female_replicate_#9", "Istiblennius_female_replicate_#2", "Istiblennius_male_replicate_#11", "Istiblennius_female_replicate_#10", "Istiblennius_female_replicate_#4", "Istiblennius_male_replicate_#7", "Istiblennius_male_replicate_#8", "Istiblennius_female_replicate_#5", "Istiblennius_male_replicate_#4", "Istiblennius_male_replicate_#5", "Istiblennius_female_replicate_#7", "Istiblennius_female_replicate_#6", "Istiblennius_male_replicate_#1", "Istiblennius_female_replicate_#1", "Istiblennius_male_replicate_#9", "Istiblennius_female_replicate_#3", "Istiblennius_male_replicate_#6"
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Tissue"
-
-
-	Non-valid URI characters:
-
-		"tissueID" contains some invalid URI characters: "Istiblennius_female_replicate_#8.1", "Istiblennius_male_replicate_#2.1", "Istiblennius_male_replicate_#3.1", "Istiblennius_male_replicate_#10.1", "Istiblennius_female_replicate_#9.1", "Istiblennius_female_replicate_#2.1", "Istiblennius_male_replicate_#11.1", "Istiblennius_female_replicate_#10.1", "Istiblennius_female_replicate_#4.1", "Istiblennius_male_replicate_#7.1", "Istiblennius_male_replicate_#8.1", "Istiblennius_female_replicate_#5.1", "Istiblennius_male_replicate_#4.1", "Istiblennius_male_replicate_#5.1", "Istiblennius_female_replicate_#7.1", "Istiblennius_female_replicate_#6.1", "Istiblennius_male_replicate_#1.1", "Istiblennius_female_replicate_#1.1", "Istiblennius_male_replicate_#9.1", "Istiblennius_female_replicate_#3.1", "Istiblennius_male_replicate_#6.1"
-
-
-Validation error(s) attempting to upload expedition: E1509
+Successfully uploaded expedition:  E1509
 
 
 Successfully uploaded expedition:  E0734
@@ -916,76 +420,19 @@ Successfully uploaded expedition:  E0612
 Successfully uploaded expedition:  E0699
 
 
+Successfully uploaded expedition:  E0494
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"decimalLongitude" contains non-float value "9.3516000000000002E-2"
-
-
-Validation error(s) attempting to upload expedition: E0494
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "15000.0"
-
-
-Validation error(s) attempting to upload expedition: E0035
+Successfully uploaded expedition:  E0035
 
 
 Successfully uploaded expedition:  E0809
 
 
+Successfully uploaded expedition:  E0721
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "160934.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "16093.4"
-
-
-Validation error(s) attempting to upload expedition: E0721
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"dayCollected" contains non-integer value "14.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "20.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2008.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "26.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "16.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1996.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2001.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0624
+Successfully uploaded expedition:  E0624
 
 
 Successfully uploaded expedition:  E1304
@@ -1000,40 +447,10 @@ Successfully uploaded expedition:  E0638
 Successfully uploaded expedition:  E1438
 
 
+Successfully uploaded expedition:  E1045
 
 
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Non-valid URI characters:
-
-		"materialSampleID" contains some invalid URI characters: "THEQ#26", "THEQ#21", "THEQ#1", "THEQ#4"
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Tissue"
-
-
-	Non-valid URI characters:
-
-		"tissueID" contains some invalid URI characters: "THEQ#26.1", "THEQ#21.1", "THEQ#1.1", "THEQ#4.1"
-
-
-Validation error(s) attempting to upload expedition: E1045
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-
-
-Validation error(s) attempting to upload expedition: E0976
+Successfully uploaded expedition:  E0976
 
 
 Successfully uploaded expedition:  E1399
@@ -1080,22 +497,7 @@ Successfully uploaded expedition:  E1172
 Successfully uploaded expedition:  M0032
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "3758.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3300.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1880.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "4270.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3420.0"
-
-
-Validation error(s) attempting to upload expedition: E0019
+Successfully uploaded expedition:  E0019
 
 
 
@@ -1120,53 +522,13 @@ Successfully uploaded expedition:  E1131
 Successfully uploaded expedition:  M0041
 
 
+Successfully uploaded expedition:  E0720
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E0952
 
 
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "16.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"dayCollected" contains non-integer value "18.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0720
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0952
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1656.0"
-
-
-Validation error(s) attempting to upload expedition: E1139
+Successfully uploaded expedition:  E1139
 
 
 Successfully uploaded expedition:  E0475
@@ -1187,19 +549,7 @@ Successfully uploaded expedition:  M0001
 Successfully uploaded expedition:  E1340
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "3706.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3917.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "4881.0"
-
-
-Validation error(s) attempting to upload expedition: E0097
+Successfully uploaded expedition:  E0097
 
 
 
@@ -1215,52 +565,13 @@ Errors found on worksheet: "Samples" for entity: "Event"
 Validation error(s) attempting to upload expedition: E0786
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "9893.0"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1130
+Successfully uploaded expedition:  E1130
 
 
 Successfully uploaded expedition:  E1189
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"dayCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "18.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10000.0"
-		"dayCollected" contains non-integer value "28.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "26.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "12.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "11.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0707
+Successfully uploaded expedition:  E0707
 
 
 Successfully uploaded expedition:  E1197
@@ -1299,23 +610,7 @@ Successfully uploaded expedition:  E0310
 Successfully uploaded expedition:  E1023
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"yearCollected" contains non-integer value "2018.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "24912.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "33855.0"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "75529.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "42992.0"
-
-
-Validation error(s) attempting to upload expedition: E1008
+Successfully uploaded expedition:  E1008
 
 
 Successfully uploaded expedition:  E0250
@@ -1351,35 +646,7 @@ Successfully uploaded expedition:  M0029
 Successfully uploaded expedition:  E0034
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "28.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1996.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "12.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "25.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1995.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0812
+Successfully uploaded expedition:  E0812
 
 
 
@@ -1392,28 +659,10 @@ Errors found on worksheet: "Samples" for entity: "Event"
 		"habitat" has a missing cell value
 
 
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2530.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "6068.0"
-
-
 Validation error(s) attempting to upload expedition: E0217
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"decimalLatitude" contains non-float value "4.6656999999999997E-2"
-
-
-Validation error(s) attempting to upload expedition: E0477
+Successfully uploaded expedition:  E0477
 
 
 Successfully uploaded expedition:  M0043
@@ -1442,16 +691,6 @@ Errors found on worksheet: "Samples" for entity: "Event"
 		"habitat" has a missing cell value
 
 
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1807.0"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-
-
 Validation error(s) attempting to upload expedition: E0077
 
 
@@ -1467,67 +706,19 @@ Successfully uploaded expedition:  E1375
 Successfully uploaded expedition:  M0049
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "21.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "11.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0865
+Successfully uploaded expedition:  E0865
 
 
 Successfully uploaded expedition:  E0681
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "14919.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "61158.0"
-
-
-Validation error(s) attempting to upload expedition: E0987
+Successfully uploaded expedition:  E0987
 
 
 Successfully uploaded expedition:  E1362
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "5276.9"
-		"coordinateUncertaintyInMeters" contains non-integer value "8071.9"
-		"coordinateUncertaintyInMeters" contains non-integer value "1816.7"
-		"coordinateUncertaintyInMeters" contains non-integer value "4609.8"
-		"coordinateUncertaintyInMeters" contains non-integer value "3973.7"
-		"coordinateUncertaintyInMeters" contains non-integer value "7672.9"
-		"decimalLatitude" contains non-float value "-9.7713999999999995E-2"
-		"coordinateUncertaintyInMeters" contains non-integer value "3169.7"
-		"coordinateUncertaintyInMeters" contains non-integer value "8509.5"
-		"coordinateUncertaintyInMeters" contains non-integer value "3886.6"
-
-
-Validation error(s) attempting to upload expedition: E0922
+Successfully uploaded expedition:  E0922
 
 
 Successfully uploaded expedition:  E1389
@@ -1555,40 +746,13 @@ Successfully uploaded expedition:  E0609
 Successfully uploaded expedition:  M0017
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1807.0"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0439
+Successfully uploaded expedition:  E0439
 
 
 Successfully uploaded expedition:  E0589
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "12600.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2385.0"
-
-
-Validation error(s) attempting to upload expedition: E0950
+Successfully uploaded expedition:  E0950
 
 
 Successfully uploaded expedition:  E0847
@@ -1597,57 +761,13 @@ Successfully uploaded expedition:  E0847
 Successfully uploaded expedition:  E0196
 
 
+Successfully uploaded expedition:  E0958
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E1073
 
 
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-
-
-Validation error(s) attempting to upload expedition: E0958
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "7279.0"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "795.0"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1073
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "1998.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"yearCollected" contains non-integer value "2000.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "13.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "25.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "18.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2001.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "3000.0"
-
-
-Validation error(s) attempting to upload expedition: E0339
+Successfully uploaded expedition:  E0339
 
 
 Successfully uploaded expedition:  E1223
@@ -1677,43 +797,13 @@ Successfully uploaded expedition:  E0793
 Successfully uploaded expedition:  E0369
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-
-
-Validation error(s) attempting to upload expedition: E1579
+Successfully uploaded expedition:  E1579
 
 
 Successfully uploaded expedition:  E0070
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2002.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "18.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "27.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "3.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0327
+Successfully uploaded expedition:  E0327
 
 
 Successfully uploaded expedition:  M0067
@@ -1728,108 +818,16 @@ Successfully uploaded expedition:  E0156
 Successfully uploaded expedition:  M0047
 
 
+Successfully uploaded expedition:  E1103
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E1486
 
 
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2017.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
+Successfully uploaded expedition:  E0517
 
 
-Validation error(s) attempting to upload expedition: E1103
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "22.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "25.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "15.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "20.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "18.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "28.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2017.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "26.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "21.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1486
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1961.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1466.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "2030.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1059.0"
-		"yearCollected" contains non-integer value "1987.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1953.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "2699.0"
-		"yearCollected" contains non-integer value "1973.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1100.0"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0517
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "30.0"
-		"dayCollected" contains non-integer value "17.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "15.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0172
+Successfully uploaded expedition:  E0172
 
 
 Successfully uploaded expedition:  E0103
@@ -1887,26 +885,7 @@ Successfully uploaded expedition:  M0040
 Successfully uploaded expedition:  E0806
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "14.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "13.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0110
+Successfully uploaded expedition:  E0110
 
 
 Successfully uploaded expedition:  E0782
@@ -1938,51 +917,13 @@ Errors found on worksheet: "Samples" for entity: "Tissue"
 Validation error(s) attempting to upload expedition: E0078
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1454
+Successfully uploaded expedition:  E1454
 
 
 Successfully uploaded expedition:  E1121
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"monthCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "13.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "12696.0"
-		"dayCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "6071.0"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1577
+Successfully uploaded expedition:  E1577
 
 
 Successfully uploaded expedition:  E0946
@@ -1997,23 +938,7 @@ Successfully uploaded expedition:  M0066
 Successfully uploaded expedition:  E0566
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "300.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "210.0"
-		"yearCollected" contains non-integer value "1994.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "3000.0"
-
-
-Validation error(s) attempting to upload expedition: E0197
+Successfully uploaded expedition:  E0197
 
 
 Successfully uploaded expedition:  E0227
@@ -2028,87 +953,22 @@ Successfully uploaded expedition:  M0011
 Successfully uploaded expedition:  E0235
 
 
+Successfully uploaded expedition:  E0438
 
 
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Non-valid URI characters:
-
-		"materialSampleID" contains some invalid URI characters: "Ursus_arctos_Ireland_F21439/85_Sligo.5", "Ursus_arctos_Ireland_F21456/8_Leitrim.6", "Ursus_arctos_Ireland_F21455/43"
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Tissue"
-
-
-	Non-valid URI characters:
-
-		"tissueID" contains some invalid URI characters: "Ursus_arctos_Ireland_F21439/85_Sligo.5.1", "Ursus_arctos_Ireland_F21456/8_Leitrim.6.1", "Ursus_arctos_Ireland_F21455/43.1"
-
-
-Validation error(s) attempting to upload expedition: E0438
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "50000.0"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1018
+Successfully uploaded expedition:  E1018
 
 
 Successfully uploaded expedition:  E0312
 
 
+Successfully uploaded expedition:  E0092
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E0186
 
 
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "210.0"
-
-
-Validation error(s) attempting to upload expedition: E0092
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "68000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0186
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-
-
-Validation error(s) attempting to upload expedition: E0170
+Successfully uploaded expedition:  E0170
 
 
 
@@ -2119,11 +979,6 @@ Errors found on worksheet: "Samples" for entity: "Event"
 	Missing column(s):
 
 		"country" has a missing cell value
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
 
 
 Validation error(s) attempting to upload expedition: E0983
@@ -2142,107 +997,28 @@ Errors found on worksheet: "Samples" for entity: "Event"
 Validation error(s) attempting to upload expedition: E0067
 
 
+Successfully uploaded expedition:  E0558
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0558
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1005
+Successfully uploaded expedition:  E1005
 
 
 Successfully uploaded expedition:  E0119
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1082.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "587.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2518.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2270.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1807.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "6525.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "12198.0"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "210.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "5421.0"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "4453.0"
-
-
-Validation error(s) attempting to upload expedition: E0238
+Successfully uploaded expedition:  E0238
 
 
 Successfully uploaded expedition:  E0621
 
 
+Successfully uploaded expedition:  E0992
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E0349
 
 
-	Invalid DataFormat:
-
-		"decimalLongitude" contains non-float value "-3.3000000000000002E-2"
-		"decimalLongitude" contains non-float value "1.4999999999999999E-2"
-
-
-Validation error(s) attempting to upload expedition: E0992
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "50.0"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0349
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"decimalLongitude" contains non-float value "6.6666666666666652E-2"
-		"decimalLongitude" contains non-float value "1.6666666666666718E-2"
-
-
-Validation error(s) attempting to upload expedition: E1208
+Successfully uploaded expedition:  E1208
 
 
 Successfully uploaded expedition:  E0127
@@ -2254,27 +1030,7 @@ Successfully uploaded expedition:  E1386
 Successfully uploaded expedition:  E0570
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Non-valid URI characters:
-
-		"materialSampleID" contains some invalid URI characters: "B1,_Thistle_Creek,_Yukon", "H2,_Thistle_Creek,_Yukon", "BM1,_Thistle_Creek,_Yukon", "BM_little,_Thistle_Creek,_Yukon", "B2,_Thistle_Creek,_Yukon", "BM_great,_Thistle_Creek,_Yukon", "BM_great_RE,_Thistle_Creek,_Yukon", "H1,_Thistle_Creek,_Yukon", "BM_little_RE,_Thistle_Creek,_Yukon", "BM2,_Thistle_Creek,_Yukon", "Drill,_Thistle_Creek,_Yukon"
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Tissue"
-
-
-	Non-valid URI characters:
-
-		"tissueID" contains some invalid URI characters: "B1,_Thistle_Creek,_Yukon.1", "H2,_Thistle_Creek,_Yukon.1", "BM1,_Thistle_Creek,_Yukon.1", "BM_little,_Thistle_Creek,_Yukon.1", "B2,_Thistle_Creek,_Yukon.1", "BM_great,_Thistle_Creek,_Yukon.1", "BM_great_RE,_Thistle_Creek,_Yukon.1", "H1,_Thistle_Creek,_Yukon.1", "BM_little_RE,_Thistle_Creek,_Yukon.1", "BM2,_Thistle_Creek,_Yukon.1", "Drill,_Thistle_Creek,_Yukon.1"
-
-
-Validation error(s) attempting to upload expedition: E0090
+Successfully uploaded expedition:  E0090
 
 
 Successfully uploaded expedition:  E0208
@@ -2283,19 +1039,7 @@ Successfully uploaded expedition:  E0208
 Successfully uploaded expedition:  E1502
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "7912.0"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1240
+Successfully uploaded expedition:  E1240
 
 
 Successfully uploaded expedition:  E0955
@@ -2313,38 +1057,10 @@ Successfully uploaded expedition:  M0007
 Successfully uploaded expedition:  M0016
 
 
+Successfully uploaded expedition:  E0416
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-
-
-Validation error(s) attempting to upload expedition: E0416
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"monthCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "5.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1334
+Successfully uploaded expedition:  E1334
 
 
 Successfully uploaded expedition:  E0262
@@ -2356,41 +1072,7 @@ Successfully uploaded expedition:  E0837
 Successfully uploaded expedition:  M0065
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "15352.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "8915.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "25005.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "10437.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "76670.0"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "8100.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "34042.0"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "17692.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "34917.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "25882.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "4129.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "17599.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "13972.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "27364.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "33700.0"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "11009.0"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "2422.0"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "29383.0"
-
-
-Validation error(s) attempting to upload expedition: M0070
+Successfully uploaded expedition:  M0070
 
 
 Successfully uploaded expedition:  E1093
@@ -2452,44 +1134,10 @@ Errors found on worksheet: "Samples" for entity: "Event"
 Validation error(s) attempting to upload expedition: E0117
 
 
+Successfully uploaded expedition:  E0801
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0801
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "423.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "496.0"
-		"dayCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "323.0"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "285.0"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "30.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "31.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0374
+Successfully uploaded expedition:  E0374
 
 
 Successfully uploaded expedition:  E1318
@@ -2529,97 +1177,25 @@ Successfully uploaded expedition:  E0294
 Successfully uploaded expedition:  E0645
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1807.0"
-
-
-Validation error(s) attempting to upload expedition: E0044
+Successfully uploaded expedition:  E0044
 
 
 Successfully uploaded expedition:  E1039
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1998.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1981.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1978.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2002.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1992.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1987.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2008.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2003.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2000.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "50000.0"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1986.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1999.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2001.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1995.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0604
+Successfully uploaded expedition:  E0604
 
 
 Successfully uploaded expedition:  E0563
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "26978.0"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "21270.0"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0660
+Successfully uploaded expedition:  E0660
 
 
 Successfully uploaded expedition:  E0691
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-
-
-Validation error(s) attempting to upload expedition: E0910
+Successfully uploaded expedition:  E0910
 
 
 Successfully uploaded expedition:  E0417
@@ -2635,9 +1211,7 @@ Errors found on worksheet: "Samples" for entity: "Event"
 
 	Invalid DataFormat:
 
-		"decimalLatitude" contains non-float value "-4.9200000000000001E-2"
-		"decimalLatitude" contains non-float value "-8.9999999999999998E-4"
-		"decimalLatitude" contains non-float value "-2.8999999999999998E-3"
+		"decimalLatitude" contains non-float value "-9.0E-4"
 
 
 Validation error(s) attempting to upload expedition: E1419
@@ -2655,75 +1229,16 @@ Successfully uploaded expedition:  E0423
 Successfully uploaded expedition:  E1322
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-
-
-Validation error(s) attempting to upload expedition: E1449
+Successfully uploaded expedition:  E1449
 
 
 Successfully uploaded expedition:  E1329
 
 
+Successfully uploaded expedition:  M0014
 
 
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Non-valid URI characters:
-
-		"materialSampleID" contains some invalid URI characters: "ATL_MAR_ARC_02@82@ACGTCA", "MED_MAR_SET_07@7@TGCCCA", "ATL_EST_ADR_12@100@CCTTG", "MED_MAR_AGD_11@27@CGGAC", "ATL_EST_ADR_26@114@ATGAAG", "MED_LAG_MAU_03@35@CAAAGG", "ATL_EST_ADR_21@109@GATAA", "ATL_EST_ADR_10@98@ATTCC", "ATL_EST_ADR_28@116@CCCAAA", "ATL_MAR_ARC_05@85@GAAGTC", "MED_MAR_SET_12@12@CTAGA", "ATL_EST_ADR_18@106@ACAAT", "ATL_EST_ADR_07@95@TACGAG", "MED_MAR_SET_05@5@GAAGTC", "MED_MAR_SET_08@8@TTGGCC", "MED_MAR_SET_13@13@GATAA", "MED_LAG_MAU_21@53@GGTTCC", "ATL_MAR_GIR_05@69@GAAGTC", "MED_MAR_SET_11@11@CGGAC", "ATL_EST_ADR_40@128@TCGCA", "MED_MAR_AGD_02@18@ACGTCA", "ATL_EST_ADR_39@127@TAATC", "ATL_EST_ADR_29@117@GGTTCC", "ATL_EST_ADR_37@125@GGACG", "ATL_MAR_GIR_04@68@CTTATC", "MED_MAR_AGD_06@22@GCGAGC", "MED_LAG_MAU_26@58@ATTCC", "MED_LAG_MAU_24@56@TCCTTC", "ATL_MAR_GIR_08@72@TTGGCC", "MED_MAR_AGD_03@19@CGTCAG", "ATL_EST_ADR_34@122@ATTCC", "ATL_EST_ADR_08@96@TCCTTC", "ATL_EST_ADR_17@105@AAGGG", "MED_MAR_AGD_05@21@GAAGTC", "ATL_EST_ADR_32@120@TCCTTC", "MED_LAG_MAU_11@43@CACCT", "MED_MAR_SET_02@2@ACGTCA", "MED_LAG_MAU_09@41@AGCTA", "MED_LAG_MAU_30@62@GTGTT", "MED_LAG_MAU_27@59@CACCT", "MED_MAR_SET_03@3@CGTCAG", "ATL_EST_ADR_04@92@CCCAAA", "ATL_EST_ADR_11@99@CACCT", "MED_LAG_MAU_31@63@TAATC", "MED_MAR_AGD_12@28@CTAGA", "ATL_EST_ADR_16@104@TCGCA", "ATL_EST_ADR_15@103@TAATC", "ATL_EST_ADR_31@119@TACGAG", "ATL_MAR_GIR_14@78@GCCGC", "ATL_EST_ADR_30@118@GTTGGG", "ATL_EST_ADR_22@110@GCCGC", "ATL_EST_ADR_20@108@CTAGA", "MED_MAR_SET_06@6@GCGAGC", "ATL_EST_ADR_14@102@GTGTT", "MED_LAG_MAU_17@49@AGTAGA", "ATL_EST_ADR_05@93@GGTTCC", "MED_LAG_MAU_14@46@GTGTT", "MED_LAG_MAU_10@42@ATTCC", "ATL_EST_ADR_35@123@CACCT", "ATL_EST_ADR_06@94@GTTGGG", "MED_MAR_AGD_10@26@ACAAT", "ATL_EST_ADR_19@107@CGGAC", "MED_LAG_MAU_22@54@GTTGGG", "MED_MAR_SET_01@1@AAACAA", "ATL_MAR_ARC_07@87@TGCCCA", "ATL_MAR_GIR_11@75@CGGAC", "ATL_EST_ADR_23@111@TGTGT", "MED_MAR_AGD_13@29@GATAA", "ATL_MAR_ARC_01@81@AAACAA", "MED_LAG_MAU_05@37@GGTTCC", "ATL_EST_ADR_13@101@GGACG", "MED_LAG_MAU_06@38@GTTGGG", "MED_MAR_SET_10@10@ACAAT", "ATL_EST_ADR_24@112@TTCAG", "MED_LAG_MAU_04@36@CCCAAA", "ATL_MAR_GIR_06@70@GCGAGC", "MED_LAG_MAU_02@34@ATGAAG", "ATL_EST_ADR_38@126@GTGTT", "ATL_MAR_GIR_10@74@ACAAT", "MED_LAG_MAU_19@51@CAAAGG", "MED_MAR_AGD_14@30@GCCGC", "MED_LAG_MAU_25@57@AGCTA", "MED_MAR_SET_14@14@GCCGC", "MED_LAG_MAU_15@47@TAATC", "ATL_EST_ADR_02@90@ATGAAG", "ATL_EST_ADR_25@113@AGTAGA", "ATL_MAR_GIR_16@80@TTCAG", "MED_MAR_AGD_15@31@TGTGT", "ATL_EST_ADR_09@97@AGCTA", "ATL_MAR_GIR_12@76@CTAGA", "ATL_EST_ADR_33@121@AGCTA", "MED_LAG_MAU_18@50@ATGAAG", "MED_MAR_AGD_07@23@TGCCCA", "ATL_MAR_ARC_08@88@TTGGCC", "MED_MAR_AGD_01@17@AAACAA", "MED_LAG_MAU_29@61@GGACG", "MED_LAG_MAU_08@40@TCCTTC", "ATL_MAR_GIR_07@71@TGCCCA", "MED_MAR_SET_04@4@CTTATC", "ATL_MAR_GIR_09@73@AAGGG", "MED_LAG_MAU_01@33@AGTAGA", "MED_MAR_SET_09@9@AAGGG", "MED_MAR_AGD_09@25@AAGGG", "MED_LAG_MAU_23@55@TACGAG", "ATL_MAR_GIR_01@65@AAACAA", "MED_LAG_MAU_12@44@CCTTG", "ATL_MAR_ARC_03@83@CGTCAG", "MED_MAR_SET_16@16@TTCAG", "ATL_EST_ADR_27@115@CAAAGG", "MED_MAR_AGD_04@20@CTTATC", "ATL_EST_ADR_01@89@AGTAGA", "ATL_MAR_GIR_13@77@GATAA", "MED_MAR_AGD_08@24@TTGGCC", "ATL_MAR_GIR_03@67@CGTCAG", "MED_MAR_SET_15@15@TGTGT", "MED_LAG_MAU_13@45@GGACG", "MED_LAG_MAU_16@48@TCGCA", "ATL_MAR_ARC_06@86@GCGAGC", "MED_LAG_MAU_20@52@CCCAAA", "MED_MAR_AGD_16@32@TTCAG", "MED_LAG_MAU_32@64@TCGCA", "ATL_MAR_ARC_04@84@CTTATC", "ATL_EST_ADR_03@91@CAAAGG", "MED_LAG_MAU_07@39@TACGAG", "ATL_MAR_GIR_15@79@TGTGT", "ATL_EST_ADR_36@124@CCTTG", "ATL_MAR_GIR_02@66@ACGTCA", "MED_LAG_MAU_28@60@CCTTG"
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Tissue"
-
-
-	Non-valid URI characters:
-
-		"tissueID" contains some invalid URI characters: "ATL_MAR_ARC_02@82@ACGTCA.1", "MED_MAR_SET_07@7@TGCCCA.1", "ATL_EST_ADR_12@100@CCTTG.1", "MED_MAR_AGD_11@27@CGGAC.1", "ATL_EST_ADR_26@114@ATGAAG.1", "MED_LAG_MAU_03@35@CAAAGG.1", "ATL_EST_ADR_21@109@GATAA.1", "ATL_EST_ADR_10@98@ATTCC.1", "ATL_EST_ADR_28@116@CCCAAA.1", "ATL_MAR_ARC_05@85@GAAGTC.1", "MED_MAR_SET_12@12@CTAGA.1", "ATL_EST_ADR_18@106@ACAAT.1", "ATL_EST_ADR_07@95@TACGAG.1", "MED_MAR_SET_05@5@GAAGTC.1", "MED_MAR_SET_08@8@TTGGCC.1", "MED_MAR_SET_13@13@GATAA.1", "MED_LAG_MAU_21@53@GGTTCC.1", "ATL_MAR_GIR_05@69@GAAGTC.1", "MED_MAR_SET_11@11@CGGAC.1", "ATL_EST_ADR_40@128@TCGCA.1", "MED_MAR_AGD_02@18@ACGTCA.1", "ATL_EST_ADR_39@127@TAATC.1", "ATL_EST_ADR_29@117@GGTTCC.1", "ATL_EST_ADR_37@125@GGACG.1", "ATL_MAR_GIR_04@68@CTTATC.1", "MED_MAR_AGD_06@22@GCGAGC.1", "MED_LAG_MAU_26@58@ATTCC.1", "MED_LAG_MAU_24@56@TCCTTC.1", "ATL_MAR_GIR_08@72@TTGGCC.1", "MED_MAR_AGD_03@19@CGTCAG.1", "ATL_EST_ADR_34@122@ATTCC.1", "ATL_EST_ADR_08@96@TCCTTC.1", "ATL_EST_ADR_17@105@AAGGG.1", "MED_MAR_AGD_05@21@GAAGTC.1", "ATL_EST_ADR_32@120@TCCTTC.1", "MED_LAG_MAU_11@43@CACCT.1", "MED_MAR_SET_02@2@ACGTCA.1", "MED_LAG_MAU_09@41@AGCTA.1", "MED_LAG_MAU_30@62@GTGTT.1", "MED_LAG_MAU_27@59@CACCT.1", "MED_MAR_SET_03@3@CGTCAG.1", "ATL_EST_ADR_04@92@CCCAAA.1", "ATL_EST_ADR_11@99@CACCT.1", "MED_LAG_MAU_31@63@TAATC.1", "MED_MAR_AGD_12@28@CTAGA.1", "ATL_EST_ADR_16@104@TCGCA.1", "ATL_EST_ADR_15@103@TAATC.1", "ATL_EST_ADR_31@119@TACGAG.1", "ATL_MAR_GIR_14@78@GCCGC.1", "ATL_EST_ADR_30@118@GTTGGG.1", "ATL_EST_ADR_22@110@GCCGC.1", "ATL_EST_ADR_20@108@CTAGA.1", "MED_MAR_SET_06@6@GCGAGC.1", "ATL_EST_ADR_14@102@GTGTT.1", "MED_LAG_MAU_17@49@AGTAGA.1", "ATL_EST_ADR_05@93@GGTTCC.1", "MED_LAG_MAU_14@46@GTGTT.1", "MED_LAG_MAU_10@42@ATTCC.1", "ATL_EST_ADR_35@123@CACCT.1", "ATL_EST_ADR_06@94@GTTGGG.1", "MED_MAR_AGD_10@26@ACAAT.1", "ATL_EST_ADR_19@107@CGGAC.1", "MED_LAG_MAU_22@54@GTTGGG.1", "MED_MAR_SET_01@1@AAACAA.1", "ATL_MAR_ARC_07@87@TGCCCA.1", "ATL_MAR_GIR_11@75@CGGAC.1", "ATL_EST_ADR_23@111@TGTGT.1", "MED_MAR_AGD_13@29@GATAA.1", "ATL_MAR_ARC_01@81@AAACAA.1", "MED_LAG_MAU_05@37@GGTTCC.1", "ATL_EST_ADR_13@101@GGACG.1", "MED_LAG_MAU_06@38@GTTGGG.1", "MED_MAR_SET_10@10@ACAAT.1", "ATL_EST_ADR_24@112@TTCAG.1", "MED_LAG_MAU_04@36@CCCAAA.1", "ATL_MAR_GIR_06@70@GCGAGC.1", "MED_LAG_MAU_02@34@ATGAAG.1", "ATL_EST_ADR_38@126@GTGTT.1", "ATL_MAR_GIR_10@74@ACAAT.1", "MED_LAG_MAU_19@51@CAAAGG.1", "MED_MAR_AGD_14@30@GCCGC.1", "MED_LAG_MAU_25@57@AGCTA.1", "MED_MAR_SET_14@14@GCCGC.1", "MED_LAG_MAU_15@47@TAATC.1", "ATL_EST_ADR_02@90@ATGAAG.1", "ATL_EST_ADR_25@113@AGTAGA.1", "ATL_MAR_GIR_16@80@TTCAG.1", "MED_MAR_AGD_15@31@TGTGT.1", "ATL_EST_ADR_09@97@AGCTA.1", "ATL_MAR_GIR_12@76@CTAGA.1", "ATL_EST_ADR_33@121@AGCTA.1", "MED_LAG_MAU_18@50@ATGAAG.1", "MED_MAR_AGD_07@23@TGCCCA.1", "ATL_MAR_ARC_08@88@TTGGCC.1", "MED_MAR_AGD_01@17@AAACAA.1", "MED_LAG_MAU_29@61@GGACG.1", "MED_LAG_MAU_08@40@TCCTTC.1", "ATL_MAR_GIR_07@71@TGCCCA.1", "MED_MAR_SET_04@4@CTTATC.1", "ATL_MAR_GIR_09@73@AAGGG.1", "MED_LAG_MAU_01@33@AGTAGA.1", "MED_MAR_SET_09@9@AAGGG.1", "MED_MAR_AGD_09@25@AAGGG.1", "MED_LAG_MAU_23@55@TACGAG.1", "ATL_MAR_GIR_01@65@AAACAA.1", "MED_LAG_MAU_12@44@CCTTG.1", "ATL_MAR_ARC_03@83@CGTCAG.1", "MED_MAR_SET_16@16@TTCAG.1", "ATL_EST_ADR_27@115@CAAAGG.1", "MED_MAR_AGD_04@20@CTTATC.1", "ATL_EST_ADR_01@89@AGTAGA.1", "ATL_MAR_GIR_13@77@GATAA.1", "MED_MAR_AGD_08@24@TTGGCC.1", "ATL_MAR_GIR_03@67@CGTCAG.1", "MED_MAR_SET_15@15@TGTGT.1", "MED_LAG_MAU_13@45@GGACG.1", "MED_LAG_MAU_16@48@TCGCA.1", "ATL_MAR_ARC_06@86@GCGAGC.1", "MED_LAG_MAU_20@52@CCCAAA.1", "MED_MAR_AGD_16@32@TTCAG.1", "MED_LAG_MAU_32@64@TCGCA.1", "ATL_MAR_ARC_04@84@CTTATC.1", "ATL_EST_ADR_03@91@CAAAGG.1", "MED_LAG_MAU_07@39@TACGAG.1", "ATL_MAR_GIR_15@79@TGTGT.1", "ATL_EST_ADR_36@124@CCTTG.1", "ATL_MAR_GIR_02@66@ACGTCA.1", "MED_LAG_MAU_28@60@CCTTG.1"
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "50000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "20000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "5000.0"
-
-
-Validation error(s) attempting to upload expedition: M0014
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "30000.0"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "36363.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "59741.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "43604.0"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "58027.0"
-
-
-Validation error(s) attempting to upload expedition: M0061
+Successfully uploaded expedition:  M0061
 
 
 Successfully uploaded expedition:  E0928
@@ -2757,102 +1272,19 @@ Errors found on worksheet: "Samples" for entity: "Event"
 		"country" has a missing cell value
 
 
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "943.6"
-		"coordinateUncertaintyInMeters" contains non-integer value "796.34"
-		"coordinateUncertaintyInMeters" contains non-integer value "880.68"
-		"coordinateUncertaintyInMeters" contains non-integer value "1047.46"
-		"coordinateUncertaintyInMeters" contains non-integer value "1329.13"
-		"coordinateUncertaintyInMeters" contains non-integer value "1800.71"
-		"coordinateUncertaintyInMeters" contains non-integer value "2336.3200000000002"
-		"coordinateUncertaintyInMeters" contains non-integer value "1348.22"
-		"coordinateUncertaintyInMeters" contains non-integer value "578.29"
-		"coordinateUncertaintyInMeters" contains non-integer value "1524.1"
-		"coordinateUncertaintyInMeters" contains non-integer value "759.67"
-		"coordinateUncertaintyInMeters" contains non-integer value "913.61"
-		"coordinateUncertaintyInMeters" contains non-integer value "638.04"
-		"coordinateUncertaintyInMeters" contains non-integer value "1654.48"
-		"coordinateUncertaintyInMeters" contains non-integer value "1299.8399999999999"
-		"coordinateUncertaintyInMeters" contains non-integer value "1085.3699999999999"
-		"coordinateUncertaintyInMeters" contains non-integer value "1702.84"
-		"coordinateUncertaintyInMeters" contains non-integer value "1399.19"
-		"coordinateUncertaintyInMeters" contains non-integer value "1067.46"
-		"coordinateUncertaintyInMeters" contains non-integer value "835.34"
-		"coordinateUncertaintyInMeters" contains non-integer value "1143.29"
-		"coordinateUncertaintyInMeters" contains non-integer value "1369.24"
-		"coordinateUncertaintyInMeters" contains non-integer value "713.17"
-		"coordinateUncertaintyInMeters" contains non-integer value "1676.03"
-		"coordinateUncertaintyInMeters" contains non-integer value "956.13"
-		"coordinateUncertaintyInMeters" contains non-integer value "990.93"
-		"coordinateUncertaintyInMeters" contains non-integer value "1299.97"
-		"coordinateUncertaintyInMeters" contains non-integer value "1019.39"
-		"coordinateUncertaintyInMeters" contains non-integer value "1129.29"
-		"coordinateUncertaintyInMeters" contains non-integer value "1761.09"
-		"coordinateUncertaintyInMeters" contains non-integer value "2054.2600000000002"
-
-
 Validation error(s) attempting to upload expedition: E0897
 
 
 Successfully uploaded expedition:  E0799
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Non-valid URI characters:
-
-		"materialSampleID" contains some invalid URI characters: "Ya'nan_pig.1", "Ya'nan_pig.3", "Ya'nan_pig.2"
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Tissue"
-
-
-	Non-valid URI characters:
-
-		"tissueID" contains some invalid URI characters: "Ya'nan_pig.1.1", "Ya'nan_pig.3.1", "Ya'nan_pig.2.1"
-
-
-Validation error(s) attempting to upload expedition: E0063
+Successfully uploaded expedition:  E0063
 
 
 Successfully uploaded expedition:  M0069
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"yearCollected" contains non-integer value "2002.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2018.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2008.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2003.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2020.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2017.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1450
+Successfully uploaded expedition:  E1450
 
 
 Successfully uploaded expedition:  M0028
@@ -2867,17 +1299,7 @@ Successfully uploaded expedition:  E0356
 Successfully uploaded expedition:  E0694
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-
-
-Validation error(s) attempting to upload expedition: E1160
+Successfully uploaded expedition:  E1160
 
 
 Successfully uploaded expedition:  E1321
@@ -2895,25 +1317,7 @@ Successfully uploaded expedition:  E0313
 Successfully uploaded expedition:  E0864
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1600.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "200.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "250.0"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "5000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2200.0"
-
-
-Validation error(s) attempting to upload expedition: E0776
+Successfully uploaded expedition:  E0776
 
 
 Successfully uploaded expedition:  E0123
@@ -2941,38 +1345,7 @@ Errors found on worksheet: "Samples" for entity: "Event"
 Validation error(s) attempting to upload expedition: E0884
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "18930.0"
-		"yearCollected" contains non-integer value "2005.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"yearCollected" contains non-integer value "1998.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2002.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1994.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "13.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "9000.0"
-		"yearCollected" contains non-integer value "1997.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "12.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "22.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1999.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "12.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1201
+Successfully uploaded expedition:  E1201
 
 
 Successfully uploaded expedition:  M0031
@@ -2999,19 +1372,7 @@ Successfully uploaded expedition:  E0173
 Successfully uploaded expedition:  E1263
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2017.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-
-
-Validation error(s) attempting to upload expedition: E1265
+Successfully uploaded expedition:  E1265
 
 
 Successfully uploaded expedition:  M0058
@@ -3020,22 +1381,7 @@ Successfully uploaded expedition:  M0058
 Successfully uploaded expedition:  E0989
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "300.0"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "200.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "800.0"
-
-
-Validation error(s) attempting to upload expedition: E1168
+Successfully uploaded expedition:  E1168
 
 
 Successfully uploaded expedition:  E1451
@@ -3050,20 +1396,7 @@ Successfully uploaded expedition:  M0059
 Successfully uploaded expedition:  E0185
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0180
+Successfully uploaded expedition:  E0180
 
 
 Successfully uploaded expedition:  M0068
@@ -3072,59 +1405,16 @@ Successfully uploaded expedition:  M0068
 Successfully uploaded expedition:  E0365
 
 
+Successfully uploaded expedition:  E1174
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E0216
 
 
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
+Successfully uploaded expedition:  E0113
 
 
-Validation error(s) attempting to upload expedition: E1174
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "17383.0"
-
-
-Validation error(s) attempting to upload expedition: E0216
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-
-
-Validation error(s) attempting to upload expedition: E0113
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"decimalLongitude" contains non-float value "4.2999999999999997E-2"
-		"decimalLongitude" contains non-float value "3.7999999999999999E-2"
-
-
-Validation error(s) attempting to upload expedition: E0725
+Successfully uploaded expedition:  E0725
 
 
 Successfully uploaded expedition:  E0579
@@ -3136,20 +1426,7 @@ Successfully uploaded expedition:  E1110
 Successfully uploaded expedition:  E0251
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "20.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1204
+Successfully uploaded expedition:  E1204
 
 
 
@@ -3165,52 +1442,13 @@ Errors found on worksheet: "Samples" for entity: "Event"
 Validation error(s) attempting to upload expedition: E0102
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "28.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1993.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2010.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10.0"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "5.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0648
+Successfully uploaded expedition:  E0648
 
 
 Successfully uploaded expedition:  E0993
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "20000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "12162.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "10965.0"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2016.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1231
+Successfully uploaded expedition:  E1231
 
 
 Successfully uploaded expedition:  E0466
@@ -3228,24 +1466,7 @@ Successfully uploaded expedition:  E1253
 Successfully uploaded expedition:  E1082
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"dayCollected" contains non-integer value "26.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "28.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "3.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0739
+Successfully uploaded expedition:  E0739
 
 
 Successfully uploaded expedition:  E0903
@@ -3254,143 +1475,25 @@ Successfully uploaded expedition:  E0903
 Successfully uploaded expedition:  E0716
 
 
+Successfully uploaded expedition:  E1584
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
+Successfully uploaded expedition:  E0519
 
 
-	Invalid DataFormat:
-
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1584
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0519
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "301.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3842.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "13975.0"
-		"dayCollected" contains non-integer value "17.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "2.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "2289.0"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1506.0"
-		"yearCollected" contains non-integer value "2008.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "27.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "2196.0"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "210.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "310.0"
-		"dayCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "22.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "25.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "30.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "15.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1948.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1923.0"
-		"dayCollected" contains non-integer value "1.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1552.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "90.0"
-		"dayCollected" contains non-integer value "20.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "5373.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1807.0"
-		"dayCollected" contains non-integer value "18.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "28.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "11789.0"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "19.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2007.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "29.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "16.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "873.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2911.0"
-		"dayCollected" contains non-integer value "21.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "31.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "5.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1010.0"
-
-
-Validation error(s) attempting to upload expedition: E0485
+Successfully uploaded expedition:  E0485
 
 
 Successfully uploaded expedition:  E1101
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-
-
-Validation error(s) attempting to upload expedition: E1096
+Successfully uploaded expedition:  E1096
 
 
 Successfully uploaded expedition:  E1507
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "14.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "5000.0"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1000.0"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2014.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "12.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1999.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "30.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "15.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2009.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "12.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E1164
+Successfully uploaded expedition:  E1164
 
 
 Successfully uploaded expedition:  E0627
@@ -3408,56 +1511,13 @@ Successfully uploaded expedition:  E1503
 Successfully uploaded expedition:  E0360
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "8571.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "17013.0"
-		"dayCollected" contains non-integer value "24.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "14.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1998.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "10.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2002.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "20.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "38650.0"
-		"dayCollected" contains non-integer value "28.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "23.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "6.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2000.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "26.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "25269.0"
-		"monthCollected" contains non-integer value "3.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "15328.0"
-		"monthCollected" contains non-integer value "11.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "4.0". Value can also be "Unknown"
-		"dayCollected" contains non-integer value "22.0". Value can also be "Unknown"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2001.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10606.0"
-
-
-Validation error(s) attempting to upload expedition: E0386
+Successfully uploaded expedition:  E0386
 
 
 Successfully uploaded expedition:  E1532
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"decimalLongitude" contains non-float value "3.3203000000000003E-2"
-
-
-Validation error(s) attempting to upload expedition: E0220
+Successfully uploaded expedition:  E0220
 
 
 Successfully uploaded expedition:  E0553
@@ -3466,54 +1526,13 @@ Successfully uploaded expedition:  E0553
 Successfully uploaded expedition:  E0194
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "31190.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "37333.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "100000.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "23289.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "84281.0"
-		"yearCollected" contains non-integer value "2012.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "25933.0"
-		"yearCollected" contains non-integer value "2008.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1952.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "77369.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "61661.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "24548.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "33447.0"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "49100.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "43268.0"
-
-
-Validation error(s) attempting to upload expedition: E0342
+Successfully uploaded expedition:  E0342
 
 
 Successfully uploaded expedition:  E0285
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "18284.0"
-		"yearCollected" contains non-integer value "2011.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "4830.0"
-		"yearCollected" contains non-integer value "2013.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10069.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3282.0"
-
-
-Validation error(s) attempting to upload expedition: E0295
+Successfully uploaded expedition:  E0295
 
 
 Successfully uploaded expedition:  E0643
@@ -3522,17 +1541,7 @@ Successfully uploaded expedition:  E0643
 Successfully uploaded expedition:  E0051
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "16672.0"
-
-
-Validation error(s) attempting to upload expedition: M0013
+Successfully uploaded expedition:  M0013
 
 
 Successfully uploaded expedition:  E0712
@@ -3541,32 +1550,10 @@ Successfully uploaded expedition:  E0712
 Successfully uploaded expedition:  E1313
 
 
+Successfully uploaded expedition:  E0845
 
 
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"decimalLatitude" contains non-float value "3.4835999999999999E-2"
-
-
-Validation error(s) attempting to upload expedition: E0845
-
-
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "3036.0"
-		"yearCollected" contains non-integer value "2006.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "1089.0"
-
-
-Validation error(s) attempting to upload expedition: E1037
+Successfully uploaded expedition:  E1037
 
 
 Successfully uploaded expedition:  E0059
@@ -3591,40 +1578,7 @@ Successfully uploaded expedition:  E0775
 Successfully uploaded expedition:  M0021
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "2713.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3099.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2607.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3760.0"
-		"monthCollected" contains non-integer value "8.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "2681.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2493.0"
-		"monthCollected" contains non-integer value "7.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "10574.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2790.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3921.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "1529.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3879.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "5850.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3178.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "3191.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "29883.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2311.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "94510.0"
-		"monthCollected" contains non-integer value "9.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "3801.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2727.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "2186.0"
-		"yearCollected" contains non-integer value "2015.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: E0794
+Successfully uploaded expedition:  E0794
 
 
 Successfully uploaded expedition:  E0347
@@ -3636,22 +1590,7 @@ Successfully uploaded expedition:  E0602
 Successfully uploaded expedition:  E1567
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Sample"
-
-
-	Unique value constraint did not pass:
-
-		"materialSampleID" column is defined as unique but some values used more than once: "APA_021"
-
-
-	Duplicate parent records:
-
-		Duplicate "materialSampleID" values, however the other columns are not the same.
-
-
-Validation error(s) attempting to upload expedition: M0046
+Successfully uploaded expedition:  M0046
 
 
 Successfully uploaded expedition:  E0178
@@ -3663,39 +1602,13 @@ Successfully uploaded expedition:  E0182
 Successfully uploaded expedition:  E0971
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"yearCollected" contains non-integer value "2017.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "50000.0"
-
-
-Validation error(s) attempting to upload expedition: E1163
+Successfully uploaded expedition:  E1163
 
 
 Successfully uploaded expedition:  E1111
 
 
-
-
-Errors found on worksheet: "Samples" for entity: "Event"
-
-
-	Invalid DataFormat:
-
-		"coordinateUncertaintyInMeters" contains non-integer value "1500.0"
-		"coordinateUncertaintyInMeters" contains non-integer value "18000.0"
-		"yearCollected" contains non-integer value "2004.0". Value can also be "Unknown"
-		"yearCollected" contains non-integer value "1987.0". Value can also be "Unknown"
-		"coordinateUncertaintyInMeters" contains non-integer value "8000.0"
-		"yearCollected" contains non-integer value "2003.0". Value can also be "Unknown"
-
-
-Validation error(s) attempting to upload expedition: M0002
+Successfully uploaded expedition:  M0002
 
 
 Successfully uploaded expedition:  M0023
