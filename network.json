@@ -44,6 +44,12 @@
                 },
                 {
                     "name": "ControlledVocabulary",
+                    "level": "ERROR",
+                    "column": "permitType",
+                    "listName": "permitType"
+                },
+                {
+                    "name": "ControlledVocabulary",
                     "level": "WARNING",
                     "column": "environmentalMedium",
                     "listName": "environmentalMedium"
@@ -95,13 +101,6 @@
                     "level": "ERROR"
                 }
             ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "eventID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/Event",
-            "recordType": "biocode.fims.records.GenericRecord",
-            "worksheet": "Events",
-            "conceptAlias": "Event",
             "attributes": [
                 {
                     "column": "eventID",
@@ -134,7 +133,7 @@
                     "allowTBD": false
                 },
                 {
-                    "column": "sampleCollectionDevice",
+                    "column": "sampleCollectionDeviceEvent",
                     "uri": "urn:sampleCollectionDevicee",
                     "dataType": "STRING",
                     "internal": false,
@@ -360,7 +359,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/locality",
-                    "definition": "The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description.",
+                    "definition": "The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description. If you are unsure of the value and will never come across it, add \u2018Unknown\u2019, or if you do not currently have the data but will in the future, add \u2018TBD\u2019.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -490,7 +489,7 @@
                     "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "urn:monthCollected",
-                    "definition": "The month the collecting event took place.",
+                    "definition": "The month the collecting event took place. Must be numeric to pass validation",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
@@ -501,6 +500,56 @@
                     "internal": false,
                     "definedBy": "urn:permitInformation",
                     "definition": "Information regarding the permit.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "permitStatus",
+                    "uri": "urn:permitStatus",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://data.ggbn.org/schemas/ggbn/terms/permitStatus",
+                    "definition": "Information about the presence, absence or other basic status of permits associated with the sample(s).",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "permitType",
+                    "uri": "urn:permitType",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://data.ggbn.org/schemas/ggbn/terms/permitType",
+                    "definition": "A permit is a document that allows someone to take an action that otherwise would not be allowed. Examples: Collecting Permit, Import Permit, Export Permit, Intellectual Property Rights, Copyright, Patent, Data use, Phytosanitary, Salvage, Exemption Permit, Material Transfer Agreement, Internationally Recognized Certificate of Compliance, contract, Memorandum of Understanding, Memorandum of Cooperation, Veterinary Certificate, Human Pathogens, Genetically Modified Organism, Other  ",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "permitText",
+                    "uri": "urn:permitText",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://data.ggbn.org/schemas/ggbn/terms/permitText",
+                    "definition": "The text of a permit related to the gathering/shipping or further details",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "permitURI",
+                    "uri": "urn:permitURI",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://data.ggbn.org/schemas/ggbn/terms/permitURI",
+                    "definition": "A reference to the permit related to the gathering or shipping event",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "recordedByID",
+                    "uri": "urn:recordedByID",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/recordedByID",
+                    "definition": "A list (concatenated and separated) of the globally unique identifier for the person, people, groups, or organizations responsible for recording the original Occurrence.  Examples https://orcid.org/0000-0002-1825-0097 (for an individual); https://orcid.org/0000-0002-1825-0097 | https://orcid.org/0000-0002-1825-0098 (for a list of people).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -570,7 +619,7 @@
                     "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "urn:yearCollected",
-                    "definition": "The year the collecting event took place",
+                    "definition": "The year the collecting event took place. If you are unsure of the value and will never come across it, add \u2018Unknown\u2019, or if you do not currently have the data but will in the future, add \u2018TBD\u2019.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
@@ -998,7 +1047,14 @@
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ]
+            ],
+            "hashed": false,
+            "uniqueAcrossProject": false,
+            "uniqueKey": "eventID",
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/Event",
+            "recordType": "biocode.fims.records.GenericRecord",
+            "worksheet": "Events",
+            "conceptAlias": "Event"
         },
         {
             "type": "DefaultEntity",
@@ -1097,14 +1153,6 @@
                     "listName": "basisOfRecord"
                 }
             ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "materialSampleID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
-            "parentEntity": "Event",
-            "recordType": "biocode.fims.records.GenericRecord",
-            "worksheet": "Samples",
-            "conceptAlias": "Sample",
             "attributes": [
                 {
                     "column": "length",
@@ -1168,7 +1216,7 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/ownerInstitutionCode",
                     "group": "Protocol and Storage Details",
-                    "definition": "The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record.",
+                    "definition": "The official name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record. E.g. NMNH, US",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -1377,7 +1425,18 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/catalogNumber",
                     "group": "Record and Owner Details",
-                    "definition": "The Biocode GUID identifier for the record within the dataset. It is a legacy identifier as the expedition_code + specimen_num_collector is the current unique identifier",
+                    "definition": "A unique identifier (legacy) for the record within the data set or collection.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "boldBIN",
+                    "uri": "urn:boldBIN",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:boldBIN",
+                    "group": "Record and Owner Details",
+                    "definition": "Add boldBIN provided by BOLD for COI barcodes here. For example:  BOLD:AAF0202",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -1432,7 +1491,7 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/occurrenceRemarks",
                     "group": "Record and Owner Details",
-                    "definition": "Comments or notes about the Occurrence.",
+                    "definition": "Comments or notes about the Occurrence. For example: found dead on road",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -1564,7 +1623,7 @@
                     "internal": false,
                     "definedBy": "urn:voucherCatalogNumber",
                     "group": "Record and Owner Details",
-                    "definition": "Voucher catalog number used for the specimen (assigned by host institution)",
+                    "definition": "The catalog number used for the voucher specimen (assigned by host institution). Typically this field follows the format outlined in the specimen_voucher qualifier of the GenBank feature table and is structured as institution-code: (optional collection-code): specimen_id. Examples and a list of institutional abbreviations can be found on the INSDC page: https://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -1608,7 +1667,7 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/identificationRemarks",
                     "group": "Taxonomy and Life History",
-                    "definition": "Comments or notes about the Identification.",
+                    "definition": "Comments or notes about the Identification. For example: Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the u\u00f1as.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -1784,7 +1843,7 @@
                     "internal": false,
                     "definedBy": "urn:monthIdentified",
                     "group": "Taxonomy and Life History",
-                    "definition": "The month on which the subject was identified as representing the Taxon. ",
+                    "definition": "The month on which the subject was identified as representing the Taxon. Must be numeric to pass validation",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -1850,7 +1909,7 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/scientificName",
                     "group": "Taxonomy and Life History",
-                    "definition": "scientificName as the lowest taxon identified",
+                    "definition": "scientificName as the lowest taxon identified, use TBD if you do not have the information at hand (and update it later)",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -1993,7 +2052,7 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/taxonRemarks",
                     "group": "Taxonomy and Life History",
-                    "definition": "Comments or notes about the taxon or name.",
+                    "definition": "Comments or notes about the taxon or name. For example: this name is a misspelling in common use",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -2084,8 +2143,78 @@
                     "definition": "A local identifier or name that for the material sample used for extracting nucleic acids, and subsequent sequencing. It can refer either to the original material collected or to any derived sub-samples. It can have any format, but we suggest that you make it concise, unique and consistent within your lab, and as informative as possible. INSDC requires every sample name from a single Submitter to be unique. Use of a globally unique identifier for the field source_mat_id is recommended in addition to sample_name.",
                     "allowUnknown": false,
                     "allowTBD": false
+                },
+                {
+                    "column": "sampleCollectionDevice",
+                    "uri": "urn:sampleCollectionDevice",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:sampleCollectionDevice",
+                    "definition": "The device used to collect an environmental sample.  This field accepts terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO). This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094).",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "bioSampleAccession",
+                    "uri": "urn:bioSampleAccession",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:bioSampleAccession",
+                    "definition": "The bioSample Accession number as reported by SRA.  Typically, BioSample data are submitted first and assigned BioSample accession numbers (SAMNxxxxxxxx). The BioSample accession numbers can subsequently be referenced as appropriate when submitting corresponding experimental data to the archival database.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "bioProjectAccession",
+                    "uri": "urn:bioProjectAccession",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:bioProjectAccession",
+                    "definition": "The bioProject Accession number as reported by SRA.  The BioProject is assigned a BioProject accession number (PRJNAxxxxxx) which is referenced when submitting the corresponding BioSamples and experimental data to archival databases.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "verbatimLabel",
+                    "uri": "urn:verbatimLabel",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/verbatimLabel",
+                    "definition": "The content of this term should include no embellishments, prefixes, headers or other additions made to the text. Abbreviations must not be expanded and supposed misspellings must not be corrected. Lines or breakpoints between blocks of text that could be verified by seeing the original labels or images of them may be used. Examples of material entities include preserved specimens, fossil specimens, and material samples. Best practice is to use UTF-8 for all characters. Best practice is to add comment 'verbatimLabel derived from human transcription' in dwc:occurrenceRemarks.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "higherClassification",
+                    "uri": "urn:higherClassification",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/higherClassification",
+                    "definition": "A list (concatenated and separated) of taxa names terminating at the rank immediately superior to the referenced dwc:Taxon.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "namePublishedIn",
+                    "uri": "urn:namePublishedIn",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/namePublishedIn",
+                    "definition": "A reference for the publication in which the dwc:scientificName was originally established under the rules of the associated dwc:nomenclaturalCode.",
+                    "allowUnknown": false,
+                    "allowTBD": false
                 }
-            ]
+              
+                
+            ],
+            "hashed": false,
+            "uniqueAcrossProject": false,
+            "uniqueKey": "materialSampleID",
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
+            "parentEntity": "Event",
+            "recordType": "biocode.fims.records.GenericRecord",
+            "worksheet": "Samples",
+            "conceptAlias": "Sample"
         },
         {
             "type": "DefaultEntity",
@@ -2155,14 +2284,6 @@
                     ]
                 }
             ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "diagnosticID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
-            "parentEntity": "Sample",
-            "recordType": "biocode.fims.records.GenericRecord",
-            "worksheet": "Diagnostics",
-            "conceptAlias": "Diagnostics",
             "attributes": [
                 {
                     "column": "diagnosticID",
@@ -2771,7 +2892,7 @@
                 {
                     "column": "coralColonyAlgalContact",
                     "uri": "uri:coralColonyAlgalContact",
-                    "dataType": "STRING",
+                    "dataType": "BOOLEAN",
                     "internal": false,
                     "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
                     "group": "Diagnostics and Traits",
@@ -2782,7 +2903,7 @@
                 {
                     "column": "coralColonyAlgalcontactsNumber",
                     "uri": "uri:coralColonyAlgalcontactsNumber",
-                    "dataType": "FLOAT",
+                    "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
                     "group": "Diagnostics and Traits",
@@ -2815,7 +2936,7 @@
                 {
                     "column": "coralColonyMacroalgalContactsNumber",
                     "uri": "uri:coralColonyMacroalgalContactsNumber",
-                    "dataType": "FLOAT",
+                    "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
                     "group": "Diagnostics and Traits",
@@ -2846,7 +2967,7 @@
                     "allowTBD": false
                 },
                 {
-                    "column": "coralColonyCCAContaactPercent",
+                    "column": "coralColonyCCAContactPercent",
                     "uri": "uri:coralColonyCCAContaactPercent",
                     "dataType": "FLOAT",
                     "internal": false,
@@ -2901,7 +3022,7 @@
                     "allowTBD": false
                 },
                 {
-                    "column": "coralColonycoralContactTypes",
+                    "column": "coralColonyCoralContactTypes",
                     "uri": "uri:coralColonycoralContactTypes",
                     "dataType": "STRING",
                     "internal": false,
@@ -2921,8 +3042,82 @@
                     "definition": "True if sediment is deposited on top of the coral or the coral was partially buried. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
-                }
-            ]
+                },
+                {
+                    "column": "coralColonyContactDescription",
+                    "uri": "uri:coralColonyContactDescription",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Coral Colony Description of Contact (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "allowUnknown": false,
+                    "allowTBD": false
+    },
+    {
+        "column": "coralColonyDominantCover",
+        "uri": "uri:coralColonyDominantCover",
+        "dataType": "STRING",
+        "internal": false,
+        "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+        "group": "Diagnostics and Traits",
+        "definition": "Coral Colony Dominant Cover (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+        "allowUnknown": false,
+        "allowTBD": false
+},
+{
+    "column": "coralColonyDiameterInCentimeters",
+    "uri": "uri:coralColonyDiameterInCentimeters",
+    "dataType": "FLOAT",
+    "internal": false,
+    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+    "group": "Diagnostics and Traits",
+    "definition": "Coral Colony Diameter in Centimeters (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+    "allowUnknown": false,
+    "allowTBD": false
+},
+{
+    "column": "coralColonyShelfLocation",
+    "uri": "uri:coralColonyShelfLocation",
+    "dataType": "STRING",
+    "internal": false,
+    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+    "group": "Diagnostics and Traits",
+    "definition": "Coral Colony Shelf Location (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+    "allowUnknown": false,
+    "allowTBD": false
+},
+{
+    "column": "coralColonyVisibilityInMeters",
+    "uri": "uri:coralColonyVisibilityInMeters",
+    "dataType": "FLOAT",
+    "internal": false,
+    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+    "group": "Diagnostics and Traits",
+    "definition": "Coral Colony Visibility in Meters (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+    "allowUnknown": false,
+    "allowTBD": false
+},
+{
+    "column": "coralColonyVisibilityMethod",
+    "uri": "uri:coralColonyVisibilityMethod",
+    "dataType": "STRING",
+    "internal": false,
+    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+    "group": "Diagnostics and Traits",
+    "definition": "Coral Colony Visibility Method (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+    "allowUnknown": false,
+    "allowTBD": false
+}
+            ],
+            "hashed": false,
+            "uniqueAcrossProject": false,
+            "uniqueKey": "diagnosticID",
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
+            "parentEntity": "Sample",
+            "recordType": "biocode.fims.records.GenericRecord",
+            "worksheet": "Diagnostics",
+            "conceptAlias": "Diagnostics"
         },
         {
             "type": "Tissue",
@@ -2987,14 +3182,6 @@
                     "level": "ERROR"
                 }
             ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "tissueID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
-            "parentEntity": "Sample",
-            "recordType": "biocode.fims.records.GenericRecord",
-            "worksheet": "Tissues",
-            "conceptAlias": "Tissue",
             "attributes": [
                 {
                     "column": "tissueID",
@@ -3032,7 +3219,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "urn:plateID",
-                    "definition": "The name of the plate.  Typically this is a 96 well plat for Biocode projects",
+                    "definition": "The name of the plate (typically a 96 well plate) containing the tissue subsamples that will be consumed for DNA extractions for projects",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3042,7 +3229,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "urn:wellID",
-                    "definition": "The well location in the plate",
+                    "definition": "The well location in the tissue plate",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3052,7 +3239,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "urn:previousTissueID",
-                    "definition": "The previous tissue catalog number, designated by a GUID",
+                    "definition": "The catalog number used for the tissue specimen (assigned by host institution). Typically this field follows the format outlined in the bio_material qualifier of the GenBank feature table and is structured as institution-code: (optional collection-code): specimen_id. Examples and a list of institutional abbreviations can be found on the INSDC page: https://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3062,7 +3249,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "urn:tissueStorageID",
-                    "definition": "The barcode on the long-term tissue storage vial. Typically the tissue barcode represents a 2D barcode on a FluidX vial which can be read using the tube scanner.",
+                    "definition": "Alphanumeric barcode given to tissue by storing institution",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3082,7 +3269,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "urn:tissueOtherCatalogNumbers",
-                    "definition": "Other catalog numbers which this tissue is known by",
+                    "definition": "Other catalog numbers which this tissue is known by, for example: 2D extraction barcode",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3196,7 +3383,15 @@
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ]
+            ],
+            "hashed": false,
+            "uniqueAcrossProject": false,
+            "uniqueKey": "tissueID",
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
+            "parentEntity": "Sample",
+            "recordType": "biocode.fims.records.GenericRecord",
+            "worksheet": "Tissues",
+            "conceptAlias": "Tissue"
         },
         {
             "type": "Photo",
@@ -3227,14 +3422,6 @@
                     "level": "ERROR"
                 }
             ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "photoID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/associatedMedia",
-            "parentEntity": "Sample",
-            "recordType": "biocode.fims.photos.PhotoRecord",
-            "worksheet": "sample_photos",
-            "conceptAlias": "Sample_Photo",
             "attributes": [
                 {
                     "column": "materialSampleID",
@@ -3351,8 +3538,25 @@
                     "internal": false,
                     "allowUnknown": false,
                     "allowTBD": false
+                },
+                {
+                    "column": "viewSamplePhotoMetadata",
+                    "uri": "urn:viewSamplePhotoMetadata",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definition": "Standardized term to group images depicting a specific set of features of the organisms or related environment. Such as: Dorsal, Ventral, Lateral, etc.",
+                    "allowUnknown": false,
+                    "allowTBD": false
                 }
-            ]
+            ],
+            "hashed": false,
+            "uniqueAcrossProject": false,
+            "uniqueKey": "photoID",
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/associatedMedia",
+            "parentEntity": "Sample",
+            "recordType": "biocode.fims.photos.PhotoRecord",
+            "worksheet": "sample_photos",
+            "conceptAlias": "Sample_Photo"
         },
         {
             "type": "Photo",
@@ -3383,14 +3587,6 @@
                     "level": "ERROR"
                 }
             ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "photoID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/associatedMedia",
-            "parentEntity": "Event",
-            "recordType": "biocode.fims.photos.PhotoRecord",
-            "worksheet": "event_photos",
-            "conceptAlias": "Event_Photo",
             "attributes": [
                 {
                     "column": "eventID",
@@ -3507,8 +3703,25 @@
                     "internal": true,
                     "allowUnknown": false,
                     "allowTBD": false
+                },
+                {
+                    "column": "viewEventPhotoMetadata",
+                    "uri": "urn:viewEventPhotoMetadata",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definition": "Standardized term to group images depicting a specific set of features of the organisms or related environment.",
+                    "allowUnknown": false,
+                    "allowTBD": false
                 }
-            ]
+            ],
+            "hashed": false,
+            "uniqueAcrossProject": false,
+            "uniqueKey": "photoID",
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/associatedMedia",
+            "parentEntity": "Event",
+            "recordType": "biocode.fims.photos.PhotoRecord",
+            "worksheet": "event_photos",
+            "conceptAlias": "Event_Photo"
         },
         {
             "type": "Fasta",
@@ -3536,13 +3749,6 @@
                     "uniqueAcrossProject": false
                 }
             ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "identifier",
-            "conceptURI": "urn:fastaSequence",
-            "parentEntity": "Tissue",
-            "recordType": "biocode.fims.fasta.FastaRecord",
-            "conceptAlias": "fastaSequence",
             "attributes": [
                 {
                     "column": "sequence",
@@ -3579,7 +3785,14 @@
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ]
+            ],
+            "hashed": false,
+            "uniqueAcrossProject": false,
+            "uniqueKey": "identifier",
+            "conceptURI": "urn:fastaSequence",
+            "parentEntity": "Tissue",
+            "recordType": "biocode.fims.fasta.FastaRecord",
+            "conceptAlias": "fastaSequence"
         },
         {
             "type": "Fastq",
@@ -3622,13 +3835,6 @@
                     "level": "ERROR"
                 }
             ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "identifier",
-            "conceptURI": "urn:fastqMetadata",
-            "parentEntity": "Tissue",
-            "recordType": "biocode.fims.fastq.FastqRecord",
-            "conceptAlias": "fastqMetadata",
             "attributes": [
                 {
                     "column": "libraryLayout",
@@ -3721,7 +3927,14 @@
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ]
+            ],
+            "hashed": false,
+            "uniqueAcrossProject": false,
+            "uniqueKey": "identifier",
+            "conceptURI": "urn:fastqMetadata",
+            "parentEntity": "Tissue",
+            "recordType": "biocode.fims.fastq.FastqRecord",
+            "conceptAlias": "fastqMetadata"
         }
     ],
     "lists": [
@@ -4004,6 +4217,15 @@
                     "value": "Illumina NovaSeq 6000"
                 },
                 {
+                    "value": "Illumina NovaSeq X"
+                },
+                {
+                    "value": "Illumina NovaSeq X Plus"
+                },
+                {
+                    "value": "Illumina iSeq Plus"
+                },
+                {
                     "value": "HiSeq X Five"
                 },
                 {
@@ -4020,6 +4242,9 @@
                 },
                 {
                     "value": "Illumina HiScanSQ"
+                },
+                {
+                    "value": "Illumina HiSeq X"
                 },
                 {
                     "value": "Illumina HiSeq 1000"
@@ -4041,6 +4266,12 @@
                 },
                 {
                     "value": "Illumina MiSeq"
+                },
+                {
+                    "value": "NextSeq 2000"
+                },
+                {
+                    "value": "NextSeq 1000"
                 },
                 {
                     "value": "NextSeq 500"
@@ -4086,6 +4317,21 @@
                 },
                 {
                     "value": "PacBio RS II"
+                },
+                {
+                    "value": "Revio"
+                },
+                {
+                    "value": "Sequel"
+                },
+                {
+                    "value": "Sequel II"
+                },
+                {
+                    "value": "Sequel IIe"
+                },
+                {
+                    "value": "Onso"
                 }
             ],
             "networkList": true
@@ -4136,16 +4382,25 @@
             "caseInsensitive": false,
             "fields": [
                 {
-                    "value": "0.65 eppendorf"
+                    "value": "0.65 ml Eppendorf tube"
+                },
+                {
+                    "value": "5.0 ml Eppendorf tube"
                 },
                 {
                     "value": "1.2 ul Cryovial"
                 },
                 {
+                    "value": "5.0 ml Cryovial"
+                },
+                {
+                    "value": "20 ml scintillation vial"
+                },
+                {
                     "value": "1.4 ml TrackMate 2D barcoded storage tube"
                 },
                 {
-                    "value": "1.5 Eppindorf Tube"
+                    "value": "1.5 ml Eppendorf tube"
                 },
                 {
                     "value": "15 ml Falcon Tube"
@@ -4178,7 +4433,16 @@
                     "value": "glass vial"
                 },
                 {
-                    "value": "microscope_slide"
+                    "value": "microscope slide"
+                },
+                {
+                    "value": "sterivex filter capsule"
+                },
+                {
+                    "value": "disc filter capsule"
+                },
+                {
+                    "value": "SEM stub"
                 }
             ],
             "networkList": true
@@ -5697,6 +5961,70 @@
             "networkList": true
         },
         {
+            "alias": "permitType",
+            "caseInsensitive": false,
+            "fields": [
+                {
+                    "value": "Collecting Permit"
+                },
+                {
+                    "value": "Import Permit"
+                },
+                {
+                    "value": "Export Permit"
+                },
+                {
+                    "value": "Intellectual Property Rights"
+                },
+                {
+                    "value": "Copyright"
+                },
+                {
+                    "value": "Patent"
+                },
+                {
+                    "value": "Data use"
+                },
+                {
+                    "value": "Phytosanitary"
+                },
+                {
+                    "value": "Salvage"
+                },
+                {
+                    "value": "Exemption Permit"
+                },
+                {
+                    "value": "Material Transfer Agreement"
+                },
+                {
+                    "value": "Internationally Recognized Certificate of Compliance"
+                },
+                {
+                    "value": "contract"
+                },
+                {
+                    "value": "Memorandum of Understanding"
+                },
+                {
+                    "value": "Memorandum of Cooperation"
+                },
+                {
+                    "value": "Veterinary Certificate"
+                },
+                {
+                    "value": "Human Pathogens"
+                },
+                {
+                    "value": "Genetically Modified Organism"
+                },
+                {
+                    "value": "Other"
+                }
+            ],
+            "networkList": true
+        },
+        {
             "alias": "lengthUnits",
             "caseInsensitive": false,
             "fields": [
@@ -6057,6 +6385,14 @@
                     "definition": "18S ribosomal RNA"
                 },
                 {
+                    "value": "28S",
+                    "definition": "28S"
+                },
+                {
+                    "value": "mutS",
+                    "definition": "mutS"
+                },
+                {
                     "value": "S7",
                     "definition": "S7 ribosomal protein gene"
                 },
@@ -6135,6 +6471,9 @@
                     "value": "Aquificae"
                 },
                 {
+                    "value": "Apicomplexa"
+                },
+                {
                     "value": "Armatimonadetes"
                 },
                 {
@@ -6145,6 +6484,9 @@
                 },
                 {
                     "value": "Bacteroidetes"
+                },
+                {
+                    "value": "Bacillariophyta"
                 },
                 {
                     "value": "Basidiomycota"
@@ -6240,10 +6582,16 @@
                     "value": "Dikaryomycota"
                 },
                 {
+                    "value": "Discosea"
+                },
+                {
                     "value": "Echinodermata"
                 },
                 {
                     "value": "Elusimicrobia"
+                },
+                {
+                    "value": "Endomyxa"
                 },
                 {
                     "value": "Entoprocta"
@@ -6255,6 +6603,9 @@
                     "value": "Euryarchaeota"
                 },
                 {
+                    "value": "Evosea"
+                },
+                {
                     "value": "Fibrobacteres"
                 },
                 {
@@ -6262,6 +6613,9 @@
                 },
                 {
                     "value": "Foraminifera"
+                },
+                {
+                    "value": "Fornicata"
                 },
                 {
                     "value": "Fusobacteria"
@@ -6291,10 +6645,22 @@
                     "value": "Hemichordata"
                 },
                 {
+                    "value": "Hemimastigophora"
+                },
+                {
+                    "value": "Heterolobosea"
+                },
+                {
                     "value": "Lentisphaerae"
                 },
                 {
                     "value": "Loukozoa"
+                },
+                {
+                    "value": "Kinorhyncha"
+                },
+                {
+                    "value": "Loricifera"
                 },
                 {
                     "value": "Marchantiophyta"
@@ -6351,6 +6717,12 @@
                     "value": "Orthonectida"
                 },
                 {
+                    "value": "Parabasalia"
+                },
+                {
+                    "value": "Perkinsozoa"
+                },
+                {
                     "value": "Percolozoa"
                 },
                 {
@@ -6370,6 +6742,18 @@
                 },
                 {
                     "value": "Porifera"
+                },
+                {
+                    "value": "Prasinodermophyta"
+                },
+                {
+                    "value": "Priapulida"
+                },
+                {
+                    "value": "Preaxostyla"
+                },
+                {
+                    "value": "Priapulida"
                 },
                 {
                     "value": "Proteobacteria"
@@ -6393,6 +6777,9 @@
                     "value": "Spirochaetae"
                 },
                 {
+                    "value": "Streptophyta"
+                },
+                {
                     "value": "Sulcozoa"
                 },
                 {
@@ -6412,6 +6799,9 @@
                 },
                 {
                     "value": "Tracheophyta"
+                },
+                {
+                    "value": "Tubulinea"
                 },
                 {
                     "value": "Unknown"
@@ -6500,6 +6890,9 @@
             "alias": "preservative",
             "caseInsensitive": false,
             "fields": [
+                {
+                    "value": "ATL buffer"
+                },
                 {
                     "value": "10% formalin"
                 },
@@ -6604,7 +6997,7 @@
                     "value": "MgCl"
                 },
                 {
-                    "value": "Tricaine"
+                    "value": "Tricaine (MS-222)"
                 },
                 {
                     "value": "chloretone"
