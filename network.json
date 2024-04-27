@@ -2703,6 +2703,83 @@
                     "allowTBD": false
                 },
                 {
+                    "column": "derivedDataDescription",
+                    "uri": "urn:derivedDataDescription",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:derivedDataDescription",
+                    "group": "Derived Data Formats",
+                    "definition": "A text-based description of the derivedData",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "experimentalProtocol",
+                    "uri": "urn:experimentalProtocol",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:experimentalProtocol",
+                    "group": "Derived Data Formats",
+                    "definition": "Experimental Protocol.  Reccomended best practice is to insert an IRI pointing for example to protocols.io",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "experimentStartDate",
+                    "uri": "urn:experimentStartDate",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:experimentStartDate",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Date an Expexriment was started.  Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "experimentEndDate",
+                    "uri": "urn:experimentEndDate",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:experimentEndDate",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Date an Expexriment was ended.  Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "analysisDate",
+                    "uri": "urn:analysisDate",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:analysisDate",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Date of Analysis. Recommended best practice is to use a date that conforms to ISO 8601-1:2019, for example, 1809-02-12 (some time during 12 February 1809)",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "methodOfDNAExtraction",
+                    "uri": "urn:methodOfDNAExtraction",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:methodOfDNAExtraction",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Description of the method used for DNA extraction.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "experimentalLocation",
+                    "uri": "urn:experimentalLocation",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "urn:experimentalLocation",
+                    "group": "Diagnostics and Traits",
+                    "definition": "A text description of the location an experiment was performed.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
                     "column": "PARInMicroMolQuantaMetersSquaredPerSecond",
                     "uri": "uri:PARInMicroMolQuantaMetersSquaredPerSecond",
                     "dataType": "FLOAT",
