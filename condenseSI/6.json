@@ -1,0 +1,4402 @@
+{
+    "id": 6,
+    "created": "2018-12-10 16:41:46",
+    "modified": "2024-12-15 15:10:00",
+    "name": "Smithsonian Barcoding and Global Genome Initiative",
+    "description": "The Smithsonian Barcoding and Global Genome Initiative Team uses a single sheet for entering events, samples, and tissues (called Samples).   FASTQ metadata may be loaded through the interface to generate an SRA submission package.  FASTA metadata plus sequences can be loaded through the interface as well.  The individual-based sequencing configuration originated from Smithsonian Barcoding projects and the Global Genome Initiative.  This team is generally comprised of data sets utilizing Sanger-based methods (e.g. DNA barcoding) where a unique individual is the origin of each sample.",
+    "networkApproved": true,
+    "user": {
+        "userId": 17,
+        "username": "nredmond",
+        "email": "RedmondN@si.edu"
+    },
+    "network": {
+        "id": 1,
+        "title": "GeOMe Network"
+    },
+    "config": {
+        "entities": [
+            {
+                "type": "DefaultEntity",
+                "attributes": [
+                    {
+                        "column": "materialSampleID",
+                        "uri": "urn:materialSampleID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/MaterialSampleID",
+                        "group": "Record and Owner Details",
+                        "definition": "The collector's specimen number. This number must be unique among the IDs within the expedition.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "eventID",
+                        "uri": "urn:eventID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/eventID",
+                        "group": "Record and Owner Details",
+                        "definition": "The collector's event identifier.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "institutionCode",
+                        "uri": "urn:sampleOwnerInstitutionCode",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/ownerInstitutionCode",
+                        "group": "Protocol and Storage Details",
+                        "definition": "The official name (or acronym) in use by the institution having custody of the object(s) or information referred to in the record. E.g. NMNH, US",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "collectionCode",
+                        "uri": "urn:collectionCode",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/collectionCode",
+                        "group": "Protocol and Storage Details",
+                        "definition": "The name, acronym, coden, or initialism identifying the collection or data set from which the record was derived.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "catalogNumber",
+                        "uri": "urn:catalogNumber",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/catalogNumber",
+                        "group": "Record and Owner Details",
+                        "definition": "A unique identifier (legacy) for the record within the data set or collection.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "voucherCatalogNumber",
+                        "uri": "urn:voucherCatalogNumber",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/voucherCatalogNumber?info",
+                        "group": "Record and Owner Details",
+                        "definition": "The catalog number used for the voucher specimen (assigned by host institution). Typically this field follows the format outlined in the specimen_voucher qualifier of the GenBank feature table and is structured as institution-code: (optional collection-code): specimen_id. Examples and a list of institutional abbreviations can be found on the INSDC page: https://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "kingdom",
+                        "uri": "urn:kingdom",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/kingdom",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the kingdom in which the taxon is classified.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "phylum",
+                        "uri": "urn:phylum",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/phylum",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the phylum in which the taxon is classified.  The list of phyla allowable in GeOMe are taken from the Catalog of Life.  In addition, we have added 'Unknown' as an acceptable value",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "class",
+                        "uri": "urn:class",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/class",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the class in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "order",
+                        "uri": "urn:order",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/order",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the order in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "subOrder",
+                        "uri": "urn:suborder",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/suborder?info",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the subOrder in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "family",
+                        "uri": "urn:family",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/family",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the family in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "genus",
+                        "uri": "urn:genus",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/genus",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the genus in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "specificEpithet",
+                        "uri": "urn:species",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/specificEpithet",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the specificEpithet in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "infraspecificEpithet",
+                        "uri": "urn:subSpecies",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/infraspecificEpithet",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the infraspecificEpithet in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "scientificName",
+                        "uri": "urn:scientificName",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/scientificName",
+                        "group": "Taxonomy and Life History",
+                        "definition": "scientificName as the lowest taxon identified, use TBD if you do not have the information at hand (and update it later)",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "dayIdentified",
+                        "uri": "urn:dayIdentified",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dayIdentified?info",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The day on which the subject was identified as representing the Taxon. ",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "monthIdentified",
+                        "uri": "urn:monthIdentified",
+                        "dataType": "INTEGER",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/monthIdentified?info",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The month on which the subject was identified as representing the Taxon. Must be numeric to pass validation",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "yearIdentified",
+                        "uri": "urn:yearIdentified",
+                        "dataType": "INTEGER",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/yearIdentified?info",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The year on which the subject was identified as representing the Taxon. ",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "establishmentMeans",
+                        "uri": "urn:establishmentMeans",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/establishmentMeans",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The process by which the biological individual(s) represented in the Occurrence became established at the location. Recommended best practice is to use a controlled vocabulary. See associated list in ''lists'' tab.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "sex",
+                        "uri": "urn:sex",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/sex",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The sex of the biological individual(s) represented in the Occurrence. Recommended best practice is to use a controlled vocabulary. See associated list on lists tab.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "subClass",
+                        "uri": "urn:subclass",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/subclass?info",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the subClass in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "subFamily",
+                        "uri": "urn:subfamily",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/subfamily?info",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The full scientific name of the subFamily in which the taxon is classified",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "taxonRemarks",
+                        "uri": "urn:taxonRemarks",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/taxonRemarks",
+                        "group": "Taxonomy and Life History",
+                        "definition": "Comments or notes about the taxon or name. For example: this name is a misspelling in common use",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "lifeStage",
+                        "uri": "urn:lifeStage",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/lifeStage",
+                        "group": "Taxonomy and Life History",
+                        "definition": "The age class or life stage of the biological individual(s) at the time the Occurrence was recorded. Recommended best practice is to use a controlled vocabulary.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "identifiedBy",
+                        "uri": "urn:identifiedBy",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/identifiedBy",
+                        "group": "Taxonomy and Life History",
+                        "definition": "A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "associatedMedia",
+                        "uri": "urn:associatedMedia",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/associatedMedia",
+                        "group": "Record and Owner Details",
+                        "definition": "Photos, videos etc of the individual. From Darwincore: A list (concatenated and separated) of identifiers (publication, global unique identifier, URI,DOI) of media associated with the Occurrence.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "fieldNumber",
+                        "uri": "urn:fieldNumber",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/fieldNumber",
+                        "group": "Record and Owner Details",
+                        "definition": "An identifier given to the event in the field. Often serves as a link between field notes and the Event.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "genbankSpecimenVoucher",
+                        "uri": "urn:genbankSpecimenVoucher",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://www.ncbi.nlm.nih.gov/books/NBK53701/",
+                        "group": "Record and Owner Details",
+                        "definition": "A field to populate the /specimen_voucher qualifier field for submissions to Genbank.  Please refer to the instructions for populating /specimen_voucher at the <a href='https://www.ncbi.nlm.nih.gov/books/NBK53701/'>Genbank Submission Handbook</a>.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "boldProcessID",
+                        "uri": "urn:boldProcessID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/boldProcessID?info",
+                        "group": "Record and Owner Details",
+                        "definition": "BOLD Process IDs are unique codes automatically generated for each new record added to a project within the Barcode of Life Database. They serve to connect specimen information, such as taxonomy, collection data and images, to the DNA barcode sequence for that specimen.  BOLD Process IDs consist of a standard format including the project code and sequential numbers, followed by the year the record was added to the database. For example, the first record uploaded to project PROJ in 2012 would be assigned BOLD Process ID PROJ001-12 . This format ensures BOLD Process IDs are always unique in the system, as well as identifying the year the record was uploaded and the original project it was uploaded to.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "boldBIN",
+                        "uri": "urn:boldBIN",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/boldBIN?info",
+                        "group": "Record and Owner Details",
+                        "definition": "Add boldBIN provided by BOLD for COI barcodes here. For example:  BOLD:AAF0202",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "occurrenceRemarks",
+                        "uri": "urn:occurrenceRemarks",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/occurrenceRemarks",
+                        "group": "Record and Owner Details",
+                        "definition": "Comments or notes about the Occurrence. For example: found dead on road",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "organismRemarks",
+                        "uri": "urn:organismRemarks",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/organismRemarks",
+                        "group": "Taxonomy and Life History",
+                        "definition": "Comments or notes about the Organism instance.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "identificationRemarks",
+                        "uri": "urn:basisOfIdentification",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/identificationRemarks",
+                        "group": "Taxonomy and Life History",
+                        "definition": "Comments or notes about the Identification. For example: Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the u\u00f1as.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "associatedTaxa",
+                        "uri": "urn:associatedTaxa",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/associatedTaxa",
+                        "group": "Taxonomy and Life History",
+                        "definition": "A list (concatenated and separated) of identifiers or names of taxa and their associations with the Occurrence.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    }
+                ],
+                "rules": [
+                    {
+                        "name": "RequiredValue",
+                        "level": "ERROR",
+                        "columns": [
+                            "eventID",
+                            "phylum",
+                            "materialSampleID",
+                            "institutionCode",
+                            "kingdom",
+                            "scientificName"
+                        ]
+                    },
+                    {
+                        "name": "ControlledVocabulary",
+                        "level": "ERROR",
+                        "column": "sex",
+                        "listName": "sex"
+                    },
+                    {
+                        "name": "ControlledVocabulary",
+                        "level": "WARNING",
+                        "column": "lifeStage",
+                        "listName": "lifeStage"
+                    },
+                    {
+                        "name": "ControlledVocabulary",
+                        "level": "ERROR",
+                        "column": "phylum",
+                        "listName": "phylum"
+                    },
+                    {
+                        "name": "NumericRange",
+                        "level": "ERROR",
+                        "column": "yearIdentified",
+                        "range": ">=1500|<=2050"
+                    },
+                    {
+                        "name": "NumericRange",
+                        "level": "ERROR",
+                        "column": "monthIdentified",
+                        "range": ">=1|<=12"
+                    },
+                    {
+                        "name": "NumericRange",
+                        "level": "ERROR",
+                        "column": "dayIdentified",
+                        "range": ">=1|<=31"
+                    },
+                    {
+                        "name": "ValidDataTypeFormat",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "ValidParentIdentifiers",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "ValidForURI",
+                        "level": "ERROR",
+                        "column": "materialSampleID"
+                    },
+                    {
+                        "name": "ControlledVocabulary",
+                        "level": "WARNING",
+                        "column": "establishmentMeans",
+                        "listName": "establishmentMeans"
+                    },
+                    {
+                        "name": "UniqueValue",
+                        "level": "ERROR",
+                        "column": "materialSampleID",
+                        "uniqueAcrossProject": false
+                    }
+                ],
+                "conceptAlias": "Sample",
+                "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
+                "parentEntity": "Event",
+                "recordType": "biocode.fims.records.GenericRecord",
+                "worksheet": "Samples",
+                "uniqueKey": "materialSampleID",
+                "uniqueAcrossProject": false,
+                "hashed": false
+            },
+            {
+                "type": "DefaultEntity",
+                "attributes": [
+                    {
+                        "column": "eventID",
+                        "uri": "urn:eventID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/eventID",
+                        "definition": "The collector's event identifier. This number must be unique among the event IDs within the expedition.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "yearCollected",
+                        "uri": "urn:yearCollected",
+                        "dataType": "INTEGER",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/yearCollected?info",
+                        "group": "Default Group",
+                        "definition": "The year the collecting event took place. If you are unsure of the value and will never come across it, add \u2018Unknown\u2019, or if you do not currently have the data but will in the future, add \u2018TBD\u2019.",
+                        "allowUnknown": true,
+                        "allowTBD": true
+                    },
+                    {
+                        "column": "locality",
+                        "uri": "urn:locality",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/locality",
+                        "group": "Default Group",
+                        "definition": "The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description. If you are unsure of the value and will never come across it, add \u2018Unknown\u2019, or if you do not currently have the data but will in the future, add \u2018TBD\u2019.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "samplingProtocol",
+                        "uri": "urn:samplingProtocol",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/samplingProtocol",
+                        "definition": "The name of, reference to, or description of the method or protocol used during an Event.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "collectorList",
+                        "uri": "urn:recordedBy",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/recordedBy",
+                        "delimitedBy": "|",
+                        "definition": "A list (concatenated and separated) of names of people, groups, or organizations responsible for recording the original Occurrence. The primary collector or observer, especially one who applies a personal identifier (recordNumber), should be listed first.  Name separation should use the pipe ('|') symbol",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "country",
+                        "uri": "urn:country",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/country",
+                        "definition": "The name of the country or major administrative unit in which the Location occurs. ",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "county",
+                        "uri": "urn:county",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "ttp://rs.tdwg.org/dwc/terms/county",
+                        "definition": "The full, unabbreviated name of the next smaller administrative region than stateProvince (county, shire, department, etc.) in which the Location occurs.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "dayCollected",
+                        "uri": "urn:dayCollected",
+                        "dataType": "INTEGER",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dayCollected?info",
+                        "definition": "The day the collecting event took place.",
+                        "allowUnknown": true,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "monthCollected",
+                        "uri": "urn:monthCollected",
+                        "dataType": "INTEGER",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/monthCollected?info",
+                        "group": "Default Group",
+                        "definition": "The month the collecting event took place. Must be numeric to pass validation",
+                        "allowUnknown": true,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "decimalLatitude",
+                        "uri": "urn:decimalLatitude",
+                        "dataType": "FLOAT",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/decimalLatitude",
+                        "definition": "The geographic latitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are north of the Equator, negative values are south of it. Legal values lie between -90 and 90, inclusive.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "decimalLongitude",
+                        "uri": "urn:decimalLongitude",
+                        "dataType": "FLOAT",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/decimalLongitude",
+                        "definition": "The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "habitat",
+                        "uri": "urn:habitat",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000739",
+                        "definition": "A category or description of the habitat in which the Event occurred.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "municipality",
+                        "uri": "urn:municipality",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/municipality",
+                        "definition": "The full, unabbreviated name of the next smaller administrative region than county (city, municipality, etc.) in which the Location occurs. Do not use this term for a nearby named place that does not contain the actual location.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "permitInformation",
+                        "uri": "urn:permitInformation",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/permitInformation?info",
+                        "definition": "Information regarding the permit.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "stateProvince",
+                        "uri": "urn:stateProvince",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/stateProvince",
+                        "definition": "The name of the next smaller administrative region than country (state, province, canton, department, region, etc.) in which the Location occurs.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    }
+                ],
+                "rules": [
+                    {
+                        "name": "RequiredValue",
+                        "level": "ERROR",
+                        "columns": [
+                            "locality",
+                            "yearCollected",
+                            "country",
+                            "eventID"
+                        ]
+                    },
+                    {
+                        "name": "RequireValueIfOtherColumn",
+                        "level": "ERROR",
+                        "column": "decimalLatitude",
+                        "otherColumn": "decimalLongitude"
+                    },
+                    {
+                        "name": "RequireValueIfOtherColumn",
+                        "level": "ERROR",
+                        "column": "decimalLongitude",
+                        "otherColumn": "decimalLatitude"
+                    },
+                    {
+                        "name": "ControlledVocabulary",
+                        "level": "WARNING",
+                        "column": "habitat",
+                        "listName": "habitat"
+                    },
+                    {
+                        "name": "ControlledVocabulary",
+                        "level": "ERROR",
+                        "column": "country",
+                        "listName": "country"
+                    },
+                    {
+                        "name": "NumericRange",
+                        "level": "ERROR",
+                        "column": "yearCollected",
+                        "range": ">=1500|<=2050"
+                    },
+                    {
+                        "name": "NumericRange",
+                        "level": "ERROR",
+                        "column": "monthCollected",
+                        "range": ">=1|<=12"
+                    },
+                    {
+                        "name": "NumericRange",
+                        "level": "ERROR",
+                        "column": "dayCollected",
+                        "range": ">=1|<=31"
+                    },
+                    {
+                        "name": "ValidDataTypeFormat",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "ValidForURI",
+                        "level": "ERROR",
+                        "column": "eventID"
+                    },
+                    {
+                        "name": "RequiredValueInGroup",
+                        "level": "ERROR",
+                        "columns": [
+                            "locality",
+                            "decimalLatitude",
+                            "decimalLongitude"
+                        ]
+                    },
+                    {
+                        "name": "UniqueValue",
+                        "level": "ERROR",
+                        "column": "eventID",
+                        "uniqueAcrossProject": false
+                    }
+                ],
+                "conceptAlias": "Event",
+                "conceptURI": "http://rs.tdwg.org/dwc/terms/Event",
+                "recordType": "biocode.fims.records.GenericRecord",
+                "worksheet": "Samples",
+                "uniqueKey": "eventID",
+                "uniqueAcrossProject": false,
+                "hashed": true
+            },
+            {
+                "type": "Tissue",
+                "attributes": [
+                    {
+                        "column": "tissueID",
+                        "uri": "urn:tissueID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
+                        "definition": "The unique identifier for the tissue.  This identifier can be assigned either automatically or defined by the user.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "materialSampleID",
+                        "uri": "urn:materialSampleID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/MaterialSampleID",
+                        "definition": "The collector's specimen number. This number must be unique among the IDs within the expedition.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissueBarcode",
+                        "uri": "urn:tissueStorageID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueStorageID?info",
+                        "group": "Default Group",
+                        "definition": "Alphanumeric barcode given to tissue by storing institution",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissuePlate",
+                        "uri": "urn:plateID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/plateID?info",
+                        "group": "Default Group",
+                        "definition": "The name of the plate (typically a 96 well plate) containing the tissue subsamples that will be consumed for DNA extractions for projects",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissueWell",
+                        "uri": "urn:wellID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/wellID?info",
+                        "group": "Default Group",
+                        "definition": "The well location in the tissue plate",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissueType",
+                        "uri": "urn:geneticTissueType",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/geneticTissueType?info",
+                        "definition": "A list (concatenated and separated) of the tissue types sampled from this individual, together with any tissue identifiers that were assigned to them",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "associatedSequences",
+                        "uri": "urn:associatedSequences",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "http://rs.tdwg.org/dwc/terms/associatedSequences",
+                        "definition": "A list (concatenated and separated) of identifiers (publication, global unique identifier, URI) of genetic sequence information associated with the Occurrence.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissuePreservative",
+                        "uri": "urn:tissuePreservative",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissuePreservative?info",
+                        "definition": "Presersvative of this tissue",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissueInstitution",
+                        "uri": "urn:tissueInstitution",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueInstitution?info",
+                        "definition": "Institution  name or acronym which maintains ownership of the tissue",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissueOtherCatalogNumbers",
+                        "uri": "urn:tissueOtherCatalogNumbers",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueOtherCatalogNumbers?info",
+                        "group": "Default Group",
+                        "definition": "Other catalog numbers which this tissue is known by, for example: 2D extraction barcode",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissueCatalogNumber",
+                        "uri": "urn:previousTissueID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/previousTissueID?info",
+                        "definition": "The catalog number used for the tissue specimen (assigned by host institution). Typically this field follows the format outlined in the bio_material qualifier of the GenBank feature table and is structured as institution-code: (optional collection-code): specimen_id. Examples and a list of institutional abbreviations can be found on the INSDC page: https://www.insdc.org/controlled-vocabulary-specimenvoucher-qualifier.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    }
+                ],
+                "rules": [
+                    {
+                        "name": "RequireValueIfOtherColumn",
+                        "level": "WARNING",
+                        "column": "tissueWell",
+                        "otherColumn": "tissuePlate"
+                    },
+                    {
+                        "name": "ControlledVocabulary",
+                        "level": "WARNING",
+                        "column": "tissuePreservative",
+                        "listName": "preservative"
+                    },
+                    {
+                        "name": "RegExp",
+                        "level": "ERROR",
+                        "column": "tissueWell",
+                        "pattern": "^[A-H]((0[1-9]|1[0-2]))$",
+                        "caseInsensitive": false
+                    },
+                    {
+                        "name": "CompositeUniqueValue",
+                        "level": "ERROR",
+                        "columns": [
+                            "tissuePlate",
+                            "tissueWell"
+                        ]
+                    },
+                    {
+                        "name": "ValidDataTypeFormat",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "ValidParentIdentifiers",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "RequiredValue",
+                        "level": "ERROR",
+                        "columns": [
+                            "materialSampleID",
+                            "tissuePlate",
+                            "tissueWell"
+                        ]
+                    },
+                    {
+                        "name": "RequiredValue",
+                        "level": "WARNING",
+                        "columns": [
+                            "tissueType"
+                        ]
+                    },
+                    {
+                        "name": "ValidForURI",
+                        "level": "ERROR",
+                        "column": "tissueID"
+                    },
+                    {
+                        "name": "UniqueValue",
+                        "level": "ERROR",
+                        "column": "tissueID",
+                        "uniqueAcrossProject": false
+                    }
+                ],
+                "conceptAlias": "Tissue",
+                "conceptURI": "urn:Tissue",
+                "parentEntity": "Sample",
+                "recordType": "biocode.fims.records.GenericRecord",
+                "worksheet": "Samples",
+                "uniqueKey": "tissueID",
+                "uniqueAcrossProject": false,
+                "hashed": false,
+                "generateID": true,
+                "generateEmptyTissue": false
+            },
+            {
+                "type": "Fasta",
+                "attributes": [
+                    {
+                        "column": "sequence",
+                        "uri": "sequence",
+                        "dataType": "STRING",
+                        "internal": true,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/sequence?info",
+                        "definition": "Sequence data for the material sample.",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "marker",
+                        "uri": "marker",
+                        "dataType": "STRING",
+                        "internal": true,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/marker?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "identifier",
+                        "uri": "identifier",
+                        "dataType": "STRING",
+                        "internal": true,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/identifier?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissueID",
+                        "uri": "urn:tissueID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
+                        "definition": "",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    }
+                ],
+                "rules": [
+                    {
+                        "name": "ValidDataTypeFormat",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "ValidParentIdentifiers",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "RequiredValue",
+                        "level": "ERROR",
+                        "columns": [
+                            "sequence",
+                            "identifier",
+                            "tissueID"
+                        ]
+                    },
+                    {
+                        "name": "UniqueValue",
+                        "level": "ERROR",
+                        "column": "identifier",
+                        "uniqueAcrossProject": false
+                    },
+                    {
+                        "name": "ValidForURI",
+                        "level": "ERROR",
+                        "column": "identifier"
+                    }
+                ],
+                "conceptAlias": "fastaSequence",
+                "conceptURI": "urn:fastaSequence",
+                "parentEntity": "Tissue",
+                "recordType": "biocode.fims.fasta.FastaRecord",
+                "uniqueKey": "identifier",
+                "uniqueAcrossProject": false,
+                "hashed": false
+            },
+            {
+                "type": "Fastq",
+                "attributes": [
+                    {
+                        "column": "libraryStrategy",
+                        "uri": "libraryStrategy",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/libraryStrategy?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "librarySource",
+                        "uri": "librarySource",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/librarySource?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "librarySelection",
+                        "uri": "librarySelection",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/librarySelection?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "libraryLayout",
+                        "uri": "libraryLayout",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/libraryLayout?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "platform",
+                        "uri": "platform",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/platform?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "instrumentModel",
+                        "uri": "instrumentModel",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/instrumentModel?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "designDescription",
+                        "uri": "designDescription",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/designDescription?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "filenames",
+                        "uri": "filenames",
+                        "dataType": "STRING",
+                        "internal": true,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filenames?info",
+                        "definition": "List of filenames to be uploaded to NCBI Genbank SRA",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "identifier",
+                        "uri": "identifier",
+                        "dataType": "STRING",
+                        "internal": true,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/identifier?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "bioSample",
+                        "uri": "bioSample",
+                        "dataType": "STRING",
+                        "internal": true,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bioSample?info",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    },
+                    {
+                        "column": "tissueID",
+                        "uri": "urn:tissueID",
+                        "dataType": "STRING",
+                        "internal": false,
+                        "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
+                        "definition": "",
+                        "allowUnknown": false,
+                        "allowTBD": false
+                    }
+                ],
+                "rules": [
+                    {
+                        "name": "RequiredValue",
+                        "level": "ERROR",
+                        "columns": [
+                            "libraryStrategy",
+                            "librarySource",
+                            "librarySelection",
+                            "libraryLayout",
+                            "platform",
+                            "instrumentModel",
+                            "designDescription",
+                            "filenames",
+                            "identifier",
+                            "tissueID"
+                        ]
+                    },
+                    {
+                        "name": "UniqueValue",
+                        "level": "ERROR",
+                        "column": "identifier",
+                        "uniqueAcrossProject": false
+                    },
+                    {
+                        "name": "ValidParentIdentifiers",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "ValidFastqLibraryLayout",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "ValidFastqFilenames",
+                        "level": "ERROR"
+                    },
+                    {
+                        "name": "ValidFastqMetadata",
+                        "level": "ERROR"
+                    }
+                ],
+                "conceptAlias": "fastqMetadata",
+                "conceptURI": "urn:fastqMetadata",
+                "parentEntity": "Tissue",
+                "recordType": "biocode.fims.fastq.FastqRecord",
+                "uniqueKey": "identifier",
+                "uniqueAcrossProject": false,
+                "hashed": false
+            }
+        ],
+        "lists": [
+            {
+                "alias": "trueFalse",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "TRUE"
+                    },
+                    {
+                        "value": "FALSE"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "ageUnit",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "hour"
+                    },
+                    {
+                        "value": "day"
+                    },
+                    {
+                        "value": "week"
+                    },
+                    {
+                        "value": "month"
+                    },
+                    {
+                        "value": "year"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "materialSampleType",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "whole organism"
+                    },
+                    {
+                        "value": "part organism"
+                    },
+                    {
+                        "value": "whole bone"
+                    },
+                    {
+                        "value": "part bone"
+                    },
+                    {
+                        "value": "whole skeleton"
+                    },
+                    {
+                        "value": "gutted"
+                    },
+                    {
+                        "value": "skinned"
+                    },
+                    {
+                        "value": "gutted and skinned"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "reproductiveCondition",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "non-reproductive"
+                    },
+                    {
+                        "value": "pregnant"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "derivedDataType",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "Microsat"
+                    },
+                    {
+                        "value": "SNP"
+                    },
+                    {
+                        "value": "OTU"
+                    },
+                    {
+                        "value": "ASV"
+                    },
+                    {
+                        "value": "FASTQ"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "derivedDataFormat",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "genpop"
+                    },
+                    {
+                        "value": "FASTA"
+                    },
+                    {
+                        "value": "FASTQ"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "PARMethod",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "PAR meter pointed upwards near coral"
+                    },
+                    {
+                        "value": "none"
+                    },
+                    {
+                        "value": "buoy"
+                    },
+                    {
+                        "value": "missing:not collected"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "measurementSide",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "left"
+                    },
+                    {
+                        "value": "right"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "measurementUnit",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "mm"
+                    },
+                    {
+                        "value": "cm"
+                    },
+                    {
+                        "value": "m"
+                    },
+                    {
+                        "value": "in"
+                    },
+                    {
+                        "value": "ft"
+                    },
+                    {
+                        "value": "km"
+                    },
+                    {
+                        "value": "g"
+                    },
+                    {
+                        "value": "kg"
+                    },
+                    {
+                        "value": "oz"
+                    },
+                    {
+                        "value": "lb"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "ABI_SOLID",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "AB 5500 Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB 5500x-Wl Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB 5500xl Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB SOLiD 3 Plus System"
+                    },
+                    {
+                        "value": "AB SOLiD 4 System"
+                    },
+                    {
+                        "value": "AB SOLiD 4hq System"
+                    },
+                    {
+                        "value": "AB SOLiD PI System"
+                    },
+                    {
+                        "value": "AB SOLiD System"
+                    },
+                    {
+                        "value": "AB SOLiD System 2.0"
+                    },
+                    {
+                        "value": "AB SOLiD System 3.0"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "CAPILLARY",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "AB 310 Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB 3130 Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB 3130xL Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB 3500 Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB 3500xL Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB 3730 Genetic Analyzer"
+                    },
+                    {
+                        "value": "AB 3730xL Genetic Analyzer"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "COMPLETE_GENOMICS",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "Complete Genomics"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "HELICOS",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "Helicos HeliScope"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "ILLUMINA",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "Illumina NovaSeq 6000"
+                    },
+                    {
+                        "value": "Illumina NovaSeq X"
+                    },
+                    {
+                        "value": "Illumina NovaSeq X Plus"
+                    },
+                    {
+                        "value": "Illumina iSeq Plus"
+                    },
+                    {
+                        "value": "HiSeq X Five"
+                    },
+                    {
+                        "value": "HiSeq X Ten"
+                    },
+                    {
+                        "value": "Illumina Genome Analyzer"
+                    },
+                    {
+                        "value": "Illumina Genome Analyzer II"
+                    },
+                    {
+                        "value": "Illumina Genome Analyzer IIx"
+                    },
+                    {
+                        "value": "Illumina HiScanSQ"
+                    },
+                    {
+                        "value": "Illumina HiSeq X"
+                    },
+                    {
+                        "value": "Illumina HiSeq 1000"
+                    },
+                    {
+                        "value": "Illumina HiSeq 1500"
+                    },
+                    {
+                        "value": "Illumina HiSeq 2000"
+                    },
+                    {
+                        "value": "Illumina HiSeq 2500"
+                    },
+                    {
+                        "value": "Illumina HiSeq 3000"
+                    },
+                    {
+                        "value": "Illumina HiSeq 4000"
+                    },
+                    {
+                        "value": "Illumina MiSeq"
+                    },
+                    {
+                        "value": "NextSeq 2000"
+                    },
+                    {
+                        "value": "NextSeq 1000"
+                    },
+                    {
+                        "value": "NextSeq 500"
+                    },
+                    {
+                        "value": "NextSeq 550"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "ION_TORRENT",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "Ion Torrent PGM"
+                    },
+                    {
+                        "value": "Ion Torrent Proton"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "OXFORD_NANOPORE",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "GridION"
+                    },
+                    {
+                        "value": "MinION"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "PACBIO_SMRT",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "PacBio RS"
+                    },
+                    {
+                        "value": "PacBio RS II"
+                    },
+                    {
+                        "value": "Revio"
+                    },
+                    {
+                        "value": "Sequel"
+                    },
+                    {
+                        "value": "Sequel II"
+                    },
+                    {
+                        "value": "Sequel IIe"
+                    },
+                    {
+                        "value": "Onso"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "_LS454",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "454 GS"
+                    },
+                    {
+                        "value": "454 GS 20"
+                    },
+                    {
+                        "value": "454 GS FLX"
+                    },
+                    {
+                        "value": "454 GS FLX Titanium"
+                    },
+                    {
+                        "value": "454 GS FLX+"
+                    },
+                    {
+                        "value": "454 GS Junior"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "basisOfIdentification",
+                "caseInsensitive": true,
+                "fields": [
+                    {
+                        "value": "Genetics"
+                    },
+                    {
+                        "value": "Morphology"
+                    },
+                    {
+                        "value": "Other"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "container",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "0.65 ml Eppendorf tube"
+                    },
+                    {
+                        "value": "5.0 ml Eppendorf tube"
+                    },
+                    {
+                        "value": "1.2 ul Cryovial"
+                    },
+                    {
+                        "value": "5.0 ml Cryovial"
+                    },
+                    {
+                        "value": "20 ml scintillation vial"
+                    },
+                    {
+                        "value": "1.4 ml TrackMate 2D barcoded storage tube"
+                    },
+                    {
+                        "value": "1.5 ml Eppendorf tube"
+                    },
+                    {
+                        "value": "15 ml Falcon Tube"
+                    },
+                    {
+                        "value": "2 ml 96 well assay block"
+                    },
+                    {
+                        "value": "2.0 ml Cryovial"
+                    },
+                    {
+                        "value": "2.0 ul Cryovial"
+                    },
+                    {
+                        "value": "2.5 ml biopsy vial"
+                    },
+                    {
+                        "value": "50 ml Falcon Tube"
+                    },
+                    {
+                        "value": "FTA 96 well sheet"
+                    },
+                    {
+                        "value": "Whirlpack"
+                    },
+                    {
+                        "value": "bag in ziploc with silica gel"
+                    },
+                    {
+                        "value": "glass vial"
+                    },
+                    {
+                        "value": "microscope slide"
+                    },
+                    {
+                        "value": "sterivex filter capsule"
+                    },
+                    {
+                        "value": "disc filter capsule"
+                    },
+                    {
+                        "value": "SEM stub"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "basisOfRecord",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "PreservedSpecimen"
+                    },
+                    {
+                        "value": "FossilSpecimen"
+                    },
+                    {
+                        "value": "LivingSpecimen"
+                    },
+                    {
+                        "value": "MaterialSample"
+                    },
+                    {
+                        "value": "Event"
+                    },
+                    {
+                        "value": "HumanObservation"
+                    },
+                    {
+                        "value": "MachineObservation"
+                    },
+                    {
+                        "value": "Taxon"
+                    },
+                    {
+                        "value": "Occurrence"
+                    },
+                    {
+                        "value": "EnvironmentalDNA"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "country",
+                "caseInsensitive": true,
+                "fields": [
+                    {
+                        "value": "Afghanistan"
+                    },
+                    {
+                        "value": "Albania"
+                    },
+                    {
+                        "value": "Algeria"
+                    },
+                    {
+                        "value": "American Samoa"
+                    },
+                    {
+                        "value": "Andorra"
+                    },
+                    {
+                        "value": "Angola"
+                    },
+                    {
+                        "value": "Anguilla"
+                    },
+                    {
+                        "value": "Antarctica"
+                    },
+                    {
+                        "value": "Antigua and Barbuda"
+                    },
+                    {
+                        "value": "Arctic Ocean"
+                    },
+                    {
+                        "value": "Argentina"
+                    },
+                    {
+                        "value": "Armenia"
+                    },
+                    {
+                        "value": "Aruba"
+                    },
+                    {
+                        "value": "Ashmore and Cartier Islands"
+                    },
+                    {
+                        "value": "Atlantic Ocean"
+                    },
+                    {
+                        "value": "Australia"
+                    },
+                    {
+                        "value": "Austria"
+                    },
+                    {
+                        "value": "Azerbaijan"
+                    },
+                    {
+                        "value": "Bahamas"
+                    },
+                    {
+                        "value": "Bahrain"
+                    },
+                    {
+                        "value": "Baker Island"
+                    },
+                    {
+                        "value": "Baltic Sea"
+                    },
+                    {
+                        "value": "Bangladesh"
+                    },
+                    {
+                        "value": "Barbados"
+                    },
+                    {
+                        "value": "Bassas da India"
+                    },
+                    {
+                        "value": "Belarus"
+                    },
+                    {
+                        "value": "Belgium"
+                    },
+                    {
+                        "value": "Belize"
+                    },
+                    {
+                        "value": "Benin"
+                    },
+                    {
+                        "value": "Bermuda"
+                    },
+                    {
+                        "value": "Bhutan"
+                    },
+                    {
+                        "value": "Bolivia"
+                    },
+                    {
+                        "value": "Borneo"
+                    },
+                    {
+                        "value": "Bosnia and Herzegovina"
+                    },
+                    {
+                        "value": "Botswana"
+                    },
+                    {
+                        "value": "Bouvet Island"
+                    },
+                    {
+                        "value": "Brazil"
+                    },
+                    {
+                        "value": "British Indian Ocean Territory"
+                    },
+                    {
+                        "value": "British Virgin Islands"
+                    },
+                    {
+                        "value": "Brunei"
+                    },
+                    {
+                        "value": "Bulgaria"
+                    },
+                    {
+                        "value": "Burkina Faso"
+                    },
+                    {
+                        "value": "Burundi"
+                    },
+                    {
+                        "value": "Cambodia"
+                    },
+                    {
+                        "value": "Cameroon"
+                    },
+                    {
+                        "value": "Canada"
+                    },
+                    {
+                        "value": "Cape Verde"
+                    },
+                    {
+                        "value": "Cayman Islands"
+                    },
+                    {
+                        "value": "Central African Republic"
+                    },
+                    {
+                        "value": "Chad"
+                    },
+                    {
+                        "value": "Chile"
+                    },
+                    {
+                        "value": "China"
+                    },
+                    {
+                        "value": "Christmas Island"
+                    },
+                    {
+                        "value": "Clipperton Island"
+                    },
+                    {
+                        "value": "Cocos Islands"
+                    },
+                    {
+                        "value": "Colombia"
+                    },
+                    {
+                        "value": "Comoros"
+                    },
+                    {
+                        "value": "Cook Islands"
+                    },
+                    {
+                        "value": "Coral Sea Islands"
+                    },
+                    {
+                        "value": "Costa Rica"
+                    },
+                    {
+                        "value": "Cote d'Ivoire"
+                    },
+                    {
+                        "value": "Croatia"
+                    },
+                    {
+                        "value": "Cuba"
+                    },
+                    {
+                        "value": "Curacao"
+                    },
+                    {
+                        "value": "Cyprus"
+                    },
+                    {
+                        "value": "Czech Republic"
+                    },
+                    {
+                        "value": "Democratic Republic of the Congo"
+                    },
+                    {
+                        "value": "Denmark"
+                    },
+                    {
+                        "value": "Djibouti"
+                    },
+                    {
+                        "value": "Dominica"
+                    },
+                    {
+                        "value": "Dominican Republic"
+                    },
+                    {
+                        "value": "East Timor"
+                    },
+                    {
+                        "value": "Ecuador"
+                    },
+                    {
+                        "value": "Egypt"
+                    },
+                    {
+                        "value": "El Salvador"
+                    },
+                    {
+                        "value": "Equatorial Guinea"
+                    },
+                    {
+                        "value": "Eritrea"
+                    },
+                    {
+                        "value": "Estonia"
+                    },
+                    {
+                        "value": "Ethiopia"
+                    },
+                    {
+                        "value": "Europa Island"
+                    },
+                    {
+                        "value": "Falkland Islands (Islas Malvinas)"
+                    },
+                    {
+                        "value": "Faroe Islands"
+                    },
+                    {
+                        "value": "Fiji"
+                    },
+                    {
+                        "value": "Finland"
+                    },
+                    {
+                        "value": "France"
+                    },
+                    {
+                        "value": "French Guiana"
+                    },
+                    {
+                        "value": "French Polynesia"
+                    },
+                    {
+                        "value": "French Southern and Antarctic Lands"
+                    },
+                    {
+                        "value": "Gabon"
+                    },
+                    {
+                        "value": "Gambia"
+                    },
+                    {
+                        "value": "Gaza Strip"
+                    },
+                    {
+                        "value": "Georgia"
+                    },
+                    {
+                        "value": "Germany"
+                    },
+                    {
+                        "value": "Ghana"
+                    },
+                    {
+                        "value": "Gibraltar"
+                    },
+                    {
+                        "value": "Glorioso Islands"
+                    },
+                    {
+                        "value": "Greece"
+                    },
+                    {
+                        "value": "Greenland"
+                    },
+                    {
+                        "value": "Grenada"
+                    },
+                    {
+                        "value": "Guadeloupe"
+                    },
+                    {
+                        "value": "Guam"
+                    },
+                    {
+                        "value": "Guatemala"
+                    },
+                    {
+                        "value": "Guernsey"
+                    },
+                    {
+                        "value": "Guinea"
+                    },
+                    {
+                        "value": "Guinea-Bissau"
+                    },
+                    {
+                        "value": "Guyana"
+                    },
+                    {
+                        "value": "Haiti"
+                    },
+                    {
+                        "value": "Heard Island and McDonald Islands"
+                    },
+                    {
+                        "value": "Honduras"
+                    },
+                    {
+                        "value": "Hong Kong"
+                    },
+                    {
+                        "value": "Howland Island"
+                    },
+                    {
+                        "value": "Hungary"
+                    },
+                    {
+                        "value": "Iceland"
+                    },
+                    {
+                        "value": "India"
+                    },
+                    {
+                        "value": "Indian Ocean"
+                    },
+                    {
+                        "value": "Indonesia"
+                    },
+                    {
+                        "value": "Iran"
+                    },
+                    {
+                        "value": "Iraq"
+                    },
+                    {
+                        "value": "Ireland"
+                    },
+                    {
+                        "value": "Isle of Man"
+                    },
+                    {
+                        "value": "Israel"
+                    },
+                    {
+                        "value": "Italy"
+                    },
+                    {
+                        "value": "Jamaica"
+                    },
+                    {
+                        "value": "Jan Mayen"
+                    },
+                    {
+                        "value": "Japan"
+                    },
+                    {
+                        "value": "Jarvis Island"
+                    },
+                    {
+                        "value": "Jersey"
+                    },
+                    {
+                        "value": "Johnston Atoll"
+                    },
+                    {
+                        "value": "Jordan"
+                    },
+                    {
+                        "value": "Juan de Nova Island"
+                    },
+                    {
+                        "value": "Kazakhstan"
+                    },
+                    {
+                        "value": "Kenya"
+                    },
+                    {
+                        "value": "Kerguelen Archipelago"
+                    },
+                    {
+                        "value": "Kingman Reef"
+                    },
+                    {
+                        "value": "Kiribati"
+                    },
+                    {
+                        "value": "Kosovo"
+                    },
+                    {
+                        "value": "Kuwait"
+                    },
+                    {
+                        "value": "Kyrgyzstan"
+                    },
+                    {
+                        "value": "Laos"
+                    },
+                    {
+                        "value": "Latvia"
+                    },
+                    {
+                        "value": "Lebanon"
+                    },
+                    {
+                        "value": "Lesotho"
+                    },
+                    {
+                        "value": "Liberia"
+                    },
+                    {
+                        "value": "Libya"
+                    },
+                    {
+                        "value": "Liechtenstein"
+                    },
+                    {
+                        "value": "Line Islands"
+                    },
+                    {
+                        "value": "Lithuania"
+                    },
+                    {
+                        "value": "Luxembourg"
+                    },
+                    {
+                        "value": "Macau"
+                    },
+                    {
+                        "value": "Macedonia"
+                    },
+                    {
+                        "value": "Madagascar"
+                    },
+                    {
+                        "value": "Malawi"
+                    },
+                    {
+                        "value": "Malaysia"
+                    },
+                    {
+                        "value": "Maldives"
+                    },
+                    {
+                        "value": "Mali"
+                    },
+                    {
+                        "value": "Malta"
+                    },
+                    {
+                        "value": "Marshall Islands"
+                    },
+                    {
+                        "value": "Martinique"
+                    },
+                    {
+                        "value": "Mauritania"
+                    },
+                    {
+                        "value": "Mauritius"
+                    },
+                    {
+                        "value": "Mayotte"
+                    },
+                    {
+                        "value": "Mediterranean Sea"
+                    },
+                    {
+                        "value": "Mexico"
+                    },
+                    {
+                        "value": "Micronesia"
+                    },
+                    {
+                        "value": "Midway Islands"
+                    },
+                    {
+                        "value": "Moldova"
+                    },
+                    {
+                        "value": "Monaco"
+                    },
+                    {
+                        "value": "Mongolia"
+                    },
+                    {
+                        "value": "Montenegro"
+                    },
+                    {
+                        "value": "Montserrat"
+                    },
+                    {
+                        "value": "Morocco"
+                    },
+                    {
+                        "value": "Mozambique"
+                    },
+                    {
+                        "value": "Myanmar"
+                    },
+                    {
+                        "value": "Namibia"
+                    },
+                    {
+                        "value": "Nauru"
+                    },
+                    {
+                        "value": "Navassa Island"
+                    },
+                    {
+                        "value": "Nepal"
+                    },
+                    {
+                        "value": "Netherlands"
+                    },
+                    {
+                        "value": "New Caledonia"
+                    },
+                    {
+                        "value": "New Zealand"
+                    },
+                    {
+                        "value": "Nicaragua"
+                    },
+                    {
+                        "value": "Niger"
+                    },
+                    {
+                        "value": "Nigeria"
+                    },
+                    {
+                        "value": "Niue"
+                    },
+                    {
+                        "value": "Norfolk Island"
+                    },
+                    {
+                        "value": "North Korea"
+                    },
+                    {
+                        "value": "North Sea"
+                    },
+                    {
+                        "value": "Northern Mariana Islands"
+                    },
+                    {
+                        "value": "Norway"
+                    },
+                    {
+                        "value": "Oman"
+                    },
+                    {
+                        "value": "Pacific Ocean"
+                    },
+                    {
+                        "value": "Pakistan"
+                    },
+                    {
+                        "value": "Palau"
+                    },
+                    {
+                        "value": "Palmyra Atoll"
+                    },
+                    {
+                        "value": "Panama"
+                    },
+                    {
+                        "value": "Papua New Guinea"
+                    },
+                    {
+                        "value": "Paracel Islands"
+                    },
+                    {
+                        "value": "Paraguay"
+                    },
+                    {
+                        "value": "Peru"
+                    },
+                    {
+                        "value": "Philippines"
+                    },
+                    {
+                        "value": "Pitcairn Islands"
+                    },
+                    {
+                        "value": "Poland"
+                    },
+                    {
+                        "value": "Portugal"
+                    },
+                    {
+                        "value": "Puerto Rico"
+                    },
+                    {
+                        "value": "Qatar"
+                    },
+                    {
+                        "value": "Republic of the Congo"
+                    },
+                    {
+                        "value": "Reunion"
+                    },
+                    {
+                        "value": "Romania"
+                    },
+                    {
+                        "value": "Ross Sea"
+                    },
+                    {
+                        "value": "Russia"
+                    },
+                    {
+                        "value": "Rwanda"
+                    },
+                    {
+                        "value": "Saint Helena"
+                    },
+                    {
+                        "value": "Saint Kitts and Nevis"
+                    },
+                    {
+                        "value": "Saint Lucia"
+                    },
+                    {
+                        "value": "Saint Pierre and Miquelon"
+                    },
+                    {
+                        "value": "Saint Vincent and the Grenadines"
+                    },
+                    {
+                        "value": "Samoa"
+                    },
+                    {
+                        "value": "San Marino"
+                    },
+                    {
+                        "value": "Sao Tome and Principe"
+                    },
+                    {
+                        "value": "Saudi Arabia"
+                    },
+                    {
+                        "value": "Senegal"
+                    },
+                    {
+                        "value": "Serbia"
+                    },
+                    {
+                        "value": "Seychelles"
+                    },
+                    {
+                        "value": "Sierra Leone"
+                    },
+                    {
+                        "value": "Singapore"
+                    },
+                    {
+                        "value": "Sint Maarten"
+                    },
+                    {
+                        "value": "Slovakia"
+                    },
+                    {
+                        "value": "Slovenia"
+                    },
+                    {
+                        "value": "Solomon Islands"
+                    },
+                    {
+                        "value": "Somalia"
+                    },
+                    {
+                        "value": "South Africa"
+                    },
+                    {
+                        "value": "South Georgia and the South Sandwich Islands"
+                    },
+                    {
+                        "value": "South Korea"
+                    },
+                    {
+                        "value": "South Sudan"
+                    },
+                    {
+                        "value": "Southern Ocean"
+                    },
+                    {
+                        "value": "Spain"
+                    },
+                    {
+                        "value": "Spratly Islands"
+                    },
+                    {
+                        "value": "Sri Lanka"
+                    },
+                    {
+                        "value": "State of Palestine"
+                    },
+                    {
+                        "value": "Sudan"
+                    },
+                    {
+                        "value": "Suriname"
+                    },
+                    {
+                        "value": "Svalbard"
+                    },
+                    {
+                        "value": "Swaziland"
+                    },
+                    {
+                        "value": "Sweden"
+                    },
+                    {
+                        "value": "Switzerland"
+                    },
+                    {
+                        "value": "Syria"
+                    },
+                    {
+                        "value": "Taiwan"
+                    },
+                    {
+                        "value": "Tajikistan"
+                    },
+                    {
+                        "value": "Tanzania"
+                    },
+                    {
+                        "value": "Tasman Sea"
+                    },
+                    {
+                        "value": "Thailand"
+                    },
+                    {
+                        "value": "To Be Determined"
+                    },
+                    {
+                        "value": "TBD"
+                    },
+                    {
+                        "value": "Togo"
+                    },
+                    {
+                        "value": "Tokelau"
+                    },
+                    {
+                        "value": "Tonga"
+                    },
+                    {
+                        "value": "Trinidad and Tobago"
+                    },
+                    {
+                        "value": "Tromelin Island"
+                    },
+                    {
+                        "value": "Tunisia"
+                    },
+                    {
+                        "value": "Turkey"
+                    },
+                    {
+                        "value": "Turkmenistan"
+                    },
+                    {
+                        "value": "Turks and Caicos Islands"
+                    },
+                    {
+                        "value": "Tuvalu"
+                    },
+                    {
+                        "value": "USA"
+                    },
+                    {
+                        "value": "Uganda"
+                    },
+                    {
+                        "value": "Ukraine"
+                    },
+                    {
+                        "value": "Unknown"
+                    },
+                    {
+                        "value": "United Arab Emirates"
+                    },
+                    {
+                        "value": "United Kingdom"
+                    },
+                    {
+                        "value": "Uruguay"
+                    },
+                    {
+                        "value": "Uzbekistan"
+                    },
+                    {
+                        "value": "Vanuatu"
+                    },
+                    {
+                        "value": "Venezuela"
+                    },
+                    {
+                        "value": "Vietnam"
+                    },
+                    {
+                        "value": "Virgin Islands"
+                    },
+                    {
+                        "value": "Wake Island"
+                    },
+                    {
+                        "value": "Wallis and Futuna"
+                    },
+                    {
+                        "value": "West Bank"
+                    },
+                    {
+                        "value": "Western Sahara"
+                    },
+                    {
+                        "value": "Yemen"
+                    },
+                    {
+                        "value": "Zambia"
+                    },
+                    {
+                        "value": "Zimbabwe"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "chronometricAgeReferenceSystem",
+                "caseInsensitive": true,
+                "fields": [
+                    {
+                        "value": "kya"
+                    },
+                    {
+                        "value": "mya"
+                    },
+                    {
+                        "value": "BP"
+                    },
+                    {
+                        "value": "AD"
+                    },
+                    {
+                        "value": "BCE"
+                    },
+                    {
+                        "value": "ACE"
+                    },
+                    {
+                        "value": "BC"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "establishmentMeans",
+                "caseInsensitive": true,
+                "fields": [
+                    {
+                        "value": "introduced"
+                    },
+                    {
+                        "value": "invasive"
+                    },
+                    {
+                        "value": "managed"
+                    },
+                    {
+                        "value": "native"
+                    },
+                    {
+                        "value": "naturalized"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "environmentalMedium",
+                "caseInsensitive": true,
+                "fields": [
+                    {
+                        "value": "anthropogenic environmental material",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00100001"
+                    },
+                    {
+                        "value": "air",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00002005"
+                    },
+                    {
+                        "value": "animal manure",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00003031"
+                    },
+                    {
+                        "value": "colloidal suspension",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01001560"
+                    },
+                    {
+                        "value": "clay",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00002982"
+                    },
+                    {
+                        "value": "mud",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000001"
+                    },
+                    {
+                        "value": "organic material",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000155"
+                    },
+                    {
+                        "value": "permafrost",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000134"
+                    },
+                    {
+                        "value": "saline water",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00002010"
+                    },
+                    {
+                        "value": "sand",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000017"
+                    },
+                    {
+                        "value": "sediment",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00002007"
+                    },
+                    {
+                        "value": "snow",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000406"
+                    },
+                    {
+                        "value": "soil",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00001998"
+                    },
+                    {
+                        "value": "river water",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_010000599"
+                    },
+                    {
+                        "value": "fresh water",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00002011"
+                    },
+                    {
+                        "value": "sea water",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00002149"
+                    },
+                    {
+                        "value": "brackish water",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00002019"
+                    },
+                    {
+                        "value": "Other",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00010483"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "habitat",
+                "caseInsensitive": true,
+                "fields": [
+                    {
+                        "value": "river",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000022"
+                    },
+                    {
+                        "value": "intertidal zone",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000316"
+                    },
+                    {
+                        "value": "terrestrial biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000446"
+                    },
+                    {
+                        "value": "marine biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000447"
+                    },
+                    {
+                        "value": "freshwater biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000873"
+                    },
+                    {
+                        "value": "large river biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000887"
+                    },
+                    {
+                        "value": "large river headwater biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000888"
+                    },
+                    {
+                        "value": "large river delta biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000889"
+                    },
+                    {
+                        "value": "small river biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000890"
+                    },
+                    {
+                        "value": "large lake biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000891"
+                    },
+                    {
+                        "value": "small lake biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000892"
+                    },
+                    {
+                        "value": "xeric basin biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00000893"
+                    },
+                    {
+                        "value": "aquatic biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_00002030"
+                    },
+                    {
+                        "value": "concentration basin mediterranean sea biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000004"
+                    },
+                    {
+                        "value": "estuarine biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000020"
+                    },
+                    {
+                        "value": "marine salt marsh biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000022"
+                    },
+                    {
+                        "value": "marine pelagic biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000023"
+                    },
+                    {
+                        "value": "marine benthic biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000024"
+                    },
+                    {
+                        "value": "marine neritic benthic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000025"
+                    },
+                    {
+                        "value": "marine bathyal zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000026"
+                    },
+                    {
+                        "value": "marine abyssal zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000027"
+                    },
+                    {
+                        "value": "marine hadal zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000028"
+                    },
+                    {
+                        "value": "marine reef biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000029"
+                    },
+                    {
+                        "value": "marine hydrothermal vent biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000030"
+                    },
+                    {
+                        "value": "neritic pelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000032"
+                    },
+                    {
+                        "value": "oceanic pelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000033"
+                    },
+                    {
+                        "value": "oceanic sea surface microlayer biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000034"
+                    },
+                    {
+                        "value": "oceanic epipelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000035"
+                    },
+                    {
+                        "value": "oceanic mesopelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000036"
+                    },
+                    {
+                        "value": "oceanic bathypelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000037"
+                    },
+                    {
+                        "value": "oceanic abyssopelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000038"
+                    },
+                    {
+                        "value": "oceanic hadal pelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000039"
+                    },
+                    {
+                        "value": "oceanic benthopelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000040"
+                    },
+                    {
+                        "value": "neritic sea surface microlayer biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000041"
+                    },
+                    {
+                        "value": "neritic epipelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000042"
+                    },
+                    {
+                        "value": "neritic mesopelagic zone biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000043"
+                    },
+                    {
+                        "value": "epeiric sea biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000045"
+                    },
+                    {
+                        "value": "marginal sea biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000046"
+                    },
+                    {
+                        "value": "mediterranean sea biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000047"
+                    },
+                    {
+                        "value": "ocean biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000048"
+                    },
+                    {
+                        "value": "marine coral reef biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000049"
+                    },
+                    {
+                        "value": "marine subtidal rocky reef biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000050"
+                    },
+                    {
+                        "value": "marine black smoker biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000051"
+                    },
+                    {
+                        "value": "marine white smoker biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000052"
+                    },
+                    {
+                        "value": "marine ultramafic hydrothermal vent biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000053"
+                    },
+                    {
+                        "value": "marine basaltic hydrothermal vent biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000054"
+                    },
+                    {
+                        "value": "sea grass bed",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000059"
+                    },
+                    {
+                        "value": "planktonic material",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000063"
+                    },
+                    {
+                        "value": "marine sponge reef biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000123"
+                    },
+                    {
+                        "value": "marine cold seep biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000127"
+                    },
+                    {
+                        "value": "dilution basin mediterranean sea biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000128"
+                    },
+                    {
+                        "value": "forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000174"
+                    },
+                    {
+                        "value": "woodland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000175"
+                    },
+                    {
+                        "value": "shrubland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000176"
+                    },
+                    {
+                        "value": "grassland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000177"
+                    },
+                    {
+                        "value": "savanna biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000178"
+                    },
+                    {
+                        "value": "desert biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000179"
+                    },
+                    {
+                        "value": "tundra biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000180"
+                    },
+                    {
+                        "value": "mangrove biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000181"
+                    },
+                    {
+                        "value": "temperate desert biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000182"
+                    },
+                    {
+                        "value": "tropical desert biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000183"
+                    },
+                    {
+                        "value": "subtropical desert biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000184"
+                    },
+                    {
+                        "value": "montane desert biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000185"
+                    },
+                    {
+                        "value": "polar desert biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000186"
+                    },
+                    {
+                        "value": "subtropical savanna biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000187"
+                    },
+                    {
+                        "value": "tropical savanna biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000188"
+                    },
+                    {
+                        "value": "temperate savanna biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000189"
+                    },
+                    {
+                        "value": "flooded savanna biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000190"
+                    },
+                    {
+                        "value": "subtropical grassland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000191"
+                    },
+                    {
+                        "value": "tropical grassland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000192"
+                    },
+                    {
+                        "value": "temperate grassland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000193"
+                    },
+                    {
+                        "value": "montane grassland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000194"
+                    },
+                    {
+                        "value": "flooded grassland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000195"
+                    },
+                    {
+                        "value": "coniferous forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000196"
+                    },
+                    {
+                        "value": "broadleaf forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000197"
+                    },
+                    {
+                        "value": "mixed forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000198"
+                    },
+                    {
+                        "value": "mediterranean forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000199"
+                    },
+                    {
+                        "value": "tropical broadleaf forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000200"
+                    },
+                    {
+                        "value": "subtropical broadleaf forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000201"
+                    },
+                    {
+                        "value": "temperate broadleaf forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000202"
+                    },
+                    {
+                        "value": "mediterranean woodland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000208"
+                    },
+                    {
+                        "value": "subtropical coniferous forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000209"
+                    },
+                    {
+                        "value": "tropical coniferous forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000210"
+                    },
+                    {
+                        "value": "temperate coniferous forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000211"
+                    },
+                    {
+                        "value": "temperate mixed forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000212"
+                    },
+                    {
+                        "value": "subtropical shrubland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000213"
+                    },
+                    {
+                        "value": "tropical shrubland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000214"
+                    },
+                    {
+                        "value": "temperate shrubland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000215"
+                    },
+                    {
+                        "value": "montane shrubland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000216"
+                    },
+                    {
+                        "value": "mediterranean shrubland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000217"
+                    },
+                    {
+                        "value": "xeric shrubland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000218"
+                    },
+                    {
+                        "value": "anthropogenic terrestrial biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000219"
+                    },
+                    {
+                        "value": "tropical woodland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000220"
+                    },
+                    {
+                        "value": "temperate woodland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000221"
+                    },
+                    {
+                        "value": "subtropical woodland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000222"
+                    },
+                    {
+                        "value": "montane savanna biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000223"
+                    },
+                    {
+                        "value": "mediterranean grassland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000224"
+                    },
+                    {
+                        "value": "subtropical dry broadleaf forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000225"
+                    },
+                    {
+                        "value": "subtropical moist broadleaf forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000226"
+                    },
+                    {
+                        "value": "tropical dry broadleaf forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000227"
+                    },
+                    {
+                        "value": "tropical moist broadleaf forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000228"
+                    },
+                    {
+                        "value": "mediterranean savanna biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000229"
+                    },
+                    {
+                        "value": "cropland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000245"
+                    },
+                    {
+                        "value": "village biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000246"
+                    },
+                    {
+                        "value": "rangeland biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000247"
+                    },
+                    {
+                        "value": "dense settlement biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000248"
+                    },
+                    {
+                        "value": "urban biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000249"
+                    },
+                    {
+                        "value": "subpolar coniferous forest biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000250"
+                    },
+                    {
+                        "value": "freshwater lake biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000252"
+                    },
+                    {
+                        "value": "freshwater river biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000253"
+                    },
+                    {
+                        "value": "polar biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000339"
+                    },
+                    {
+                        "value": "tropical marine coral reef biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000854"
+                    },
+                    {
+                        "value": "temperate marginal sea biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000856"
+                    },
+                    {
+                        "value": "temperate mediterranean sea biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000857"
+                    },
+                    {
+                        "value": "marine upwelling biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000858"
+                    },
+                    {
+                        "value": "tropical marine upwelling biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000859"
+                    },
+                    {
+                        "value": "temperate marine upwelling biome",
+                        "definedBy": "http://purl.obolibrary.org/obo/ENVO_01000860"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "horizontalDatum",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "NAD1927"
+                    },
+                    {
+                        "value": "NAD1983"
+                    },
+                    {
+                        "value": "WGS1984"
+                    },
+                    {
+                        "value": "unknown"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "permitType",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "Collecting Permit"
+                    },
+                    {
+                        "value": "Import Permit"
+                    },
+                    {
+                        "value": "Export Permit"
+                    },
+                    {
+                        "value": "Intellectual Property Rights"
+                    },
+                    {
+                        "value": "Copyright"
+                    },
+                    {
+                        "value": "Patent"
+                    },
+                    {
+                        "value": "Data use"
+                    },
+                    {
+                        "value": "Phytosanitary"
+                    },
+                    {
+                        "value": "Salvage"
+                    },
+                    {
+                        "value": "Exemption Permit"
+                    },
+                    {
+                        "value": "Material Transfer Agreement"
+                    },
+                    {
+                        "value": "Internationally Recognized Certificate of Compliance"
+                    },
+                    {
+                        "value": "contract"
+                    },
+                    {
+                        "value": "Memorandum of Understanding"
+                    },
+                    {
+                        "value": "Memorandum of Cooperation"
+                    },
+                    {
+                        "value": "Veterinary Certificate"
+                    },
+                    {
+                        "value": "Human Pathogens"
+                    },
+                    {
+                        "value": "Genetically Modified Organism"
+                    },
+                    {
+                        "value": "Other"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "lengthUnits",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "meters"
+                    },
+                    {
+                        "value": "millimeters"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "sampleSizeUnits",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "grams"
+                    },
+                    {
+                        "value": "kilograms"
+                    },
+                    {
+                        "value": "square meters"
+                    },
+                    {
+                        "value": "milliliters"
+                    },
+                    {
+                        "value": "liters"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "libraryLayout",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "paired"
+                    },
+                    {
+                        "value": "single"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "librarySelection",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "CAGE",
+                        "definition": "Cap-analysis gene expression"
+                    },
+                    {
+                        "value": "ChIP",
+                        "definition": "Chromatin immunoprecipitation"
+                    },
+                    {
+                        "value": "Padlock probes capture method",
+                        "definition": "Circularized oligonucleotide probes"
+                    },
+                    {
+                        "value": "CF-H",
+                        "definition": "Cot-filtered highly repetitive genomic DNA"
+                    },
+                    {
+                        "value": "CF-M",
+                        "definition": "Cot-filtered moderately repetitive genomic DNA"
+                    },
+                    {
+                        "value": "CF-S",
+                        "definition": "Cot-filtered single/low-copy genomic DNA"
+                    },
+                    {
+                        "value": "CF-T",
+                        "definition": "Cot-filtered theoretical single-copy genomic DNA"
+                    },
+                    {
+                        "value": "Restriction Digest",
+                        "definition": "DNA fractionation using restriction enzymes"
+                    },
+                    {
+                        "value": "DNAse",
+                        "definition": "Deoxyribonuclease (MNase) digestion"
+                    },
+                    {
+                        "value": "MBD2 protein methyl-CpG binding domain",
+                        "definition": "Enrichment by methyl-CpG binding domain"
+                    },
+                    {
+                        "value": "HMPR",
+                        "definition": "Hypo-methylated partial restriction digest"
+                    },
+                    {
+                        "value": "unspecified",
+                        "definition": "Library enrichment, screening, or selection is not specified (please include additional info in the design description)"
+                    },
+                    {
+                        "value": "MF",
+                        "definition": "Methyl Filtrated"
+                    },
+                    {
+                        "value": "MSLL",
+                        "definition": "Methylation Spanning Linking Library"
+                    },
+                    {
+                        "value": "MNase",
+                        "definition": "Micrococcal Nuclease (MNase) digestion"
+                    },
+                    {
+                        "value": "MDA",
+                        "definition": "Multiple displacement amplification"
+                    },
+                    {
+                        "value": "other",
+                        "definition": "Other library enrichment, screening, or selection process (please include additional info in the design description)"
+                    },
+                    {
+                        "value": "size fractionation",
+                        "definition": "Physical selection of size appropriate targets"
+                    },
+                    {
+                        "value": "RANDOM",
+                        "definition": "Random selection by shearing or other method"
+                    },
+                    {
+                        "value": "RACE",
+                        "definition": "Rapid Amplification of cDNA Ends"
+                    },
+                    {
+                        "value": "Reduced Representation",
+                        "definition": "Reproducible genomic subsets, often generated by restriction fragment size selection, containing a manageable number of loci to facilitate re-sampling"
+                    },
+                    {
+                        "value": "Hybrid Selection",
+                        "definition": "Selection by hybridization in array or solution"
+                    },
+                    {
+                        "value": "5-methylcytidine antibody",
+                        "definition": "Selection of methylated DNA fragments using an antibody raised against 5-methylcytosine or 5-methylcytidine (m5C)"
+                    },
+                    {
+                        "value": "PCR",
+                        "definition": "Source material was selected by designed primers"
+                    },
+                    {
+                        "value": "RANDOM PCR",
+                        "definition": "Source material was selected by randomly generated primers"
+                    },
+                    {
+                        "value": "RT-PCR",
+                        "definition": "Source material was selected by reverse transcription PCR"
+                    },
+                    {
+                        "value": "cDNA",
+                        "definition": "complementary DNA"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "librarySource",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "GENOMIC",
+                        "definition": "Genomic DNA (includes PCR products from genomic DNA)"
+                    },
+                    {
+                        "value": "METAGENOMIC",
+                        "definition": "Mixed material from metagenome"
+                    },
+                    {
+                        "value": "OTHER",
+                        "definition": "Other, unspecified, or unknown library source material (please include additional info in the design description)"
+                    },
+                    {
+                        "value": "SYNTHETIC",
+                        "definition": "Synthetic DNA"
+                    },
+                    {
+                        "value": "METATRANSCRIPTOMIC",
+                        "definition": "Transcription products from community targets"
+                    },
+                    {
+                        "value": "TRANSCRIPTOMIC",
+                        "definition": "Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries)"
+                    },
+                    {
+                        "value": "VIRAL RNA",
+                        "definition": "Viral RNA"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "libraryStrategy",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "CLONEEND",
+                        "definition": "Clone end (5', 3', or both) sequencing"
+                    },
+                    {
+                        "value": "CTS",
+                        "definition": "Concatenated Tag Sequencing"
+                    },
+                    {
+                        "value": "MNase-Seq",
+                        "definition": "Direct sequencing following MNase digestion"
+                    },
+                    {
+                        "value": "ChIP-Seq",
+                        "definition": "Direct sequencing of chromatin immunoprecipitates"
+                    },
+                    {
+                        "value": "MBD-Seq",
+                        "definition": "Direct sequencing of methylated fractions sequencing strategy"
+                    },
+                    {
+                        "value": "FL-cDNA",
+                        "definition": "Full-length sequencing of cDNA templates"
+                    },
+                    {
+                        "value": "CLONE",
+                        "definition": "Genomic clone based (hierarchical) sequencing"
+                    },
+                    {
+                        "value": "OTHER",
+                        "definition": "Library strategy not listed (please include additional info in the design description)"
+                    },
+                    {
+                        "value": "MeDIP-Seq",
+                        "definition": "Methylated DNA Immunoprecipitation Sequencing strategy"
+                    },
+                    {
+                        "value": "MRE-Seq",
+                        "definition": "Methylation-Sensitive Restriction Enzyme Sequencing strategy"
+                    },
+                    {
+                        "value": "WCS",
+                        "definition": "Random sequencing of a whole chromosome or other replicon isolated from a genome"
+                    },
+                    {
+                        "value": "WXS",
+                        "definition": "Random sequencing of exonic regions selected from the genome"
+                    },
+                    {
+                        "value": "miRNA-Seq",
+                        "definition": "Random sequencing of small miRNAs"
+                    },
+                    {
+                        "value": "WGS",
+                        "definition": "Random sequencing of the whole genome"
+                    },
+                    {
+                        "value": "WGA",
+                        "definition": "Random sequencing of the whole genome following non-pcr amplification"
+                    },
+                    {
+                        "value": "RNA-Seq",
+                        "definition": "Random sequencing of whole transcriptome"
+                    },
+                    {
+                        "value": "Bisulfite-Seq",
+                        "definition": "Sequencing following treatment of DNA with bisulfite to convert cytosine residues to uracil depending on methylation status"
+                    },
+                    {
+                        "value": "Tn-Seq",
+                        "definition": "Sequencing from transposon insertion sites"
+                    },
+                    {
+                        "value": "FINISHING",
+                        "definition": "Sequencing intended to finish (close) gaps in existing coverage"
+                    },
+                    {
+                        "value": "DNase-Hypersensitivity",
+                        "definition": "Sequencing of hypersensitive sites, or segments of open chromatin that are more readily cleaved by DNaseI"
+                    },
+                    {
+                        "value": "AMPLICON",
+                        "definition": "Sequencing of overlapping or distinct PCR or RT-PCR products"
+                    },
+                    {
+                        "value": "POOLCLONE",
+                        "definition": "Shotgun of pooled clones (usually BACs and Fosmids)"
+                    },
+                    {
+                        "value": "EST",
+                        "definition": "Single pass sequencing of cDNA templates"
+                    },
+                    {
+                        "value": "Synthetic-Long-Read"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "lifeStage",
+                "caseInsensitive": true,
+                "fields": [
+                    {
+                        "value": "Not Applicable"
+                    },
+                    {
+                        "value": "Not Collected"
+                    },
+                    {
+                        "value": "adult"
+                    },
+                    {
+                        "value": "egg"
+                    },
+                    {
+                        "value": "gametophyte"
+                    },
+                    {
+                        "value": "immature"
+                    },
+                    {
+                        "value": "juvenile"
+                    },
+                    {
+                        "value": "larva"
+                    },
+                    {
+                        "value": "metamorph"
+                    },
+                    {
+                        "value": "naiad"
+                    },
+                    {
+                        "value": "neotene"
+                    },
+                    {
+                        "value": "nymph"
+                    },
+                    {
+                        "value": "penultimate"
+                    },
+                    {
+                        "value": "sporophyte"
+                    },
+                    {
+                        "value": "subadult"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "markers",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "18S",
+                        "definition": "18S ribosomal RNA"
+                    },
+                    {
+                        "value": "28S",
+                        "definition": "28S"
+                    },
+                    {
+                        "value": "mutS",
+                        "definition": "mutS"
+                    },
+                    {
+                        "value": "S7",
+                        "definition": "S7 ribosomal protein gene"
+                    },
+                    {
+                        "value": "TMO",
+                        "definition": "TMO 4C4 gene"
+                    },
+                    {
+                        "value": "GnRH",
+                        "definition": "gonadotropin-releasing hormone gene"
+                    },
+                    {
+                        "value": "NEW_MARKER",
+                        "definition": "marker not listed"
+                    },
+                    {
+                        "value": "ND2",
+                        "definition": "mitochondiral ND2 protein"
+                    },
+                    {
+                        "value": "16S",
+                        "definition": "mitochondrial 16S ribosomal RNA"
+                    },
+                    {
+                        "value": "CR",
+                        "definition": "mitochondrial control region"
+                    },
+                    {
+                        "value": "CO1",
+                        "definition": "mitochondrial cytochrome c oxidase subunit 1"
+                    },
+                    {
+                        "value": "CO2",
+                        "definition": "mitochondrial cytochrome c oxidase subunit 2"
+                    },
+                    {
+                        "value": "CYB",
+                        "definition": "mitochondrial cytocrhome B"
+                    },
+                    {
+                        "value": "RAG",
+                        "definition": "recombination-activating gene"
+                    },
+                    {
+                        "value": "A68"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "phylum",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "Acanthocephala"
+                    },
+                    {
+                        "value": "Acavomonidia"
+                    },
+                    {
+                        "value": "Acidobacteria"
+                    },
+                    {
+                        "value": "Actinobacteria"
+                    },
+                    {
+                        "value": "Amoebozoa"
+                    },
+                    {
+                        "value": "Annelida"
+                    },
+                    {
+                        "value": "Anthocerotophyta"
+                    },
+                    {
+                        "value": "Aquificae"
+                    },
+                    {
+                        "value": "Apicomplexa"
+                    },
+                    {
+                        "value": "Armatimonadetes"
+                    },
+                    {
+                        "value": "Arthropoda"
+                    },
+                    {
+                        "value": "Ascomycota"
+                    },
+                    {
+                        "value": "Bacteroidetes"
+                    },
+                    {
+                        "value": "Bacillariophyta"
+                    },
+                    {
+                        "value": "Basidiomycota"
+                    },
+                    {
+                        "value": "Bigyra"
+                    },
+                    {
+                        "value": "Brachiopoda"
+                    },
+                    {
+                        "value": "Bryophyta"
+                    },
+                    {
+                        "value": "Bryozoa"
+                    },
+                    {
+                        "value": "Calcitarcha"
+                    },
+                    {
+                        "value": "Caldiserica"
+                    },
+                    {
+                        "value": "Cephalorhyncha"
+                    },
+                    {
+                        "value": "Cercozoa"
+                    },
+                    {
+                        "value": "Chaetognatha"
+                    },
+                    {
+                        "value": "Charophyta"
+                    },
+                    {
+                        "value": "Chlamydiae"
+                    },
+                    {
+                        "value": "Chlorobi"
+                    },
+                    {
+                        "value": "Chloroflexi"
+                    },
+                    {
+                        "value": "Chlorophyta"
+                    },
+                    {
+                        "value": "Choanozoa"
+                    },
+                    {
+                        "value": "Chordata"
+                    },
+                    {
+                        "value": "Chrysiogenetes"
+                    },
+                    {
+                        "value": "Chytridiomycota"
+                    },
+                    {
+                        "value": "Ciliophora"
+                    },
+                    {
+                        "value": "Cnidaria"
+                    },
+                    {
+                        "value": "Crenarchaeota"
+                    },
+                    {
+                        "value": "Cryptista"
+                    },
+                    {
+                        "value": "Ctenophora"
+                    },
+                    {
+                        "value": "Cyanobacteria"
+                    },
+                    {
+                        "value": "Cycliophora"
+                    },
+                    {
+                        "value": "Deferribacteres"
+                    },
+                    {
+                        "value": "Deinococcus-thermus"
+                    },
+                    {
+                        "value": "Dictyoglomi"
+                    },
+                    {
+                        "value": "Dicyemida"
+                    },
+                    {
+                        "value": "Dikaryomycota"
+                    },
+                    {
+                        "value": "Discosea"
+                    },
+                    {
+                        "value": "Echinodermata"
+                    },
+                    {
+                        "value": "Elusimicrobia"
+                    },
+                    {
+                        "value": "Endomyxa"
+                    },
+                    {
+                        "value": "Entoprocta"
+                    },
+                    {
+                        "value": "Euglenozoa"
+                    },
+                    {
+                        "value": "Euryarchaeota"
+                    },
+                    {
+                        "value": "Evosea"
+                    },
+                    {
+                        "value": "Fibrobacteres"
+                    },
+                    {
+                        "value": "Firmicutes"
+                    },
+                    {
+                        "value": "Foraminifera"
+                    },
+                    {
+                        "value": "Fornicata"
+                    },
+                    {
+                        "value": "Fusobacteria"
+                    },
+                    {
+                        "value": "Gastrotricha"
+                    },
+                    {
+                        "value": "Gemmatimonadetes"
+                    },
+                    {
+                        "value": "Glaucophyta"
+                    },
+                    {
+                        "value": "Glomeromycota"
+                    },
+                    {
+                        "value": "Gnathostomulida"
+                    },
+                    {
+                        "value": "Haptophyta"
+                    },
+                    {
+                        "value": "Heliozoa"
+                    },
+                    {
+                        "value": "Hemichordata"
+                    },
+                    {
+                        "value": "Hemimastigophora"
+                    },
+                    {
+                        "value": "Heterolobosea"
+                    },
+                    {
+                        "value": "Lentisphaerae"
+                    },
+                    {
+                        "value": "Loukozoa"
+                    },
+                    {
+                        "value": "Kinorhyncha"
+                    },
+                    {
+                        "value": "Loricifera"
+                    },
+                    {
+                        "value": "Marchantiophyta"
+                    },
+                    {
+                        "value": "Metamonada"
+                    },
+                    {
+                        "value": "Metazoa"
+                    },
+                    {
+                        "value": "Micrognathozoa"
+                    },
+                    {
+                        "value": "Microsporidia"
+                    },
+                    {
+                        "value": "Miozoa"
+                    },
+                    {
+                        "value": "Mixed"
+                    },
+                    {
+                        "value": "Mollusca"
+                    },
+                    {
+                        "value": "Mycetozoa"
+                    },
+                    {
+                        "value": "Myxozoa"
+                    },
+                    {
+                        "value": "Nematoda"
+                    },
+                    {
+                        "value": "Nematomorpha"
+                    },
+                    {
+                        "value": "Nemertea"
+                    },
+                    {
+                        "value": "Nitrospira"
+                    },
+                    {
+                        "value": "Ochrophyta"
+                    },
+                    {
+                        "value": "Onychophora"
+                    },
+                    {
+                        "value": "Oomycota"
+                    },
+                    {
+                        "value": "Orthonectida"
+                    },
+                    {
+                        "value": "Parabasalia"
+                    },
+                    {
+                        "value": "Perkinsozoa"
+                    },
+                    {
+                        "value": "Percolozoa"
+                    },
+                    {
+                        "value": "Phoronida"
+                    },
+                    {
+                        "value": "Picozoa"
+                    },
+                    {
+                        "value": "Placozoa"
+                    },
+                    {
+                        "value": "Planctomycetes"
+                    },
+                    {
+                        "value": "Platyhelminthes"
+                    },
+                    {
+                        "value": "Porifera"
+                    },
+                    {
+                        "value": "Prasinodermophyta"
+                    },
+                    {
+                        "value": "Priapulida"
+                    },
+                    {
+                        "value": "Preaxostyla"
+                    },
+                    {
+                        "value": "Priapulida"
+                    },
+                    {
+                        "value": "Proteobacteria"
+                    },
+                    {
+                        "value": "Radiozoa"
+                    },
+                    {
+                        "value": "Rhodophyta"
+                    },
+                    {
+                        "value": "Rotifera"
+                    },
+                    {
+                        "value": "Sarcomastigophora"
+                    },
+                    {
+                        "value": "Sipuncula"
+                    },
+                    {
+                        "value": "Spirochaetae"
+                    },
+                    {
+                        "value": "Streptophyta"
+                    },
+                    {
+                        "value": "Sulcozoa"
+                    },
+                    {
+                        "value": "Synergistetes"
+                    },
+                    {
+                        "value": "Tardigrada"
+                    },
+                    {
+                        "value": "Tenericutes"
+                    },
+                    {
+                        "value": "Thermodesulfobacteria"
+                    },
+                    {
+                        "value": "Thermotogae"
+                    },
+                    {
+                        "value": "Tracheophyta"
+                    },
+                    {
+                        "value": "Tubulinea"
+                    },
+                    {
+                        "value": "Unknown"
+                    },
+                    {
+                        "value": "Verrucomicrobia"
+                    },
+                    {
+                        "value": "Xenacoelomorpha"
+                    },
+                    {
+                        "value": "Zygomycota"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "platform",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "ABI_SOLID"
+                    },
+                    {
+                        "value": "CAPILLARY"
+                    },
+                    {
+                        "value": "COMPLETE_GENOMICS"
+                    },
+                    {
+                        "value": "HELICOS"
+                    },
+                    {
+                        "value": "ILLUMINA"
+                    },
+                    {
+                        "value": "ION_TORRENT"
+                    },
+                    {
+                        "value": "OXFORD_NANOPORE"
+                    },
+                    {
+                        "value": "PACBIO_SMRT"
+                    },
+                    {
+                        "value": "_LS454"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "preparationType",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "card_mount"
+                    },
+                    {
+                        "value": "envelope"
+                    },
+                    {
+                        "value": "fluid"
+                    },
+                    {
+                        "value": "other"
+                    },
+                    {
+                        "value": "pin"
+                    },
+                    {
+                        "value": "pin_genitalia_vial"
+                    },
+                    {
+                        "value": "resin_mount"
+                    },
+                    {
+                        "value": "riker_mount"
+                    },
+                    {
+                        "value": "slide"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "preservative",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "ATL buffer"
+                    },
+                    {
+                        "value": "10% formalin"
+                    },
+                    {
+                        "value": "10% formalin and 75% ethanol"
+                    },
+                    {
+                        "value": "100% ethanol"
+                    },
+                    {
+                        "value": "75% ethanol"
+                    },
+                    {
+                        "value": "80% ethanol"
+                    },
+                    {
+                        "value": "80% isopropanol"
+                    },
+                    {
+                        "value": "90% ethanol"
+                    },
+                    {
+                        "value": "95% ethanol"
+                    },
+                    {
+                        "value": "96% ethanol"
+                    },
+                    {
+                        "value": "Bouin's fixative"
+                    },
+                    {
+                        "value": "DMSO"
+                    },
+                    {
+                        "value": "FTA paper"
+                    },
+                    {
+                        "value": "Longmire's solution"
+                    },
+                    {
+                        "value": "M2 buffer"
+                    },
+                    {
+                        "value": "RNAlater"
+                    },
+                    {
+                        "value": "block"
+                    },
+                    {
+                        "value": "dry"
+                    },
+                    {
+                        "value": "ethanol"
+                    },
+                    {
+                        "value": "formalin"
+                    },
+                    {
+                        "value": "formalin and 75% ethanol"
+                    },
+                    {
+                        "value": "formalin and 95% ethanol"
+                    },
+                    {
+                        "value": "frozen formalin"
+                    },
+                    {
+                        "value": "glutaraldehyde"
+                    },
+                    {
+                        "value": "leash"
+                    },
+                    {
+                        "value": "liquid nitrogen"
+                    },
+                    {
+                        "value": "none (for -20)"
+                    },
+                    {
+                        "value": "none (for -80)"
+                    },
+                    {
+                        "value": "osmium tetroxide"
+                    },
+                    {
+                        "value": "silica gel"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "relaxant",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "</metadata>"
+                    },
+                    {
+                        "value": "Kibble"
+                    },
+                    {
+                        "value": "MgCl"
+                    },
+                    {
+                        "value": "Tricaine (MS-222)"
+                    },
+                    {
+                        "value": "chloretone"
+                    },
+                    {
+                        "value": "clove oil"
+                    },
+                    {
+                        "value": "ethyl acetate"
+                    },
+                    {
+                        "value": "ethylene glycol"
+                    },
+                    {
+                        "value": "freezer"
+                    },
+                    {
+                        "value": "frozen"
+                    },
+                    {
+                        "value": "ice"
+                    },
+                    {
+                        "value": "menthol"
+                    },
+                    {
+                        "value": "nicotine"
+                    },
+                    {
+                        "value": "propylene phenoxitol"
+                    },
+                    {
+                        "value": "refrigeration"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "sex",
+                "caseInsensitive": true,
+                "fields": [
+                    {
+                        "value": "female"
+                    },
+                    {
+                        "value": "hermaphrodite"
+                    },
+                    {
+                        "value": "intersex"
+                    },
+                    {
+                        "value": "male"
+                    },
+                    {
+                        "value": "missing"
+                    },
+                    {
+                        "value": "neuter"
+                    },
+                    {
+                        "value": "not applicable"
+                    },
+                    {
+                        "value": "not collected"
+                    },
+                    {
+                        "value": "not determined"
+                    },
+                    {
+                        "value": "pooled male and female"
+                    },
+                    {
+                        "value": "simultaneous hermaphrodite"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "taxonRank",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "class"
+                    },
+                    {
+                        "value": "family"
+                    },
+                    {
+                        "value": "genus"
+                    },
+                    {
+                        "value": "infraClass"
+                    },
+                    {
+                        "value": "infraOrder"
+                    },
+                    {
+                        "value": "infraspecficEpithet"
+                    },
+                    {
+                        "value": "kingdom"
+                    },
+                    {
+                        "value": "order"
+                    },
+                    {
+                        "value": "phylum"
+                    },
+                    {
+                        "value": "specificEpithet"
+                    },
+                    {
+                        "value": "subClass"
+                    },
+                    {
+                        "value": "subFamily"
+                    },
+                    {
+                        "value": "subGenus"
+                    },
+                    {
+                        "value": "subOrder"
+                    },
+                    {
+                        "value": "subPhylum"
+                    },
+                    {
+                        "value": "subTribe"
+                    },
+                    {
+                        "value": "superClass"
+                    },
+                    {
+                        "value": "superFamily"
+                    },
+                    {
+                        "value": "superOrder"
+                    },
+                    {
+                        "value": "tribe"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "weightUnits",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "grams"
+                    },
+                    {
+                        "value": "kilograms"
+                    }
+                ],
+                "networkList": true
+            },
+            {
+                "alias": "institutionCode",
+                "caseInsensitive": false,
+                "fields": [
+                    {
+                        "value": "To be determined",
+                        "definition": "The institutionCode is not yet determined for this sample"
+                    },
+                    {
+                        "value": "Unknown",
+                        "definition": "The institutionCode is unknown for this sample"
+                    },
+                    {
+                        "value": "Smithsonian Institution National Museum of Natural History"
+                    }
+                ],
+                "networkList": false
+            }
+        ],
+        "expeditionMetadataProperties": []
+    }
+}
