@@ -101,6 +101,13 @@
                     "level": "ERROR"
                 }
             ],
+            "worksheet": "Events",
+            "conceptAlias": "Event",
+            "uniqueKey": "eventID",
+            "uniqueAcrossProject": false,
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/Event",
+            "hashed": false,
+            "recordType": "biocode.fims.records.GenericRecord",
             "attributes": [
                 {
                     "column": "eventID",
@@ -109,6 +116,16 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/eventID",
                     "definition": "The collector's event identifier. This number must be unique among the event IDs within the expedition.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "parentEventID",
+                    "uri": "urn:parentEventID",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/parentEventID",
+                    "definition": "An identifier for the broader dwc:Event that groups this and potentially other dwc:Events.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -1047,14 +1064,7 @@
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "eventID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/Event",
-            "recordType": "biocode.fims.records.GenericRecord",
-            "worksheet": "Events",
-            "conceptAlias": "Event"
+            ]
         },
         {
             "type": "DefaultEntity",
@@ -1153,6 +1163,14 @@
                     "listName": "basisOfRecord"
                 }
             ],
+            "worksheet": "Samples",
+            "parentEntity": "Event",
+            "conceptAlias": "Sample",
+            "uniqueKey": "materialSampleID",
+            "uniqueAcrossProject": false,
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
+            "hashed": false,
+            "recordType": "biocode.fims.records.GenericRecord",
             "attributes": [
                 {
                     "column": "length",
@@ -1524,7 +1542,7 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/occurrenceID",
                     "group": "Record and Owner Details",
-                    "definition": "An identifier for the Occurrence (as opposed to a particular digital record of the occurrence). GeOME Note: this term is adapted from the Darwin Core vocabulary and the lack of a better definition is a function of the biodiversity information standards community.",
+                    "definition": "An identifier for the dwc:Occurrence (as opposed to a particular digital record of the dwc:Occurrence). In the absence of a persistent global unique identifier, construct one from a combination of identifiers in the record that will most closely make the dwc:occurrenceID globally unique.   E.g. a darwin core triplet like: MVZ:Herp:100321 or a fully resolvable url like https://arctos.database.museum/guid/MVZ:Herp:100321",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -2204,17 +2222,7 @@
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-              
-                
-            ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "materialSampleID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
-            "parentEntity": "Event",
-            "recordType": "biocode.fims.records.GenericRecord",
-            "worksheet": "Samples",
-            "conceptAlias": "Sample"
+            ]
         },
         {
             "type": "DefaultEntity",
@@ -2284,6 +2292,14 @@
                     ]
                 }
             ],
+            "worksheet": "Diagnostics",
+            "parentEntity": "Sample",
+            "conceptAlias": "Diagnostics",
+            "uniqueKey": "diagnosticID",
+            "uniqueAcrossProject": false,
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
+            "hashed": false,
+            "recordType": "biocode.fims.records.GenericRecord",
             "attributes": [
                 {
                     "column": "diagnosticID",
@@ -2429,9 +2445,9 @@
                 {
                     "column": "sampleType",
                     "uri": "urn:sampleType",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/sampleType?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/sampleType?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Type of sample tested: eg, swabbing, blood, skin, liver",
                     "allowUnknown": false,
@@ -2440,9 +2456,9 @@
                 {
                     "column": "diseaseLineage",
                     "uri": "urn:diseaseLineage",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseLineage?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseLineage?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Specific genetic lineage detected (if available) NCBI URI (e.g., http://www.ncbi.nlm.nih.gov/biosample/xxxxxxx",
                     "allowUnknown": false,
@@ -2451,9 +2467,9 @@
                 {
                     "column": "genotypeMethod",
                     "uri": "urn:genotypeMethod",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/genotytpeMethod?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/genotytpeMethod?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Genotyping methods used to determine diseaseLineage if present (e.g., whole genome sequencing, ITS sequencing, multilocus nuclear sequencing).",
                     "allowUnknown": false,
@@ -2462,9 +2478,9 @@
                 {
                     "column": "diseaseTested",
                     "uri": "urn:diseaseTested",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseTested?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseTested?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Controlled vocabulary: Bd, Bsal, Bd+Bsal, Other",
                     "allowUnknown": false,
@@ -2473,9 +2489,9 @@
                 {
                     "column": "diseaseTestedPositiveCount",
                     "uri": "urn:diseaseTestedPositiveCount",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseTestedPositiveCount?info",    
                     "dataType": "INTEGER",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseTestedPositiveCount?info",
                     "group": "Diagnostics and Traits",
                     "definition": "The number of positive values for a disease test.  Can be used together with individualCount in the Samples entity to determine the percentage of individuals testing positive for a disease. Must be an integer.",
                     "allowUnknown": false,
@@ -2484,9 +2500,9 @@
                 {
                     "column": "specimenDisposition",
                     "uri": "urn:specimenDisposition",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/specimenDisposition?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/specimenDisposition?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Post-sampling status",
                     "allowUnknown": false,
@@ -2495,9 +2511,9 @@
                 {
                     "column": "diseaseDetected",
                     "uri": "urn:diseaseDetected",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseDetected?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseDetected?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Result of disease testing: True=Positive, False=Negative, No Confidence=Ambiguous",
                     "allowUnknown": false,
@@ -2506,9 +2522,9 @@
                 {
                     "column": "fatal",
                     "uri": "urn:fatal",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/fatal?info",    
                     "dataType": "BOOLEAN",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/fatal?info",
                     "group": "Diagnostics and Traits",
                     "definition": "At time of sampling, presumed cause of death to be diseaseTested, mark [FALSE] if unknown",
                     "allowUnknown": false,
@@ -2516,21 +2532,21 @@
                 },
                 {
                     "column": "testMethod",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/testMethod?info",    
                     "uri": "urn:testMethod",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/testMethod?info",
                     "group": "Diagnostics and Traits",
                     "definition": "traditional PCR, quantitive PCR, realtime PCR, histology, Other",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
-                    "column": "quantityDetected",                    
+                    "column": "quantityDetected",
                     "uri": "urn:quantityDetected",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/quantityDetected?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/quantityDetected?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Number of zoospore detected. Needed to calculate Zoospore Equivalent Score (ZEscore), a measure of infection intensity (see Vredenburg et al 2010 doi: 10.1073/pnas.0914111107)",
                     "allowUnknown": false,
@@ -2539,9 +2555,9 @@
                 {
                     "column": "dilutionFactor",
                     "uri": "urn:dilutionFactor",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dilutionFactor?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dilutionFactor?info",
                     "group": "Diagnostics and Traits",
                     "definition": "The dilution factor is needed to calculate Zoospore Equivalent Score (ZEscore), a measure of infection intensity (see Vredenburg et al 2010 doi: 10.1073/pnas.0914111107)",
                     "allowUnknown": false,
@@ -2550,9 +2566,9 @@
                 {
                     "column": "cycleTimeFirstDetection",
                     "uri": "urn:cycleTimeFirstDetection",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/cycleTimeFirstDetection?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/cycleTimeFirstDetection?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Cycle number (c(t)) at which the qPCR machine first detects a positive for chytrid ( a measure of the amount of Bd or Bsal present)",
                     "allowUnknown": false,
@@ -2561,8 +2577,9 @@
                 {
                     "column": "diagnosticLab",
                     "uri": "urn:diagnosticLab",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diagnosticLab?info",    
+                    "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diagnosticLab?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Record the diagnostic lab if different than the diagnostic lab listed in the Project details or if more than one are used.",
                     "allowUnknown": false,
@@ -2571,9 +2588,9 @@
                 {
                     "column": "zeScore",
                     "uri": "urn:zeScore",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/zeScore?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/zeScore?info",
                     "group": "Diagnostics and Traits",
                     "definition": "If present, these values may be entered (otherwise it will be calculated from the quantityDetected and dilutionFactor).",
                     "allowUnknown": false,
@@ -2582,9 +2599,9 @@
                 {
                     "column": "ageEstimationMethod",
                     "uri": "urn:ageEstimationMethod",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/ageEstimationMethod?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/ageEstimationMethod?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Free text field for description of method for determining ageValue",
                     "allowUnknown": false,
@@ -2593,9 +2610,9 @@
                 {
                     "column": "verbatimAgeValue",
                     "uri": "urn:verbatimAgeValue",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/verbatimAgeValue?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/verbatimAgeValue?info",
                     "group": "Diagnostics and Traits",
                     "definition": "The numerical value or range indicating how old including the unit such as hours, days, weeks, months, or years the individual is a time of death (paleo and zooarchaeological), collection (neoecological), or observation (non-specimen observations).",
                     "allowUnknown": false,
@@ -2604,9 +2621,9 @@
                 {
                     "column": "ageValue",
                     "uri": "urn:ageValue",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/ageValue?info",    
                     "dataType": "FLOAT",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/ageValue?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Unit for the ageValue in hour, day, week, month, or year",
                     "allowUnknown": false,
@@ -2615,9 +2632,9 @@
                 {
                     "column": "ageUnit",
                     "uri": "urn:ageUnit",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/ageUnit?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/ageUnit?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Numerical (float) value indicating how old in hours, days, weeks, months, or years the individual is a time of death (paleo and zooarchaeological), collection (neoecological), or observation (non-specimen observations).",
                     "allowUnknown": false,
@@ -2625,10 +2642,10 @@
                 },
                 {
                     "column": "materialSampleType",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/materialSampleType?info",    
                     "uri": "urn:materialSampleType",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/materialSampleType?info",
                     "group": "Diagnostics and Traits",
                     "definition": "The completeness of the materialSample.  Indicate 'whole organism' if the materialSample represents a whole organism.  For any other condition, choose the most appropriate term from the controlled vocabularly. Use the materialSampleCondition field to provide additional comments.",
                     "allowUnknown": false,
@@ -2637,9 +2654,9 @@
                 {
                     "column": "materialSampleCondition",
                     "uri": "urn:materialSampleCondition",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/materialSampleCondition?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/materialSampleCondition?info",
                     "group": "Diagnostics and Traits",
                     "definition": "The post-mordem condition or modification of the specimen. E.g. 'burned' or 'medial side eroded slightly'",
                     "allowUnknown": false,
@@ -2670,9 +2687,9 @@
                 {
                     "column": "measurementMethodURI",
                     "uri": "urn:measurementMethodURI",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/measurementMethodURI?info",    
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/measurementMethodURI?info",
                     "group": "Diagnostics and Traits",
                     "definition": "URI pointing to description of method for measurement",
                     "allowUnknown": false,
@@ -2683,7 +2700,7 @@
                     "uri": "urn:derivedDataType",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataType?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataType?info",
                     "group": "Derived Data Formats",
                     "definition": "The data type of the derived data type (e.g. microsats, SNPs, OTUs, ASVs, sequences)",
                     "allowUnknown": false,
@@ -2694,7 +2711,7 @@
                     "uri": "urn:derivedDataFormat",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataFormat?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataFormat?info",
                     "group": "Derived Data Formats",
                     "definition": "The data format of the derived data type (e.g. genpop, FASTA, FASTQ)",
                     "allowUnknown": false,
@@ -2705,7 +2722,7 @@
                     "uri": "urn:derivedDataURI",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataURI?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataURI?info",
                     "group": "Derived Data Formats",
                     "definition": "URI specifying web-accessible location of derived data.",
                     "allowUnknown": false,
@@ -2716,7 +2733,7 @@
                     "uri": "urn:derivedDataFilename",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataFilename?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataFilename?info",
                     "group": "Derived Data Formats",
                     "definition": "The filename of the derived data.",
                     "allowUnknown": false,
@@ -2727,7 +2744,7 @@
                     "uri": "urn:derivedDataDescription",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataDescription?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/derivedDataDescription?info",
                     "group": "Derived Data Formats",
                     "definition": "A text-based description of the derivedData",
                     "allowUnknown": false,
@@ -2738,7 +2755,7 @@
                     "uri": "urn:experimentalProtocol",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/experimentalProtocol?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/experimentalProtocol?info",
                     "group": "Derived Data Formats",
                     "definition": "Experimental Protocol.  Reccomended best practice is to insert an IRI pointing for example to protocols.io",
                     "allowUnknown": false,
@@ -2749,7 +2766,7 @@
                     "uri": "urn:experimentStartDate",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/experimentalStartDate?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/experimentalStartDate?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Date an Expexriment was started.  Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
                     "allowUnknown": false,
@@ -2760,7 +2777,7 @@
                     "uri": "urn:experimentEndDate",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/experimentalEndDate?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/experimentalEndDate?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Date an Expexriment was ended.  Recommended best practice is to use a date that conforms to ISO 8601-1:2019.",
                     "allowUnknown": false,
@@ -2771,7 +2788,7 @@
                     "uri": "urn:analysisDate",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/analysisDate?info",    
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/analysisDate?info",
                     "group": "Diagnostics and Traits",
                     "definition": "Date of Analysis. Recommended best practice is to use a date that conforms to ISO 8601-1:2019, for example, 1809-02-12 (some time during 12 February 1809)",
                     "allowUnknown": false,
@@ -3150,71 +3167,63 @@
                     "definition": "Coral Colony Description of Contact (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
-    },
-    {
-        "column": "coralColonyDominantCover",
-        "uri": "uri:coralColonyDominantCover",
-        "dataType": "STRING",
-        "internal": false,
-        "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
-        "group": "Diagnostics and Traits",
-        "definition": "Coral Colony Dominant Cover (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
-        "allowUnknown": false,
-        "allowTBD": false
-},
-{
-    "column": "coralColonyDiameterInCentimeters",
-    "uri": "uri:coralColonyDiameterInCentimeters",
-    "dataType": "FLOAT",
-    "internal": false,
-    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
-    "group": "Diagnostics and Traits",
-    "definition": "Coral Colony Diameter in Centimeters (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
-    "allowUnknown": false,
-    "allowTBD": false
-},
-{
-    "column": "coralColonyShelfLocation",
-    "uri": "uri:coralColonyShelfLocation",
-    "dataType": "STRING",
-    "internal": false,
-    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
-    "group": "Diagnostics and Traits",
-    "definition": "Coral Colony Shelf Location (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
-    "allowUnknown": false,
-    "allowTBD": false
-},
-{
-    "column": "coralColonyVisibilityInMeters",
-    "uri": "uri:coralColonyVisibilityInMeters",
-    "dataType": "FLOAT",
-    "internal": false,
-    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
-    "group": "Diagnostics and Traits",
-    "definition": "Coral Colony Visibility in Meters (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
-    "allowUnknown": false,
-    "allowTBD": false
-},
-{
-    "column": "coralColonyVisibilityMethod",
-    "uri": "uri:coralColonyVisibilityMethod",
-    "dataType": "STRING",
-    "internal": false,
-    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
-    "group": "Diagnostics and Traits",
-    "definition": "Coral Colony Visibility Method (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
-    "allowUnknown": false,
-    "allowTBD": false
-}
-            ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "diagnosticID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
-            "parentEntity": "Sample",
-            "recordType": "biocode.fims.records.GenericRecord",
-            "worksheet": "Diagnostics",
-            "conceptAlias": "Diagnostics"
+                },
+                {
+                    "column": "coralColonyDominantCover",
+                    "uri": "uri:coralColonyDominantCover",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Coral Colony Dominant Cover (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "coralColonyDiameterInCentimeters",
+                    "uri": "uri:coralColonyDiameterInCentimeters",
+                    "dataType": "FLOAT",
+                    "internal": false,
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Coral Colony Diameter in Centimeters (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "coralColonyShelfLocation",
+                    "uri": "uri:coralColonyShelfLocation",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Coral Colony Shelf Location (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "coralColonyVisibilityInMeters",
+                    "uri": "uri:coralColonyVisibilityInMeters",
+                    "dataType": "FLOAT",
+                    "internal": false,
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Coral Colony Visibility in Meters (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "coralColonyVisibilityMethod",
+                    "uri": "uri:coralColonyVisibilityMethod",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "group": "Diagnostics and Traits",
+                    "definition": "Coral Colony Visibility Method (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                }
+            ]
         },
         {
             "type": "Tissue",
@@ -3279,6 +3288,14 @@
                     "level": "ERROR"
                 }
             ],
+            "worksheet": "Tissues",
+            "parentEntity": "Sample",
+            "conceptAlias": "Tissue",
+            "uniqueKey": "tissueID",
+            "uniqueAcrossProject": false,
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
+            "hashed": false,
+            "recordType": "biocode.fims.records.GenericRecord",
             "attributes": [
                 {
                     "column": "tissueID",
@@ -3480,15 +3497,7 @@
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "tissueID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/MaterialSample",
-            "parentEntity": "Sample",
-            "recordType": "biocode.fims.records.GenericRecord",
-            "worksheet": "Tissues",
-            "conceptAlias": "Tissue"
+            ]
         },
         {
             "type": "Photo",
@@ -3519,6 +3528,14 @@
                     "level": "ERROR"
                 }
             ],
+            "worksheet": "sample_photos",
+            "parentEntity": "Sample",
+            "conceptAlias": "Sample_Photo",
+            "uniqueKey": "photoID",
+            "uniqueAcrossProject": false,
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/associatedMedia",
+            "hashed": false,
+            "recordType": "biocode.fims.photos.PhotoRecord",
             "attributes": [
                 {
                     "column": "materialSampleID",
@@ -3533,9 +3550,9 @@
                 {
                     "column": "photoID",
                     "uri": "photoID",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/photoID?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/photoID?info",
                     "definition": "identifier for the photo",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -3543,9 +3560,9 @@
                 {
                     "column": "originalUrl",
                     "uri": "originalUrl",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/originalUrl?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/originalUrl?info",
                     "definition": "Publicly accessible url for the original photo",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -3553,121 +3570,113 @@
                 {
                     "column": "qualityScore",
                     "uri": "urn:qualityScore",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/qualityScore?info",
                     "dataType": "INTEGER",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/qualityScore?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "hasScale",
                     "uri": "urn:hasScale",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/hasScale?info",
                     "dataType": "BOOLEAN",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/hasScale?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "processed",
                     "uri": "processed",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/processed?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/processed?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "imageProcessingErrors",
                     "uri": "imageProcessingErrors",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/imageProcessingErrors?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/imageProcessingErrors?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "img128",
                     "uri": "img128",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img128?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img128?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "img512",
                     "uri": "img512",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img512?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img512?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "img1024",
                     "uri": "img1024",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img1024?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img1024?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "img64",
                     "uri": "img64",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img64?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img64?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "bulkLoadFile",
                     "uri": "bulkLoadFile",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bulkLoadFile?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bulkLoadFile?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "filename",
                     "uri": "filename",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filename?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filename?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "photographer",
                     "uri": "urn:samplePhotographer",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/samplePhotographer?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/samplePhotographer?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "viewSamplePhotoMetadata",
                     "uri": "urn:viewSamplePhotoMetadata",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/viewSamplePhotoMetadata?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/viewSamplePhotoMetadata?info",
                     "definition": "Standardized term to group images depicting a specific set of features of the organisms or related environment. Such as: Dorsal, Ventral, Lateral, etc.",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "photoID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/associatedMedia",
-            "parentEntity": "Sample",
-            "recordType": "biocode.fims.photos.PhotoRecord",
-            "worksheet": "sample_photos",
-            "conceptAlias": "Sample_Photo"
+            ]
         },
         {
             "type": "Photo",
@@ -3698,6 +3707,14 @@
                     "level": "ERROR"
                 }
             ],
+            "worksheet": "event_photos",
+            "parentEntity": "Event",
+            "conceptAlias": "Event_Photo",
+            "uniqueKey": "photoID",
+            "uniqueAcrossProject": false,
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/associatedMedia",
+            "hashed": false,
+            "recordType": "biocode.fims.photos.PhotoRecord",
             "attributes": [
                 {
                     "column": "eventID",
@@ -3712,9 +3729,9 @@
                 {
                     "column": "photoID",
                     "uri": "photoID",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/photoID?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/photoID?info",
                     "definition": "identifier for the photo",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -3722,9 +3739,9 @@
                 {
                     "column": "originalUrl",
                     "uri": "originalUrl",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/originalUrl?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/originalUrl?info",
                     "definition": "Publicly accessible url for the original photo",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -3732,121 +3749,113 @@
                 {
                     "column": "qualityScore",
                     "uri": "urn:qualityScore",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/qualityScore?info",
                     "dataType": "INTEGER",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/qualityScore?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "hasScale",
                     "uri": "urn:hasScale",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/hasScale?info",
                     "dataType": "BOOLEAN",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/hasScale?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "processed",
                     "uri": "processed",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/processed?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/processed?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "imageProcessingErrors",
                     "uri": "imageProcessingErrors",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/imageProcessingErrors?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/imageProcessingErrors?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "img128",
                     "uri": "img128",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img128?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img128?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "img512",
                     "uri": "img512",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img512?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img512?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "img1024",
                     "uri": "img1024",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img1024?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img1024?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "img64",
                     "uri": "img64",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img64?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img64?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "bulkLoadFile",
                     "uri": "bulkLoadFile",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bulkLoadFile?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bulkLoadFile?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "photographer",
                     "uri": "urn:eventPhotographer",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/eventPhotographer?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/eventPhotographer?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "filename",
                     "uri": "filename",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filename?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filename?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "viewEventPhotoMetadata",
                     "uri": "urn:viewEventPhotoMetadata",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/viewEventPhotoMetadata?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/viewEventPhotoMetadata?info",
                     "definition": "Standardized term to group images depicting a specific set of features of the organisms or related environment.",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "photoID",
-            "conceptURI": "http://rs.tdwg.org/dwc/terms/associatedMedia",
-            "parentEntity": "Event",
-            "recordType": "biocode.fims.photos.PhotoRecord",
-            "worksheet": "event_photos",
-            "conceptAlias": "Event_Photo"
+            ]
         },
         {
             "type": "Fasta",
@@ -3874,13 +3883,20 @@
                     "uniqueAcrossProject": false
                 }
             ],
+            "parentEntity": "Tissue",
+            "conceptAlias": "fastaSequence",
+            "uniqueKey": "identifier",
+            "uniqueAcrossProject": false,
+            "conceptURI": "urn:fastaSequence",
+            "hashed": false,
+            "recordType": "biocode.fims.fasta.FastaRecord",
             "attributes": [
                 {
                     "column": "sequence",
                     "uri": "sequence",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/sequence?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/sequence?info",
                     "definition": "Sequence data for the material sample.",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -3888,39 +3904,32 @@
                 {
                     "column": "marker",
                     "uri": "marker",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/marker?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/marker?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "identifier",
                     "uri": "identifier",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/identifier?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/identifier?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "tissueID",
                     "uri": "urn:tissueID",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
                     "definition": "",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "identifier",
-            "conceptURI": "urn:fastaSequence",
-            "parentEntity": "Tissue",
-            "recordType": "biocode.fims.fasta.FastaRecord",
-            "conceptAlias": "fastaSequence"
+            ]
         },
         {
             "type": "Fastq",
@@ -3963,76 +3972,83 @@
                     "level": "ERROR"
                 }
             ],
+            "parentEntity": "Tissue",
+            "conceptAlias": "fastqMetadata",
+            "uniqueKey": "identifier",
+            "uniqueAcrossProject": false,
+            "conceptURI": "urn:fastqMetadata",
+            "hashed": false,
+            "recordType": "biocode.fims.fastq.FastqRecord",
             "attributes": [
                 {
                     "column": "libraryLayout",
                     "uri": "libraryLayout",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/libraryLayout?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/libraryLayout?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "libraryStrategy",
                     "uri": "libraryStrategy",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/libraryStrategy?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/libraryStrategy?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "librarySource",
                     "uri": "librarySource",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/librarySource?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/librarySource?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "librarySelection",
                     "uri": "librarySelection",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/librarySelection?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/librarySelection?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "platform",
                     "uri": "platform",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/platform?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/platform?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "instrumentModel",
                     "uri": "instrumentModel",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/instrumentModel?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/instrumentModel?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "designDescription",
                     "uri": "designDescription",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/designDescription?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/designDescription?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "filenames",
                     "uri": "filenames",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filenames?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filenames?info",
                     "definition": "List of filenames to be uploaded to NCBI Genbank SRA",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -4040,39 +4056,32 @@
                 {
                     "column": "identifier",
                     "uri": "identifier",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/identifier?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/identifier?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "bioSample",
                     "uri": "bioSample",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bioSample?info",
                     "dataType": "STRING",
                     "internal": true,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bioSample?info",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
                     "column": "tissueID",
                     "uri": "urn:tissueID",
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
                     "dataType": "STRING",
                     "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
                     "definition": "",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
-            ],
-            "hashed": false,
-            "uniqueAcrossProject": false,
-            "uniqueKey": "identifier",
-            "conceptURI": "urn:fastqMetadata",
-            "parentEntity": "Tissue",
-            "recordType": "biocode.fims.fastq.FastqRecord",
-            "conceptAlias": "fastqMetadata"
+            ]
         }
     ],
     "lists": [
@@ -7059,6 +7068,9 @@
                     "value": "96% ethanol"
                 },
                 {
+                    "value": "70% ethanol"
+                },
+                {
                     "value": "Bouin's fixative"
                 },
                 {
@@ -7113,10 +7125,16 @@
                     "value": "none (for -80)"
                 },
                 {
+                    "value": "none (live)"
+                },
+                {
                     "value": "osmium tetroxide"
                 },
                 {
                     "value": "silica gel"
+                },
+                {
+                    "value": "DNA/RNA shield"
                 }
             ],
             "networkList": true

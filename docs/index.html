@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEOME Network Visualizer - Extraction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <style>
+    :root {
+      --bg: #f6f2ea;
+      --panel: #ffffff;
+      --ink: #1f2933;
+      --muted: #6b7280;
+      --accent: #1b998b;
+      --accent-2: #e98b4f;
+      --accent-3: #5b8def;
+      --line: #e5e7eb;
+      --shadow: 0 12px 40px rgba(16, 24, 40, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(1200px 600px at 20% -10%, #fdf7ee 0%, #f6f2ea 55%, #efe6d6 100%);
+    }
+    header {
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, #ffffff 0%, #faf6ef 100%);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    header h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 20px;
+      letter-spacing: 0.4px;
+      margin: 0;
+    }
+    header .meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 260px minmax(320px, 1fr) 420px;
+      gap: 16px;
+      padding: 16px 18px 26px;
+    }
+    .panel {
+      background: var(--panel);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      overflow: hidden;
+      min-height: 200px;
+    }
+    .panel h2 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 16px;
+    }
+    .search {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      font-size: 14px;
+      background: #f9fafb;
+    }
+    .entity-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      overflow-y: auto;
+      max-height: calc(100vh - 220px);
+      padding-right: 6px;
+    }
+    .entity-item {
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      background: #fdfcf9;
+    }
+    .entity-item:hover {
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+    .entity-item.active {
+      border-color: var(--accent);
+      background: rgba(27, 153, 139, 0.08);
+    }
+    .entity-item .sub {
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .graph-panel {
+      position: relative;
+      padding: 0;
+      overflow: hidden;
+    }
+    #graph {
+      width: 100%;
+      height: 100%;
+      min-height: 560px;
+    }
+    .graph-legend {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 12px;
+      box-shadow: var(--shadow);
+    }
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .detail-panel {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .detail-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      background: #f9fafb;
+      gap: 12px;
+    }
+    .detail-kicker {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: var(--muted);
+    }
+    .detail-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .detail-sub {
+      font-size: 12px;
+      color: var(--muted);
+      text-align: right;
+      max-width: 180px;
+    }
+    .detail-content {
+      padding: 14px 16px 18px;
+      overflow-y: auto;
+      max-height: calc(100vh - 220px);
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .meta-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 8px 10px;
+      background: #fafafa;
+      font-size: 12px;
+    }
+    .meta-card strong {
+      display: block;
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+    }
+    th, td {
+      text-align: left;
+      padding: 6px 8px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th {
+      background: #f3f4f6;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    a {
+      color: var(--accent-3);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      background: #eef6f5;
+      border: 1px solid #d4ebe7;
+      margin: 4px 4px 0 0;
+      cursor: pointer;
+    }
+    .list-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      background: #fff;
+    }
+    .list-values {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .value-chip {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 12px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 11px;
+      background: #fef3c7;
+      color: #92400e;
+      margin-left: 6px;
+    }
+    .rules-index-item {
+      padding: 8px 10px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      margin-bottom: 8px;
+    }
+    .muted { color: var(--muted); }
+
+    .rule-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      background: #fff;
+    }
+    .rule-card strong { font-size: 13px; }
+    .rule-meta { color: var(--muted); font-size: 12px; margin-top: 4px; }
+    .rule-actions { margin-top: 8px; }
+
+    .modal {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15, 23, 42, 0.4);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 20;
+    }
+    .modal.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .modal-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      max-width: 560px;
+      width: min(90vw, 560px);
+      max-height: 80vh;
+      overflow: auto;
+      padding: 16px 18px 20px;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .modal-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      margin: 0;
+    }
+    .modal-close {
+      border: none;
+      background: #f1f5f9;
+      border-radius: 999px;
+      padding: 6px 10px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+
+    @media (max-width: 1100px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      .entity-list { max-height: 240px; }
+      .detail-content { max-height: none; }
+      #graph { min-height: 420px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>GEOME Network Visualizer</h1>
+      <div class="meta">network_extraction.json • Entity relationships, attributes, rules, and vocabularies</div>
+    </div>
+    <div class="meta" id="summary"></div>
+  </header>
+
+  <main>
+    <section class="panel sidebar">
+      <h2>Entities</h2>
+      <input class="search" id="entitySearch" placeholder="Search entities..." />
+      <div class="entity-list" id="entityList"></div>
+    </section>
+
+    <section class="panel graph-panel">
+      <svg id="graph"></svg>
+      <div class="graph-legend" id="legend"></div>
+    </section>
+
+    <section class="panel detail-panel">
+      <div class="detail-header">
+        <div>
+          <div class="detail-kicker">Entity</div>
+          <div class="detail-title" id="entityTitle">—</div>
+        </div>
+        <div class="detail-sub" id="entitySub"></div>
+      </div>
+      <div class="detail-content" id="details"></div>
+    </section>
+  </main>
+
+  
+  <div class="modal" id="modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalTitle">Details</h3>
+        <button class="modal-close" id="modalClose">Close</button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+  <script>
+    const dataUrl = './network_extraction.json';
+    fetch(dataUrl)
+      .then(response => {
+        if (!response.ok) throw new Error(`Failed to load ${dataUrl}: ${response.status}`);
+        return response.json();
+      })
+      .then(init)
+      .catch(err => {
+        console.error(err);
+        const summary = document.getElementById('summary');
+        if (summary) summary.textContent = `Failed to load ${dataUrl}`;
+      });
+
+    function init(raw) {
+    const entities = raw.entities || [];
+    const lists = raw.lists || [];
+    const listByAlias = new Map(lists.map(l => [l.alias, l]));
+
+    const entityByAlias = new Map(entities.map(e => [e.conceptAlias, e]));
+    const childrenByParent = new Map();
+    entities.forEach(e => {
+      if (!e.parentEntity) return;
+      if (!childrenByParent.has(e.parentEntity)) childrenByParent.set(e.parentEntity, []);
+      childrenByParent.get(e.parentEntity).push(e.conceptAlias);
+    });
+
+    const summary = document.getElementById('summary');
+    summary.textContent = `${entities.length} entities • ${lists.length} vocabularies`;
+
+    const entityList = document.getElementById('entityList');
+    const entitySearch = document.getElementById('entitySearch');
+    const entityTitle = document.getElementById('entityTitle');
+    const entitySub = document.getElementById('entitySub');
+
+    const modal = document.getElementById('modal');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalBody = document.getElementById('modalBody');
+    const modalClose = document.getElementById('modalClose');
+
+    function openModal(title, bodyHtml) {
+      modalTitle.textContent = title;
+      modalBody.innerHTML = bodyHtml;
+      modal.classList.add('open');
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+    }
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    let selectedAlias = entities[0]?.conceptAlias || null;
+
+    function renderEntityList(filter = '') {
+      entityList.innerHTML = '';
+      const lower = filter.toLowerCase();
+      entities
+        .filter(e => e.conceptAlias?.toLowerCase().includes(lower))
+        .forEach(e => {
+          const item = document.createElement('div');
+          item.className = 'entity-item' + (e.conceptAlias === selectedAlias ? ' active' : '');
+          item.innerHTML = `<strong>${e.conceptAlias}</strong><div class="sub">${e.type || 'Entity'} • ${e.parentEntity || 'Root'}</div>`;
+          item.addEventListener('click', () => selectEntity(e.conceptAlias));
+          entityList.appendChild(item);
+        });
+    }
+
+    entitySearch.addEventListener('input', e => renderEntityList(e.target.value));
+
+    function makeLink(value) {
+      if (!value) return '';
+      if (value.startsWith('http')) {
+        return `<a href="${value}" target="_blank" rel="noopener">link</a>`;
+      }
+      return value;
+    }
+
+    function safe(val) {
+      if (val === null || val === undefined) return '';
+      if (Array.isArray(val)) return val.join(', ');
+      if (typeof val === 'object') return JSON.stringify(val);
+      return String(val);
+    }
+
+    function ruleColumns(rule) {
+      if (rule.column) return [rule.column];
+      if (Array.isArray(rule.columns)) return rule.columns;
+      return [];
+    }
+
+    function describeRule(rule) {
+      if (rule.name === 'RequireValueIfOtherColumn' && rule.otherColumn) {
+        return `Requires a value when ${rule.otherColumn} is present.`;
+      }
+      if (rule.name === 'ControlledVocabulary' && rule.listName) {
+        return `Value must be in list \"${rule.listName}\".`;
+      }
+      if (rule.name === 'NumericRange' && rule.range) {
+        return `Value must be within ${rule.range}.`;
+      }
+      if (rule.name === 'RegExp' && rule.pattern) {
+        return `Value must match pattern ${rule.pattern}.`;
+      }
+      if (rule.name === 'UniqueValue') {
+        return `Value must be unique (${rule.uniqueAcrossProject ? 'across project' : 'within project'}).`;
+      }
+      if (rule.name === 'CompositeUniqueValue' && rule.columns) {
+        return `Combination must be unique across ${rule.columns.join(', ')}.`;
+      }
+      if (rule.name === 'RequiredValue' && rule.columns) {
+        return `Required fields: ${rule.columns.join(', ')}.`;
+      }
+      return 'Rule applies as defined in configuration.';
+    }
+
+    let currentListUsage = new Map();
+
+    function renderDetails(alias) {
+      const entity = entityByAlias.get(alias);
+      if (!entity) return;
+
+      const parent = entity.parentEntity || 'Root';
+      const children = childrenByParent.get(alias) || [];
+      const parentChain = [];
+      let current = entity.parentEntity;
+      while (current) {
+        parentChain.push(current);
+        current = entityByAlias.get(current)?.parentEntity;
+      }
+
+      const attributes = entity.attributes || [];
+      const rules = entity.rules || [];
+
+      const listUsage = new Map();
+      const listByColumn = new Map();
+
+      rules.forEach(r => {
+        if (!r.listName) return;
+        const cols = ruleColumns(r);
+        if (!listUsage.has(r.listName)) listUsage.set(r.listName, { columns: new Set(), rules: new Set() });
+        listUsage.get(r.listName).rules.add(r.name);
+        cols.forEach(c => {
+          listUsage.get(r.listName).columns.add(c);
+          if (!listByColumn.has(c)) listByColumn.set(c, new Set());
+          listByColumn.get(c).add(r.listName);
+        });
+      });
+
+      currentListUsage = listUsage;
+
+      entityTitle.textContent = entity.conceptAlias || '—';
+      entitySub.textContent = `${entity.type || 'Entity'} • ${parent}`;
+
+      const details = document.getElementById('details');
+      details.innerHTML = `
+        <div class="meta-grid">
+          <div class="meta-card"><strong>Type</strong>${safe(entity.type)}</div>
+          <div class="meta-card"><strong>Worksheet</strong>${safe(entity.worksheet)}</div>
+          <div class="meta-card"><strong>Parent</strong>${safe(parent)}</div>
+          <div class="meta-card"><strong>Unique Key</strong>${safe(entity.uniqueKey)}</div>
+          <div class="meta-card"><strong>Record Type</strong>${safe(entity.recordType)}</div>
+          <div class="meta-card"><strong>Concept URI</strong>${safe(entity.conceptURI)}</div>
+        </div>
+        <div class="muted">Parent chain: ${parentChain.length ? parentChain.join(' → ') : 'None'}</div>
+        <div>${children.map(c => `<span class="pill" data-entity="${c}">Child: ${c}</span>`).join(' ')}</div>
+
+        <h2 style="margin-top:16px">Attributes (${attributes.length})</h2>
+        <div style="max-height:280px; overflow:auto; border:1px solid var(--line); border-radius:12px;">
+          <table>
+            <thead>
+              <tr>
+                <th>column</th>
+                <th>dataType</th>
+                <th>uri</th>
+                <th>definedBy</th>
+                <th>lists</th>
+                <th>internal</th>
+                <th>allowUnknown</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${attributes.map(a => {
+                const listPills = listByColumn.has(a.column)
+                  ? Array.from(listByColumn.get(a.column)).map(l => `<span class="pill" data-list="${l}">${l}</span>`).join('')
+                  : '';
+                return `
+                  <tr>
+                    <td>${safe(a.column)}</td>
+                    <td>${safe(a.dataType)}</td>
+                    <td>${makeLink(a.uri) || safe(a.uri)}</td>
+                    <td>${makeLink(a.definedBy) || safe(a.definedBy)}</td>
+                    <td>${listPills || '<span class="muted">—</span>'}</td>
+                    <td>${safe(a.internal)}</td>
+                    <td>${safe(a.allowUnknown)}</td>
+                  </tr>
+                `;
+              }).join('')}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 style="margin-top:16px">Rules (${rules.length})</h2>
+        ${rules.map((r, idx) => {
+          const cols = ruleColumns(r);
+          const colText = cols.length ? cols.join(', ') : 'All / unspecified';
+          return `
+            <div class="rule-card">
+              <strong>${safe(r.name)}</strong>
+              <span class="badge">${safe(r.level || '—')}</span>
+              <div class="rule-meta">Applies to: ${safe(colText)}</div>
+              <div class="rule-meta">${describeRule(r)}</div>
+              <div class="rule-actions">
+                <span class="pill" data-rule-index="${idx}">View rule details</span>
+              </div>
+            </div>
+          `;
+        }).join('')}
+
+        <h2 style="margin-top:16px">Lists Referenced (${listUsage.size})</h2>
+        <div>
+          ${Array.from(listUsage.keys()).map(l => `<span class="pill" data-list="${l}">${l}</span>`).join(' ') || '<span class="muted">None</span>'}
+        </div>
+      `;
+
+      details.querySelectorAll('.pill[data-entity]').forEach(p => {
+        p.addEventListener('click', () => selectEntity(p.dataset.entity));
+      });
+
+      details.querySelectorAll('.pill[data-list]').forEach(p => {
+        p.addEventListener('click', () => openListModal(p.dataset.list));
+      });
+
+      details.querySelectorAll('.pill[data-rule-index]').forEach(p => {
+        p.addEventListener('click', () => {
+          const idx = Number(p.dataset.ruleIndex);
+          const rule = rules[idx];
+          if (rule) openRuleModal(rule);
+        });
+      });
+    }
+
+    function openRuleModal(rule) {
+      const cols = ruleColumns(rule);
+      const fieldList = cols.length ? cols : ['(entity-level)'];
+      const extra = [];
+      if (rule.listName) extra.push(`<div><strong>List:</strong> ${rule.listName}</div>`);
+      if (rule.range) extra.push(`<div><strong>Range:</strong> ${rule.range}</div>`);
+      if (rule.pattern) extra.push(`<div><strong>Pattern:</strong> ${rule.pattern}</div>`);
+      if (rule.otherColumn) extra.push(`<div><strong>Other Column:</strong> ${rule.otherColumn}</div>`);
+      if (rule.uniqueAcrossProject !== undefined) extra.push(`<div><strong>Unique Across Project:</strong> ${rule.uniqueAcrossProject}</div>`);
+
+      const body = `
+        <div class="muted">Rule type: ${safe(rule.name)} • Level: ${safe(rule.level || '—')}</div>
+        <p>${describeRule(rule)}</p>
+        <h4>Applies to</h4>
+        <ul>
+          ${fieldList.map(c => `<li><strong>${c}</strong> — ${describeRule(rule)}</li>`).join('')}
+        </ul>
+        ${extra.length ? `<h4>Rule Parameters</h4>${extra.join('')}` : ''}
+      `;
+      openModal(`Rule: ${safe(rule.name)}`, body);
+    }
+
+    function openListModal(alias) {
+      const list = listByAlias.get(alias);
+      if (!list) return;
+      const usage = currentListUsage.get(alias);
+      const usedColumns = usage ? Array.from(usage.columns) : [];
+      const usedRules = usage ? Array.from(usage.rules) : [];
+
+      const values = (list.fields || []).map(v => v.value);
+      const max = 120;
+      const shown = values.slice(0, max);
+
+      const body = `
+        <div class="muted">caseInsensitive: ${safe(list.caseInsensitive)} • values: ${values.length}</div>
+        <p>Used by rules: ${usedRules.length ? usedRules.join(', ') : '—'}</p>
+        <p>Columns using this list: ${usedColumns.length ? usedColumns.join(', ') : '—'}</p>
+        <div class="list-values">
+          ${shown.map(v => `<span class="value-chip">${v}</span>`).join('')}
+        </div>
+        ${values.length > max ? `<div class="muted" style="margin-top:8px;">Showing first ${max} values</div>` : ''}
+      `;
+      openModal(`List: ${alias}`, body);
+    }
+
+    function selectEntity(alias) {
+      selectedAlias = alias;
+      renderEntityList(entitySearch.value);
+      renderDetails(alias);
+      highlightNode(alias);
+    }
+
+    renderEntityList();
+    renderDetails(selectedAlias);
+    // Graph (hierarchy: Event at top)
+    const width = document.querySelector('.graph-panel').clientWidth;
+    const height = document.querySelector('.graph-panel').clientHeight;
+    const svg = d3.select('#graph')
+      .attr('viewBox', `0 0 ${width} ${height}`);
+
+    const g = svg.append('g');
+    svg.call(d3.zoom().scaleExtent([0.6, 2.5]).on('zoom', (event) => g.attr('transform', event.transform)));
+
+    const colorMap = {
+      DefaultEntity: '#1b998b',
+      Tissue: '#2a9d8f',
+      Photo: '#e76f51',
+      Fasta: '#e9c46a',
+      Fastq: '#f4a261',
+      Extraction: '#5b8def'
+    };
+
+    function buildTree(alias, visited = new Set()) {
+      if (visited.has(alias)) {
+        return { name: alias, entity: entityByAlias.get(alias), children: [] };
+      }
+      visited.add(alias);
+      const children = childrenByParent.get(alias) || [];
+      return {
+        name: alias,
+        entity: entityByAlias.get(alias),
+        children: children.map(child => buildTree(child, visited))
+      };
+    }
+
+    const rootAlias = entityByAlias.has('Event')
+      ? 'Event'
+      : entities.find(e => !e.parentEntity || !entityByAlias.has(e.parentEntity))?.conceptAlias;
+
+    const treeData = rootAlias ? buildTree(rootAlias) : { name: 'root', entity: null, children: [] };
+    const root = d3.hierarchy(treeData, d => d.children);
+
+    const margin = { top: 24, right: 24, bottom: 24, left: 24 };
+    const treeLayout = d3.tree().size([width - margin.left - margin.right, height - margin.top - margin.bottom]);
+    treeLayout(root);
+
+    const linkPath = d3.linkVertical()
+      .x(d => d.x + margin.left)
+      .y(d => d.y + margin.top);
+
+    const link = g.append('g')
+      .attr('stroke', '#94a3b8')
+      .attr('stroke-opacity', 0.6)
+      .attr('fill', 'none')
+      .selectAll('path')
+      .data(root.links())
+      .join('path')
+      .attr('stroke-width', 2)
+      .attr('d', linkPath);
+
+    const node = g.append('g')
+      .selectAll('g')
+      .data(root.descendants())
+      .join('g')
+      .attr('class', 'node')
+      .attr('transform', d => `translate(${d.x + margin.left}, ${d.y + margin.top})`)
+      .style('cursor', 'pointer');
+
+    node.append('circle')
+      .attr('r', 26)
+      .attr('fill', d => colorMap[d.data.entity?.type] || '#94a3b8')
+      .attr('stroke', '#0f172a')
+      .attr('stroke-width', 1.5)
+      .attr('opacity', 0.92);
+
+    node.append('text')
+      .text(d => d.data.name)
+      .attr('text-anchor', 'middle')
+      .attr('dy', 4)
+      .attr('fill', '#0f172a')
+      .attr('font-size', 10)
+      .attr('font-weight', 600);
+
+    node.on('click', (event, d) => {
+      if (d.data.name) selectEntity(d.data.name);
+    });
+
+    function highlightNode(alias) {
+      node.selectAll('circle')
+        .attr('stroke', d => d.data.name === alias ? '#111827' : '#0f172a')
+        .attr('stroke-width', d => d.data.name === alias ? 3 : 1.5)
+        .attr('opacity', d => d.data.name === alias ? 1 : 0.75);
+    }
+
+    // Legend
+    const legend = document.getElementById('legend');
+    legend.innerHTML = Object.entries(colorMap).map(([type, color]) => `
+      <div class="legend-row"><span class="legend-dot" style="background:${color}"></span>${type}</div>
+    `).join('');
+
+    highlightNode(selectedAlias);
+    }
+  </script>
+</body>
+</html>

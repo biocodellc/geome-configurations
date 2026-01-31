@@ -3,6 +3,7 @@ const path = require('path');
 const csvParser = require('csv-parser');
 const fastcsv = require('fast-csv');
 
+const photosPath = 'sample_photos_output.csv';
 const samplesPath = 'Samples_output.csv';
 const eventsPath = 'Events_output.csv';
 const outputPath = 'occurrence_output.csv';
@@ -22,6 +23,7 @@ function loadCSV(filePath) {
 async function joinAndWriteCSV() {
   const samples = await loadCSV(samplesPath);
   const events = await loadCSV(eventsPath);
+  const photos = await loadCSV(photosPath);
 
   // Create a lookup for events by eventID
   const eventsById = {};
