@@ -87,13 +87,31 @@
                 {
                     "name": "NumericRange",
                     "level": "ERROR",
+                    "column": "yearCollected2",
+                    "range": ">=1500|<=2050"
+                },
+                {
+                    "name": "NumericRange",
+                    "level": "ERROR",
                     "column": "monthCollected",
                     "range": ">=1|<=12"
                 },
                 {
                     "name": "NumericRange",
                     "level": "ERROR",
+                    "column": "monthCollected2",
+                    "range": ">=1|<=12"
+                },
+                {
+                    "name": "NumericRange",
+                    "level": "ERROR",
                     "column": "dayCollected",
+                    "range": ">=1|<=31"
+                },
+                {
+                    "name": "NumericRange",
+                    "level": "ERROR",
+                    "column": "dayCollected2",
                     "range": ">=1|<=31"
                 },
                 {
@@ -221,6 +239,16 @@
                     "allowTBD": false
                 },
                 {
+                    "column": "dayCollected2",
+                    "uri": "urn:dayCollected2",
+                    "dataType": "INTEGER",
+                    "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dayCollected2?info",
+                    "definition": "The day the collecting event ended.",
+                    "allowUnknown": true,
+                    "allowTBD": false
+                },
+                {
                     "column": "locationID",
                     "uri": "uri:locationID",
                     "dataType": "STRING",
@@ -277,6 +305,16 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/decimalLongitudeEnd?info",
                     "definition": "The geographic longitude (in decimal degrees, using the spatial reference system given in geodeticDatum) of the geographic center of a Location that denotes the end point of a sampling run. Positive values are east of the Greenwich Meridian, negative values are west of it. Legal values lie between -180 and 180, inclusive.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "footprintWKT",
+                    "uri": "urn:footprintWKT",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/iri/footprintWKT",
+                    "definition": "A Well-Known Text (WKT) representation of the shape that defines the location.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -511,6 +549,16 @@
                     "allowTBD": false
                 },
                 {
+                    "column": "monthCollected2",
+                    "uri": "urn:monthCollected2",
+                    "dataType": "INTEGER",
+                    "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/monthCollected2?info",
+                    "definition": "The month the collecting event ended.",
+                    "allowUnknown": true,
+                    "allowTBD": false
+                },
+                {
                     "column": "permitInformation",
                     "uri": "urn:permitInformation",
                     "dataType": "STRING",
@@ -611,6 +659,16 @@
                     "allowTBD": false
                 },
                 {
+                    "column": "timeCollected2",
+                    "uri": "urn:timeCollected2",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/timeCollected2?info",
+                    "definition": "The time the collecting event ended.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
                     "column": "verbatimLatitude",
                     "uri": "urn:verbatimLatitude",
                     "dataType": "STRING",
@@ -637,6 +695,16 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/yearCollected?info",
                     "definition": "The year the collecting event took place. If you are unsure of the value and will never come across it, add \u2018Unknown\u2019, or if you do not currently have the data but will in the future, add \u2018TBD\u2019.",
+                    "allowUnknown": true,
+                    "allowTBD": false
+                },
+                {
+                    "column": "yearCollected2",
+                    "uri": "urn:yearCollected2",
+                    "dataType": "INTEGER",
+                    "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/yearCollected2?info",
+                    "definition": "The year the collecting event ended.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
