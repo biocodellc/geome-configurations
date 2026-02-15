@@ -49,11 +49,111 @@
       color: var(--muted);
       font-size: 13px;
     }
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .manual-loader {
+      display: none;
+      align-items: center;
+      gap: 6px;
+    }
+    .manual-loader input[type="file"] {
+      font-size: 12px;
+    }
+    .config-switch {
+      border: 1px solid var(--line);
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 5px 8px;
+      font-size: 12px;
+      color: var(--ink);
+    }
+    .pane-toggle {
+      width: 22px;
+      height: 22px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      border-radius: 6px;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1;
+      cursor: pointer;
+      color: var(--ink);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+    }
+    .pane-toggle:hover {
+      border-color: var(--accent);
+    }
+    .pane-toggle.active {
+      border-color: var(--accent);
+      background: rgba(27, 153, 139, 0.09);
+    }
+    .pane-controls {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      display: flex;
+      gap: 6px;
+      z-index: 2;
+    }
+    .detail-tools {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+    .restore-tray {
+      display: none;
+      position: fixed;
+      right: 16px;
+      bottom: 14px;
+      z-index: 25;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 8px;
+      box-shadow: var(--shadow);
+    }
+    .restore-tray .tray-label {
+      font-size: 11px;
+      color: var(--muted);
+      margin-left: 2px;
+      margin-right: 2px;
+    }
     main {
       display: grid;
       grid-template-columns: 260px minmax(320px, 1fr) 420px;
       gap: 16px;
       padding: 16px 18px 26px;
+      transition: grid-template-columns 0.2s ease;
+    }
+    main.hide-graph {
+      grid-template-columns: 260px minmax(320px, 1fr);
+    }
+    main.hide-details {
+      grid-template-columns: 260px minmax(320px, 1fr);
+    }
+    main.hide-graph.hide-details {
+      grid-template-columns: 1fr;
+    }
+    main.hide-graph .graph-panel {
+      display: none;
+    }
+    main.hide-details .detail-panel {
+      display: none;
+    }
+    main.hide-graph.hide-details .sidebar {
+      grid-column: 1 / -1;
     }
     .panel {
       background: var(--panel);
@@ -336,6 +436,17 @@
       main {
         grid-template-columns: 1fr;
       }
+      .header-tools {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .pane-controls {
+        gap: 6px;
+      }
+      .restore-tray {
+        right: 10px;
+        bottom: 10px;
+      }
       .entity-list { max-height: 240px; }
       .detail-content { max-height: none; }
       #graph { min-height: 420px; }
@@ -346,9 +457,20 @@
   <header>
     <div>
       <h1>GEOME Network Visualizer</h1>
-      <div class="meta">network_extraction.json • Entity relationships, attributes, rules, and vocabularies</div>
+      <div class="meta" id="configHint">Entity relationships, attributes, rules, and vocabularies</div>
     </div>
-    <div class="meta" id="summary"></div>
+    <div class="header-tools">
+      <label class="meta" for="configSelect">Configuration</label>
+      <select class="config-switch" id="configSelect" aria-label="Select configuration">
+        <option value="current">Current configuration</option>
+        <option value="proposed">Proposed configuration</option>
+      </select>
+      <div class="meta" id="summary"></div>
+      <label class="manual-loader meta" id="manualLoader">
+        Load JSON
+        <input id="manualJsonInput" type="file" accept=".json,application/json" />
+      </label>
+    </div>
   </header>
 
   <main>
@@ -359,6 +481,9 @@
     </section>
 
     <section class="panel graph-panel">
+      <div class="pane-controls">
+        <button class="pane-toggle" id="toggleGraphPane" type="button" title="Hide middle pane" aria-label="Hide middle pane">−</button>
+      </div>
       <svg id="graph"></svg>
       <div class="graph-legend" id="legend"></div>
     </section>
@@ -369,11 +494,20 @@
           <div class="detail-kicker">Entity</div>
           <div class="detail-title" id="entityTitle">—</div>
         </div>
-        <div class="detail-sub" id="entitySub"></div>
+        <div class="detail-tools">
+          <div class="detail-sub" id="entitySub"></div>
+          <button class="pane-toggle" id="toggleDetailPane" type="button" title="Hide right pane" aria-label="Hide right pane">−</button>
+        </div>
       </div>
       <div class="detail-content" id="details"></div>
     </section>
   </main>
+
+  <div class="restore-tray" id="restoreTray" aria-live="polite">
+    <span class="tray-label">Restore</span>
+    <button class="pane-toggle" id="restoreGraphPane" type="button" title="Show middle pane" aria-label="Show middle pane">M</button>
+    <button class="pane-toggle" id="restoreDetailPane" type="button" title="Show right pane" aria-label="Show right pane">R</button>
+  </div>
 
   
   <div class="modal" id="modal">
@@ -386,18 +520,114 @@
     </div>
   </div>
   <script>
-    const dataUrl = './network_extraction.json';
-    fetch(dataUrl)
-      .then(response => {
-        if (!response.ok) throw new Error(`Failed to load ${dataUrl}: ${response.status}`);
-        return response.json();
-      })
-      .then(init)
-      .catch(err => {
-        console.error(err);
-        const summary = document.getElementById('summary');
-        if (summary) summary.textContent = `Failed to load ${dataUrl}`;
+    const CONFIG_OPTIONS = {
+      current: {
+        label: 'Current configuration',
+        displayName: 'network.json',
+        candidates: [
+          '../network.json',
+          '/network.json',
+          './network.json',
+          'network.json'
+        ]
+      },
+      proposed: {
+        label: 'Proposed configuration',
+        displayName: 'network_extraction.json',
+        candidates: [
+          './network_extraction.json',
+          'network_extraction.json',
+          '/docs/network_extraction.json',
+          '../docs/network_extraction.json'
+        ]
+      }
+    };
+
+    function getSelectedConfigKey() {
+      const params = new URLSearchParams(window.location.search);
+      const key = params.get('config');
+      return CONFIG_OPTIONS[key] ? key : 'proposed';
+    }
+
+    function updateConfigUI() {
+      const configKey = getSelectedConfigKey();
+      const config = CONFIG_OPTIONS[configKey];
+      const configSelect = document.getElementById('configSelect');
+      const configHint = document.getElementById('configHint');
+      if (configSelect) configSelect.value = configKey;
+      if (configHint) {
+        configHint.textContent = `${config.displayName} • Entity relationships, attributes, rules, and vocabularies`;
+      }
+    }
+
+    function setupConfigSelector() {
+      const configSelect = document.getElementById('configSelect');
+      if (!configSelect) return;
+
+      updateConfigUI();
+      configSelect.addEventListener('change', () => {
+        const params = new URLSearchParams(window.location.search);
+        params.set('config', configSelect.value);
+        const next = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+        window.location.assign(next);
       });
+    }
+
+    async function loadConfig() {
+      const configKey = getSelectedConfigKey();
+      const config = CONFIG_OPTIONS[configKey];
+      const candidates = config.candidates;
+      updateConfigUI();
+
+      let lastError = null;
+      for (const url of candidates) {
+        try {
+          const response = await fetch(url, { cache: 'no-store' });
+          if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
+          const raw = await response.json();
+          init(raw);
+          return;
+        } catch (err) {
+          lastError = err;
+        }
+      }
+
+      console.error(lastError);
+      const summary = document.getElementById('summary');
+      const manualLoader = document.getElementById('manualLoader');
+      if (summary) {
+        const fileHint = location.protocol === 'file:'
+          ? ' (file:// blocked fetch; use the file picker or run a local server)'
+          : '';
+        summary.textContent = `Failed to load ${config.displayName}${fileHint}`;
+      }
+      if (manualLoader) manualLoader.style.display = 'inline-flex';
+    }
+
+    function setupManualLoader() {
+      const input = document.getElementById('manualJsonInput');
+      if (!input) return;
+      input.addEventListener('change', (event) => {
+        const file = event.target.files?.[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+          try {
+            const raw = JSON.parse(String(reader.result || ''));
+            init(raw);
+          } catch (err) {
+            console.error(err);
+            const summary = document.getElementById('summary');
+            if (summary) summary.textContent = 'Manual file load failed: invalid JSON';
+          }
+        };
+        reader.readAsText(file);
+      });
+    }
+
+    setupManualLoader();
+    setupConfigSelector();
+    loadConfig();
 
     function init(raw) {
     const entities = raw.entities || [];
@@ -441,6 +671,70 @@
     });
 
     let selectedAlias = entities[0]?.conceptAlias || null;
+    let isGraphHidden = false;
+    let isDetailHidden = false;
+    let nodeSelection = null;
+
+    const mainLayout = document.querySelector('main');
+    const graphPanel = document.querySelector('.graph-panel');
+    const restoreTray = document.getElementById('restoreTray');
+    const toggleGraphPaneBtn = document.getElementById('toggleGraphPane');
+    const toggleDetailPaneBtn = document.getElementById('toggleDetailPane');
+    const restoreGraphPaneBtn = document.getElementById('restoreGraphPane');
+    const restoreDetailPaneBtn = document.getElementById('restoreDetailPane');
+
+    function syncPaneControls() {
+      toggleGraphPaneBtn.textContent = isGraphHidden ? '+' : '−';
+      toggleGraphPaneBtn.classList.toggle('active', isGraphHidden);
+      toggleGraphPaneBtn.setAttribute('aria-pressed', String(isGraphHidden));
+      toggleGraphPaneBtn.title = isGraphHidden ? 'Show middle pane' : 'Hide middle pane';
+      toggleGraphPaneBtn.setAttribute('aria-label', toggleGraphPaneBtn.title);
+
+      toggleDetailPaneBtn.textContent = isDetailHidden ? '+' : '−';
+      toggleDetailPaneBtn.classList.toggle('active', isDetailHidden);
+      toggleDetailPaneBtn.setAttribute('aria-pressed', String(isDetailHidden));
+      toggleDetailPaneBtn.title = isDetailHidden ? 'Show right pane' : 'Hide right pane';
+      toggleDetailPaneBtn.setAttribute('aria-label', toggleDetailPaneBtn.title);
+
+      if (restoreTray) {
+        restoreTray.style.display = (isGraphHidden || isDetailHidden) ? 'flex' : 'none';
+      }
+      if (restoreGraphPaneBtn) {
+        restoreGraphPaneBtn.style.display = isGraphHidden ? 'inline-flex' : 'none';
+      }
+      if (restoreDetailPaneBtn) {
+        restoreDetailPaneBtn.style.display = isDetailHidden ? 'inline-flex' : 'none';
+      }
+    }
+
+    function applyLayout() {
+      mainLayout.classList.toggle('hide-graph', isGraphHidden);
+      mainLayout.classList.toggle('hide-details', isDetailHidden);
+      syncPaneControls();
+      if (!isGraphHidden) {
+        window.requestAnimationFrame(renderGraph);
+      }
+    }
+
+    toggleGraphPaneBtn.addEventListener('click', () => {
+      isGraphHidden = !isGraphHidden;
+      applyLayout();
+    });
+
+    toggleDetailPaneBtn.addEventListener('click', () => {
+      isDetailHidden = !isDetailHidden;
+      applyLayout();
+    });
+
+    restoreGraphPaneBtn.addEventListener('click', () => {
+      isGraphHidden = false;
+      applyLayout();
+    });
+
+    restoreDetailPaneBtn.addEventListener('click', () => {
+      isDetailHidden = false;
+      applyLayout();
+    });
 
     function renderEntityList(filter = '') {
       entityList.innerHTML = '';
@@ -685,14 +979,6 @@
     renderEntityList();
     renderDetails(selectedAlias);
     // Graph (hierarchy: Event at top)
-    const width = document.querySelector('.graph-panel').clientWidth;
-    const height = document.querySelector('.graph-panel').clientHeight;
-    const svg = d3.select('#graph')
-      .attr('viewBox', `0 0 ${width} ${height}`);
-
-    const g = svg.append('g');
-    svg.call(d3.zoom().scaleExtent([0.6, 2.5]).on('zoom', (event) => g.attr('transform', event.transform)));
-
     const colorMap = {
       DefaultEntity: '#1b998b',
       Tissue: '#2a9d8f',
@@ -715,63 +1001,80 @@
       };
     }
 
-    const rootAlias = entityByAlias.has('Event')
-      ? 'Event'
-      : entities.find(e => !e.parentEntity || !entityByAlias.has(e.parentEntity))?.conceptAlias;
-
-    const treeData = rootAlias ? buildTree(rootAlias) : { name: 'root', entity: null, children: [] };
-    const root = d3.hierarchy(treeData, d => d.children);
-
-    const margin = { top: 24, right: 24, bottom: 24, left: 24 };
-    const treeLayout = d3.tree().size([width - margin.left - margin.right, height - margin.top - margin.bottom]);
-    treeLayout(root);
-
-    const linkPath = d3.linkVertical()
-      .x(d => d.x + margin.left)
-      .y(d => d.y + margin.top);
-
-    const link = g.append('g')
-      .attr('stroke', '#94a3b8')
-      .attr('stroke-opacity', 0.6)
-      .attr('fill', 'none')
-      .selectAll('path')
-      .data(root.links())
-      .join('path')
-      .attr('stroke-width', 2)
-      .attr('d', linkPath);
-
-    const node = g.append('g')
-      .selectAll('g')
-      .data(root.descendants())
-      .join('g')
-      .attr('class', 'node')
-      .attr('transform', d => `translate(${d.x + margin.left}, ${d.y + margin.top})`)
-      .style('cursor', 'pointer');
-
-    node.append('circle')
-      .attr('r', 26)
-      .attr('fill', d => colorMap[d.data.entity?.type] || '#94a3b8')
-      .attr('stroke', '#0f172a')
-      .attr('stroke-width', 1.5)
-      .attr('opacity', 0.92);
-
-    node.append('text')
-      .text(d => d.data.name)
-      .attr('text-anchor', 'middle')
-      .attr('dy', 4)
-      .attr('fill', '#0f172a')
-      .attr('font-size', 10)
-      .attr('font-weight', 600);
-
-    node.on('click', (event, d) => {
-      if (d.data.name) selectEntity(d.data.name);
-    });
-
     function highlightNode(alias) {
-      node.selectAll('circle')
+      if (!nodeSelection) return;
+      nodeSelection.selectAll('circle')
         .attr('stroke', d => d.data.name === alias ? '#111827' : '#0f172a')
         .attr('stroke-width', d => d.data.name === alias ? 3 : 1.5)
         .attr('opacity', d => d.data.name === alias ? 1 : 0.75);
+    }
+
+    function renderGraph() {
+      if (isGraphHidden) return;
+
+      const width = Math.max(graphPanel.clientWidth, 320);
+      const height = Math.max(graphPanel.clientHeight, 560);
+      const svg = d3.select('#graph');
+      svg.attr('viewBox', `0 0 ${width} ${height}`);
+      svg.selectAll('*').remove();
+      svg.on('.zoom', null);
+
+      const g = svg.append('g');
+      svg.call(d3.zoom().scaleExtent([0.6, 2.5]).on('zoom', (event) => g.attr('transform', event.transform)));
+
+      const rootAlias = entityByAlias.has('Event')
+        ? 'Event'
+        : entities.find(e => !e.parentEntity || !entityByAlias.has(e.parentEntity))?.conceptAlias;
+
+      const treeData = rootAlias ? buildTree(rootAlias) : { name: 'root', entity: null, children: [] };
+      const root = d3.hierarchy(treeData, d => d.children);
+
+      const margin = { top: 24, right: 24, bottom: 24, left: 24 };
+      const treeLayout = d3.tree().size([width - margin.left - margin.right, height - margin.top - margin.bottom]);
+      treeLayout(root);
+
+      const linkPath = d3.linkVertical()
+        .x(d => d.x + margin.left)
+        .y(d => d.y + margin.top);
+
+      g.append('g')
+        .attr('stroke', '#94a3b8')
+        .attr('stroke-opacity', 0.6)
+        .attr('fill', 'none')
+        .selectAll('path')
+        .data(root.links())
+        .join('path')
+        .attr('stroke-width', 2)
+        .attr('d', linkPath);
+
+      nodeSelection = g.append('g')
+        .selectAll('g')
+        .data(root.descendants())
+        .join('g')
+        .attr('class', 'node')
+        .attr('transform', d => `translate(${d.x + margin.left}, ${d.y + margin.top})`)
+        .style('cursor', 'pointer');
+
+      nodeSelection.append('circle')
+        .attr('r', 26)
+        .attr('fill', d => colorMap[d.data.entity?.type] || '#94a3b8')
+        .attr('stroke', '#0f172a')
+        .attr('stroke-width', 1.5)
+        .attr('opacity', 0.92);
+
+      nodeSelection.append('text')
+        .text(d => d.data.name)
+        .attr('text-anchor', 'middle')
+        .attr('dy', 4)
+        .attr('fill', '#0f172a')
+        .attr('font-size', 10)
+        .attr('font-weight', 600);
+
+      nodeSelection.on('click', (event, d) => {
+        if (d.data.name) selectEntity(d.data.name);
+      });
+
+      highlightNode(selectedAlias);
     }
 
     // Legend
@@ -780,7 +1083,15 @@
       <div class="legend-row"><span class="legend-dot" style="background:${color}"></span>${type}</div>
     `).join('');
 
-    highlightNode(selectedAlias);
+    let resizeTimer = null;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (!isGraphHidden) renderGraph();
+      }, 120);
+    });
+
+    applyLayout();
     }
   </script>
 </body>
