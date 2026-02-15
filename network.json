@@ -1604,6 +1604,17 @@
                     "allowTBD": false
                 },
                 {
+                    "column": "fromSample",
+                    "uri": "urn:fromSample",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/fromSample?info",
+                    "group": "Record and Owner Details",
+                    "definition": "Identifier of sample that this sample was derived from, if available.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
                     "column": "occurrenceID",
                     "uri": "urn:occurrenceID",
                     "dataType": "STRING",
