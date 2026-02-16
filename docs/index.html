@@ -72,63 +72,45 @@
       font-size: 12px;
       color: var(--ink);
     }
-    .pane-toggle {
-      width: 22px;
-      height: 22px;
-      border: 1px solid var(--line);
-      background: #ffffff;
-      border-radius: 6px;
-      padding: 0;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 1;
-      cursor: pointer;
-      color: var(--ink);
+    .view-toggle-label {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .view-toggle {
       display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      user-select: none;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 3px;
+      background: #f9fafb;
+      gap: 3px;
     }
-    .pane-toggle:hover {
-      border-color: var(--accent);
+    .view-toggle-btn {
+      border: 1px solid transparent;
+      border-radius: 7px;
+      background: transparent;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 10px;
+      cursor: pointer;
+      min-width: 88px;
     }
-    .pane-toggle.active {
+    .view-toggle-btn:hover {
+      border-color: var(--line);
+      background: #ffffff;
+    }
+    .view-toggle-btn.active {
       border-color: var(--accent);
       background: rgba(27, 153, 139, 0.09);
-    }
-    .pane-controls {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      display: flex;
-      gap: 6px;
-      z-index: 2;
     }
     .detail-tools {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
       gap: 6px;
-    }
-    .restore-tray {
-      display: none;
-      position: fixed;
-      right: 16px;
-      bottom: 14px;
-      z-index: 25;
-      align-items: center;
-      gap: 6px;
-      background: rgba(255, 255, 255, 0.96);
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 6px 8px;
-      box-shadow: var(--shadow);
-    }
-    .restore-tray .tray-label {
-      font-size: 11px;
-      color: var(--muted);
-      margin-left: 2px;
-      margin-right: 2px;
     }
     main {
       display: grid;
@@ -137,23 +119,17 @@
       padding: 16px 18px 26px;
       transition: grid-template-columns 0.2s ease;
     }
-    main.hide-graph {
+    main.view-attributes {
       grid-template-columns: 260px minmax(320px, 1fr);
     }
-    main.hide-details {
+    main.view-diagram {
       grid-template-columns: 260px minmax(320px, 1fr);
     }
-    main.hide-graph.hide-details {
-      grid-template-columns: 1fr;
-    }
-    main.hide-graph .graph-panel {
+    main.view-attributes .graph-panel {
       display: none;
     }
-    main.hide-details .detail-panel {
+    main.view-diagram .detail-panel {
       display: none;
-    }
-    main.hide-graph.hide-details .sidebar {
-      grid-column: 1 / -1;
     }
     .panel {
       background: var(--panel);
@@ -243,6 +219,12 @@
       border-radius: 50%;
       background: var(--accent);
     }
+    .legend-link {
+      width: 14px;
+      height: 0;
+      border-top: 2px dashed #64748b;
+      display: inline-block;
+    }
     .detail-panel {
       display: flex;
       flex-direction: column;
@@ -318,6 +300,47 @@
       top: 0;
       z-index: 1;
     }
+    .attribute-tools {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .attribute-search {
+      min-width: 220px;
+      max-width: 360px;
+      flex: 1 1 240px;
+    }
+    .attribute-row {
+      cursor: pointer;
+    }
+    .attribute-row:hover {
+      background: #f8fafc;
+    }
+    .attribute-table {
+      table-layout: fixed;
+    }
+    .attribute-table th,
+    .attribute-table td {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    .attribute-table .attr-col-column { width: 13%; }
+    .attribute-table .attr-col-type { width: 9%; }
+    .attribute-table .attr-col-definition { width: 16%; }
+    .attribute-table .attr-col-uri { width: 14%; }
+    .attribute-table .attr-col-definedby { width: 18%; }
+    .attribute-table .attr-col-lists { width: 16%; }
+    .attribute-table .attr-col-internal { width: 7%; }
+    .attribute-table .attr-col-unknown { width: 7%; }
+    .attribute-table td.attr-col-definedby a,
+    .attribute-table td.attr-col-uri a {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      white-space: normal;
+    }
     a {
       color: var(--accent-3);
       text-decoration: none;
@@ -384,6 +407,25 @@
     .rule-card strong { font-size: 13px; }
     .rule-meta { color: var(--muted); font-size: 12px; margin-top: 4px; }
     .rule-actions { margin-top: 8px; }
+    .attribute-link {
+      stroke: #64748b;
+      stroke-dasharray: 3 4;
+      stroke-width: 1.7;
+      opacity: 0.85;
+      fill: none;
+      pointer-events: none;
+    }
+    .attribute-link-label {
+      font-size: 10px;
+      fill: #334155;
+      pointer-events: none;
+      paint-order: stroke;
+      stroke: #ffffff;
+      stroke-width: 3;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+      font-weight: 600;
+    }
 
     .modal {
       position: fixed;
@@ -440,13 +482,6 @@
         width: 100%;
         justify-content: flex-start;
       }
-      .pane-controls {
-        gap: 6px;
-      }
-      .restore-tray {
-        right: 10px;
-        bottom: 10px;
-      }
       .entity-list { max-height: 240px; }
       .detail-content { max-height: none; }
       #graph { min-height: 420px; }
@@ -462,8 +497,7 @@
     <div class="header-tools">
       <label class="meta" for="configSelect">Configuration</label>
       <select class="config-switch" id="configSelect" aria-label="Select configuration">
-        <option value="current">Current configuration</option>
-        <option value="proposed">Proposed configuration</option>
+        <option value="network">GEOME network (default)</option>
       </select>
       <div class="meta" id="summary"></div>
       <label class="manual-loader meta" id="manualLoader">
@@ -473,17 +507,19 @@
     </div>
   </header>
 
-  <main>
+  <main class="view-attributes">
     <section class="panel sidebar">
       <h2>Entities</h2>
+      <div class="view-toggle-label">View</div>
+      <div class="view-toggle" role="tablist" aria-label="Left pane view mode">
+        <button class="view-toggle-btn active" id="viewModeAttributes" type="button" role="tab" aria-selected="true">Attributes</button>
+        <button class="view-toggle-btn" id="viewModeDiagram" type="button" role="tab" aria-selected="false">Diagram</button>
+      </div>
       <input class="search" id="entitySearch" placeholder="Search entities..." />
       <div class="entity-list" id="entityList"></div>
     </section>
 
     <section class="panel graph-panel">
-      <div class="pane-controls">
-        <button class="pane-toggle" id="toggleGraphPane" type="button" title="Hide middle pane" aria-label="Hide middle pane">−</button>
-      </div>
       <svg id="graph"></svg>
       <div class="graph-legend" id="legend"></div>
     </section>
@@ -496,18 +532,11 @@
         </div>
         <div class="detail-tools">
           <div class="detail-sub" id="entitySub"></div>
-          <button class="pane-toggle" id="toggleDetailPane" type="button" title="Hide right pane" aria-label="Hide right pane">−</button>
         </div>
       </div>
       <div class="detail-content" id="details"></div>
     </section>
   </main>
-
-  <div class="restore-tray" id="restoreTray" aria-live="polite">
-    <span class="tray-label">Restore</span>
-    <button class="pane-toggle" id="restoreGraphPane" type="button" title="Show middle pane" aria-label="Show middle pane">M</button>
-    <button class="pane-toggle" id="restoreDetailPane" type="button" title="Show right pane" aria-label="Show right pane">R</button>
-  </div>
 
   
   <div class="modal" id="modal">
@@ -520,88 +549,146 @@
     </div>
   </div>
   <script>
-    const CONFIG_OPTIONS = {
-      current: {
-        label: 'Current configuration',
-        displayName: 'network.json',
-        candidates: [
-          '../network.json',
-          '/network.json',
-          './network.json',
-          'network.json'
-        ]
-      },
-      proposed: {
-        label: 'Proposed configuration',
-        displayName: 'network_extraction.json',
-        candidates: [
-          './network_extraction.json',
-          'network_extraction.json',
-          '/docs/network_extraction.json',
-          '../docs/network_extraction.json'
-        ]
-      }
+    const CONFIG_ENDPOINTS = {
+      network: 'https://api.geome-db.org/network/1/config',
+      teams: 'https://api.geome-db.org/projects/configs?networkApproved=true',
+      teamConfig: (id) => `https://api.geome-db.org/projects/configs/${encodeURIComponent(id)}?includePublic=true`
     };
+    const NETWORK_FILE_CANDIDATES = [
+      './network_extraction.json',
+      'network_extraction.json',
+      '/docs/network_extraction.json',
+      '../docs/network_extraction.json'
+    ];
+    const SOURCE_OPTIONS = new Map();
 
-    function getSelectedConfigKey() {
+    function normalizeConfigPayload(raw) {
+      if (raw && raw.config && Array.isArray(raw.config.entities)) return raw.config;
+      if (raw && Array.isArray(raw.entities)) return raw;
+      throw new Error('Response does not contain entities/lists configuration');
+    }
+
+    function getSelectedSourceKey() {
       const params = new URLSearchParams(window.location.search);
-      const key = params.get('config');
-      return CONFIG_OPTIONS[key] ? key : 'proposed';
+      const source = params.get('source');
+      if (source && SOURCE_OPTIONS.has(source)) return source;
+      const legacyConfig = params.get('config');
+      if (legacyConfig === 'current') return 'network';
+      return 'network';
     }
 
-    function updateConfigUI() {
-      const configKey = getSelectedConfigKey();
-      const config = CONFIG_OPTIONS[configKey];
-      const configSelect = document.getElementById('configSelect');
-      const configHint = document.getElementById('configHint');
-      if (configSelect) configSelect.value = configKey;
-      if (configHint) {
-        configHint.textContent = `${config.displayName} • Entity relationships, attributes, rules, and vocabularies`;
-      }
+    async function fetchJson(url) {
+      const response = await fetch(url, { cache: 'no-store' });
+      if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
+      return response.json();
     }
 
-    function setupConfigSelector() {
+    function addSourceOption(select, key, label) {
+      const option = document.createElement('option');
+      option.value = key;
+      option.textContent = label;
+      select.appendChild(option);
+    }
+
+    async function populateConfigOptions() {
       const configSelect = document.getElementById('configSelect');
       if (!configSelect) return;
 
-      updateConfigUI();
+      SOURCE_OPTIONS.clear();
+      configSelect.innerHTML = '';
+
+      SOURCE_OPTIONS.set('network', {
+        label: 'GEOME network',
+        displayName: 'GEOME network configuration',
+        candidates: [
+          ...NETWORK_FILE_CANDIDATES,
+          CONFIG_ENDPOINTS.network
+        ]
+      });
+      addSourceOption(configSelect, 'network', 'GEOME network (default)');
+
+      try {
+        const teamPayload = await fetchJson(CONFIG_ENDPOINTS.teams);
+        const teamRows = Array.isArray(teamPayload)
+          ? teamPayload
+          : (Array.isArray(teamPayload?.configurations) ? teamPayload.configurations : []);
+
+        const teams = teamRows
+          .filter((team) => team && team.id && team.name && team.networkApproved)
+          .sort((a, b) => String(a.name).localeCompare(String(b.name)));
+
+        teams.forEach((team) => {
+          const key = `team:${team.id}`;
+          SOURCE_OPTIONS.set(key, {
+            label: team.name,
+            displayName: `${team.name} team configuration`,
+            candidates: [CONFIG_ENDPOINTS.teamConfig(team.id)]
+          });
+          addSourceOption(configSelect, key, team.name);
+        });
+      } catch (err) {
+        console.error('Unable to fetch team configurations', err);
+      }
+    }
+
+    function updateConfigUI(sourceKey) {
+      const configSelect = document.getElementById('configSelect');
+      const configHint = document.getElementById('configHint');
+      const selected = SOURCE_OPTIONS.get(sourceKey) || SOURCE_OPTIONS.get('network');
+      if (configSelect && selected) configSelect.value = sourceKey;
+      if (configHint) {
+        const label = selected ? selected.displayName : 'GEOME network configuration';
+        configHint.textContent = `${label} • Entity relationships, attributes, rules, and vocabularies`;
+      }
+    }
+
+    async function setupConfigSelector() {
+      const configSelect = document.getElementById('configSelect');
+      if (!configSelect) return;
+
+      await populateConfigOptions();
+      const sourceKey = getSelectedSourceKey();
+      const selected = SOURCE_OPTIONS.has(sourceKey) ? sourceKey : 'network';
+      updateConfigUI(selected);
+      configSelect.value = selected;
+
       configSelect.addEventListener('change', () => {
         const params = new URLSearchParams(window.location.search);
-        params.set('config', configSelect.value);
+        params.set('source', configSelect.value);
+        params.delete('config');
         const next = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
         window.location.assign(next);
       });
     }
 
     async function loadConfig() {
-      const configKey = getSelectedConfigKey();
-      const config = CONFIG_OPTIONS[configKey];
-      const candidates = config.candidates;
-      updateConfigUI();
+      const sourceKey = getSelectedSourceKey();
+      const selected = SOURCE_OPTIONS.get(sourceKey) || SOURCE_OPTIONS.get('network');
+      updateConfigUI(sourceKey);
 
-      let lastError = null;
-      for (const url of candidates) {
-        try {
-          const response = await fetch(url, { cache: 'no-store' });
-          if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
-          const raw = await response.json();
-          init(raw);
-          return;
-        } catch (err) {
-          lastError = err;
+      try {
+        let lastError = null;
+        const candidates = Array.isArray(selected.candidates) ? selected.candidates : [];
+        for (const url of candidates) {
+          try {
+            const raw = await fetchJson(url);
+            init(normalizeConfigPayload(raw));
+            return;
+          } catch (err) {
+            lastError = err;
+          }
         }
+        if (lastError) throw lastError;
+        return;
+      } catch (err) {
+        console.error(err);
+        const summary = document.getElementById('summary');
+        const manualLoader = document.getElementById('manualLoader');
+        if (summary) {
+          summary.textContent = `Failed to load ${selected.displayName}`;
+        }
+        if (manualLoader) manualLoader.style.display = 'inline-flex';
       }
-
-      console.error(lastError);
-      const summary = document.getElementById('summary');
-      const manualLoader = document.getElementById('manualLoader');
-      if (summary) {
-        const fileHint = location.protocol === 'file:'
-          ? ' (file:// blocked fetch; use the file picker or run a local server)'
-          : '';
-        summary.textContent = `Failed to load ${config.displayName}${fileHint}`;
-      }
-      if (manualLoader) manualLoader.style.display = 'inline-flex';
     }
 
     function setupManualLoader() {
@@ -614,7 +701,7 @@
         reader.onload = () => {
           try {
             const raw = JSON.parse(String(reader.result || ''));
-            init(raw);
+            init(normalizeConfigPayload(raw));
           } catch (err) {
             console.error(err);
             const summary = document.getElementById('summary');
@@ -626,13 +713,21 @@
     }
 
     setupManualLoader();
-    setupConfigSelector();
-    loadConfig();
+    (async () => {
+      await setupConfigSelector();
+      await loadConfig();
+    })();
 
     function init(raw) {
     const entities = raw.entities || [];
     const lists = raw.lists || [];
     const listByAlias = new Map(lists.map(l => [l.alias, l]));
+    const listAliasByLower = new Map();
+    lists.forEach((list) => {
+      const normalizedAlias = String(list?.alias || '').trim().toLowerCase();
+      if (!normalizedAlias || listAliasByLower.has(normalizedAlias)) return;
+      listAliasByLower.set(normalizedAlias, list.alias);
+    });
 
     const entityByAlias = new Map(entities.map(e => [e.conceptAlias, e]));
     const childrenByParent = new Map();
@@ -641,6 +736,87 @@
       if (!childrenByParent.has(e.parentEntity)) childrenByParent.set(e.parentEntity, []);
       childrenByParent.get(e.parentEntity).push(e.conceptAlias);
     });
+
+    function normalizeId(value) {
+      return String(value || '').trim().toLowerCase();
+    }
+
+    function findListAliasForColumn(column) {
+      if (!column) return null;
+      if (listByAlias.has(column)) return column;
+      return listAliasByLower.get(normalizeId(column)) || null;
+    }
+
+    function inferAttributeRelationships() {
+      const uniqueKeyTargets = new Map();
+      entities.forEach((entity) => {
+        const normalizedKey = normalizeId(entity.uniqueKey);
+        if (!normalizedKey) return;
+        if (!uniqueKeyTargets.has(normalizedKey)) {
+          uniqueKeyTargets.set(normalizedKey, entity.conceptAlias);
+        }
+      });
+
+      const explicitTargets = new Map([
+        ['fromtissueid', 'Tissue'],
+        ['fromsampleid', 'Sample'],
+        ['fromtissue', 'Tissue'],
+        ['fromsample', 'Sample'],
+        ['parenteventid', 'Event'],
+        ['relatedeventid', 'Event']
+      ]);
+
+      const relationships = [];
+      entities.forEach((entity) => {
+        const sourceAlias = entity.conceptAlias;
+        const sourceUniqueKey = normalizeId(entity.uniqueKey);
+        const parentAlias = entity.parentEntity;
+        const parentUniqueKey = normalizeId(entityByAlias.get(parentAlias)?.uniqueKey);
+        (entity.attributes || []).forEach((attribute) => {
+          const column = attribute?.column;
+          const normalizedColumn = normalizeId(column);
+          if (!normalizedColumn) return;
+          if (normalizedColumn === sourceUniqueKey) return;
+
+          let targetAlias = explicitTargets.get(normalizedColumn) || uniqueKeyTargets.get(normalizedColumn);
+
+          if (!targetAlias && normalizedColumn.endsWith('id')) {
+            const stem = normalizedColumn.slice(0, -2);
+            const candidates = [
+              stem,
+              stem.replace(/^from/, ''),
+              stem.replace(/^parent/, ''),
+              stem.replace(/^related/, '')
+            ];
+            targetAlias = Array.from(entityByAlias.keys()).find((alias) => {
+              const normalizedAlias = normalizeId(alias);
+              return candidates.some(candidate => candidate && candidate === normalizedAlias);
+            });
+          }
+
+          if (!targetAlias || !entityByAlias.has(targetAlias)) return;
+          if (parentAlias && targetAlias === parentAlias && parentUniqueKey && normalizedColumn === parentUniqueKey) {
+            return;
+          }
+
+          relationships.push({
+            from: sourceAlias,
+            to: targetAlias,
+            label: column
+          });
+        });
+      });
+
+      const seen = new Set();
+      return relationships.filter((relationship) => {
+        const key = `${relationship.from}|${relationship.to}|${relationship.label}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    }
+
+    const attributeRelationships = inferAttributeRelationships();
 
     const summary = document.getElementById('summary');
     summary.textContent = `${entities.length} entities • ${lists.length} vocabularies`;
@@ -671,69 +847,35 @@
     });
 
     let selectedAlias = entities[0]?.conceptAlias || null;
-    let isGraphHidden = false;
-    let isDetailHidden = false;
+    let viewMode = 'attributes';
     let nodeSelection = null;
 
     const mainLayout = document.querySelector('main');
     const graphPanel = document.querySelector('.graph-panel');
-    const restoreTray = document.getElementById('restoreTray');
-    const toggleGraphPaneBtn = document.getElementById('toggleGraphPane');
-    const toggleDetailPaneBtn = document.getElementById('toggleDetailPane');
-    const restoreGraphPaneBtn = document.getElementById('restoreGraphPane');
-    const restoreDetailPaneBtn = document.getElementById('restoreDetailPane');
+    const viewModeAttributesBtn = document.getElementById('viewModeAttributes');
+    const viewModeDiagramBtn = document.getElementById('viewModeDiagram');
 
-    function syncPaneControls() {
-      toggleGraphPaneBtn.textContent = isGraphHidden ? '+' : '−';
-      toggleGraphPaneBtn.classList.toggle('active', isGraphHidden);
-      toggleGraphPaneBtn.setAttribute('aria-pressed', String(isGraphHidden));
-      toggleGraphPaneBtn.title = isGraphHidden ? 'Show middle pane' : 'Hide middle pane';
-      toggleGraphPaneBtn.setAttribute('aria-label', toggleGraphPaneBtn.title);
-
-      toggleDetailPaneBtn.textContent = isDetailHidden ? '+' : '−';
-      toggleDetailPaneBtn.classList.toggle('active', isDetailHidden);
-      toggleDetailPaneBtn.setAttribute('aria-pressed', String(isDetailHidden));
-      toggleDetailPaneBtn.title = isDetailHidden ? 'Show right pane' : 'Hide right pane';
-      toggleDetailPaneBtn.setAttribute('aria-label', toggleDetailPaneBtn.title);
-
-      if (restoreTray) {
-        restoreTray.style.display = (isGraphHidden || isDetailHidden) ? 'flex' : 'none';
-      }
-      if (restoreGraphPaneBtn) {
-        restoreGraphPaneBtn.style.display = isGraphHidden ? 'inline-flex' : 'none';
-      }
-      if (restoreDetailPaneBtn) {
-        restoreDetailPaneBtn.style.display = isDetailHidden ? 'inline-flex' : 'none';
-      }
-    }
-
-    function applyLayout() {
-      mainLayout.classList.toggle('hide-graph', isGraphHidden);
-      mainLayout.classList.toggle('hide-details', isDetailHidden);
-      syncPaneControls();
-      if (!isGraphHidden) {
+    function applyViewMode() {
+      const showAttributes = viewMode !== 'diagram';
+      mainLayout.classList.toggle('view-attributes', showAttributes);
+      mainLayout.classList.toggle('view-diagram', !showAttributes);
+      viewModeAttributesBtn.classList.toggle('active', showAttributes);
+      viewModeAttributesBtn.setAttribute('aria-selected', String(showAttributes));
+      viewModeDiagramBtn.classList.toggle('active', !showAttributes);
+      viewModeDiagramBtn.setAttribute('aria-selected', String(!showAttributes));
+      if (!showAttributes) {
         window.requestAnimationFrame(renderGraph);
       }
     }
 
-    toggleGraphPaneBtn.addEventListener('click', () => {
-      isGraphHidden = !isGraphHidden;
-      applyLayout();
+    viewModeAttributesBtn.addEventListener('click', () => {
+      viewMode = 'attributes';
+      applyViewMode();
     });
 
-    toggleDetailPaneBtn.addEventListener('click', () => {
-      isDetailHidden = !isDetailHidden;
-      applyLayout();
-    });
-
-    restoreGraphPaneBtn.addEventListener('click', () => {
-      isGraphHidden = false;
-      applyLayout();
-    });
-
-    restoreDetailPaneBtn.addEventListener('click', () => {
-      isDetailHidden = false;
-      applyLayout();
+    viewModeDiagramBtn.addEventListener('click', () => {
+      viewMode = 'diagram';
+      applyViewMode();
     });
 
     function renderEntityList(filter = '') {
@@ -754,10 +896,11 @@
 
     function makeLink(value) {
       if (!value) return '';
-      if (value.startsWith('http')) {
-        return `<a href="${value}" target="_blank" rel="noopener">link</a>`;
+      const text = String(value);
+      if (text.startsWith('http')) {
+        return `<a href="${text}" target="_blank" rel="noopener">${text}</a>`;
       }
-      return value;
+      return text;
     }
 
     function safe(val) {
@@ -831,6 +974,18 @@
         });
       });
 
+      attributes.forEach((attribute) => {
+        const column = attribute?.column;
+        const matchedListAlias = findListAliasForColumn(column);
+        if (!column || !matchedListAlias) return;
+        if (!listUsage.has(matchedListAlias)) {
+          listUsage.set(matchedListAlias, { columns: new Set(), rules: new Set() });
+        }
+        listUsage.get(matchedListAlias).columns.add(column);
+        if (!listByColumn.has(column)) listByColumn.set(column, new Set());
+        listByColumn.get(column).add(matchedListAlias);
+      });
+
       currentListUsage = listUsage;
 
       entityTitle.textContent = entity.conceptAlias || '—';
@@ -850,56 +1005,44 @@
         <div>${children.map(c => `<span class="pill" data-entity="${c}">Child: ${c}</span>`).join(' ')}</div>
 
         <h2 style="margin-top:16px">Attributes (${attributes.length})</h2>
+        <div class="attribute-tools">
+          <input
+            class="search attribute-search"
+            id="attributeSearch"
+            type="text"
+            placeholder="Search attributes..."
+          />
+          <span class="muted" id="attributeMatchCount">Showing ${attributes.length} of ${attributes.length}</span>
+        </div>
         <div style="max-height:280px; overflow:auto; border:1px solid var(--line); border-radius:12px;">
-          <table>
+          <table class="attribute-table">
             <thead>
               <tr>
-                <th>column</th>
-                <th>dataType</th>
-                <th>uri</th>
-                <th>definedBy</th>
-                <th>lists</th>
-                <th>internal</th>
-                <th>allowUnknown</th>
+                <th class="attr-col-column">column</th>
+                <th class="attr-col-type">dataType</th>
+                <th class="attr-col-definition">definition</th>
+                <th class="attr-col-uri">uri</th>
+                <th class="attr-col-definedby">definedBy</th>
+                <th class="attr-col-lists">lists</th>
+                <th class="attr-col-internal">internal</th>
+                <th class="attr-col-unknown">allowUnknown</th>
               </tr>
             </thead>
-            <tbody>
-              ${attributes.map(a => {
-                const listPills = listByColumn.has(a.column)
-                  ? Array.from(listByColumn.get(a.column)).map(l => `<span class="pill" data-list="${l}">${l}</span>`).join('')
-                  : '';
-                return `
-                  <tr>
-                    <td>${safe(a.column)}</td>
-                    <td>${safe(a.dataType)}</td>
-                    <td>${makeLink(a.uri) || safe(a.uri)}</td>
-                    <td>${makeLink(a.definedBy) || safe(a.definedBy)}</td>
-                    <td>${listPills || '<span class="muted">—</span>'}</td>
-                    <td>${safe(a.internal)}</td>
-                    <td>${safe(a.allowUnknown)}</td>
-                  </tr>
-                `;
-              }).join('')}
-            </tbody>
+            <tbody id="attributeRows"></tbody>
           </table>
         </div>
 
         <h2 style="margin-top:16px">Rules (${rules.length})</h2>
-        ${rules.map((r, idx) => {
-          const cols = ruleColumns(r);
-          const colText = cols.length ? cols.join(', ') : 'All / unspecified';
-          return `
-            <div class="rule-card">
-              <strong>${safe(r.name)}</strong>
-              <span class="badge">${safe(r.level || '—')}</span>
-              <div class="rule-meta">Applies to: ${safe(colText)}</div>
-              <div class="rule-meta">${describeRule(r)}</div>
-              <div class="rule-actions">
-                <span class="pill" data-rule-index="${idx}">View rule details</span>
-              </div>
-            </div>
-          `;
-        }).join('')}
+        <div class="attribute-tools">
+          <input
+            class="search attribute-search"
+            id="ruleSearch"
+            type="text"
+            placeholder="Search attributes within rules..."
+          />
+          <span class="muted" id="ruleMatchCount">Showing ${rules.length} of ${rules.length}</span>
+        </div>
+        <div id="ruleCards"></div>
 
         <h2 style="margin-top:16px">Lists Referenced (${listUsage.size})</h2>
         <div>
@@ -911,17 +1054,164 @@
         p.addEventListener('click', () => selectEntity(p.dataset.entity));
       });
 
-      details.querySelectorAll('.pill[data-list]').forEach(p => {
-        p.addEventListener('click', () => openListModal(p.dataset.list));
+      const attributeRows = details.querySelector('#attributeRows');
+      const attributeSearch = details.querySelector('#attributeSearch');
+      const attributeMatchCount = details.querySelector('#attributeMatchCount');
+      const ruleCards = details.querySelector('#ruleCards');
+      const ruleSearch = details.querySelector('#ruleSearch');
+      const ruleMatchCount = details.querySelector('#ruleMatchCount');
+
+      function renderAttributeRows(filterText = '') {
+        const needle = String(filterText || '').toLowerCase();
+        const filtered = attributes
+          .map((attribute, index) => ({ attribute, index }))
+          .filter(({ attribute }) => String(attribute.column || '').toLowerCase().includes(needle));
+
+        attributeMatchCount.textContent = `Showing ${filtered.length} of ${attributes.length}`;
+        attributeRows.innerHTML = filtered.length ? filtered.map(({ attribute, index }) => {
+          const definitionText = String(attribute.definition || '');
+          const definitionPreview = definitionText.length > 20
+            ? `${definitionText.slice(0, 20)}...`
+            : definitionText;
+          const listPills = listByColumn.has(attribute.column)
+            ? Array.from(listByColumn.get(attribute.column)).map(listAlias => `<span class="pill" data-list="${listAlias}">${listAlias}</span>`).join('')
+            : '';
+          return `
+            <tr class="attribute-row" data-attribute-index="${index}" title="Click for full attribute details">
+              <td class="attr-col-column">${safe(attribute.column)}</td>
+              <td class="attr-col-type">${safe(attribute.dataType)}</td>
+              <td class="attr-col-definition" title="${safe(definitionText)}">${safe(definitionPreview) || '<span class="muted">—</span>'}</td>
+              <td class="attr-col-uri">${makeLink(attribute.uri) || safe(attribute.uri)}</td>
+              <td class="attr-col-definedby">${makeLink(attribute.definedBy) || safe(attribute.definedBy)}</td>
+              <td class="attr-col-lists">${listPills || '<span class="muted">—</span>'}</td>
+              <td class="attr-col-internal">${safe(attribute.internal)}</td>
+              <td class="attr-col-unknown">${safe(attribute.allowUnknown)}</td>
+            </tr>
+          `;
+        }).join('') : `
+          <tr>
+            <td colspan="8" class="muted">No matching attributes</td>
+          </tr>
+        `;
+      }
+
+      attributeSearch.addEventListener('input', (event) => {
+        renderAttributeRows(event.target.value);
       });
 
-      details.querySelectorAll('.pill[data-rule-index]').forEach(p => {
-        p.addEventListener('click', () => {
-          const idx = Number(p.dataset.ruleIndex);
-          const rule = rules[idx];
-          if (rule) openRuleModal(rule);
-        });
+      attributeRows.addEventListener('click', (event) => {
+        const listPill = event.target.closest('.pill[data-list]');
+        if (listPill) {
+          event.stopPropagation();
+          openListModal(listPill.dataset.list);
+          return;
+        }
+        if (event.target.closest('a')) return;
+        const row = event.target.closest('.attribute-row');
+        if (!row) return;
+        const attributeIndex = Number(row.dataset.attributeIndex);
+        const attribute = attributes[attributeIndex];
+        if (attribute) openAttributeModal(attribute);
       });
+
+      renderAttributeRows();
+      function renderRuleCards(filterText = '') {
+        const needle = String(filterText || '').toLowerCase();
+        const filteredRules = rules
+          .map((rule, index) => ({ rule, index }))
+          .filter(({ rule }) => {
+            if (!needle) return true;
+            const cols = ruleColumns(rule);
+            const haystack = [
+              rule.name || '',
+              ...(cols || []),
+              rule.otherColumn || '',
+              rule.listName || '',
+              rule.pattern || '',
+              rule.range || ''
+            ].join(' ').toLowerCase();
+            return haystack.includes(needle);
+          });
+
+        ruleMatchCount.textContent = `Showing ${filteredRules.length} of ${rules.length}`;
+        ruleCards.innerHTML = filteredRules.length ? filteredRules.map(({ rule, index }) => {
+          const cols = ruleColumns(rule);
+          const colText = cols.length ? cols.join(', ') : 'All / unspecified';
+          return `
+            <div class="rule-card">
+              <strong>${safe(rule.name)}</strong>
+              <span class="badge">${safe(rule.level || '—')}</span>
+              <div class="rule-meta">Applies to: ${safe(colText)}</div>
+              <div class="rule-meta">${describeRule(rule)}</div>
+              <div class="rule-actions">
+                <span class="pill" data-rule-index="${index}">View rule details</span>
+              </div>
+            </div>
+          `;
+        }).join('') : '<div class="muted">No matching rules</div>';
+      }
+
+      ruleSearch.addEventListener('input', (event) => {
+        renderRuleCards(event.target.value);
+      });
+
+      ruleCards.addEventListener('click', (event) => {
+        const pill = event.target.closest('.pill[data-rule-index]');
+        if (!pill) return;
+        const idx = Number(pill.dataset.ruleIndex);
+        const rule = rules[idx];
+        if (rule) openRuleModal(rule);
+      });
+
+      renderRuleCards();
+
+      details.querySelectorAll('.pill[data-list]').forEach(p => {
+        if (p.closest('#attributeRows')) return;
+        p.addEventListener('click', () => openListModal(p.dataset.list));
+      });
+    }
+
+    function openAttributeModal(attribute) {
+      if (!attribute) return;
+      const preferredKeys = [
+        'column',
+        'dataType',
+        'uri',
+        'definedBy',
+        'definition',
+        'group',
+        'internal',
+        'allowUnknown',
+        'allowTBD',
+        'delimitedBy'
+      ];
+      const keys = Object.keys(attribute);
+      const orderedKeys = [
+        ...preferredKeys.filter(key => keys.includes(key)),
+        ...keys.filter(key => !preferredKeys.includes(key)).sort()
+      ];
+      const rows = orderedKeys.map(key => {
+        const value = attribute[key];
+        const renderedValue = (key === 'uri' || key === 'definedBy')
+          ? (makeLink(value) || safe(value))
+          : safe(value);
+        return `
+          <tr>
+            <td style="width: 34%;"><strong>${safe(key)}</strong></td>
+            <td>${renderedValue || '<span class="muted">—</span>'}</td>
+          </tr>
+        `;
+      }).join('');
+
+      const body = `
+        <div class="muted">All available metadata for this attribute.</div>
+        <div style="margin-top:8px; max-height:60vh; overflow:auto; border:1px solid var(--line); border-radius:12px;">
+          <table>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>
+      `;
+      openModal(`Attribute: ${safe(attribute.column || '(unnamed)')}`, body);
     }
 
     function openRuleModal(rule) {
@@ -1010,7 +1300,7 @@
     }
 
     function renderGraph() {
-      if (isGraphHidden) return;
+      if (viewMode !== 'diagram') return;
 
       const width = Math.max(graphPanel.clientWidth, 320);
       const height = Math.max(graphPanel.clientHeight, 560);
@@ -1047,6 +1337,73 @@
         .attr('stroke-width', 2)
         .attr('d', linkPath);
 
+      const nodePositions = new Map(
+        root.descendants().map(d => [d.data.name, { x: d.x + margin.left, y: d.y + margin.top }])
+      );
+
+      const renderedRelationships = attributeRelationships.filter(
+        relationship => nodePositions.has(relationship.from) && nodePositions.has(relationship.to)
+      );
+
+      function relationshipPath(relationship) {
+        const source = nodePositions.get(relationship.from);
+        const target = nodePositions.get(relationship.to);
+        if (!source || !target) return '';
+
+        if (relationship.from === relationship.to) {
+          const r = 26;
+          return `M ${source.x + r * 0.55} ${source.y - r * 0.75} C ${source.x + r * 1.65} ${source.y - r * 1.9}, ${source.x - r * 1.65} ${source.y - r * 1.9}, ${source.x - r * 0.55} ${source.y - r * 0.75}`;
+        }
+
+        const dx = target.x - source.x;
+        const dy = target.y - source.y;
+        const distance = Math.hypot(dx, dy) || 1;
+        const bend = Math.min(42, Math.max(18, distance * 0.18));
+        const nx = -dy / distance;
+        const ny = dx / distance;
+        const controlX = (source.x + target.x) / 2 + nx * bend;
+        const controlY = (source.y + target.y) / 2 + ny * bend;
+        return `M ${source.x} ${source.y} Q ${controlX} ${controlY} ${target.x} ${target.y}`;
+      }
+
+      function relationshipLabelPosition(relationship) {
+        const source = nodePositions.get(relationship.from);
+        const target = nodePositions.get(relationship.to);
+        if (!source || !target) return { x: 0, y: 0 };
+
+        if (relationship.from === relationship.to) {
+          const r = 26;
+          return { x: source.x, y: source.y - r * 2.15 };
+        }
+
+        const dx = target.x - source.x;
+        const dy = target.y - source.y;
+        const distance = Math.hypot(dx, dy) || 1;
+        const bend = Math.min(42, Math.max(18, distance * 0.18));
+        const nx = -dy / distance;
+        const ny = dx / distance;
+        return {
+          x: (source.x + target.x) / 2 + nx * bend,
+          y: (source.y + target.y) / 2 + ny * bend - 4
+        };
+      }
+
+      const relationshipLayer = g.append('g').attr('class', 'attribute-relationship-layer');
+      relationshipLayer.selectAll('path')
+        .data(renderedRelationships)
+        .join('path')
+        .attr('class', 'attribute-link')
+        .attr('d', relationshipPath);
+
+      relationshipLayer.selectAll('text')
+        .data(renderedRelationships)
+        .join('text')
+        .attr('class', 'attribute-link-label')
+        .attr('x', relationship => relationshipLabelPosition(relationship).x)
+        .attr('y', relationship => relationshipLabelPosition(relationship).y)
+        .attr('text-anchor', 'middle')
+        .text(relationship => relationship.label || '');
+
       nodeSelection = g.append('g')
         .selectAll('g')
         .data(root.descendants())
@@ -1079,19 +1436,22 @@
 
     // Legend
     const legend = document.getElementById('legend');
-    legend.innerHTML = Object.entries(colorMap).map(([type, color]) => `
-      <div class="legend-row"><span class="legend-dot" style="background:${color}"></span>${type}</div>
-    `).join('');
+    legend.innerHTML = [
+      ...Object.entries(colorMap).map(([type, color]) => `
+        <div class="legend-row"><span class="legend-dot" style="background:${color}"></span>${type}</div>
+      `),
+      `<div class="legend-row"><span class="legend-link"></span>Attribute relationship</div>`
+    ].join('');
 
     let resizeTimer = null;
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
-        if (!isGraphHidden) renderGraph();
+        if (viewMode === 'diagram') renderGraph();
       }, 120);
     });
 
-    applyLayout();
+    applyViewMode();
     }
   </script>
 </body>

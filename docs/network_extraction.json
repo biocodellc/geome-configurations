@@ -153,7 +153,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/principleInvestigator?info",
-                    "definition": "Firstname Lastname (the PI on the grant that generated this data)",
+                    "definition": "The principal Investigator of the grant that is funding collection work or more generally the person in charge of the collecting effort (Firstname Lastname)",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -234,7 +234,7 @@
                     "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dayCollected?info",
-                    "definition": "The day the collecting event took place.",
+                    "definition": "The day-of-month when the collecting event started. Expected value is an integer from 1 to 31 (validation rule: >=1 and <=31). Use with monthCollected and yearCollected for the start date.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
@@ -244,7 +244,7 @@
                     "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dayCollected2?info",
-                    "definition": "The day the collecting event ended.",
+                    "definition": "The day-of-month when the collecting event ended. Expected value is an integer from 1 to 31 (validation rule: >=1 and <=31). Use with monthCollected2 and yearCollected2 for the end date.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
@@ -414,7 +414,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/locality",
-                    "definition": "The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description. If you are unsure of the value and will never come across it, add \u2018Unknown\u2019, or if you do not currently have the data but will in the future, add \u2018TBD\u2019.",
+                    "definition": "The specific description of the place. Less specific geographic information can be provided in other geographic terms (higherGeography, continent, country, stateProvince, county, municipality, waterBody, island, islandGroup). This term may contain information modified from the original to correct perceived errors or standardize the description. If you are unsure of the value and will never come across it, add ‘Unknown’, or if you do not currently have the data but will in the future, add ‘TBD’.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -544,7 +544,7 @@
                     "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/monthCollected?info",
-                    "definition": "The month the collecting event took place. Must be numeric to pass validation",
+                    "definition": "The month when the collecting event started. Expected value is an integer from 1 to 12 (validation rule: >=1 and <=12). Use with dayCollected and yearCollected for the start date.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
@@ -554,7 +554,7 @@
                     "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/monthCollected2?info",
-                    "definition": "The month the collecting event ended.",
+                    "definition": "The month when the collecting event ended. Expected value is an integer from 1 to 12 (validation rule: >=1 and <=12). Use with dayCollected2 and yearCollected2 for the end date.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
@@ -653,18 +653,18 @@
                     "uri": "urn:timeCollected",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/timeCollected?info",
-                    "definition": "The time the collecting event took place.",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/timeOfDay?info",
+                    "definition": "Enter the event time as local time at the place the event happened, using 24-hour format HH:MM (e.g., 08:05, 14:30). Use this field for a single time value or the start/begin time of an event.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
-                    "column": "timeCollected2",
+                    "column": "timeOfDay2",
                     "uri": "urn:timeCollected2",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/timeCollected2?info",
-                    "definition": "The time the collecting event ended.",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/timeOfDay2?info",
+                    "definition": "If the event has an end time, enter it as local time at the place the event happened, using 24-hour format HH:MM (e.g., 11:45, 16:10). Leave blank if the end time is unknown or not applicable.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -694,7 +694,7 @@
                     "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/yearCollected?info",
-                    "definition": "The year the collecting event took place. If you are unsure of the value and will never come across it, add \u2018Unknown\u2019, or if you do not currently have the data but will in the future, add \u2018TBD\u2019.",
+                    "definition": "The year when the collecting event started. Expected value is an integer from 1500 to 2050 (validation rule: >=1500 and <=2050). Use with monthCollected and dayCollected for the start date; use 'Unknown' if the value is not known.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
@@ -704,7 +704,7 @@
                     "dataType": "INTEGER",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/yearCollected2?info",
-                    "definition": "The year the collecting event ended.",
+                    "definition": "The year when the collecting event ended. Expected value is an integer from 1500 to 2050 (validation rule: >=1500 and <=2050). Use with monthCollected2 and dayCollected2 for the end date; use 'Unknown' if the value is not known.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
@@ -1229,6 +1229,12 @@
                     "level": "ERROR",
                     "column": "basisOfRecord",
                     "listName": "basisOfRecord"
+                },
+                {
+                    "name": "ControlledVocabulary",
+                    "level": "ERROR",
+                    "column": "occurrenceStatus",
+                    "listName": "occurrenceStatus"
                 }
             ],
             "worksheet": "Samples",
@@ -1582,6 +1588,17 @@
                     "allowTBD": false
                 },
                 {
+                    "column": "occurrenceStatus",
+                    "uri": "urn:occurrenceStatus",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/occurrenceStatus",
+                    "group": "Record and Owner Details",
+                    "definition": "A statement about the presence or absence of an entity associated with the collecting event. Utilize the terms \"present\" or \"absent\".",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
                     "column": "otherCatalogNumbers",
                     "uri": "urn:otherCatalogNumbers",
                     "dataType": "STRING",
@@ -1764,7 +1781,7 @@
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/identificationRemarks",
                     "group": "Taxonomy and Life History",
-                    "definition": "Comments or notes about the Identification. For example: Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the u\u00f1as.",
+                    "definition": "Comments or notes about the Identification. For example: Distinguished between Anthus correndera and Anthus hellmayri based on the comparative lengths of the uñas.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -2990,7 +3007,7 @@
                     "internal": false,
                     "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
                     "group": "Diagnostics and Traits",
-                    "definition": "If the coral appears to have lost tissue, divers estimated the percent.  This method is inexact, but we think it will be more robust than categories, since for example 0-25 biases a lot of low percent estimates upward when converted to a percentage for regression.  Ideally all of these would be measured in the field, but in practice exact measurements weren\u2019t feasible given time constraints in many areas. We may try quantifying a subset of these in ImageJ from the Flickr photos to be more quantitative. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "definition": "If the coral appears to have lost tissue, divers estimated the percent.  This method is inexact, but we think it will be more robust than categories, since for example 0-25 biases a lot of low percent estimates upward when converted to a percentage for regression.  Ideally all of these would be measured in the field, but in practice exact measurements weren’t feasible given time constraints in many areas. We may try quantifying a subset of these in ImageJ from the Flickr photos to be more quantitative. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3089,7 +3106,7 @@
                     "internal": false,
                     "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
                     "group": "Diagnostics and Traits",
-                    "definition": "True if the coral is in contact with either turf algae or macroalgae, False  otherwise.  Note that as CCA isn\u2019t considered harmful (and may be beneficial) we don\u2019t include it here. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "definition": "True if the coral is in contact with either turf algae or macroalgae, False  otherwise.  Note that as CCA isn’t considered harmful (and may be beneficial) we don’t include it here. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3111,7 +3128,7 @@
                     "internal": false,
                     "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
                     "group": "Diagnostics and Traits",
-                    "definition": "A list of the algal contact types, including turf and CCA.  Note: since some algae have multi-word names/descriptions, I\u2019ve been separating algal types with two underscores \u2018__\u2019 so we can split these back out easily later.  Try to see if one of the existing values matches before entering a new one (its better to not have \u2018Halimeda__Turf\u2019 and \u2018Turf__Halimeda\u2019 for example. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "definition": "A list of the algal contact types, including turf and CCA.  Note: since some algae have multi-word names/descriptions, I’ve been separating algal types with two underscores ‘__’ so we can split these back out easily later.  Try to see if one of the existing values matches before entering a new one (its better to not have ‘Halimeda__Turf’ and ‘Turf__Halimeda’ for example. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3133,7 +3150,7 @@
                     "internal": false,
                     "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
                     "group": "Diagnostics and Traits",
-                    "definition": "Number of distinct types of macroalgae contacted (even if they can\u2019t all be fully identified).  Doesn\u2019t include turf algae/CCA. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "definition": "Number of distinct types of macroalgae contacted (even if they can’t all be fully identified).  Doesn’t include turf algae/CCA. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3144,7 +3161,7 @@
                     "internal": false,
                     "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
                     "group": "Diagnostics and Traits",
-                    "definition": "A list of the algal contact types, excluding turf and CCA.  Note: since some algae have multi-word names/descriptions, I\u2019ve been separating algal types with two underscores \u2018__\u2019 so we can split these back out easily later.  Try to see if one of the existing values matches before entering a new one (its better to not have \u2018Halimeda__Dictyota\u2019 and \u2018Dictyota__Halimeda\u2019 for example. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
+                    "definition": "A list of the algal contact types, excluding turf and CCA.  Note: since some algae have multi-word names/descriptions, I’ve been separating algal types with two underscores ‘__’ so we can split these back out easily later.  Try to see if one of the existing values matches before entering a new one (its better to not have ‘Halimeda__Dictyota’ and ‘Dictyota__Halimeda’ for example. (as defined by GCMP; https://dx.doi.org/10.1038/s41467-018-07275-x)",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -3653,7 +3670,8 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/qualityScore?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Subjective image quality rating for this photo. Suggested scale: 1-5 (or 1-10 if your lab uses it). Use a consistent scheme across uploads (e.g., 1=poor, 5=excellent). User entry: Optional numeric score."
                 },
                 {
                     "column": "hasScale",
@@ -3662,7 +3680,8 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/hasScale?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Indicates whether the image includes a scale bar or a physical scale reference. User entry: true or false."
                 },
                 {
                     "column": "processed",
@@ -3671,7 +3690,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/processed?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Processing status flag set by the photo pipeline. It is stored as a string (\"true\" / \"false\"). User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "imageProcessingErrors",
@@ -3680,7 +3700,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/imageProcessingErrors?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "JSON-formatted error message(s) from the processing pipeline (e.g., failed to fetch/parse image). User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "img128",
@@ -3689,7 +3710,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img128?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "URL of a server-generated 128px resized derivative. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "img512",
@@ -3698,7 +3720,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img512?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "URL of a server-generated 512px resized derivative. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "img1024",
@@ -3707,7 +3730,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img1024?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "URL of a server-generated 1024px resized derivative. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "img64",
@@ -3716,7 +3740,8 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img64?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Legacy/optional thumbnail URL (not used by current processing code). User entry: Usually leave blank unless your UI expects a custom thumbnail URL."
                 },
                 {
                     "column": "bulkLoadFile",
@@ -3725,7 +3750,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bulkLoadFile?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Server path to a photo uploaded via bulk ZIP/package. Used internally during bulk processing. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "filename",
@@ -3734,7 +3760,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filename?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Original filename extracted from originalUrl or bulk upload. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "photographer",
@@ -3743,7 +3770,8 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/samplePhotographer?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Name of the person who took the photo. User entry: Free text (e.g., \"J. Doe\")."
                 },
                 {
                     "column": "viewSamplePhotoMetadata",
@@ -3832,7 +3860,8 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/qualityScore?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Subjective image quality rating for this photo. Suggested scale: 1-5 (or 1-10 if your lab uses it). Use a consistent scheme across uploads (e.g., 1=poor, 5=excellent). User entry: Optional numeric score."
                 },
                 {
                     "column": "hasScale",
@@ -3841,7 +3870,8 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/hasScale?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Indicates whether the image includes a scale bar or a physical scale reference. User entry: true or false."
                 },
                 {
                     "column": "processed",
@@ -3850,7 +3880,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/processed?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Processing status flag set by the photo pipeline. It is stored as a string (\"true\" / \"false\"). User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "imageProcessingErrors",
@@ -3859,7 +3890,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/imageProcessingErrors?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "JSON-formatted error message(s) from the processing pipeline (e.g., failed to fetch/parse image). User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "img128",
@@ -3868,7 +3900,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img128?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "URL of a server-generated 128px resized derivative. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "img512",
@@ -3877,7 +3910,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img512?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "URL of a server-generated 512px resized derivative. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "img1024",
@@ -3886,7 +3920,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img1024?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "URL of a server-generated 1024px resized derivative. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "img64",
@@ -3895,7 +3930,8 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/img64?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Legacy/optional thumbnail URL (not used by current processing code). User entry: Usually leave blank unless your UI expects a custom thumbnail URL."
                 },
                 {
                     "column": "bulkLoadFile",
@@ -3904,7 +3940,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bulkLoadFile?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Server path to a photo uploaded via bulk ZIP/package. Used internally during bulk processing. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "photographer",
@@ -3913,7 +3950,8 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/eventPhotographer?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Name of the person who took the photo. User entry: Free text (e.g., \"J. Doe\")."
                 },
                 {
                     "column": "filename",
@@ -3922,7 +3960,8 @@
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filename?info",
                     "allowUnknown": false,
-                    "allowTBD": false
+                    "allowTBD": false,
+                    "definition": "Original filename extracted from originalUrl or bulk upload. User entry: Leave blank. System-managed."
                 },
                 {
                     "column": "viewEventPhotoMetadata",
@@ -3985,6 +4024,7 @@
                     "uri": "marker",
                     "dataType": "STRING",
                     "internal": true,
+                    "definition": "The sequence marker / locus (e.g., COI, 16S, ITS) for a FASTA record. It’s used to group FASTA outputs by marker and is part of the FASTA record’s unique identifier (often <parentID>_<marker>).",
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/marker?info",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -3993,6 +4033,7 @@
                     "column": "identifier",
                     "uri": "identifier",
                     "dataType": "STRING",
+                    "definition": "A required, internal unique key for each FASTA sequence record. It identifies a specific sequence entry within the FASTA entity, and is typically generated as <parentUniqueKey>_<marker> (e.g., Tissue123_COI). It is not a BCID and not the expedition identifier; it’s only for uniquely identifying FASTA sequence records.",
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/identifier?info",
                     "allowUnknown": false,
@@ -4004,7 +4045,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
-                    "definition": "",
+                    "definition": "A pointer to an tissueID that this sequence is derived from.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4014,6 +4055,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/extractionID?info",
+                    "definition": "A pointer to an extractionID that this sequence is derived from. This field is optional",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
@@ -4074,6 +4116,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/libraryLayout?info",
+                    "definition": "The layout of reads for the sequencing run. In SRA metadata this indicates whether reads are generated as single-end (SINGLE) or paired-end (PAIRED).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4083,6 +4126,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/libraryStrategy?info",
+                    "definition": "The sequencing strategy describing the primary experimental approach used for the library (e.g., WGS, RNA-Seq, AMPLICON, WXS).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4092,6 +4136,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/librarySource?info",
+                    "definition": "The source material being sequenced for the library (e.g., GENOMIC, TRANSCRIPTOMIC, METAGENOMIC, METATRANSCRIPTOMIC).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4101,6 +4146,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/librarySelection?info",
+                    "definition": "The library selection or enrichment method applied before sequencing (e.g., RANDOM, PCR, cDNA, size fractionation).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4110,6 +4156,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/platform?info",
+                    "definition": "The sequencing platform used for the run (e.g., ILLUMINA, PACBIO_SMRT, OXFORD_NANOPORE).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4119,6 +4166,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/instrumentModel?info",
+                    "definition": "The specific sequencing instrument model used to generate the reads (for example, Illumina NovaSeq 6000).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4128,6 +4176,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/designDescription?info",
+                    "definition": "A free-text description of library design and construction, including protocol details relevant to how reads were generated.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4137,7 +4186,7 @@
                     "dataType": "STRING",
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/filenames?info",
-                    "definition": "List of filenames to be uploaded to NCBI Genbank SRA",
+                    "definition": "List of sequence data filenames to be uploaded to NCBI SRA. Filenames must match uploaded files exactly, including file extensions.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4147,6 +4196,7 @@
                     "dataType": "STRING",
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/identifier?info",
+                    "definition": "A required, internal unique key for each FASTQ metadata record. It uniquely identifies an experiment/run metadata row within the fastqMetadata entity.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4156,6 +4206,7 @@
                     "dataType": "STRING",
                     "internal": true,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/bioSample?info",
+                    "definition": "BioSample accession for the sample linked to this sequencing metadata (typically in the form SAMN########).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4165,7 +4216,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
-                    "definition": "",
+                    "definition": "A pointer to a tissueID that this FASTQ data is derived from.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4175,13 +4226,14 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/extractionID?info",
+                    "definition": "A pointer to an extractionID that this FASTQ data is derived from. This field is optional.",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
             ]
         },
         {
-            "type": "Extraction",
+            "type": "DefaultEntity",
             "worksheet": "Extractions",
             "parentEntity": "Tissue",
             "conceptAlias": "Extraction",
@@ -4224,6 +4276,24 @@
                     "level": "WARNING",
                     "column": "dnaVolumeUnit",
                     "otherColumn": "dnaVolume"
+                },
+                {
+                    "name": "NumericRange",
+                    "level": "ERROR",
+                    "column": "yearExtracted",
+                    "range": ">=1500|<=2050"
+                },
+                {
+                    "name": "NumericRange",
+                    "level": "ERROR",
+                    "column": "monthExtracted",
+                    "range": ">=1|<=12"
+                },
+                {
+                    "name": "NumericRange",
+                    "level": "ERROR",
+                    "column": "dayExtracted",
+                    "range": ">=1|<=31"
                 }
             ],
             "attributes": [
@@ -4233,6 +4303,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/extractionID?info",
+                    "definition": "Unique identifier for this DNA extraction record. This value links extraction metadata to downstream sequence records and should be unique within the project.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4242,6 +4313,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/tissueID?info",
+                    "definition": "Identifier of the tissue subsample used as input for this extraction. Must match an existing tissueID in the Tissue entity.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4251,16 +4323,38 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/methodOfDNAExtraction?info",
+                    "definition": "Method or protocol used to extract nucleic acid from the source tissue (for example kit name, chemistry, or SOP reference).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
-                    "column": "extractionDate",
-                    "uri": "urn:analysisDate",
-                    "dataType": "STRING",
+                    "column": "yearExtracted",
+                    "uri": "urn:yearExtracted",
+                    "dataType": "INTEGER",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/analysisDate?info",
-                    "allowUnknown": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/yearExtracted?info",
+                    "definition": "The year when the extraction was performed. Expected value is an integer from 1500 to 2050 (validation rule: >=1500 and <=2050). Use with monthExtracted and dayExtracted for the extraction date; use 'Unknown' if the value is not known.",
+                    "allowUnknown": true,
+                    "allowTBD": false
+                },
+                {
+                    "column": "monthExtracted",
+                    "uri": "urn:monthExtracted",
+                    "dataType": "INTEGER",
+                    "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/monthExtracted?info",
+                    "definition": "The month when the extraction was performed. Expected value is an integer from 1 to 12 (validation rule: >=1 and <=12). Use with dayExtracted and yearExtracted for the extraction date.",
+                    "allowUnknown": true,
+                    "allowTBD": false
+                },
+                {
+                    "column": "dayExtracted",
+                    "uri": "urn:dayExtracted",
+                    "dataType": "INTEGER",
+                    "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dayExtracted?info",
+                    "definition": "The day-of-month when the extraction was performed. Expected value is an integer from 1 to 31 (validation rule: >=1 and <=31). Use with monthExtracted and yearExtracted for the extraction date.",
+                    "allowUnknown": true,
                     "allowTBD": false
                 },
                 {
@@ -4269,6 +4363,7 @@
                     "dataType": "FLOAT",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dnaConcentration?info",
+                    "definition": "Measured concentration of extracted DNA in solution. Record as a numeric value and specify the matching unit in dnaConcentrationUnit.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4278,6 +4373,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dnaConcentrationUnit?info",
+                    "definition": "Unit for dnaConcentration (for example ng/uL). Provide this whenever dnaConcentration is reported.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4287,6 +4383,7 @@
                     "dataType": "FLOAT",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dnaVolume?info",
+                    "definition": "Volume of DNA extract available or transferred, recorded as a numeric value. Pair this value with dnaVolumeUnit.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4296,6 +4393,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dnaVolumeUnit?info",
+                    "definition": "Unit for dnaVolume (for example uL or mL). Provide this whenever dnaVolume is reported.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4305,6 +4403,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/storageLocation?info",
+                    "definition": "Physical storage location for the extracted DNA (for example freezer, rack, box, and position).",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
@@ -4314,6 +4413,7 @@
                     "dataType": "STRING",
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/extractionRemarks?info",
+                    "definition": "Free-text notes about the extraction, such as deviations from protocol, quality concerns, or handling details.",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
@@ -4863,6 +4963,19 @@
                 },
                 {
                     "value": "EnvironmentalDNA"
+                }
+            ],
+            "networkList": true
+        },
+        {
+            "alias": "occurrenceStatus",
+            "caseInsensitive": false,
+            "fields": [
+                {
+                    "value": "present"
+                },
+                {
+                    "value": "absent"
                 }
             ],
             "networkList": true
