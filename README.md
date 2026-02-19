@@ -69,3 +69,26 @@ Either do this on the front-end or on the back-end like:
 select create_project(1, 'B_TEMPLATE','Biocode Template',1);
 select create_project(2, 'DIPNET','Diversity of the IndoPacific',1);
 ```
+
+# Generate report.json for geome-configurations
+Use the reports endpoint to generate a JSON report file that can be consumed by geome-configurations.
+
+```
+curl -sS "https://api.geome-db.org/geome-db/reports/summary?includePublic=true&includePrivate=true&access_token=YOUR_TOKEN" > report.json
+```
+
+Optional filters:
+- `teamId=<project_configurations.id>`
+- `projectId=<projects.id>`
+- `includePrivate=true|false` (default `true`; requires authenticated user to include private/member projects)
+- `topUsersLimit=<int>` (default `25`, max `500`)
+- `fieldLimit=<int>`
+
+Example with team filter:
+```
+curl -sS "https://api.geome-db.org/geome-db/reports/summary?includePublic=true&includePrivate=true&topUsersLimit=100&access_token=YOUR_TOKEN" > docs/report.json
+```
+
+`projectSummary` rows include:
+- `latestDataModification` (ISO timestamp from `projects.latest_data_modification`)
+- `public` (project visibility flag)

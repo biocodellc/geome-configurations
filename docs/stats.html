@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEOME Statistics Viewer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #f6f2ea;
+      --panel: #ffffff;
+      --ink: #1f2933;
+      --muted: #6b7280;
+      --accent: #1b998b;
+      --line: #e5e7eb;
+      --shadow: 0 12px 40px rgba(16, 24, 40, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: radial-gradient(1200px 600px at 20% -10%, #fdf7ee 0%, #f6f2ea 55%, #efe6d6 100%);
+    }
+    header {
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(135deg, #ffffff 0%, #faf6ef 100%);
+      position: sticky;
+      top: 0;
+      z-index: 5;
+    }
+    h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 20px;
+      letter-spacing: 0.4px;
+      margin: 0;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .header-tools {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .header-link {
+      border: 1px solid var(--line);
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 12px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .header-link:hover {
+      border-color: var(--accent);
+    }
+    .manual-loader {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    main {
+      padding: 16px 18px 26px;
+      display: grid;
+      gap: 16px;
+    }
+    .panel {
+      background: var(--panel);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .panel-body {
+      padding: 14px 16px 18px;
+    }
+    .panel h2 {
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+    }
+    .panel-head {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--line);
+      background: #f9fafb;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .search {
+      width: min(420px, 100%);
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      font-size: 14px;
+      background: #f9fafb;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .stat-card {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      background: #fafafa;
+    }
+    .stat-label {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.35px;
+      margin-bottom: 4px;
+    }
+    .stat-value {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      background: #eef6f5;
+      border: 1px solid #d4ebe7;
+      color: #125c53;
+    }
+    .table-wrap {
+      max-height: 360px;
+      overflow: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+    }
+    th, td {
+      text-align: left;
+      padding: 6px 8px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      white-space: nowrap;
+    }
+    th {
+      background: #f3f4f6;
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    th.sortable {
+      cursor: pointer;
+      user-select: none;
+    }
+    th.sortable:hover {
+      background: #e9edf2;
+    }
+    td.wrap {
+      white-space: normal;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      min-width: 220px;
+    }
+    @media (max-width: 1100px) {
+      .header-tools {
+        width: 100%;
+        justify-content: flex-start;
+      }
+      .search {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>GEOME Statistics Viewer</h1>
+      <div class="meta" id="reportHint">Report metrics across projects, fields, and users</div>
+    </div>
+    <div class="header-tools">
+      <a class="header-link" href="./index.html">Network Configuration Viewer</a>
+      <div class="meta" id="summary"></div>
+      <label class="manual-loader" id="manualLoader">
+        Load JSON
+        <input id="manualJsonInput" type="file" accept=".json,application/json" />
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Overview</h2>
+        <div class="meta" id="generatedAt">Generated at: -</div>
+      </div>
+      <div class="panel-body">
+        <div class="stats-grid" id="overviewCards"></div>
+        <div class="pill-row" id="metricEntities"></div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Projects</h2>
+        <input class="search" id="projectSearch" type="text" placeholder="Search project title, team, or id..." />
+      </div>
+      <div class="panel-body" style="padding-top: 0;">
+        <div class="meta" id="projectCount"></div>
+        <div class="table-wrap">
+          <table>
+            <thead id="projectHead"></thead>
+            <tbody id="projectRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Field Usage</h2>
+        <input class="search" id="fieldSearch" type="text" placeholder="Search entity, field name, or field uri..." />
+      </div>
+      <div class="panel-body" style="padding-top: 0;">
+        <div class="meta" id="fieldCount"></div>
+        <div class="table-wrap">
+          <table>
+            <thead id="fieldHead"></thead>
+            <tbody id="fieldRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Top Users</h2>
+        <input class="search" id="userSearch" type="text" placeholder="Search username, name, institution, or email..." />
+      </div>
+      <div class="panel-body" style="padding-top: 0;">
+        <div class="meta" id="userCount"></div>
+        <div class="table-wrap">
+          <table>
+            <thead id="userHead"></thead>
+            <tbody id="userRows"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const REPORT_CANDIDATES = [
+      './report.json',
+      'report.json',
+      '/docs/report.json',
+      '../docs/report.json'
+    ];
+
+    function formatNumber(value) {
+      return Number(value || 0).toLocaleString('en-US');
+    }
+
+    function esc(value) {
+      return String(value ?? '')
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function sumCounts(rows, keys) {
+      const totals = {};
+      keys.forEach((key) => { totals[key] = 0; });
+      rows.forEach((row) => {
+        const counts = row?.counts || {};
+        keys.forEach((key) => {
+          totals[key] += Number(counts[key] || 0);
+        });
+      });
+      return totals;
+    }
+
+    function compareValues(a, b) {
+      if (typeof a === 'number' && typeof b === 'number') {
+        return a - b;
+      }
+      return String(a ?? '').localeCompare(String(b ?? ''), undefined, { sensitivity: 'base', numeric: true });
+    }
+
+    function sortRows(rows, state, getValue) {
+      const dir = state.dir === 'asc' ? 1 : -1;
+      return rows.slice().sort((a, b) => compareValues(getValue(a, state.key), getValue(b, state.key)) * dir);
+    }
+
+    async function fetchReport() {
+      let lastError = null;
+      for (const url of REPORT_CANDIDATES) {
+        try {
+          const response = await fetch(url, { cache: 'no-store' });
+          if (!response.ok) throw new Error(`HTTP ${response.status} for ${url}`);
+          return await response.json();
+        } catch (err) {
+          lastError = err;
+        }
+      }
+      throw lastError || new Error('Failed to load report');
+    }
+
+    function render(report) {
+      const projectSummary = Array.isArray(report.projectSummary) ? report.projectSummary : [];
+      const fieldUsage = Array.isArray(report.fieldUsage) ? report.fieldUsage : [];
+      const topUsers = Array.isArray(report.topUsers) ? report.topUsers : [];
+      const metricKeys = Object.keys(projectSummary[0]?.counts || topUsers[0]?.counts || {}).filter((k) => k !== 'total');
+
+      const generatedAt = document.getElementById('generatedAt');
+      const summary = document.getElementById('summary');
+      const reportHint = document.getElementById('reportHint');
+      const overviewCards = document.getElementById('overviewCards');
+      const metricEntities = document.getElementById('metricEntities');
+
+      generatedAt.textContent = `Generated at: ${report.generatedAt || '-'}`;
+      reportHint.textContent = `Network ${report.networkId ?? '-'} • Report metrics across projects, fields, and users`;
+      summary.textContent = `${projectSummary.length} projects • ${fieldUsage.length} fields • ${topUsers.length} users`;
+
+      const totals = sumCounts(projectSummary, metricKeys);
+      const overallTotal = Object.values(totals).reduce((a, b) => a + b, 0);
+
+      const cards = [
+        ['Network ID', report.networkId ?? '-'],
+        ['Projects', projectSummary.length],
+        ['Field Entries', fieldUsage.length],
+        ['Top Users', topUsers.length],
+        ['Total Records', overallTotal]
+      ];
+      metricKeys.forEach((k) => cards.push([k, totals[k]]));
+
+      overviewCards.innerHTML = cards.map(([label, val]) => `
+        <div class="stat-card">
+          <div class="stat-label">${esc(label)}</div>
+          <div class="stat-value">${typeof val === 'number' ? formatNumber(val) : esc(val)}</div>
+        </div>
+      `).join('');
+
+      const metricEntityPairs = Object.entries(report.metricEntities || {});
+      metricEntities.innerHTML = metricEntityPairs.map(([k, v]) => `<span class="pill">${esc(k)}: ${esc(v)}</span>`).join('');
+
+      const projectSearch = document.getElementById('projectSearch');
+      const projectCount = document.getElementById('projectCount');
+      const projectHead = document.getElementById('projectHead');
+      const projectRows = document.getElementById('projectRows');
+      const fieldHead = document.getElementById('fieldHead');
+
+      const projectColumns = ['projectId', 'projectTitle', 'teamName', ...metricKeys, 'total'];
+      const projectNumeric = new Set(['projectId', ...metricKeys, 'total']);
+      const projectSort = { key: 'total', dir: 'desc' };
+
+      function renderProjectHead() {
+        projectHead.innerHTML = `<tr>${projectColumns.map((c) => {
+          const marker = projectSort.key === c ? (projectSort.dir === 'asc' ? ' ▲' : ' ▼') : '';
+          return `<th class="sortable" data-col="${esc(c)}">${esc(c)}${marker}</th>`;
+        }).join('')}</tr>`;
+        projectHead.querySelectorAll('th[data-col]').forEach((th) => {
+          th.addEventListener('click', () => {
+            const key = th.dataset.col;
+            if (!key) return;
+            if (projectSort.key === key) {
+              projectSort.dir = projectSort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+              projectSort.key = key;
+              projectSort.dir = projectNumeric.has(key) ? 'desc' : 'asc';
+            }
+            renderProjects(projectSearch.value);
+          });
+        });
+      }
+
+      function projectValue(project, key) {
+        const counts = project?.counts || {};
+        if (key === 'projectId') {
+          const num = Number(project?.projectId);
+          return Number.isFinite(num) ? num : String(project?.projectId || '');
+        }
+        if (key === 'projectTitle') return project?.projectTitle || '';
+        if (key === 'teamName') return project?.team?.teamName || '';
+        if (key === 'total') return metricKeys.reduce((sum, metric) => sum + Number(counts[metric] || 0), 0);
+        return Number(counts[key] || 0);
+      }
+
+      function renderProjects(filterText = '') {
+        const needle = String(filterText || '').toLowerCase();
+        const filtered = projectSummary.filter((p) => {
+          const teamName = p?.team?.teamName || '';
+          const haystack = `${p?.projectId || ''} ${p?.projectTitle || ''} ${teamName}`.toLowerCase();
+          return haystack.includes(needle);
+        });
+        const sorted = sortRows(filtered, projectSort, projectValue);
+
+        renderProjectHead();
+        projectCount.textContent = `Showing ${sorted.length} of ${projectSummary.length}`;
+        projectRows.innerHTML = sorted.map((p) => {
+          const counts = p?.counts || {};
+          const total = metricKeys.reduce((sum, key) => sum + Number(counts[key] || 0), 0);
+          const cells = [
+            esc(p.projectId),
+            `<td class="wrap">${esc(p.projectTitle)}</td>`,
+            `<td class="wrap">${esc(p?.team?.teamName || '')}</td>`,
+            ...metricKeys.map((k) => formatNumber(counts[k] || 0)),
+            formatNumber(total)
+          ];
+          return `<tr><td>${cells[0]}</td>${cells.slice(1).map((c) => (String(c).startsWith('<td') ? c : `<td>${c}</td>`)).join('')}</tr>`;
+        }).join('') || '<tr><td colspan="20" class="meta">No matching projects</td></tr>';
+      }
+
+      projectSearch.addEventListener('input', (e) => renderProjects(e.target.value));
+      renderProjects();
+
+      const fieldSearch = document.getElementById('fieldSearch');
+      const fieldCount = document.getElementById('fieldCount');
+      const fieldRows = document.getElementById('fieldRows');
+      const fieldColumns = ['entity', 'fieldName', 'fieldUri', 'filledCount'];
+      const fieldNumeric = new Set(['filledCount']);
+      const fieldSort = { key: 'filledCount', dir: 'desc' };
+
+      function renderFieldHead() {
+        fieldHead.innerHTML = `<tr>${fieldColumns.map((c) => {
+          const marker = fieldSort.key === c ? (fieldSort.dir === 'asc' ? ' ▲' : ' ▼') : '';
+          return `<th class="sortable" data-col="${esc(c)}">${esc(c)}${marker}</th>`;
+        }).join('')}</tr>`;
+        fieldHead.querySelectorAll('th[data-col]').forEach((th) => {
+          th.addEventListener('click', () => {
+            const key = th.dataset.col;
+            if (!key) return;
+            if (fieldSort.key === key) {
+              fieldSort.dir = fieldSort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+              fieldSort.key = key;
+              fieldSort.dir = fieldNumeric.has(key) ? 'desc' : 'asc';
+            }
+            renderFields(fieldSearch.value);
+          });
+        });
+      }
+
+      function fieldValue(field, key) {
+        if (key === 'filledCount') return Number(field?.filledCount || 0);
+        return field?.[key] || '';
+      }
+
+      function renderFields(filterText = '') {
+        const needle = String(filterText || '').toLowerCase();
+        const filtered = fieldUsage.filter((f) => {
+          const haystack = `${f?.entity || ''} ${f?.fieldName || ''} ${f?.fieldUri || ''}`.toLowerCase();
+          return haystack.includes(needle);
+        });
+        const sorted = sortRows(filtered, fieldSort, fieldValue);
+
+        renderFieldHead();
+        fieldCount.textContent = `Showing ${sorted.length} of ${fieldUsage.length}`;
+        fieldRows.innerHTML = sorted.map((f) => `
+          <tr>
+            <td>${esc(f.entity)}</td>
+            <td>${esc(f.fieldName)}</td>
+            <td class="wrap">${esc(f.fieldUri)}</td>
+            <td>${formatNumber(f.filledCount)}</td>
+          </tr>
+        `).join('') || '<tr><td colspan="4" class="meta">No matching fields</td></tr>';
+      }
+
+      fieldSearch.addEventListener('input', (e) => renderFields(e.target.value));
+      renderFields();
+
+      const userSearch = document.getElementById('userSearch');
+      const userCount = document.getElementById('userCount');
+      const userHead = document.getElementById('userHead');
+      const userRows = document.getElementById('userRows');
+      const userMetricKeys = Object.keys(topUsers[0]?.counts || {});
+      const userColumns = ['username', 'name', 'institution', 'email', ...userMetricKeys];
+      const userNumeric = new Set(userMetricKeys);
+      const userSort = { key: userMetricKeys[0] || 'username', dir: userMetricKeys.length ? 'desc' : 'asc' };
+
+      function renderUserHead() {
+        userHead.innerHTML = `<tr>${userColumns.map((c) => {
+          const marker = userSort.key === c ? (userSort.dir === 'asc' ? ' ▲' : ' ▼') : '';
+          return `<th class="sortable" data-col="${esc(c)}">${esc(c)}${marker}</th>`;
+        }).join('')}</tr>`;
+        userHead.querySelectorAll('th[data-col]').forEach((th) => {
+          th.addEventListener('click', () => {
+            const key = th.dataset.col;
+            if (!key) return;
+            if (userSort.key === key) {
+              userSort.dir = userSort.dir === 'asc' ? 'desc' : 'asc';
+            } else {
+              userSort.key = key;
+              userSort.dir = userNumeric.has(key) ? 'desc' : 'asc';
+            }
+            renderUsers(userSearch.value);
+          });
+        });
+      }
+
+      function userValue(userRow, key) {
+        const user = userRow?.user || {};
+        const counts = userRow?.counts || {};
+        if (key === 'username') return user.username || '';
+        if (key === 'name') return `${user.firstName || ''} ${user.lastName || ''}`.trim();
+        if (key === 'institution') return user.institution || '';
+        if (key === 'email') return user.email || '';
+        return Number(counts[key] || 0);
+      }
+
+      function renderUsers(filterText = '') {
+        const needle = String(filterText || '').toLowerCase();
+        const filtered = topUsers.filter((u) => {
+          const name = `${u?.user?.firstName || ''} ${u?.user?.lastName || ''}`.trim();
+          const haystack = `${u?.user?.username || ''} ${name} ${u?.user?.institution || ''} ${u?.user?.email || ''}`.toLowerCase();
+          return haystack.includes(needle);
+        });
+        const sorted = sortRows(filtered, userSort, userValue);
+
+        renderUserHead();
+        userCount.textContent = `Showing ${sorted.length} of ${topUsers.length}`;
+        userRows.innerHTML = sorted.map((u) => {
+          const user = u.user || {};
+          const counts = u.counts || {};
+          const name = `${user.firstName || ''} ${user.lastName || ''}`.trim();
+          return `
+            <tr>
+              <td>${esc(user.username)}</td>
+              <td>${esc(name)}</td>
+              <td class="wrap">${esc(user.institution)}</td>
+              <td class="wrap">${esc(user.email)}</td>
+              ${userMetricKeys.map((k) => `<td>${formatNumber(counts[k] || 0)}</td>`).join('')}
+            </tr>
+          `;
+        }).join('') || '<tr><td colspan="20" class="meta">No matching users</td></tr>';
+      }
+
+      userSearch.addEventListener('input', (e) => renderUsers(e.target.value));
+      renderUsers();
+    }
+
+    function setupManualLoader() {
+      const input = document.getElementById('manualJsonInput');
+      if (!input) return;
+      input.addEventListener('change', (event) => {
+        const file = event.target.files?.[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+          try {
+            const report = JSON.parse(String(reader.result || ''));
+            render(report);
+          } catch (err) {
+            console.error(err);
+            const summary = document.getElementById('summary');
+            if (summary) summary.textContent = 'Manual file load failed: invalid JSON';
+          }
+        };
+        reader.readAsText(file);
+      });
+    }
+
+    async function start() {
+      setupManualLoader();
+      try {
+        const report = await fetchReport();
+        render(report);
+      } catch (err) {
+        console.error(err);
+        const summary = document.getElementById('summary');
+        const manualLoader = document.getElementById('manualLoader');
+        if (summary) {
+          const fileHint = location.protocol === 'file:'
+            ? ' (file:// blocked fetch; use the file picker or run a local server)'
+            : '';
+          summary.textContent = `Failed to load report.json${fileHint}`;
+        }
+        if (manualLoader) manualLoader.style.display = 'inline-flex';
+      }
+    }
+
+    start();
+  </script>
+</body>
+</html>

@@ -72,6 +72,18 @@
       font-size: 12px;
       color: var(--ink);
     }
+    .header-link {
+      border: 1px solid var(--line);
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 12px;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .header-link:hover {
+      border-color: var(--accent);
+    }
     .view-toggle-label {
       margin: 2px 0 0;
       color: var(--muted);
@@ -499,6 +511,7 @@
       <select class="config-switch" id="configSelect" aria-label="Select configuration">
         <option value="network">GEOME network (default)</option>
       </select>
+      <a class="header-link" href="./stats.html">GEOME Statistics Viewer</a>
       <div class="meta" id="summary"></div>
       <label class="manual-loader meta" id="manualLoader">
         Load JSON
