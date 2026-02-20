@@ -392,6 +392,19 @@
       padding: 2px 8px;
       font-size: 12px;
     }
+    .list-modal-table-wrap {
+      margin-top: 8px;
+      max-height: 54vh;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    .list-modal-table td {
+      font-size: 12px;
+      max-width: 260px;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
     .badge {
       display: inline-block;
       padding: 2px 6px;
@@ -619,6 +632,12 @@
         ]
       });
       addSourceOption(configSelect, 'network', 'GEOME network (default)');
+      SOURCE_OPTIONS.set('local', {
+        label: 'Local JSON file',
+        displayName: 'Local JSON file',
+        candidates: []
+      });
+      addSourceOption(configSelect, 'local', 'Local JSON file...');
 
       try {
         const teamPayload = await fetchJson(CONFIG_ENDPOINTS.teams);
@@ -644,6 +663,12 @@
       }
     }
 
+    function setManualLoaderVisibility(visible) {
+      const manualLoader = document.getElementById('manualLoader');
+      if (!manualLoader) return;
+      manualLoader.style.display = visible ? 'inline-flex' : 'none';
+    }
+
     function updateConfigUI(sourceKey) {
       const configSelect = document.getElementById('configSelect');
       const configHint = document.getElementById('configHint');
@@ -653,6 +678,7 @@
         const label = selected ? selected.displayName : 'GEOME network configuration';
         configHint.textContent = `${label} • Entity relationships, attributes, rules, and vocabularies`;
       }
+      setManualLoaderVisibility(sourceKey === 'local');
     }
 
     async function setupConfigSelector() {
@@ -678,6 +704,13 @@
       const sourceKey = getSelectedSourceKey();
       const selected = SOURCE_OPTIONS.get(sourceKey) || SOURCE_OPTIONS.get('network');
       updateConfigUI(sourceKey);
+      const summary = document.getElementById('summary');
+
+      if (sourceKey === 'local') {
+        if (summary) summary.textContent = 'Select a local JSON file to load';
+        setManualLoaderVisibility(true);
+        return;
+      }
 
       try {
         let lastError = null;
@@ -695,12 +728,10 @@
         return;
       } catch (err) {
         console.error(err);
-        const summary = document.getElementById('summary');
-        const manualLoader = document.getElementById('manualLoader');
         if (summary) {
           summary.textContent = `Failed to load ${selected.displayName}`;
         }
-        if (manualLoader) manualLoader.style.display = 'inline-flex';
+        setManualLoaderVisibility(true);
       }
     }
 
@@ -715,6 +746,15 @@
           try {
             const raw = JSON.parse(String(reader.result || ''));
             init(normalizeConfigPayload(raw));
+            const summary = document.getElementById('summary');
+            if (summary) summary.textContent = `Loaded local file: ${file.name}`;
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('source') !== 'local') {
+              params.set('source', 'local');
+              params.delete('config');
+              const next = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+              window.history.replaceState({}, '', next);
+            }
           } catch (err) {
             console.error(err);
             const summary = document.getElementById('summary');
@@ -1256,18 +1296,49 @@
       const usedColumns = usage ? Array.from(usage.columns) : [];
       const usedRules = usage ? Array.from(usage.rules) : [];
 
-      const values = (list.fields || []).map(v => v.value);
-      const max = 120;
-      const shown = values.slice(0, max);
+      const rawFields = Array.isArray(list.fields) ? list.fields : [];
+      const fields = rawFields.map((field) => {
+        if (field && typeof field === 'object' && !Array.isArray(field)) return field;
+        return { value: field };
+      });
+      const keySet = new Set();
+      fields.forEach((field) => Object.keys(field).forEach((key) => keySet.add(key)));
+      const preferredKeys = ['value', 'definition', 'definedBy'];
+      const keys = [
+        ...preferredKeys.filter((key) => keySet.has(key)),
+        ...Array.from(keySet).filter((key) => !preferredKeys.includes(key)).sort()
+      ];
+      const max = 200;
+      const shown = fields.slice(0, max);
+      const valueCount = fields.length;
+      const tableHead = keys.map((key) => `<th>${safe(key)}</th>`).join('');
+      const tableRows = shown.map((field) => {
+        const cells = keys.map((key) => {
+          const val = field[key];
+          const rendered = key === 'definedBy'
+            ? (makeLink(val) || safe(val))
+            : safe(val);
+          return `<td>${rendered || '<span class="muted">—</span>'}</td>`;
+        }).join('');
+        return `<tr>${cells}</tr>`;
+      }).join('');
+      const fallback = '<tr><td class="muted">No values found</td></tr>';
 
       const body = `
-        <div class="muted">caseInsensitive: ${safe(list.caseInsensitive)} • values: ${values.length}</div>
+        <div class="muted">caseInsensitive: ${safe(list.caseInsensitive)} • values: ${valueCount}</div>
         <p>Used by rules: ${usedRules.length ? usedRules.join(', ') : '—'}</p>
         <p>Columns using this list: ${usedColumns.length ? usedColumns.join(', ') : '—'}</p>
-        <div class="list-values">
-          ${shown.map(v => `<span class="value-chip">${v}</span>`).join('')}
+        <div class="list-modal-table-wrap">
+          <table class="list-modal-table">
+            <thead>
+              <tr>${tableHead || '<th>value</th>'}</tr>
+            </thead>
+            <tbody>
+              ${tableRows || fallback}
+            </tbody>
+          </table>
         </div>
-        ${values.length > max ? `<div class="muted" style="margin-top:8px;">Showing first ${max} values</div>` : ''}
+        ${valueCount > max ? `<div class="muted" style="margin-top:8px;">Showing first ${max} list elements</div>` : ''}
       `;
       openModal(`List: ${alias}`, body);
     }

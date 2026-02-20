@@ -1135,6 +1135,115 @@
             ]
         },
         {
+            "worksheet": "EnvironmentalPackage",
+            "type": "DefaultEntity",
+            "hashed": false,
+            "uniqueKey": "environmentalMeasurementID",
+            "conceptURI": "http://rs.tdwg.org/dwc/terms/MeasurementOrFact",
+            "recordType": "biocode.fims.records.GenericRecord",
+            "conceptAlias": "EnvironmentalPackage",
+            "uniqueAcrossProject": false,
+            "parentEntity": "Event",
+            "attributes": [
+                {
+                    "column": "environmentalMeasurementID",
+                    "uri": "uri:environmentalMeasurementID",
+                    "definition": "Identifier for an environmental measurement record associated with the parent collecting event at the time of sampling.",
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/measurementID",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "eventID",
+                    "uri": "urn:eventID",
+                    "definition": "Identifier for the parent collecting event where the environmental measurement was recorded at the time of sampling.",
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/eventID",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "environmentalMeasurementType",
+                    "uri": "uri:environmentalMeasurementType",
+                    "definition": "Type of environmental measurement recorded for the parent collecting event at the time of sampling. If supplied, value must match the controlled vocabulary populated from relevant MIXS water package terms.",
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/measurementType",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "environmentalMeasurementValue",
+                    "uri": "uri:environmentalMeasurementValue",
+                    "definition": "Numeric value of the environmental measurement taken at the parent collecting event at the time of sampling. Required when environmentalMeasurementType is provided.",
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/measurementValue",
+                    "dataType": "FLOAT",
+                    "internal": false,
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "environmentalMeasurementUnit",
+                    "uri": "uri:environmentalMeasurementUnit",
+                    "definition": "Unit associated with environmentalMeasurementValue for the measurement recorded at the parent collecting event at the time of sampling. Required when environmentalMeasurementType is provided.",
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/measurementUnit",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "environmentalMeasurementRemarks",
+                    "uri": "uri:environmentalMeasurementRemarks",
+                    "definition": "Comments or notes about the event-level environmental measurement recorded at the time of sampling.",
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/measurementRemarks",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "allowUnknown": false,
+                    "allowTBD": false
+                }
+            ],
+            "rules": [
+                {
+                    "name": "ValidDataTypeFormat",
+                    "level": "ERROR"
+                },
+                {
+                    "name": "ValidParentIdentifiers",
+                    "level": "ERROR"
+                },
+                {
+                    "name": "ControlledVocabulary",
+                    "level": "ERROR",
+                    "column": "environmentalMeasurementType",
+                    "listName": "environmentalMeasurementType"
+                },
+                {
+                    "name": "RequireValueIfOtherColumn",
+                    "level": "ERROR",
+                    "column": "environmentalMeasurementValue",
+                    "otherColumn": "environmentalMeasurementType"
+                },
+                {
+                    "name": "RequireValueIfOtherColumn",
+                    "level": "ERROR",
+                    "column": "environmentalMeasurementUnit",
+                    "otherColumn": "environmentalMeasurementType"
+                },
+                {
+                    "name": "RequiredValue",
+                    "level": "ERROR",
+                    "columns": [
+                        "environmentalMeasurementID",
+                        "eventID"
+                    ]
+                }
+            ]
+        },
+        {
             "type": "DefaultEntity",
             "rules": [
                 {
@@ -4260,14 +4369,14 @@
                 {
                     "name": "RequireValueIfOtherColumn",
                     "level": "WARNING",
-                    "column": "dnaConcentrationUnit",
-                    "otherColumn": "dnaConcentration"
+                    "column": "extractionConcentrationUnit",
+                    "otherColumn": "extractionConcentration"
                 },
                 {
                     "name": "RequireValueIfOtherColumn",
                     "level": "WARNING",
-                    "column": "dnaVolumeUnit",
-                    "otherColumn": "dnaVolume"
+                    "column": "extractionVolumeUnit",
+                    "otherColumn": "extractionVolume"
                 },
                 {
                     "name": "NumericRange",
@@ -4318,11 +4427,11 @@
                     "allowTBD": false
                 },
                 {
-                    "column": "nuclAcidExtMethod",
+                    "column": "extractionMethod",
                     "uri": "urn:methodOfDNAExtraction",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/methodOfDNAExtraction?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000037/",
                     "definition": "Method or protocol used to extract nucleic acid from the source tissue (for example kit name, chemistry, or SOP reference).",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -4332,7 +4441,7 @@
                     "uri": "urn:yearExtracted",
                     "dataType": "INTEGER",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/yearExtracted?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000011/",
                     "definition": "The year when the extraction was performed. Expected value is an integer from 1500 to 2050 (validation rule: >=1500 and <=2050). Use with monthExtracted and dayExtracted for the extraction date; use 'Unknown' if the value is not known.",
                     "allowUnknown": true,
                     "allowTBD": false
@@ -4342,7 +4451,7 @@
                     "uri": "urn:monthExtracted",
                     "dataType": "INTEGER",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/monthExtracted?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000011/",
                     "definition": "The month when the extraction was performed. Expected value is an integer from 1 to 12 (validation rule: >=1 and <=12). Use with dayExtracted and yearExtracted for the extraction date.",
                     "allowUnknown": true,
                     "allowTBD": false
@@ -4352,57 +4461,57 @@
                     "uri": "urn:dayExtracted",
                     "dataType": "INTEGER",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dayExtracted?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000011/",
                     "definition": "The day-of-month when the extraction was performed. Expected value is an integer from 1 to 31 (validation rule: >=1 and <=31). Use with monthExtracted and yearExtracted for the extraction date.",
                     "allowUnknown": true,
                     "allowTBD": false
                 },
                 {
-                    "column": "dnaConcentration",
+                    "column": "extractionConcentration",
                     "uri": "urn:dnaConcentration",
                     "dataType": "FLOAT",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dnaConcentration?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0001352/",
                     "definition": "Measured concentration of extracted DNA in solution. Record as a numeric value and specify the matching unit in dnaConcentrationUnit.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
-                    "column": "dnaConcentrationUnit",
+                    "column": "extractionConcentrationUnit",
                     "uri": "urn:dnaConcentrationUnit",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dnaConcentrationUnit?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0001352/",
                     "definition": "Unit for dnaConcentration (for example ng/uL). Provide this whenever dnaConcentration is reported.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
-                    "column": "dnaVolume",
+                    "column": "extractionVolume",
                     "uri": "urn:dnaVolume",
                     "dataType": "FLOAT",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dnaVolume?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0001353/",
                     "definition": "Volume of DNA extract available or transferred, recorded as a numeric value. Pair this value with dnaVolumeUnit.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
-                    "column": "dnaVolumeUnit",
+                    "column": "extractionVolumeUnit",
                     "uri": "urn:dnaVolumeUnit",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dnaVolumeUnit?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0001353/",
                     "definition": "Unit for dnaVolume (for example uL or mL). Provide this whenever dnaVolume is reported.",
                     "allowUnknown": false,
                     "allowTBD": false
                 },
                 {
-                    "column": "storageLocation",
+                    "column": "extractionStorageLocation",
                     "uri": "urn:storageLocation",
                     "dataType": "STRING",
                     "internal": false,
-                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/storageLocation?info",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000755/",
                     "definition": "Physical storage location for the extracted DNA (for example freezer, rack, box, and position).",
                     "allowUnknown": false,
                     "allowTBD": false
@@ -4414,6 +4523,56 @@
                     "internal": false,
                     "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/extractionRemarks?info",
                     "definition": "Free-text notes about the extraction, such as deviations from protocol, quality concerns, or handling details.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "extractionInstitutionCode",
+                    "uri": "urn:extractionInstitutionCode",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0001152/",
+                    "definition": "The name (or acronym) in use by the institution having custody of the object(s) or information referred to in the extraction record.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "extractionInstitutionID",
+                    "uri": "urn:extractionInstitutionID",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0001152/",
+                    "definition": "An identifier for the institution having custody of the object(s) or information referred to in the extraction record. Comments For physical specimens, the recommended best practice is to use a globally unique and resolvable identifier from a collections registry such as the Research Organization Registry (ROR)",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "extractionCatalogURI",
+                    "uri": "urn:extractionCatalogURI",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000026/",
+                    "definition": "A URI denoting the extraction catalog number.  This is provided typically by the host institution.",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "extractionBarcode",
+                    "uri": "urn:extractionBarcode",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/extractionRemarks?info",
+                    "definition": "The 2d barcode on the extraction storage location tube",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "extractionCleanupMethod",
+                    "uri": "urn:extractionCleanupMethod",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000752/",
+                    "definition": "",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
@@ -7656,6 +7815,103 @@
                 },
                 {
                     "value": "kilograms"
+                }
+            ],
+            "networkList": true
+        },
+        {
+            "alias": "environmentalMeasurementType",
+            "caseInsensitive": false,
+            "fields": [
+                {
+                    "value": "temperature",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000113/",
+                    "definition": "MIXS: Temperature recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "pH",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0001001/",
+                    "definition": "MIXS: pH recorded for environmental conditions at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "salinity",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000183/",
+                    "definition": "MIXS: Concentration of dissolved salts recorded at the collecting event at the time of sampling, usually expressed as practical salinity units or parts per thousand."
+                },
+                {
+                    "value": "conductivity",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000692/",
+                    "definition": "MIXS: Specific conductivity recorded at the collecting event at the time of sampling, typically in microsiemens per centimeter."
+                },
+                {
+                    "value": "dissolved oxygen",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000119/",
+                    "definition": "MIXS: Concentration of dissolved oxygen recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "turbidity",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000191/",
+                    "definition": "MIXS: Water clarity/turbidity recorded at the collecting event at the time of sampling (for example NTU)."
+                },
+                {
+                    "value": "chlorophyll",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000177/",
+                    "definition": "MIXS: Chlorophyll concentration recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "alkalinity",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000421/",
+                    "definition": "MIXS: Alkalinity (buffering capacity) recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "nitrate",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000425/",
+                    "definition": "MIXS: Nitrate concentration recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "nitrite",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000426/",
+                    "definition": "MIXS: Nitrite concentration recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "ammonium",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000427/",
+                    "definition": "MIXS: Ammonium concentration recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "phosphate",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000505/",
+                    "definition": "MIXS: Phosphate concentration recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "silicate",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000184/",
+                    "definition": "MIXS: Silicate concentration recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "dissolved inorganic nitrogen",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000698/",
+                    "definition": "MIXS: Dissolved inorganic nitrogen recorded at the collecting event at the time of sampling, commonly reported in micromoles per liter."
+                },
+                {
+                    "value": "total phosphate",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000689/",
+                    "definition": "MIXS: Total dissolved phosphate concentration recorded at the collecting event at the time of sampling, commonly reported in micromoles per liter."
+                },
+                {
+                    "value": "total nitrogen concentration",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000102/",
+                    "definition": "MIXS: Total nitrogen concentration recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "water current",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000203/",
+                    "definition": "MIXS: Water current speed and direction recorded at the collecting event at the time of sampling."
+                },
+                {
+                    "value": "fluorescence",
+                    "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000704/",
+                    "definition": "MIXS: Relative chemical fluorescence recorded at the collecting event at the time of sampling."
                 }
             ],
             "networkList": true
