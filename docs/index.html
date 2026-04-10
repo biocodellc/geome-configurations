@@ -84,40 +84,6 @@
     .header-link:hover {
       border-color: var(--accent);
     }
-    .view-toggle-label {
-      margin: 2px 0 0;
-      color: var(--muted);
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
-    .view-toggle {
-      display: inline-flex;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      padding: 3px;
-      background: #f9fafb;
-      gap: 3px;
-    }
-    .view-toggle-btn {
-      border: 1px solid transparent;
-      border-radius: 7px;
-      background: transparent;
-      color: var(--ink);
-      font-size: 12px;
-      font-weight: 600;
-      padding: 6px 10px;
-      cursor: pointer;
-      min-width: 88px;
-    }
-    .view-toggle-btn:hover {
-      border-color: var(--line);
-      background: #ffffff;
-    }
-    .view-toggle-btn.active {
-      border-color: var(--accent);
-      background: rgba(27, 153, 139, 0.09);
-    }
     .detail-tools {
       display: flex;
       flex-direction: column;
@@ -126,22 +92,9 @@
     }
     main {
       display: grid;
-      grid-template-columns: 260px minmax(320px, 1fr) 420px;
+      grid-template-columns: minmax(280px, 25vw) minmax(0, 1fr);
       gap: 16px;
       padding: 16px 18px 26px;
-      transition: grid-template-columns 0.2s ease;
-    }
-    main.view-attributes {
-      grid-template-columns: 260px minmax(320px, 1fr);
-    }
-    main.view-diagram {
-      grid-template-columns: 260px minmax(320px, 1fr);
-    }
-    main.view-attributes .graph-panel {
-      display: none;
-    }
-    main.view-diagram .detail-panel {
-      display: none;
     }
     .panel {
       background: var(--panel);
@@ -156,12 +109,6 @@
       font-size: 16px;
       margin: 0 0 10px;
     }
-    .sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      padding: 16px;
-    }
     .search {
       width: 100%;
       padding: 8px 12px;
@@ -170,47 +117,31 @@
       font-size: 14px;
       background: #f9fafb;
     }
-    .entity-list {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-      overflow-y: auto;
-      max-height: calc(100vh - 220px);
-      padding-right: 6px;
-    }
-    .entity-item {
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid transparent;
-      cursor: pointer;
-      transition: all 0.15s ease;
-      background: #fdfcf9;
-    }
-    .entity-item:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-    .entity-item.active {
-      border-color: var(--accent);
-      background: rgba(27, 153, 139, 0.08);
-    }
-    .entity-item .sub {
-      color: var(--muted);
-      font-size: 12px;
-    }
     .graph-panel {
       position: relative;
-      padding: 0;
+      padding: 0 0 12px;
       overflow: hidden;
+    }
+    .graph-panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px 0;
+    }
+    .graph-panel-copy {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
     }
     #graph {
       width: 100%;
-      height: 100%;
-      min-height: 560px;
+      height: clamp(320px, calc(100vh - 240px), 520px);
+      display: block;
     }
     .graph-legend {
       position: absolute;
-      top: 16px;
+      top: 72px;
       left: 16px;
       background: rgba(255,255,255,0.9);
       border: 1px solid var(--line);
@@ -240,7 +171,7 @@
     .detail-panel {
       display: flex;
       flex-direction: column;
-      height: 100%;
+      height: calc(100vh - 120px);
     }
     .detail-header {
       display: flex;
@@ -507,9 +438,17 @@
         width: 100%;
         justify-content: flex-start;
       }
-      .entity-list { max-height: 240px; }
       .detail-content { max-height: none; }
       #graph { min-height: 420px; }
+      .graph-panel {
+        min-height: auto;
+      }
+      .detail-panel {
+        height: auto;
+      }
+      #graph {
+        height: clamp(280px, 48vh, 420px);
+      }
     }
   </style>
 </head>
@@ -533,19 +472,14 @@
     </div>
   </header>
 
-  <main class="view-attributes">
-    <section class="panel sidebar">
-      <h2>Entities</h2>
-      <div class="view-toggle-label">View</div>
-      <div class="view-toggle" role="tablist" aria-label="Left pane view mode">
-        <button class="view-toggle-btn active" id="viewModeAttributes" type="button" role="tab" aria-selected="true">Attributes</button>
-        <button class="view-toggle-btn" id="viewModeDiagram" type="button" role="tab" aria-selected="false">Diagram</button>
-      </div>
-      <input class="search" id="entitySearch" placeholder="Search entities..." />
-      <div class="entity-list" id="entityList"></div>
-    </section>
-
+  <main>
     <section class="panel graph-panel">
+      <div class="graph-panel-header">
+        <div>
+          <h2>Diagram</h2>
+          <div class="graph-panel-copy">Click an entity node to show its attributes, rules, and referenced lists on the right.</div>
+        </div>
+      </div>
       <svg id="graph"></svg>
       <div class="graph-legend" id="legend"></div>
     </section>
@@ -585,6 +519,12 @@
       'network_extraction.json',
       '/docs/network_extraction.json',
       '../docs/network_extraction.json'
+    ];
+    const PROPOSAL_FILE_CANDIDATES = [
+      './proposed_folded_sample_derived_data.json',
+      'proposed_folded_sample_derived_data.json',
+      '/docs/proposed_folded_sample_derived_data.json',
+      '../docs/proposed_folded_sample_derived_data.json'
     ];
     const SOURCE_OPTIONS = new Map();
 
@@ -632,6 +572,12 @@
         ]
       });
       addSourceOption(configSelect, 'network', 'GEOME network (default)');
+      SOURCE_OPTIONS.set('proposal-folded-sample-derived-data', {
+        label: 'Proposal: folded Sample + derivedData',
+        displayName: 'Proposal model: folded Sample + derivedData',
+        candidates: PROPOSAL_FILE_CANDIDATES
+      });
+      addSourceOption(configSelect, 'proposal-folded-sample-derived-data', 'Proposal: folded Sample + derivedData');
       SOURCE_OPTIONS.set('local', {
         label: 'Local JSON file',
         displayName: 'Local JSON file',
@@ -874,8 +820,6 @@
     const summary = document.getElementById('summary');
     summary.textContent = `${entities.length} entities • ${lists.length} vocabularies`;
 
-    const entityList = document.getElementById('entityList');
-    const entitySearch = document.getElementById('entitySearch');
     const entityTitle = document.getElementById('entityTitle');
     const entitySub = document.getElementById('entitySub');
 
@@ -899,53 +843,10 @@
       if (e.target === modal) closeModal();
     });
 
-    let selectedAlias = entities[0]?.conceptAlias || null;
-    let viewMode = 'attributes';
+    let selectedAlias = entityByAlias.has('Event') ? 'Event' : (entities[0]?.conceptAlias || null);
     let nodeSelection = null;
 
-    const mainLayout = document.querySelector('main');
     const graphPanel = document.querySelector('.graph-panel');
-    const viewModeAttributesBtn = document.getElementById('viewModeAttributes');
-    const viewModeDiagramBtn = document.getElementById('viewModeDiagram');
-
-    function applyViewMode() {
-      const showAttributes = viewMode !== 'diagram';
-      mainLayout.classList.toggle('view-attributes', showAttributes);
-      mainLayout.classList.toggle('view-diagram', !showAttributes);
-      viewModeAttributesBtn.classList.toggle('active', showAttributes);
-      viewModeAttributesBtn.setAttribute('aria-selected', String(showAttributes));
-      viewModeDiagramBtn.classList.toggle('active', !showAttributes);
-      viewModeDiagramBtn.setAttribute('aria-selected', String(!showAttributes));
-      if (!showAttributes) {
-        window.requestAnimationFrame(renderGraph);
-      }
-    }
-
-    viewModeAttributesBtn.addEventListener('click', () => {
-      viewMode = 'attributes';
-      applyViewMode();
-    });
-
-    viewModeDiagramBtn.addEventListener('click', () => {
-      viewMode = 'diagram';
-      applyViewMode();
-    });
-
-    function renderEntityList(filter = '') {
-      entityList.innerHTML = '';
-      const lower = filter.toLowerCase();
-      entities
-        .filter(e => e.conceptAlias?.toLowerCase().includes(lower))
-        .forEach(e => {
-          const item = document.createElement('div');
-          item.className = 'entity-item' + (e.conceptAlias === selectedAlias ? ' active' : '');
-          item.innerHTML = `<strong>${e.conceptAlias}</strong><div class="sub">${e.type || 'Entity'} • ${e.parentEntity || 'Root'}</div>`;
-          item.addEventListener('click', () => selectEntity(e.conceptAlias));
-          entityList.appendChild(item);
-        });
-    }
-
-    entitySearch.addEventListener('input', e => renderEntityList(e.target.value));
 
     function makeLink(value) {
       if (!value) return '';
@@ -1345,12 +1246,10 @@
 
     function selectEntity(alias) {
       selectedAlias = alias;
-      renderEntityList(entitySearch.value);
       renderDetails(alias);
       highlightNode(alias);
     }
 
-    renderEntityList();
     renderDetails(selectedAlias);
     // Graph (hierarchy: Event at top)
     const colorMap = {
@@ -1384,11 +1283,12 @@
     }
 
     function renderGraph() {
-      if (viewMode !== 'diagram') return;
-
-      const width = Math.max(graphPanel.clientWidth, 320);
-      const height = Math.max(graphPanel.clientHeight, 560);
       const svg = d3.select('#graph');
+      const svgElement = svg.node();
+      const width = Math.max(graphPanel.clientWidth, 280);
+      const height = Math.max(svgElement?.clientHeight || graphPanel.clientHeight || 360, 280);
+      const nodeRadius = entities.length > 5 ? 20 : 22;
+      const labelFontSize = entities.length > 5 ? 9 : 10;
       svg.attr('viewBox', `0 0 ${width} ${height}`);
       svg.selectAll('*').remove();
       svg.on('.zoom', null);
@@ -1403,7 +1303,7 @@
       const treeData = rootAlias ? buildTree(rootAlias) : { name: 'root', entity: null, children: [] };
       const root = d3.hierarchy(treeData, d => d.children);
 
-      const margin = { top: 24, right: 24, bottom: 24, left: 24 };
+      const margin = { top: 20, right: 18, bottom: 20, left: 18 };
       const treeLayout = d3.tree().size([width - margin.left - margin.right, height - margin.top - margin.bottom]);
       treeLayout(root);
 
@@ -1435,7 +1335,7 @@
         if (!source || !target) return '';
 
         if (relationship.from === relationship.to) {
-          const r = 26;
+          const r = nodeRadius;
           return `M ${source.x + r * 0.55} ${source.y - r * 0.75} C ${source.x + r * 1.65} ${source.y - r * 1.9}, ${source.x - r * 1.65} ${source.y - r * 1.9}, ${source.x - r * 0.55} ${source.y - r * 0.75}`;
         }
 
@@ -1456,7 +1356,7 @@
         if (!source || !target) return { x: 0, y: 0 };
 
         if (relationship.from === relationship.to) {
-          const r = 26;
+          const r = nodeRadius;
           return { x: source.x, y: source.y - r * 2.15 };
         }
 
@@ -1497,7 +1397,7 @@
         .style('cursor', 'pointer');
 
       nodeSelection.append('circle')
-        .attr('r', 26)
+        .attr('r', nodeRadius)
         .attr('fill', d => colorMap[d.data.entity?.type] || '#94a3b8')
         .attr('stroke', '#0f172a')
         .attr('stroke-width', 1.5)
@@ -1508,7 +1408,7 @@
         .attr('text-anchor', 'middle')
         .attr('dy', 4)
         .attr('fill', '#0f172a')
-        .attr('font-size', 10)
+        .attr('font-size', labelFontSize)
         .attr('font-weight', 600);
 
       nodeSelection.on('click', (event, d) => {
@@ -1531,11 +1431,11 @@
     window.addEventListener('resize', () => {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(() => {
-        if (viewMode === 'diagram') renderGraph();
+        renderGraph();
       }, 120);
     });
 
-    applyViewMode();
+    renderGraph();
     }
   </script>
 </body>

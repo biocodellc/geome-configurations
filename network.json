@@ -1180,7 +1180,7 @@
                     "uri": "uri:environmentalMeasurementValue",
                     "definition": "Numeric value of the environmental measurement taken at the parent collecting event at the time of sampling. Required when environmentalMeasurementType is provided.",
                     "definedBy": "http://rs.tdwg.org/dwc/terms/measurementValue",
-                    "dataType": "FLOAT",
+                    "dataType": "STRING",
                     "internal": false,
                     "allowUnknown": false,
                     "allowTBD": false
@@ -2449,6 +2449,12 @@
                 {
                     "name": "ControlledVocabulary",
                     "level": "WARNING",
+                    "column": "measurementType",
+                    "listName": "measurementType"
+                },
+                {
+                    "name": "ControlledVocabulary",
+                    "level": "WARNING",
                     "column": "PARMethod",
                     "listName": "PARMethod"
                 },
@@ -2573,7 +2579,7 @@
                 {
                     "column": "measurementValue",
                     "uri": "urn:measurementValue",
-                    "dataType": "FLOAT",
+                    "dataType": "STRING",
                     "internal": false,
                     "definedBy": "http://rs.tdwg.org/dwc/terms/measurementValue",
                     "group": "Diagnostics and Traits",
@@ -7912,6 +7918,158 @@
                     "value": "fluorescence",
                     "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000704/",
                     "definition": "MIXS: Relative chemical fluorescence recorded at the collecting event at the time of sampling."
+                }
+            ],
+            "networkList": true
+        },
+        {
+            "alias": "measurementType",
+            "caseInsensitive": false,
+            "fields": [
+                {
+                    "value": "body length",
+                    "definedBy": "http://purl.obolibrary.org/obo/OBA_VT0001256",
+                    "definition": "OBA: The length of a multicellular organism body."
+                },
+                {
+                    "value": "body width",
+                    "definedBy": "http://purl.obolibrary.org/obo/OBA_VT0015039",
+                    "definition": "OBA: The width of a multicellular organism body."
+                },
+                {
+                    "value": "body height",
+                    "definedBy": "http://purl.obolibrary.org/obo/OBA_VT0001253",
+                    "definition": "OBA: The height of a multicellular organism body."
+                },
+                {
+                    "value": "body mass",
+                    "definedBy": "http://purl.obolibrary.org/obo/OBA_VT0001259",
+                    "definition": "OBA: The mass of a multicellular organism body."
+                },
+                {
+                    "value": "circumference",
+                    "definedBy": "http://purl.obolibrary.org/obo/PATO_0001648",
+                    "definition": "PATO: The distance around the boundary of an organism or organism part."
+                },
+                {
+                    "value": "perimeter",
+                    "definedBy": "http://purl.obolibrary.org/obo/PATO_0001711",
+                    "definition": "PATO: The length of the outer boundary of an organismal structure."
+                },
+                {
+                    "value": "depth",
+                    "definedBy": "http://purl.obolibrary.org/obo/PATO_0001595",
+                    "definition": "PATO: The distance from front to back or top to bottom of an organismal structure depending on orientation."
+                },
+                {
+                    "value": "age",
+                    "definedBy": "http://purl.obolibrary.org/obo/PATO_0000011",
+                    "definition": "PATO: The age of an organism at the time of measurement."
+                },
+                {
+                    "value": "coral colony height",
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "definition": "GCMP trait: Height of a coral colony, typically recorded in centimeters."
+                },
+                {
+                    "value": "coral colony width 1",
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "definition": "GCMP trait: First orthogonal width of a coral colony, typically recorded in centimeters."
+                },
+                {
+                    "value": "coral colony width 2",
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "definition": "GCMP trait: Second orthogonal width of a coral colony, typically recorded in centimeters."
+                },
+                {
+                    "value": "coral colony diameter",
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "definition": "GCMP trait: Diameter of a coral colony, typically recorded in centimeters."
+                },
+                {
+                    "value": "coral colony tissue loss percent",
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "definition": "GCMP trait: Estimated percent of coral colony tissue lost."
+                },
+                {
+                    "value": "disease observed prevalence percent",
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "definition": "Estimated percent of the individual or colony affected by observed disease."
+                },
+                {
+                    "value": "disease tested positive count",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseTestedPositiveCount?info",
+                    "definition": "Number of positive values for a disease test."
+                },
+                {
+                    "value": "quantity detected",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/quantityDetected?info",
+                    "definition": "Quantity of target detected (for example zoospore count)."
+                },
+                {
+                    "value": "sample type",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/sampleType?info",
+                    "definition": "Type of sample tested (for example swabbing, blood, skin, liver)."
+                },
+                {
+                    "value": "disease lineage",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseLineage?info",
+                    "definition": "Specific genetic lineage detected (if available)."
+                },
+                {
+                    "value": "genotype method",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/genotytpeMethod?info",
+                    "definition": "Genotyping method used to determine disease lineage when present (for example whole genome sequencing, ITS sequencing, multilocus nuclear sequencing)."
+                },
+                {
+                    "value": "disease tested",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseTested?info",
+                    "definition": "Disease target tested (for example Bd, Bsal, Bd+Bsal, Other)."
+                },
+                {
+                    "value": "specimen disposition",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/specimenDisposition?info",
+                    "definition": "Post-sampling status of the specimen associated with the diagnostic record."
+                },
+                {
+                    "value": "disease detected",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diseaseDetected?info",
+                    "definition": "Result of disease testing (for example positive, negative, ambiguous)."
+                },
+                {
+                    "value": "fatal",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/fatal?info",
+                    "definition": "Whether disease tested is presumed to be a cause of death at sampling time."
+                },
+                {
+                    "value": "test method",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/testMethod?info",
+                    "definition": "Diagnostic method used (for example traditional PCR, qPCR, realtime PCR, histology)."
+                },
+                {
+                    "value": "dilution factor",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/dilutionFactor?info",
+                    "definition": "Dilution factor used for diagnostics and downstream ZEscore calculations."
+                },
+                {
+                    "value": "cycle time first detection",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/cycleTimeFirstDetection?info",
+                    "definition": "PCR cycle threshold/time at first positive detection."
+                },
+                {
+                    "value": "diagnostic lab",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/diagnosticLab?info",
+                    "definition": "Diagnostic laboratory responsible for the assay result."
+                },
+                {
+                    "value": "ze score",
+                    "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/zeScore?info",
+                    "definition": "Zoospore Equivalent Score (ZEscore), measured or derived from quantity detected and dilution factor."
+                },
+                {
+                    "value": "disease observed name",
+                    "definedBy": "https://dx.doi.org/10.1038/s41467-018-07275-x",
+                    "definition": "Name of any observed disease present on the organism or colony."
                 }
             ],
             "networkList": true
