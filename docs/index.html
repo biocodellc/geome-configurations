@@ -139,22 +139,73 @@
       height: clamp(320px, calc(100vh - 240px), 520px);
       display: block;
     }
-    .graph-legend {
+    .legend-bubble {
       position: absolute;
       top: 72px;
+      left: 16px;
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.96);
+      color: var(--ink);
+      box-shadow: var(--shadow);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      z-index: 3;
+    }
+    .legend-bubble:hover {
+      border-color: var(--accent);
+      background: #ffffff;
+    }
+    .graph-legend {
+      position: absolute;
+      top: 114px;
       left: 16px;
       background: rgba(255,255,255,0.9);
       border: 1px solid var(--line);
       border-radius: 12px;
       padding: 10px 12px;
-      font-size: 12px;
+      font-size: 11px;
       box-shadow: var(--shadow);
+      max-width: 180px;
+      z-index: 3;
+      display: none;
+    }
+    .graph-legend.open {
+      display: block;
+    }
+    .legend-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+    .legend-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0;
+    }
+    .legend-close {
+      border: none;
+      background: #f3f4f6;
+      border-radius: 999px;
+      padding: 2px 8px;
+      font-size: 11px;
+      cursor: pointer;
     }
     .legend-row {
       display: flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
     .legend-dot {
       width: 10px;
@@ -481,6 +532,7 @@
         </div>
       </div>
       <svg id="graph"></svg>
+      <button class="legend-bubble" id="legendToggle" type="button" aria-label="Open legend" aria-expanded="false">?</button>
       <div class="graph-legend" id="legend"></div>
     </section>
 
@@ -1420,12 +1472,43 @@
 
     // Legend
     const legend = document.getElementById('legend');
-    legend.innerHTML = [
-      ...Object.entries(colorMap).map(([type, color]) => `
-        <div class="legend-row"><span class="legend-dot" style="background:${color}"></span>${type}</div>
-      `),
-      `<div class="legend-row"><span class="legend-link"></span>Attribute relationship</div>`
-    ].join('');
+    const legendToggle = document.getElementById('legendToggle');
+    function closeLegend() {
+      legend.classList.remove('open');
+      legendToggle.setAttribute('aria-expanded', 'false');
+    }
+    function openLegend() {
+      legend.classList.add('open');
+      legendToggle.setAttribute('aria-expanded', 'true');
+    }
+
+    legend.innerHTML = `
+      <div class="legend-header">
+        <div class="legend-title">Legend</div>
+        <button class="legend-close" id="legendClose" type="button">Close</button>
+      </div>
+      ${[
+        ...Object.entries(colorMap).map(([type, color]) => `
+          <div class="legend-row"><span class="legend-dot" style="background:${color}"></span>${type}</div>
+        `),
+        `<div class="legend-row"><span class="legend-link"></span>Attribute relationship</div>`
+      ].join('')}
+    `;
+
+    const legendClose = document.getElementById('legendClose');
+    legendToggle.addEventListener('click', () => {
+      if (legend.classList.contains('open')) {
+        closeLegend();
+      } else {
+        openLegend();
+      }
+    });
+    legendClose.addEventListener('click', closeLegend);
+    document.addEventListener('click', (event) => {
+      if (!legend.classList.contains('open')) return;
+      if (legend.contains(event.target) || legendToggle.contains(event.target)) return;
+      closeLegend();
+    });
 
     let resizeTimer = null;
     window.addEventListener('resize', () => {
