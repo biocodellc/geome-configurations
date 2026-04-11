@@ -1468,14 +1468,14 @@
           "allowTBD": false
         },
         {
-          "column": "parentMaterialSampleID",
-          "uri": "urn:parentMaterialSampleID",
+          "column": "fromSample",
+          "uri": "urn:fromSample",
           "dataType": "STRING",
           "internal": false,
-          "definedBy": "urn:geome:parentMaterialSampleID",
+          "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/fromSample?info",
           "group": "Record and Owner Details",
-          "definition": "Identifier of the parent GEOME material entity from which this row was derived. Leave blank for top-level collected samples; use it to link tissue to sample and DNA extract to tissue or sample.",
-          "allowUnknown": true,
+          "definition": "Identifier of sample that this sample was derived from, if available. In the proposed folded team model, this field is used to link tissue rows to sample rows and dnaExtract rows to tissue or sample rows.",
+          "allowUnknown": false,
           "allowTBD": false
         },
         {
@@ -1849,17 +1849,6 @@
           "definedBy": "http://rs.tdwg.org/dwc/terms/MaterialSampleID",
           "group": "Record and Owner Details",
           "definition": "An identifier for the materialSample (individual bone, single specimen, individual, or lot).  Within GEOME, a materialSampleID must be unique within an expedition and optionally an entire project.",
-          "allowUnknown": false,
-          "allowTBD": false
-        },
-        {
-          "column": "fromSample",
-          "uri": "urn:fromSample",
-          "dataType": "STRING",
-          "internal": false,
-          "definedBy": "https://biscicol.org/api/v1/inaan/ark:/92250/fromSample?info",
-          "group": "Record and Owner Details",
-          "definition": "Identifier of sample that this sample was derived from, if available.",
           "allowUnknown": false,
           "allowTBD": false
         },

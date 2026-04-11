@@ -18,7 +18,7 @@ Within this proposal:
 
 - `Sample` becomes the single material-entity table
 - `materialEntityType` distinguishes `sample`, `tissue`, and `dnaExtract`
-- `parentMaterialSampleID` records derivation lineage
+- existing `fromSample` records derivation lineage for the proposed new team
 - `derivedData` absorbs the roles now handled by `fastaSequence` and `fastqMetadata`
 
 ## Why The Master Network Must Change
@@ -35,7 +35,7 @@ The key implications from `geome-db` are:
 Operationally, that means the following proposal items cannot be introduced only at the team level:
 
 - new entity `derivedData`
-- new `Sample` attributes `materialEntityType` and `parentMaterialSampleID`
+- new `Sample` attribute `materialEntityType`
 - changing the intended semantic role of `Sample` to absorb `Tissue` and `Extraction`
 - eventual retirement of `fastaSequence`, `fastqMetadata`, `Tissue`, and `Extraction`
 
@@ -43,21 +43,20 @@ One nuance:
 
 - A new list alias can technically be team-local if it does not collide with a network list alias.
 - In practice, because `materialEntityType` is a new `Sample` attribute, the master network still needs to be updated first.
+- This proposal now avoids introducing a new parent-link field. For the proposed new team, lineage is expressed with the already-existing `fromSample` attribute.
 
 ## Recommended Network Schema Patch
 
-### Step 1: Add New `Sample` Attributes
+### Step 1: Add New `Sample` Attribute
 
-Add these attributes to the master `Sample` entity:
+Add this attribute to the master `Sample` entity:
 
 - `materialEntityType`
   - datatype: `STRING`
   - required controlled vocabulary
   - purpose: classify each row as `sample`, `tissue`, or `dnaExtract`
-- `parentMaterialSampleID`
-  - datatype: `STRING`
-  - optional
-  - purpose: point to the parent material entity in the derivation chain
+
+For the proposed new team, use the existing `fromSample` field to express derivation lineage instead of creating a new `parentMaterialSampleID` field.
 
 Recommended semantics:
 
@@ -80,13 +79,13 @@ Recommended network rule on `Sample`:
 
 - `ControlledVocabulary` on `materialEntityType` using list `materialEntityType`
 
-Recommended interpretation rule:
+Recommended interpretation for the proposed new team:
 
-- `parentMaterialSampleID` is blank for top-level `sample`
-- `parentMaterialSampleID` is expected for `tissue`
-- `parentMaterialSampleID` is expected for `dnaExtract`
+- `fromSample` is blank for top-level `sample`
+- `fromSample` points from `tissue` to its parent `sample`
+- `fromSample` points from `dnaExtract` to its parent `tissue` or `sample`
 
-This last rule can be implemented later as a custom conditional rule if needed. It does not need to block the first network patch.
+This can remain a documented convention for the proposed team unless and until the network adopts a stronger conditional rule around `materialEntityType`.
 
 ### Step 2: Add New Entity `derivedData`
 
@@ -138,7 +137,6 @@ Use a staged deprecation rather than a hard cutover.
 Network changes:
 
 - add `materialEntityType`
-- add `parentMaterialSampleID`
 - add `derivedData`
 - keep `Tissue`, `Extraction`, `fastaSequence`, and `fastqMetadata`
 
@@ -199,7 +197,7 @@ For each legacy `Tissue` row:
 
 - create a folded `Sample` row with `materialEntityType = tissue`
 - carry over all tissue-specific attributes
-- set `parentMaterialSampleID` to the parent sample identifier
+- set `fromSample` to the parent sample identifier
 - preserve the original `tissueID`
 
 Recommended identifier policy:
@@ -213,7 +211,7 @@ For each legacy `Extraction` row:
 
 - create a folded `Sample` row with `materialEntityType = dnaExtract`
 - carry over extraction-specific attributes
-- set `parentMaterialSampleID` to the source tissue or sample row
+- set `fromSample` to the source tissue or sample row
 - preserve the original `extractionID`
 
 ### Legacy `fastaSequence` And `fastqMetadata` To `derivedData`
@@ -258,7 +256,7 @@ Before changing live team configs:
 Apply the network patch first:
 
 - add `materialEntityType` list
-- add `materialEntityType` and `parentMaterialSampleID` to `Sample`
+- add `materialEntityType` to `Sample`
 - add `derivedData`
 - retain legacy entities during transition
 
@@ -316,7 +314,7 @@ This makes Biocode the best first candidate for migration.
 Add to Biocode `Samples` workflow:
 
 - `materialEntityType`
-- `parentMaterialSampleID`
+- `fromSample`
 
 Do not remove current tissue fields yet.
 
@@ -325,6 +323,7 @@ Immediate usage:
 - top specimen rows use `materialEntityType = sample`
 - repeated tissue rows use `materialEntityType = tissue`
 - extraction-like folded rows use `materialEntityType = dnaExtract`
+- any folded derived row uses `fromSample` to point to its parent sample or tissue row
 
 #### Step 2: Introduce `derivedData` Upload Path
 
@@ -398,7 +397,7 @@ Risk:
 
 Mitigation:
 
-- allow `parentMaterialSampleID` to be temporarily blank for legacy backfill when true parentage is unknown
+- allow `fromSample` to be temporarily blank for legacy backfill when true parentage is unknown
 - capture unresolved lineage in migration logs
 
 ### Behavioral Regression In Downstream Services
@@ -418,7 +417,7 @@ Mitigation:
 If the goal is to move incrementally, the smallest useful master-network patch is:
 
 1. Add `materialEntityType` list to the network config.
-2. Add `materialEntityType` and `parentMaterialSampleID` to `Sample`.
+2. Add `materialEntityType` to `Sample`.
 3. Add new entity `derivedData`.
 4. Keep all legacy entities unchanged.
 5. Pilot only at Biocode team level first.
