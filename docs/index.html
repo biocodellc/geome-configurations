@@ -84,6 +84,18 @@
     .header-link:hover {
       border-color: var(--accent);
     }
+    .header-button {
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .header-button:disabled {
+      color: var(--muted);
+      cursor: not-allowed;
+      opacity: 0.65;
+    }
+    .header-button:disabled:hover {
+      border-color: var(--line);
+    }
     .detail-tools {
       display: flex;
       flex-direction: column;
@@ -514,6 +526,9 @@
       <select class="config-switch" id="configSelect" aria-label="Select configuration">
         <option value="network">GEOME network (default)</option>
       </select>
+      <button class="header-link header-button" id="downloadConfigSpreadsheet" type="button" disabled>
+        Download entire configuration as a spreadsheet
+      </button>
       <a class="header-link" href="./stats.html">GEOME Statistics Viewer</a>
       <div class="meta" id="summary"></div>
       <label class="manual-loader meta" id="manualLoader">
@@ -579,6 +594,292 @@
       '../docs/proposed_folded_sample_derived_data.json'
     ];
     const SOURCE_OPTIONS = new Map();
+    let activeConfig = null;
+    let activeConfigName = 'GEOME network configuration';
+
+    function stripInvalidXmlChars(value) {
+      return String(value).replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/g, '');
+    }
+
+    function xmlEscape(value) {
+      return stripInvalidXmlChars(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+    }
+
+    function spreadsheetValue(value) {
+      if (value === null || value === undefined) return '';
+      if (Array.isArray(value)) {
+        if (value.every(item => item === null || ['string', 'number', 'boolean', 'undefined'].includes(typeof item))) {
+          return value.filter(item => item !== null && item !== undefined).join('; ');
+        }
+        return JSON.stringify(value);
+      }
+      if (typeof value === 'object') return JSON.stringify(value);
+      return String(value);
+    }
+
+    function collectKeys(rows, preferredKeys = []) {
+      const seen = new Set();
+      const keys = [];
+      preferredKeys.forEach((key) => {
+        if (!seen.has(key)) {
+          seen.add(key);
+          keys.push(key);
+        }
+      });
+      rows.forEach((row) => {
+        Object.keys(row || {}).sort().forEach((key) => {
+          if (seen.has(key)) return;
+          seen.add(key);
+          keys.push(key);
+        });
+      });
+      return keys;
+    }
+
+    function sheetRowsFromObjects(objects, preferredKeys = []) {
+      const keys = collectKeys(objects, preferredKeys);
+      return [
+        keys,
+        ...objects.map((object) => keys.map(key => spreadsheetValue(object?.[key])))
+      ];
+    }
+
+    function normalizeListField(field) {
+      if (field && typeof field === 'object' && !Array.isArray(field)) return field;
+      return { value: field };
+    }
+
+    function buildWorkbookSheets(config) {
+      const entities = Array.isArray(config?.entities) ? config.entities : [];
+      const lists = Array.isArray(config?.lists) ? config.lists : [];
+      const exportedAt = new Date().toISOString();
+
+      const configRows = [
+        ['key', 'value'],
+        ['source', activeConfigName],
+        ['exportedAt', exportedAt],
+        ['entityCount', entities.length],
+        ['listCount', lists.length]
+      ];
+      Object.keys(config || {}).sort().forEach((key) => {
+        if (key === 'entities' || key === 'lists') return;
+        configRows.push([key, spreadsheetValue(config[key])]);
+      });
+
+      const entityRows = entities.map((entity) => {
+        const { attributes, rules, ...entityMetadata } = entity || {};
+        return {
+          ...entityMetadata,
+          attributeCount: Array.isArray(attributes) ? attributes.length : 0,
+          ruleCount: Array.isArray(rules) ? rules.length : 0
+        };
+      });
+
+      const attributeRows = [];
+      entities.forEach((entity) => {
+        (entity?.attributes || []).forEach((attribute, index) => {
+          attributeRows.push({
+            entity: entity?.conceptAlias || '',
+            attributeIndex: index + 1,
+            ...attribute
+          });
+        });
+      });
+
+      const ruleRows = [];
+      entities.forEach((entity) => {
+        (entity?.rules || []).forEach((rule, index) => {
+          ruleRows.push({
+            entity: entity?.conceptAlias || '',
+            ruleIndex: index + 1,
+            ...rule
+          });
+        });
+      });
+
+      const listRows = lists.map((list) => {
+        const { fields, ...listMetadata } = list || {};
+        return {
+          ...listMetadata,
+          valueCount: Array.isArray(fields) ? fields.length : 0
+        };
+      });
+
+      const listValueRows = [];
+      lists.forEach((list) => {
+        (list?.fields || []).forEach((field, index) => {
+          listValueRows.push({
+            list: list?.alias || '',
+            valueIndex: index + 1,
+            ...normalizeListField(field)
+          });
+        });
+      });
+
+      return [
+        { name: 'Configuration', rows: configRows },
+        {
+          name: 'Entities',
+          rows: sheetRowsFromObjects(entityRows, [
+            'conceptAlias',
+            'type',
+            'worksheet',
+            'parentEntity',
+            'uniqueKey',
+            'conceptURI',
+            'recordType',
+            'hashed',
+            'uniqueAcrossProject',
+            'attributeCount',
+            'ruleCount'
+          ])
+        },
+        {
+          name: 'Attributes',
+          rows: sheetRowsFromObjects(attributeRows, [
+            'entity',
+            'attributeIndex',
+            'column',
+            'dataType',
+            'uri',
+            'definedBy',
+            'definition',
+            'group',
+            'internal',
+            'allowUnknown',
+            'allowTBD',
+            'delimitedBy'
+          ])
+        },
+        {
+          name: 'Rules',
+          rows: sheetRowsFromObjects(ruleRows, [
+            'entity',
+            'ruleIndex',
+            'name',
+            'level',
+            'column',
+            'columns',
+            'otherColumn',
+            'listName',
+            'range',
+            'pattern',
+            'uniqueAcrossProject'
+          ])
+        },
+        {
+          name: 'Lists',
+          rows: sheetRowsFromObjects(listRows, [
+            'alias',
+            'caseInsensitive',
+            'networkList',
+            'valueCount'
+          ])
+        },
+        {
+          name: 'List Values',
+          rows: sheetRowsFromObjects(listValueRows, [
+            'list',
+            'valueIndex',
+            'value',
+            'definition',
+            'definedBy'
+          ])
+        }
+      ];
+    }
+
+    function workbookCellXml(value, isHeader = false) {
+      const style = isHeader ? ' ss:StyleID="Header"' : '';
+      return `<Cell${style}><Data ss:Type="String">${xmlEscape(spreadsheetValue(value))}</Data></Cell>`;
+    }
+
+    function workbookSheetXml(sheet) {
+      const rows = sheet.rows?.length ? sheet.rows : [['']];
+      const name = String(sheet.name || 'Sheet').slice(0, 31);
+      return `
+        <Worksheet ss:Name="${xmlEscape(name)}">
+          <Table>
+            ${rows.map((row, rowIndex) => `
+              <Row>
+                ${(row || []).map(value => workbookCellXml(value, rowIndex === 0)).join('')}
+              </Row>
+            `).join('')}
+          </Table>
+          <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+            <FreezePanes/>
+            <FrozenNoSplit/>
+            <SplitHorizontal>1</SplitHorizontal>
+            <TopRowBottomPane>1</TopRowBottomPane>
+            <ActivePane>2</ActivePane>
+          </WorksheetOptions>
+        </Worksheet>
+      `;
+    }
+
+    function buildExcelWorkbookXml(config) {
+      const sheets = buildWorkbookSheets(config);
+      return `<?xml version="1.0" encoding="UTF-8"?>
+        <?mso-application progid="Excel.Sheet"?>
+        <Workbook
+          xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:o="urn:schemas-microsoft-com:office:office"
+          xmlns:x="urn:schemas-microsoft-com:office:excel"
+          xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+          xmlns:html="http://www.w3.org/TR/REC-html40">
+          <Styles>
+            <Style ss:ID="Header">
+              <Font ss:Bold="1"/>
+              <Interior ss:Color="#F3F4F6" ss:Pattern="Solid"/>
+            </Style>
+          </Styles>
+          ${sheets.map(workbookSheetXml).join('')}
+        </Workbook>`;
+    }
+
+    function slugifyFilename(value) {
+      const slug = String(value || 'geome-configuration')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '')
+        .slice(0, 80);
+      return slug || 'geome-configuration';
+    }
+
+    function setDownloadAvailability(enabled) {
+      const button = document.getElementById('downloadConfigSpreadsheet');
+      if (!button) return;
+      button.disabled = !enabled;
+    }
+
+    function setupConfigDownload() {
+      const button = document.getElementById('downloadConfigSpreadsheet');
+      if (!button) return;
+      button.addEventListener('click', () => {
+        if (!activeConfig) {
+          const summary = document.getElementById('summary');
+          if (summary) summary.textContent = 'No configuration loaded to download';
+          return;
+        }
+        const workbookXml = buildExcelWorkbookXml(activeConfig);
+        const blob = new Blob([workbookXml], {
+          type: 'application/vnd.ms-excel;charset=utf-8'
+        });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `${slugifyFilename(activeConfigName)}-configuration.xls`;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
+    }
 
     function normalizeConfigPayload(raw) {
       if (raw && raw.config && Array.isArray(raw.config.entities)) return raw.config;
@@ -702,6 +1003,8 @@
       const sourceKey = getSelectedSourceKey();
       const selected = SOURCE_OPTIONS.get(sourceKey) || SOURCE_OPTIONS.get('network');
       updateConfigUI(sourceKey);
+      activeConfig = null;
+      setDownloadAvailability(false);
       const summary = document.getElementById('summary');
 
       if (sourceKey === 'local') {
@@ -739,11 +1042,14 @@
       input.addEventListener('change', (event) => {
         const file = event.target.files?.[0];
         if (!file) return;
+        activeConfig = null;
+        setDownloadAvailability(false);
         const reader = new FileReader();
         reader.onload = () => {
           try {
             const raw = JSON.parse(String(reader.result || ''));
             init(normalizeConfigPayload(raw));
+            activeConfigName = file.name.replace(/\.json$/i, '') || 'Local JSON file';
             const summary = document.getElementById('summary');
             if (summary) summary.textContent = `Loaded local file: ${file.name}`;
             const params = new URLSearchParams(window.location.search);
@@ -763,6 +1069,7 @@
       });
     }
 
+    setupConfigDownload();
     setupManualLoader();
     (async () => {
       await setupConfigSelector();
@@ -770,6 +1077,9 @@
     })();
 
     function init(raw) {
+    activeConfig = raw;
+    activeConfigName = SOURCE_OPTIONS.get(getSelectedSourceKey())?.displayName || 'GEOME configuration';
+    setDownloadAvailability(true);
     const entities = raw.entities || [];
     const lists = raw.lists || [];
     const listByAlias = new Map(lists.map(l => [l.alias, l]));
