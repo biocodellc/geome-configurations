@@ -2426,6 +2426,17 @@
                     "definition": "A reference for the publication in which the dwc:scientificName was originally established under the rules of the associated dwc:nomenclaturalCode.",
                     "allowUnknown": false,
                     "allowTBD": false
+                },
+                {
+                    "column": "sampleDisposition",
+                    "uri": "urn:sampleDisposition",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/disposition",
+                    "group": "Protocol and Storage Details",
+                    "definition": "Current whereabouts or disposition of this sample, recorded as free text. Examples: NHB, Biorepository, MSC freezer, used up.",
+                    "allowUnknown": false,
+                    "allowTBD": false
                 }
             ]
         },
@@ -3707,6 +3718,17 @@
                     "definition": "In the case where biosamples have already been accessioned into NCBI's Sequence Read Archive, the user may fill in the biosampleAccession number in the form SAMNxxxxxxxx",
                     "allowUnknown": false,
                     "allowTBD": false
+                },
+                {
+                    "column": "tissueDisposition",
+                    "uri": "urn:tissueDisposition",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/disposition",
+                    "group": "Protocol and Storage Details",
+                    "definition": "Current whereabouts or disposition of this tissue, recorded as free text. Examples: NHB, Biorepository, MSC freezer, used up.",
+                    "allowUnknown": false,
+                    "allowTBD": false
                 }
             ]
         },
@@ -4579,6 +4601,17 @@
                     "internal": false,
                     "definedBy": "https://genomicsstandardsconsortium.github.io/mixs/0000752/",
                     "definition": "",
+                    "allowUnknown": false,
+                    "allowTBD": false
+                },
+                {
+                    "column": "extractionDisposition",
+                    "uri": "urn:extractionDisposition",
+                    "dataType": "STRING",
+                    "internal": false,
+                    "definedBy": "http://rs.tdwg.org/dwc/terms/disposition",
+                    "group": "Protocol and Storage Details",
+                    "definition": "Current whereabouts or disposition of this extraction, recorded as free text. Examples: NHB, Biorepository, MSC freezer, used up.",
                     "allowUnknown": false,
                     "allowTBD": false
                 }
